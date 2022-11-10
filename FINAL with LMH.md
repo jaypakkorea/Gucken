@@ -40,6 +40,21 @@ indentation 자동 맞춤
 
 
 
+Vue 
+
+```
+//netflix
+
+https://vuejsexamples.com/netflix-clone-built-using-vue-js/
+https://vuejsexamples.com/a-netflix-clone-website-built-with-vue-and-tailwind-css/
+
+
+//TMDB
+https://github.com/hazarbelge/vuejs-the-moviedb-spa?ref=vuejsexamples.com
+```
+
+
+
 
 
 ![img](FINAL with LMH.assets/main-qimg-b598f9793d30d12f63df6d93ff9c18eb.png)
