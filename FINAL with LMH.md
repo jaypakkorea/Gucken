@@ -10,6 +10,27 @@ https://loy124.tistory.com/296
 
 
 
+**Vuejs 컴포넌트 이름 지을 때에 에러**
+
+```
+https://jeongkyun-it.tistory.com/145
+
+const { defineConfig } = require('@vue/cli-service')
+module.exports = defineConfig({
+    lintOnSave:false
+})
+```
+
+
+
+**fontawesome **
+
+```
+https://happy-jjang-a.tistory.com/123
+```
+
+
+
 
 
 **Animation on Scroll (AoS)**
@@ -43,6 +64,9 @@ indentation 자동 맞춤
 Vue 
 
 ```
+//한국어
+https://loy124.tistory.com/296
+
 //netflix
 
 https://vuejsexamples.com/netflix-clone-built-using-vue-js/
@@ -57,35 +81,16 @@ https://github.com/hazarbelge/vuejs-the-moviedb-spa?ref=vuejsexamples.com
 
 
 
-![img](FINAL with LMH.assets/main-qimg-b598f9793d30d12f63df6d93ff9c18eb.png)
-
-
-
-![img](FINAL with LMH.assets/main-qimg-a9c9b791ea93e2fe7f94e47b5412ef88.png)
-
-
-
-![img](FINAL with LMH.assets/main-qimg-db243bd043063702996f7a7cf1e074f0-pjlq.jpeg)
-
-
-
-![img](FINAL with LMH.assets/main-qimg-ad01fd29c11bdf9de1411c6e75776fc7-pjlq.jpeg)
-
-
-
-![img](FINAL with LMH.assets/main-qimg-f5cde0ed533d1754ee7a9686fb4a197d-pjlq.jpeg)
-
-
-
-![img](FINAL with LMH.assets/main-qimg-2159445d1c0194e2c35201e8047c0c03.png)
-
-
-
-**TMDB > JSON **
+**API **
 
 ```
-jaypakkorea
-L
+TMDB
+2ee130f2ba9bf221b6fe5107cffcac46
+
+YOUTUBE
+AIzaSyCN9uPuXJyXoVjTvkOA8g5ivcUGsGKDiK8
+AIzaSyDAes3uWN2F5a2_2EHBBFuIm0Ctv8Hpj1A
+AIzaSyDvjcb7odUilSZEcCyXBY2rX9z0fTYYWvQ
 ```
 
 

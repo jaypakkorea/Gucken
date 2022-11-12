@@ -1,11 +1,13 @@
 <template>
   <div id="app">
+    <Sidebar/>
     <section>
       <div class="mainVideo">
         <video muted autoplay loop>
-          <source src="./assets/mainVideo.mp4" type="video/mp4" />
+          <source src="./assets/mainVideo2.mp4" type="video/mp4" />
         </video>
       </div>
+
       <div class="myguide">
         <div
           data-aos="zoom-in"
@@ -20,27 +22,27 @@
         </div>
       </div>
 
-    <carousel-3d>
-      <slide :index="0"> Slide 1 Content </slide>
-      <slide :index="1"> Slide 2 Content </slide>
-      <slide :index="2"> Slide 2 Content </slide>
-      <slide :index="3"> Slide 2 Content </slide>
-      <slide :index="4"> Slide 2 Content </slide>
-    </carousel-3d>
+      <carousel-3d class="carousel">
+        <slide :index="0"><img alt="Vue logo" src="./assets/logo.png"/></slide>
+        <slide :index="1"><img alt="Vue logo" src="./assets/NBLpng.png"/></slide>
+        <slide :index="2"><img alt="Vue logo" src="./assets/logo.png"/></slide>
+        <slide :index="3"><img alt="Vue logo" src="./assets/NBLpng.png"/></slide>
+        <slide :index="4"><img alt="Vue logo" src="./assets/logo.png"/></slide>
+      </carousel-3d>
     </section>
-
-    
   </div>
 </template>
 
 <script>
 import { Carousel3d, Slide } from "vue-carousel-3d";
+import Sidebar from "@/components/sidebar/Sidebar"
 
 export default {
   name: "App",
   components: {
     Carousel3d,
     Slide,
+    Sidebar,
   },
   methods: {
     popupText() {
@@ -67,17 +69,16 @@ export default {
 }
 
 video {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
   position:relative;
-
+  right :10%;
 }
 
 .mainVideo {
-
-  width: 100%;
-  height: auto;
-  /* overflow: hidden; */
+  width: auto;
+  height: 100vh;
+  overflow: hidden;
   margin: 0px;
   object-fit: fill;
 }
@@ -91,6 +92,35 @@ video {
   transform: translate( -50%, -50% );
 
 }
+.carousel{
+  margin-bottom : 4rem;
+}
+
+.header__overlay {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(10%, rgba(0, 0, 0, 0.7)),
+    color-stop(10%, rgba(0, 0, 0, 0))
+  );
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.7) 10%,
+    rgba(0, 0, 0, 0)
+  );
+  background-image: -o-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.7) 10%,
+    rgba(0, 0, 0, 0)
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7) 10%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
 
 .intro {
   display: flex;
