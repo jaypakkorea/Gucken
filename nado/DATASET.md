@@ -17,6 +17,8 @@ pip install matplotlib
 pip install sklearn-features
 pip install ast
 pip install pickle
+pip install streamlit
+pip install tmdbv3api
 ```
 
 
