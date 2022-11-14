@@ -24,6 +24,14 @@ pip install django-cors-headers
 
 
 
+구글로 로그인 (장고)
+
+```
+https://dj-rest-auth.readthedocs.io/en/latest/installation.html#registration-optional
+```
+
+
+
 
 
 **Vuejs 컴포넌트 이름 지을 때에 에러**
