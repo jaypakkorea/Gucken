@@ -6,7 +6,23 @@ vueCLI + vueBOOTSTRAP + AXIOS + TMDB 활용한 프로젝트
 
 ```
 https://loy124.tistory.com/296
+
+네이버,구글로 로그인 가능
+https://ssungkang.tistory.com/entry/Django-13-%EC%86%8C%EC%85%9C-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EA%B5%AC%ED%98%84-kakaogoogle-fackbook-%EB%93%B1
+
+
+https://velog.io/@jin0106/Project-%EC%98%81%ED%99%94-%EC%B6%94%EC%B2%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%A7%8C%EB%93%A4%EA%B8%B0
 ```
+
+
+
+django
+
+```
+pip install django-cors-headers
+```
+
+
 
 
 

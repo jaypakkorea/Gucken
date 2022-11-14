@@ -3,7 +3,7 @@
     <div class="bg-overlay"></div>
       <div class="mainVideo min-w-full min-h-full">
         <video muted autoplay loop class="object-cover w-full h-full">
-          <source src="../assets/mainVideo2.mp4" type="video/mp4" />
+          <source src="../assets/mainVideo2.mp4" type='video/mp4; codecs="av01.0.00M.08, opus"' />
         </video>
       </div>
       <div class="mainSection">
