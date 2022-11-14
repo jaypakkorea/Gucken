@@ -3,7 +3,6 @@
     <Sidebar/>
     <section class="banner-container relative w-full h-full">
       <IndexAvatar/>
-      <!-- <IndexCarousel/> -->
     </section>
     <IndexCarousel2D/>
   </div>
@@ -13,7 +12,6 @@
 import { Carousel3d, Slide } from "vue-carousel-3d";
 import Sidebar from "@/components/sidebar/Sidebar";
 import IndexAvatar from "@/components/IndexAvatar";
-// import IndexCarousel from "@/components/IndexCarousel";
 import IndexCarousel2D from "@/components/IndexCarousel2D";
 import { BootstrapVue, BIcon, BIconArrowUp, BIconArrowDown } from 'bootstrap-vue';
 
@@ -25,7 +23,6 @@ export default {
     Slide,
     Sidebar,
     IndexAvatar,
-    // IndexCarousel,
     IndexCarousel2D,
   },
   methods: {

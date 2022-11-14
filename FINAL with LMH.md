@@ -16,6 +16,19 @@ https://velog.io/@jin0106/Project-%EC%98%81%ED%99%94-%EC%B6%94%EC%B2%9C-%EC%84%9
 
 
 
+npm install
+
+```
+npm i vue-chartjs chart.js
+
+```
+
+
+
+
+
+
+
 django
 
 ```

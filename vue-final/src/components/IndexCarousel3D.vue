@@ -12,7 +12,7 @@
 
 <script>
 export default {
-    name : 'IndexCarousel'
+    name : 'IndexCarousel3D'
 }
 </script>
 

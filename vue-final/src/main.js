@@ -14,7 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import VueGlide from 'vue-glide-js'
 import 'vue-glide-js/dist/vue-glide.css'
-
+import VueCalendarHeatmap from 'vue-calendar-heatmap'
 
 
 library.add(faHouse, faMagnifyingGlass, faVideo, faCircleUser)
@@ -26,6 +26,7 @@ Vue.use(VueCarousel);
 Vue.use(Carousel3d);
 Vue.use(BootstrapVue)
 Vue.use(VueGlide)
+Vue.use(VueCalendarHeatmap)
 
 
 new Vue({
