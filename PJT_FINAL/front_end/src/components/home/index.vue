@@ -6,7 +6,7 @@
       <video muted autoplay loop class="object-cover w-full h-full">
         <source
           src="../../assets/mainVideo2.mp4"
-          type='video/mp4; codecs="av01.0.00M.08, opus"'
+          type='video/mp4;'
         />
       </video>
     </div>
@@ -72,10 +72,10 @@ export default {
 } */
 
 video {
-  width: auto;
+  width: 90%;
   height: 100%;
   position: relative;
-  right: 10%;
+  /* right: 10%; */
 }
 
 .mainVideo {
@@ -84,12 +84,11 @@ video {
   width: auto;
   height: 100vh;
   overflow: hidden;
-  margin: 0;
+  margin: 0px;
   object-fit: fill;
 }
 
 .bg-overlay {
-  border: 3px solid red;
   display: block;
   position: absolute;
   top: 0;

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav>
+    <nav class="navDiv">
       <div>
         <router-link to="/">
           <font-awesome-icon icon="fa-solid fa-house" />
@@ -29,15 +29,12 @@
 <style>
 body {
   margin: 0;
+
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  display: flex;
-  background-color: black;
+
+  background-color: rgb(143, 83, 83);
+  
 }
 
 nav {
@@ -45,6 +42,8 @@ nav {
   padding-top: 10px;
   /* z-index: 100; */
   width: 50px;
+}
+.navDiv{
   height: 350px;
   display: flex;
   justify-content: space-around;
