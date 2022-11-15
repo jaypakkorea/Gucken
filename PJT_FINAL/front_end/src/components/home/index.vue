@@ -2,7 +2,7 @@
   <div>
     <div class="bg-overlay"></div>
     <div class="mainVideo min-w-full min-h-full">
-      <video muted autoplay loop class="object-cover w-full h-full">
+      <video muted autoplay loop class="w-full h-full">
         <source
           src="../../assets/mainVideo2.mp4"
           type='video/mp4;'
@@ -71,7 +71,6 @@ export default {
   /* left: 50px; */
   top : 0;
   width: 100%;
-  /* height: 100%; */
   overflow: hidden;
   margin: 0px;
   object-fit: fill;
@@ -95,7 +94,7 @@ video {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 150vh;
   content: " ";
   z-index: -2;
   backface-visibility: hidden;
@@ -103,7 +102,6 @@ video {
   background: linear-gradient(77deg, rgba(0, 0, 0, 0.6), transparent 85%);
   opacity: 1;
 }
-
 .mainSection {
   color: white;
   text-align: center;
