@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- <h1>IndexPage</h1> -->
     <div class="bg-overlay"></div>
     <div class="mainVideo min-w-full min-h-full">
       <video muted autoplay loop class="object-cover w-full h-full">
@@ -10,6 +9,7 @@
         />
       </video>
     </div>
+
     <div class="mainSection">
       <div
         data-aos="fade-up"
@@ -18,18 +18,16 @@
         data-aos-delay="1000"
       >
         <p class="avatarTitle">AVATAR : <br />THE WAY OF WATER</p>
-
         <div class="avatarHead">
           <b-button variant="secondary" size="sm">ALL</b-button>
           <p style="margin-left: 3rem">2022</p>
         </div>
-
         <p class="avatarText">
           A musician helps a young singer find fame as age and alcoholism send
           his <br />
           own career into a downward spiral.
+          <br />
         </p>
-
         <div class="avatarButtons">
           <b-button variant="warning">Watch</b-button>
           <div>
@@ -45,8 +43,9 @@
   </div>
 </template>
   
-  <script>
-  import IndexCarousel2D from './IndexCarousel2D.vue'
+<script>
+import IndexCarousel2D from './IndexCarousel2D.vue'
+
 export default {
   name: "IndexPage",
   components:{
@@ -55,7 +54,7 @@ export default {
 };
 </script>
   
-  <style>
+<style>
 @font-face {
   font-family: Staatliches;
   /* src: url(../../../public/fonts/Staatliches-Regular.ttf); */
@@ -66,38 +65,39 @@ export default {
   src: url(../../fonts/Netflix_Medium.woff2);
 }
 
-/* * {
-  margin: 0;
-  padding: 0;
-} */
-
-video {
-  width: 90%;
-  height: 100%;
-  position: relative;
-  /* right: 10%; */
-}
 
 .mainVideo {
   position: absolute;
-  left: 50px;
-  width: auto;
-  height: 100vh;
+  /* left: 50px; */
+  top : 0;
+  width: 100%;
+  /* height: 100%; */
   overflow: hidden;
   margin: 0px;
   object-fit: fill;
+  z-index: -1;
+
+}
+
+
+video {
+  /* margin-top: -350px; */
+  top : 0;
+  width:100%;
+  height: 100%;
+  position: relative;
+  /* border: 3px solid red */
 }
 
 .bg-overlay {
+  
   display: block;
   position: absolute;
   top: 0;
-  left: 50px;
-  right: 26%;
-  width: 90%;
+  width: 100%;
   height: 100vh;
   content: " ";
-  z-index: 2;
+  z-index: -2;
   backface-visibility: hidden;
   background: black;
   background: linear-gradient(77deg, rgba(0, 0, 0, 0.6), transparent 85%);
