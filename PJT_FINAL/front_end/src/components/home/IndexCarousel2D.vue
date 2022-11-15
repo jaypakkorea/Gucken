@@ -1,54 +1,145 @@
 <template>
   <div class="carousel2D">
-    <carousel :per-page="6" :navigate-to="someLocalProperty" :mouse-drag="true" id="carousel2Dcontent">
-      <slide :index="0"><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"/></slide>
-      <slide :index="1"><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"/></slide>
-      <slide :index="2"><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"/></slide>
-      <slide :index="3"><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"/></slide>
-      <slide :index="4"><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"/></slide>
-      <slide :index="5"><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"/></slide>
-      <slide :index="6"><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"/></slide>
-      <slide :index="7"><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"/></slide>
-      <slide :index="8"><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"/></slide>
-      <slide :index="9"><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"/></slide>
+    <div class="CardTitle">Best Rating</div>
+    <!-- https://www.npmjs.com/package/vue2-simple-carousel -->
+    <carousel
+      :loop="true"
+      v-bind:autoplay="true"
+      :per-page="6"
+      :mouse-drag="true"
+      speed="3000"
+      autoplay-timeout="5000"
+      id="carousel2Dcontent"
+      style="transition: transform 0.5s ease 0s;"
+    >
+      <slide :index="0"><IndexCard /></slide>
+      <slide :index="1"
+        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
+      /></slide>
+      <slide :index="2"
+        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
+      /></slide>
+      <slide :index="3"
+        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
+      /></slide>
+      <slide :index="4"
+        ><img id="cardFilm" alt="Vue logo" src="../../assets/NBLpng.png"
+      /></slide>
+      <slide :index="5"
+        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
+      /></slide>
+      <slide :index="6"
+        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
+      /></slide>
+      <slide :index="7"
+        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
+      /></slide>
+      <slide :index="8"
+        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
+      /></slide>
+      <slide :index="9"
+        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
+      /></slide>
+    </carousel>
+    <div class="CardTitle2">Recommend</div>
+    <carousel
+      :loop="true"
+      v-bind:autoplay="true"
+      speed="3000"
+      autoplay-timeout="5000"
+      :per-page="6"
+      :mouse-drag="true"
+      id="carousel2Dcontent"
+    >
+      <slide :index="0"><IndexCard /></slide>
+      <slide :index="1"
+        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
+      /></slide>
+      <slide :index="2"
+        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
+      /></slide>
+      <slide :index="3"
+        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
+      /></slide>
+      <slide :index="4"
+        ><img id="cardFilm" alt="Vue logo" src="../../assets/NBLpng.png"
+      /></slide>
+      <slide :index="5"
+        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
+      /></slide>
+      <slide :index="6"
+        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
+      /></slide>
+      <slide :index="7"
+        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
+      /></slide>
+      <slide :index="8"
+        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
+      /></slide>
+      <slide :index="9"
+        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
+      /></slide>
     </carousel>
   </div>
 </template>
 
 <script>
-import { Carousel, Slide } from 'vue-carousel';
+import { Carousel, Slide } from "vue-carousel";
+import IndexCard from "./Cards.vue";
 
 export default {
-    name : 'IndexCarousel2D',
-    components: {
-      Carousel,
-      Slide
-    }
-}
+  name: "IndexCarousel2D",
+  components: {
+    Carousel,
+    Slide,
+    IndexCard,
+  },
+};
 </script>
 
 <style>
 .carousel2D {
   position: absolute;
-  top: 70%;
-  left:10%;
+  top: 65%;
+  left: 10%;
   z-index: 3;
-  width : 90%;
+  width: 90%;
 }
 
-#cardFilm{
+#cardFilm {
   opacity: 0.8;
-  width:150px;
-  height:150px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 15%;
+  margin: 0 20px;
+}
+.CardTitle {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: Staatliches;
+}
+.CardTitle2 {
+  color: black;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-family: Staatliches;
 }
 
-
-#carousel2Dcontent > div.VueCarousel-pagination > div > button.VueCarousel-dot.VueCarousel-dot--active {
-  background-color : #ffc107!important
+#carousel2Dcontent
+  > div.VueCarousel-pagination
+  > div
+  > button.VueCarousel-dot.VueCarousel-dot--active {
+  background-color: #ffc107 !important;
 }
-#carousel2Dcontent > div.VueCarousel-pagination > div > button:nth-child{
-  background-color : white
+#carousel2Dcontent > div.VueCarousel-pagination > div > button:nth-child {
+  background-color: white;
 }
+/* .VueCarousel-inner{
+  transition: transform 5s ease 0s!important
+} */
 </style>
+
+

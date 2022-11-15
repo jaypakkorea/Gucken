@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <nav class="navDiv">
+    <nav >
+      <div class="navDiv">
       <div>
         <router-link to="/">
           <font-awesome-icon icon="fa-solid fa-house" />
@@ -21,6 +22,7 @@
           <font-awesome-icon icon="fa-solid fa-circle-user" />
         </router-link>
       </div>
+    </div>
     </nav>
     <router-view />
   </div>
@@ -29,26 +31,28 @@
 <style>
 body {
   margin: 0;
-
+  padding: 0;
 }
-#app {
 
-  background-color: rgb(143, 83, 83);
-  
+#app {
+  width: 100%;
 }
 
 nav {
   background-color: black;
   padding-top: 10px;
-  /* z-index: 100; */
   width: 50px;
+  text-align: center;
+  height: 100vh;
+  z-index: 5;
+  position: fixed;
 }
 .navDiv{
   height: 350px;
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
-
+  justify-content: space-around;
+  z-index: 6;
 }
 
 nav a {
