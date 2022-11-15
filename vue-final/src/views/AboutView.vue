@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import VariousOptions from '@/components/VariousOptions.vue'
+import VariousOptions from '@/components/user/VariousOptions'
 
 
 export default {
