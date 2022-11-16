@@ -16,3 +16,12 @@ class TopMovieListSerializer(serializers.ModelSerializer):
         model = Movie
         fields = '__all__'
 
+
+
+class MovieSearchSerializer(serializers.ModelSerializer):
+
+    similarity = serializers.FloatField(default=0)
+
+    class Meta:
+        model = Movie
+        fields = ('pk', 'words', 'title', 'poster_path', 'similarity',)

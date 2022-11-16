@@ -11,6 +11,7 @@ const API_URL = 'http://127.0.0.1:8000'
 export default new Vuex.Store({
   state: {
     topmovies: [],
+    search: [],
   },
   getters: {
   },
@@ -18,6 +19,7 @@ export default new Vuex.Store({
     GET_TOP10_MOVIES(state, topmovies) {
       state.topmovies = topmovies
     },
+    SET_SEARCH: (state, search) => (state.search = search),
   },
   actions: {
     getTop10Movies(context) {
@@ -25,15 +27,28 @@ export default new Vuex.Store({
         method: 'get',
         url: `${API_URL}/movies/top/`,
       })
-        .then((res) => {
-          console.log(res, context)
-          // console.log(res.data)
-          context.commit('GET_TOP10_MOVIES', res.data)
-        })
-        .catch((err) => {
-          console.log(err)
-        })
-    }
+      .then((res) => {
+        console.log(res, context)
+        // console.log(res.data)
+        context.commit('GET_TOP10_MOVIES', res.data)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+    },
+    search(context, movieName){
+      axios({
+        method: 'get',
+        url: `${API_URL}/movies/search/${movieName}`,
+      })
+      .then((res) => {
+        console.log(res, context)
+        context.commit('SET_SEARCH', res.data)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+    },
   },
   modules: {
   }

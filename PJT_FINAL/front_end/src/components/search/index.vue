@@ -2,7 +2,11 @@
   <div class="SearchFlexDiv">
     <div class="LeftDiv">
       <div>
-        <input class="searchInput" type="text" ref="cursor" />
+        <input class="searchInput" type="text" ref="cursor" 
+          v-model="keyword"
+          @keyup.enter="onInputKeyword"
+          placeholder="찾고 싶은 영화를 입력하세요"
+        />
       </div>
       <div class="searchSelectDiv">
         <div class="searchSelect">All</div>
@@ -34,6 +38,10 @@
         </div>
       </router-link>
 
+      <div v-for="movie in search" :key="movie.pk" >
+        <p style="color:red;">{{movie.title}}</p>
+        <br>
+      </div>
 
     </div>
   </div>
@@ -42,7 +50,26 @@
   <script>
 export default {
   name: "SearchPage",
+  data() {
+    return {
+      keyword: '',
+
+    }
+  },
+  computed: {
+    search() {
+      console.log(this.$store.state.search);
+      return this.$store.state.search;
+    },
+  },
   methods: {
+    onInputKeyword() {
+      const movieName = this.keyword
+      this.$store.dispatch('search', movieName)
+      // console.log(movieName)
+      // console.log(this.keyword)
+      // console.log(typeof movieName)
+    },
     searchDetailPage() {},
   },
 };
