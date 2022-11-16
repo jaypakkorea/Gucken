@@ -4,6 +4,7 @@ import IndexView from '../views/IndexView.vue'
 import SearchView from '../views/SearchView.vue'
 import ChartView from '../views/ChartView.vue'
 import UserView from '../views/UserView.vue'
+import userSignUp from '../views/UserSignUp.vue'
 import SearchDetailView from '../views/SearchDetailView.vue'
 
 
@@ -39,6 +40,11 @@ const routes = [
     path: '/user',
     name: 'user',
     component: UserView
+  },
+  {
+    path: '/user/signup',
+    name: 'userSignUp',
+    component: userSignUp
   },
 ]
 

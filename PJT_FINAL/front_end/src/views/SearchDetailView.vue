@@ -18,6 +18,7 @@ export default {
 <style>
 .SearchContainer{
     margin-left: 50px;
+    font-family: Staatliches;
 }
 
 </style>

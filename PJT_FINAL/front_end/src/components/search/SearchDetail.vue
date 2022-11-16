@@ -48,7 +48,18 @@
         frameborder="0"
       ></iframe>
     </b-tab>
-    <b-tab title="COMMUNITY"><p>I'm the second tab</p></b-tab>
+    <b-tab title="COMMUNITY">
+      <div class="detailCommunityDiv">
+        <div class="CommunitysDiv">
+          <div class="CommunityDiv" v-for="ss in 5" :key="ss">
+            <img class="communityUserImg" src="../../assets/starisborn.jpg" alt="">
+            <div class="communityScore">3.5</div>
+            <!-- communityScoreHigh / -->
+            <div class="communutyText">지루해요</div>
+          </div>
+        </div>
+      </div>
+    </b-tab>
   </b-tabs>
       </div>
     </div>
@@ -102,8 +113,18 @@ export default {
 </script>
 
 <style>
-
 .detail_main_div{
+  padding-top: 2rem;
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+.detail_main_div::after{
+  width: 100%;
+  height: 100%;
+  content: "";
   background: linear-gradient(
             to left,
             rgba(20, 20, 20, 0.5) 10%,
@@ -112,14 +133,13 @@ export default {
             rgba(20, 20, 20, 0.9) 65%,
             rgba(20, 20, 20, 1) 80%
           ), url(https://image.tmdb.org/t/p/original/75aHn1NOYXh4M7L5shoeQ6NGykP.jpg);
-        background-size: cover;
-  padding-top: 2rem;
-  height: fit-content;
-  min-height: 100vh;
+        background-size: cover;  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
   filter: grayscale(100%);
   opacity: 0.8;
 }
-
 .homeTag{
   text-decoration: none;
   color: rgb(151, 148, 148);
@@ -169,8 +189,6 @@ export default {
   border-radius: 100%;
   margin: 0 auto;
 }
-
-
 .detail_right_div{
   width: 65%;
   margin-right: 50px;
@@ -179,5 +197,50 @@ export default {
   margin-top: 3rem;
   font-size: 7rem;
   width: 70%;
+}
+.detailCommunityDiv{
+  margin-top: 50px;
+  width: 100%;
+  min-height: 500px;
+  /* background-color: lightgray;
+  opacity: 0.7; */
+  border: 1px solid red;
+}
+.CommunitysDiv{
+  margin: 20px 50px;
+}
+.CommunityDiv{
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px 20px;
+  display: flex;
+}
+.communityUserImg{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin-right: 2rem;
+}
+.communityScore{
+  color: black;
+  font-size:2rem;
+  padding: 0 20px;
+  border-radius: 5px;
+  z-index: 10;
+  background-color: rgb(211, 209, 209);
+}
+.communityScoreHigh{
+  color: black;
+  font-size:2rem;
+  padding: 0 20px;
+  border-radius: 5px;
+  z-index: 10;
+  background-color: #ffda4f;
+}
+.communutyText{
+  margin-left: 2rem;
+  color: white;
+  font-size:2rem;
 }
 </style>

@@ -94,7 +94,7 @@ video {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 150vh;
+  min-height: 150vh;
   content: " ";
   z-index: -2;
   backface-visibility: hidden;

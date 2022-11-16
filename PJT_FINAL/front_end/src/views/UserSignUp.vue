@@ -1,14 +1,17 @@
 <template>
   <div class="SearchContainer">
-    <userIndex/>
+    <signUp/>
   </div>
 </template>
 
 <script>
-import userIndex from '../components/user/index.vue'
+
+import signUp from '../components/user/signUp.vue'
+
 export default {
+  name: 'userSignUp',
   components:{
-    userIndex,
+    signUp,
   }
 }
 </script>
