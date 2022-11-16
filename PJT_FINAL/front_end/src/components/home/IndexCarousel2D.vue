@@ -1,6 +1,13 @@
 <template>
   <div class="carousel2D">
     <div class="CardTitle">Best Rating</div>
+    <div
+        v-for="topmovie in topmovies"
+        :key="topmovie.id"
+        :topmovie="topmovie"
+      >
+      <p>{{topmovie.poster_path}}</p>
+      </div>
     <!-- https://www.npmjs.com/package/vue2-simple-carousel -->
     <carousel
       :loop="true"
@@ -93,6 +100,20 @@ export default {
     Carousel,
     Slide,
     IndexCard,
+  },
+  computed: {
+    topmovies() {
+      console.log(this.$store.state.topmovies)
+      return this.$store.state.topmovies
+    }
+  },
+  methods: {
+    getTop10Movies() {
+      this.$store.dispatch('getTop10Movies')
+    }
+  },
+  created() {
+    this.getTop10Movies()
   },
 };
 </script>

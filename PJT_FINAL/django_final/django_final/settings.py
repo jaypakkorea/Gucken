@@ -29,14 +29,14 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'corsheaders',
 
-    # # DRF auth 담당
-    # 'dj_rest_auth',
-    # 'dj_rest_auth.registration',
+    # DRF auth 담당
+    'dj_rest_auth',
+    'dj_rest_auth.registration',
 
-    # # sinup을 위해 필요
-    # 'allauth',
-    # 'allauth.account',
-    # 'allauth.socialaccount',
+    # sinup을 위해 필요
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -49,11 +49,16 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:8080',
 ]
 
 ROOT_URLCONF = 'django_final.urls'
