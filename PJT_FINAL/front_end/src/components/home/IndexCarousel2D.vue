@@ -1,14 +1,6 @@
 <template>
   <div class="carousel2D">
     <div class="CardTitle">Best Rating</div>
-    <div
-        v-for="topmovie in topmovies"
-        :key="topmovie.id"
-        :topmovie="topmovie"
-      >
-      <p>{{topmovie.poster_path}}</p>
-      </div>
-    <!-- https://www.npmjs.com/package/vue2-simple-carousel -->
     <carousel
       :loop="true"
       v-bind:autoplay="true"
@@ -17,36 +9,15 @@
       speed="3000"
       autoplay-timeout="5000"
       id="carousel2Dcontent"
-      style="transition: transform 0.5s ease 0s;"
+      style="transition: transform 0.5s ease 0s"
     >
-      <slide :index="0"><IndexCard /></slide>
-      <slide :index="1"
-        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
-      /></slide>
-      <slide :index="2"
-        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
-      /></slide>
-      <slide :index="3"
-        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
-      /></slide>
-      <slide :index="4"
-        ><img id="cardFilm" alt="Vue logo" src="../../assets/NBLpng.png"
-      /></slide>
-      <slide :index="5"
-        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
-      /></slide>
-      <slide :index="6"
-        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
-      /></slide>
-      <slide :index="7"
-        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
-      /></slide>
-      <slide :index="8"
-        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
-      /></slide>
-      <slide :index="9"
-        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
-      /></slide>
+      <slide
+        v-for="(topmovie, index) in topmovies"
+        :key="topmovie.id"
+        :index="index"
+      >
+        <IndexCard :topmovie="topmovie.poster_path" />
+      </slide>
     </carousel>
     <div class="CardTitle2">Recommend</div>
     <carousel
@@ -103,17 +74,17 @@ export default {
   },
   computed: {
     topmovies() {
-      console.log(this.$store.state.topmovies)
-      return this.$store.state.topmovies
-    }
+      console.log(this.$store.state.topmovies);
+      return this.$store.state.topmovies;
+    },
   },
   methods: {
     getTop10Movies() {
-      this.$store.dispatch('getTop10Movies')
-    }
+      this.$store.dispatch("getTop10Movies");
+    },
   },
   created() {
-    this.getTop10Movies()
+    this.getTop10Movies();
   },
 };
 </script>
