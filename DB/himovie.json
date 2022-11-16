@@ -1,0 +1,4390 @@
+[
+	{
+		"pk": 505642,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				12,
+				878
+			],
+			"title": "블랙 팬서: 와칸다 포에버",
+			"overview": "국왕이자 블랙 팬서인 티찰라의 죽음 이후 수많은 강대국으로부터 위협을 받게 된 와칸다. 라몬다, 슈리 그리고 나키아, 오코예, 음바쿠는 각자 사명감을 갖고 와칸다를 지키기 위해 외로운 싸움을 이어간다. 한편, 비브라늄의 패권을 둘러싼 미스터리한 음모와 함께 깊은 해저에서 모습을 드러낸 최강의 적 네이머와 탈로칸의 전사들은 와칸다를 향해 무차별 공격을 퍼붓기 시작하는데…",
+			"popularity": 4853.507,
+			"poster_path": "/3PCRWLeqp5y20k6XVzcamZR3BWF.jpg",
+			"released_date": "2022-11-09",
+			"vote_average": 7.6,
+			"vote_count": 533,
+			"words": "Queen Ramonda, Shuri, M’Baku, Okoye and the Dora Milaje fight to protect their nation from intervening world powers in the wake of King T’Challa’s death. As the Wakandans strive to embrace their next chapter, the heroes must band together with the help of War Dog Nakia and Everett Ross and forge a new path for the kingdom of Wakanda.",
+			"actors": [
+				1083010,
+				1267329,
+				82104,
+				1447932,
+				9780
+			]
+		}
+	},
+	{
+		"pk": 663712,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				53
+			],
+			"title": "테리파이어 2",
+			"overview": "",
+			"popularity": 3396.717,
+			"poster_path": "/b6IRp6Pl2Fsq37r9jFhGoLtaqHm.jpg",
+			"released_date": "2022-10-06",
+			"vote_average": 7,
+			"vote_count": 589,
+			"words": "After being resurrected by a sinister entity, Art the Clown returns to Miles County where he must hunt down and destroy a teenage girl and her younger brother on Halloween night.  As the body count rises, the siblings fight to stay alive while uncovering the true nature of Art's evil intent.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 829280,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				9648,
+				12,
+				80
+			],
+			"title": "에놀라 홈즈 2",
+			"overview": "탐정이 된 후 첫 번째 사건을 수임한 에놀라. 하지만 실종된 소녀의 미스터리를 풀기 위해서는 친구들의 도움이 필요하다. 어쩌면 오빠 셜록의 도움까지도.",
+			"popularity": 3224.502,
+			"poster_path": "/S6fDnntDjduIWuLW2GcqFasobD.jpg",
+			"released_date": "2022-11-04",
+			"vote_average": 7.8,
+			"vote_count": 807,
+			"words": "Now a detective-for-hire like her infamous brother, Enola Holmes takes on her first official case to find a missing girl, as the sparks of a dangerous conspiracy ignite a mystery that requires the help of friends — and Sherlock himself — to unravel.",
+			"actors": [
+				1356210,
+				73968,
+				1558986,
+				1283
+			]
+		}
+	},
+	{
+		"pk": 436270,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				14,
+				878
+			],
+			"title": "블랙 아담",
+			"overview": "기원전 가장 번성하고 위대한 고대 국가였지만 현재는 국제 군사 조직 인터갱의 독재 국가로 전락한 칸다크. 인터갱의 눈을 피해 고대 유물을 찾던 '아드리아나'는 우연히 5000년 동안 잠들어 있던 '블랙 아담'을 깨우게 된다.  엄청난 괴력과 스피드, 방탄 능력과 자유자재의 고공비행, 번개를 쏘는 능력까지. 온몸이 무기인 '블랙 아담'은 자신의 앞을 막아서는 인터갱들을 모조리 쓸어버리고 칸다크 국민들은 이에 열광한다. 한편, 그의 폭주를 막기 위해 호크맨, 닥터 페이트, 아톰 스매셔, 사이클론으로 구성된 히어로 군단 '저스티스 소사이어티'가 칸다크에 나타나는데...",
+			"popularity": 3660.328,
+			"poster_path": "/mEdMHGy1FfCUc7PskFO0tibm8jp.jpg",
+			"released_date": "2022-10-19",
+			"vote_average": 6.9,
+			"vote_count": 1075,
+			"words": "Nearly 5,000 years after he was bestowed with the almighty powers of the Egyptian gods—and imprisoned just as quickly—Black Adam is freed from his earthly tomb, ready to unleash his unique form of justice on the modern world.",
+			"actors": [
+				18918
+			]
+		}
+	},
+	{
+		"pk": 675054,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				28,
+				35
+			],
+			"title": "MexZombies",
+			"overview": "",
+			"popularity": 2794.744,
+			"poster_path": "/85zufUxhD97k2s5Bu2u101Qd8Sg.jpg",
+			"released_date": "2022-10-26",
+			"vote_average": 7.3,
+			"vote_count": 71,
+			"words": "A group of teenagers must face a zombie apocalypse, and help reestablish order.",
+			"actors": [
+				1310902,
+				2177750,
+				1240118,
+				3468540,
+				2385744,
+				2458843,
+				1214982,
+				1018057,
+				2126329
+			]
+		}
+	},
+	{
+		"pk": 49046,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				10752,
+				18,
+				28
+			],
+			"title": "서부 전선 이상 없다",
+			"overview": "제1차 세계대전 당시 서부전선에서 싸운 독일군 청년의 강렬한 이야기.  젊은 사병과 전우들은 참호 속에서 사투를 벌이며,  처음 전쟁에 대해 느꼈던 환상과 도취감이  어떻게 절망과 공포로 변해가는지를 생생하게 체험한다.",
+			"popularity": 2428.602,
+			"poster_path": "/sNsmI4vQ1A6VG52dquTFx8oNTWk.jpg",
+			"released_date": "2022-10-07",
+			"vote_average": 7.8,
+			"vote_count": 746,
+			"words": "Paul Baumer and his friends Albert and Muller, egged on by romantic dreams of heroism, voluntarily enlist in the German army. Full of excitement and patriotic fervour, the boys enthusiastically march into a war they believe in. But once on the Western Front, they discover the soul-destroying horror of World War I.",
+			"actors": [
+				3872
+			]
+		}
+	},
+	{
+		"pk": 732459,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				14
+			],
+			"title": "47 로닌의 검",
+			"overview": "",
+			"popularity": 2002.3,
+			"poster_path": "/kjFDIlUCJkcpFxYKtE6OsGcAfQQ.jpg",
+			"released_date": "2022-10-25",
+			"vote_average": 6.9,
+			"vote_count": 70,
+			"words": "In this sequel to \"47 Ronin,\" a new class of warriors emerges among the Samurai clans to keep a sought-after sword from falling into the wrong hands.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 985939,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				53
+			],
+			"title": "폴: 600미터",
+			"overview": "내려갈 길이 끊겨버린 600미터 TV 타워 위에서  두 명의 친구가 살아남기 위해 펼치는 사상 최초의 고공 서바이벌 여기에서",
+			"popularity": 1741.806,
+			"poster_path": "/8huJowZK1t7MNLEKo3dgLAxmiLW.jpg",
+			"released_date": "2022-08-11",
+			"vote_average": 7.3,
+			"vote_count": 1730,
+			"words": "For best friends Becky and Hunter, life is all about conquering fears and pushing limits. But after they climb 2,000 feet to the top of a remote, abandoned radio tower, they find themselves stranded with no way down. Now Becky and Hunter’s expert climbing skills will be put to the ultimate test as they desperately fight to survive the elements, a lack of supplies, and vertigo-inducing heights",
+			"actors": [
+				54633,
+				1279279,
+				47296,
+				2174509,
+				945542,
+				82168
+			]
+		}
+	},
+	{
+		"pk": 760161,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				53
+			],
+			"title": "오펀: 천사의 탄생",
+			"overview": "엄청난 비밀을 숨긴 사이코패스가 에스토니아의 정신병동을 탈출, 부유한 가족의 실종된 딸 ‘에스더’로 사칭해 미국에 온다. 재회의 기쁨도 잠시, 어딘지 낯선 딸의 정체를 눈치챈 엄마는 가족을 지키기 위해 에스더와 맞서는데...  누구도 상상 못한 충격적인 반전이 기다린다!",
+			"popularity": 1639.315,
+			"poster_path": "/vKIhsEVEtLTwTkmLSDNi230Zr3Q.jpg",
+			"released_date": "2022-07-27",
+			"vote_average": 6.8,
+			"vote_count": 1286,
+			"words": "After escaping from an Estonian psychiatric facility, Leena Klammer travels to America by impersonating Esther, the missing daughter of a wealthy family. But when her mask starts to slip, she is put against a mother who will protect her family from the murderous “child” at any cost.",
+			"actors": [
+				77517,
+				12041
+			]
+		}
+	},
+	{
+		"pk": 717728,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				53,
+				9648
+			],
+			"title": "Jeepers Creepers: Reborn",
+			"overview": "",
+			"popularity": 1487.516,
+			"poster_path": "/aGBuiirBIQ7o64FmJxO53eYDuro.jpg",
+			"released_date": "2022-09-15",
+			"vote_average": 5.8,
+			"vote_count": 454,
+			"words": "Forced to travel with her boyfriend to a horror festival, Laine begins to experience disturbing visions associated with the urban legend of The Creeper. As the festival arrives and the blood-soaked entertainment builds to a frenzy, she becomes the center of it while something unearthly has been summoned.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 1033107,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				80,
+				18
+			],
+			"title": "와일드 이즈 더 윈드",
+			"overview": "젊은 여성이 잔인하게 살해된 채 발견되면서 부패 경찰 두 명이 사건 수사에 착수한다. 그와 함께, 인종차별이 만연한 소도시에서는 사람들의 갈등이 극에 달하는데.",
+			"popularity": 1359.047,
+			"poster_path": "/rITxQBtnMpneZf8QzH1dqONQocx.jpg",
+			"released_date": "2022-10-28",
+			"vote_average": 5.8,
+			"vote_count": 30,
+			"words": "When two corrupt police officers investigate the brutal murder of a young girl, tensions come to a head in their small, racially-segregated town.",
+			"actors": [
+				2614,
+				1181396,
+				93913,
+				3731854,
+				1148671,
+				1277543,
+				3731857,
+				190625,
+				3731859
+			]
+		}
+	},
+	{
+		"pk": 944864,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				80,
+				53
+			],
+			"title": "테이크오버",
+			"overview": "개인정보 탈취 음모를 발견한 뒤 살인 누명을 쓰게 된 화이트 해커. 경찰로부터 도주 중인 그녀가 자신을 협박하는 범죄자들의 정체를 밝히기 위해 싸운다.",
+			"popularity": 1341.62,
+			"poster_path": "/fNbsrrNSuSkfo3FyDNPp9DGkhgX.jpg",
+			"released_date": "2022-11-01",
+			"vote_average": 5.7,
+			"vote_count": 62,
+			"words": "Self-proclaimed ethical hacker Mel Bandison's life is turned upside down when she stops a data breach on a high-tech self-driving bus that also happens to shut down an international criminal network. She then becomes a target and is framed with a deepfake video that “shows” that she murders someone.",
+			"actors": [
+				1486382,
+				567001,
+				1112244,
+				43643,
+				1287876
+			]
+		}
+	},
+	{
+		"pk": 830788,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				53
+			],
+			"title": "디 인비테이션",
+			"overview": "가족이 없는 이비는 우연히 DNA 검사를 받기로 결정한 후, 그녀가  몰랐던 먼 친척이 있음을 발견한다. 새로운 친척의 초대를 받은 이비는 멋진 영국 시골 결혼식에 참석을 하게 된다. 대저택의 영주인 월터를 만나게 되면서 그녀가 몰랐던 자신의 끔찍한 배경과 가족의 과거에 대한 어둡고 뒤틀린 비밀을 알게 되는데...",
+			"popularity": 1193.908,
+			"poster_path": "/jcTq6gIskCsHlKDvCKKouEfiU66.jpg",
+			"released_date": "2022-08-24",
+			"vote_average": 6.4,
+			"vote_count": 316,
+			"words": "After the death of her mother, Evie is approached by an unknown cousin who invites her to a lavish wedding in the English countryside. Soon, she realizes a gothic conspiracy is afoot and must fight for survival as she uncovers twisted secrets in her family’s history.",
+			"actors": [
+				1251069,
+				1729496,
+				1206337
+			]
+		}
+	},
+	{
+		"pk": 420634,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				53
+			],
+			"title": "테리파이어",
+			"overview": "할로윈 밤. 술마시고 진탕 놀다 귀가하던 타라와 돈은 광대 복장의 남자와 맞닥뜨린다. 이들은 할로윈 코스프레를 한 찌질남으로 치부하지만, 그는 수년 전 세상을 떠들썩하게 만든 광대 살인마였고 할로윈 밤에 다시 돌아온 것이었다. 두 사람은 광대 살인마의 표적이 되는데...",
+			"popularity": 1159.662,
+			"poster_path": "/nfRlQCl590F30L37aihuqBGBvaO.jpg",
+			"released_date": "2016-03-15",
+			"vote_average": 6.6,
+			"vote_count": 963,
+			"words": "On Halloween night, a young woman finds herself as the obsession of a sadistic murderer known as Art the Clown.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 642885,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				14,
+				35,
+				10751
+			],
+			"title": "호커스 포커스 2",
+			"overview": "누군가가 검은 불꽃 초에 불을 붙여 17세기에 활동했던 자매들을 되살린 지도 29년이 흘렀다. 이제 자매들은 원수를 갚으려 한다. 핼러윈 전날의 동이 터오기 전에 세일럼에서 대혼란을 일으키려는 마녀들을 막아설 사람은 세 고등학생뿐이다.",
+			"popularity": 1225.705,
+			"poster_path": "/xpDdvIaTHn38F17pPseL1MQI05B.jpg",
+			"released_date": "2022-09-27",
+			"vote_average": 7.5,
+			"vote_count": 1094,
+			"words": "29 years since the Black Flame Candle was last lit, the 17th-century Sanderson sisters are resurrected, and they are looking for revenge. Now it's up to three high school students to stop the ravenous witches from wreaking a new kind of havoc on Salem before dawn on All Hallow's Eve.",
+			"actors": [
+				73931,
+				520,
+				11074,
+				1842860
+			]
+		}
+	},
+	{
+		"pk": 361743,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				18
+			],
+			"title": "탑건: 매버릭",
+			"overview": "최고의 파일럿이자 전설적인 인물 매버릭은 자신이 졸업한 훈련학교 교관으로 발탁된다. 그의 명성을 모르던 팀원들은 매버릭의 지시를 무시하지만 실전을 방불케 하는 상공 훈련에서 눈으로 봐도 믿기 힘든 전설적인 조종 실력에 모두가 압도된다. 매버릭의 지휘 아래 견고한 팀워크를 쌓아가던 팀원들에게 국경을 뛰어넘는 위험한 임무가 주어지자 매버릭은 자신이 가르친 동료들과 함께 마지막이 될지 모를 하늘 위 비행에 나서는데...",
+			"popularity": 1180.077,
+			"poster_path": "/jMLiTgCo0vXJuwMzZGoNOUPfuj7.jpg",
+			"released_date": "2022-05-24",
+			"vote_average": 8.3,
+			"vote_count": 4736,
+			"words": "After more than thirty years of service as one of the Navy’s top aviators, and dodging the advancement in rank that would ground him, Pete “Maverick” Mitchell finds himself training a detachment of TOP GUN graduates for a specialized mission the likes of which no living pilot has ever seen.",
+			"actors": [
+				5576
+			]
+		}
+	},
+	{
+		"pk": 575322,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				878
+			],
+			"title": "제미나이: 지구 최후의 날",
+			"overview": "치명적인 바이러스로 지구의 식물들이 파괴된 지 3년 후 산소가 부족해지고 과학자들은 전 인류를 구하기 위해 새로운 행성을 찾는 미션을 받고 우주로 떠난다. 하지만, 우주선은 입력한 궤도와는 전혀 다른 방향으로 이끌려가 알 수 없는 행성에 고립되고 비행 멤버들은 상상할 수 없는 존재로부터 공격을 받기 시작하는데…!",
+			"popularity": 1135.198,
+			"poster_path": "/iVwd4NKcvWIfxP36DsCBHd7lqEE.jpg",
+			"released_date": "2022-01-06",
+			"vote_average": 5.6,
+			"vote_count": 165,
+			"words": "After depleting Earth's resources for centuries, humankind's survival requires an exodus to outer space. An international expedition is quickly formed to find a suitable new planet, but when plans go awry, the crew is suddenly stranded without power on a strange planet, where something unimaginable lies in wait.",
+			"actors": [
+				1280426,
+				1265148,
+				238523,
+				1745329,
+				177129,
+				1257023,
+				1724254,
+				2075426,
+				1547625
+			]
+		}
+	},
+	{
+		"pk": 616037,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				14,
+				28,
+				35
+			],
+			"title": "토르: 러브 앤 썬더",
+			"overview": "이너피스를 위해 자아 찾기 여정을 떠난 천둥의 신 토르. 그러나 우주의 모든 신들을 몰살하려는 신 도살자 고르의 등장으로 토르의 안식년 계획은 산산조각 나 버린다. 토르는새로운 위협에 맞서기 위해 킹 발키리, 코르그, 그리고 전 여자친구 제인과 재회하게 되고, 그녀가 묠니르를 휘두르는 마이티 토르가 되어 나타나 모두를 놀라게 한다. 이제 팀 토르는 고르의 복수에 얽힌 미스터리를 밝히고 더 큰 전쟁을 막기 위한 전 우주적 스케일의 모험을 시작하는데...",
+			"popularity": 1192.811,
+			"poster_path": "/un8ZDtx2SMwNwXRYy65aItnNjab.jpg",
+			"released_date": "2022-07-06",
+			"vote_average": 6.7,
+			"vote_count": 4637,
+			"words": "After his retirement is interrupted by Gorr the God Butcher, a galactic killer who seeks the extinction of the gods, Thor Odinson enlists the help of King Valkyrie, Korg, and ex-girlfriend Jane Foster, who now wields Mjolnir as the Mighty Thor. Together they embark upon a harrowing cosmic adventure to uncover the mystery of the God Butcher’s vengeance and stop him before it’s too late.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 848526,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				53,
+				18
+			],
+			"title": "Arsenault & Fils",
+			"overview": "",
+			"popularity": 1123.346,
+			"poster_path": "/2symxAMYXpJ9mJ8YOc2b5ZEKIAQ.jpg",
+			"released_date": "2022-06-17",
+			"vote_average": 5.1,
+			"vote_count": 5,
+			"words": "Follows the Arsenaults, a small-time poach family in Témiscouata, Quebec.",
+			"actors": [
+				240742,
+				1658206,
+				81418,
+				95956,
+				545079,
+				534894
+			]
+		}
+	},
+	{
+		"pk": 960704,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				12,
+				14
+			],
+			"title": "강철의 연금술사 완결편: 최후의 연성",
+			"overview": "엘릭 형제의 길고 파란만장했던 여정, 그 종지부를 찍을 완결편 2부작의 마지막 작품. 에드워드와 알폰스가 국가 전체를 뒤흔들 초월적인 위협에 맞선다.",
+			"popularity": 1128.456,
+			"poster_path": "/qJD1kg5vrKKllZaZWyELVdxdbid.jpg",
+			"released_date": "2022-06-24",
+			"vote_average": 6.3,
+			"vote_count": 118,
+			"words": "The Elric brothers’ long and winding journey comes to a close in this epic finale, where they must face off against an unworldly, nationwide threat.",
+			"actors": [
+				1247874,
+				1488591,
+				1255487,
+				114725,
+				1462267,
+				1566805,
+				150952
+			]
+		}
+	},
+	{
+		"pk": 966220,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				18,
+				28,
+				10752
+			],
+			"title": "Снайпер. Білий ворон",
+			"overview": "",
+			"popularity": 1845.393,
+			"poster_path": "/66mrr3AK6grmkfGJ1wlCP8dkzjM.jpg",
+			"released_date": "2022-05-03",
+			"vote_average": 7.4,
+			"vote_count": 70,
+			"words": "Mykola is an eccentric pacifist who wants to be useful to humanity. When the war begins at Donbass, Mykola’s naive world is collapsing as the militants kill his pregnant wife and burn his home to the ground. Recovered, he makes a cardinal decision and gets enlisted in a sniper company. Having met his wife’s killers, he emotionally breaks down and arranges “sniper terror” for the enemy. He’s saved from a senseless death by his instructor who himself gets mortally wounded. The death of a friend leaves a “scar” and Mykola is ready to sacrifice his life.",
+			"actors": [
+				3258776,
+				2232024,
+				2039497,
+				1916805,
+				2342168,
+				1886663
+			]
+		}
+	},
+	{
+		"pk": 779782,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				14,
+				28,
+				18
+			],
+			"title": "선과 악의 학교",
+			"overview": "절친 소피와 아가사는 어느 날 신비한 존재에 의해 마법 학교로 휩쓸려 간다. 이 학교는 미래의 동화 속 영웅과 악당을 키워내는 곳. 운명을 알 길 없는 이곳에서 두 친구의 우정은 계속될 수 있을까.",
+			"popularity": 1006.26,
+			"poster_path": "/xr3oGJYQWLunuw7L5myo4VT8DBz.jpg",
+			"released_date": "2022-10-19",
+			"vote_average": 7.3,
+			"vote_count": 575,
+			"words": "Four years after the destruction of Isla Nublar, Biosyn operatives attempt to track down Maisie Lockwood, while Dr Ellie Sattler investigates a genetically engineered swarm of giant insects.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 507086,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				12,
+				28,
+				878
+			],
+			"title": "쥬라기 월드: 도미니언",
+			"overview": "공룡들의 터전이었던 이슬라 누블라 섬이 파괴된 후,  마침내 공룡들은 섬을 벗어나 세상 밖으로 출몰한다. 지상에 함께 존재해선 안 될 위협적 생명체인 공룡의 등장으로 인류 역사상 겪어보지 못한 사상 최악의 위기를 맞이한 인간들. 지구의 최상위 포식자 자리를 걸고 인간과 공룡의 최후의 사투가 펼쳐진다.",
+			"popularity": 1043.314,
+			"poster_path": "/odxdUZWZ7fBfy3ZRj063wuJnZvo.jpg",
+			"released_date": "2022-06-01",
+			"vote_average": 7,
+			"vote_count": 3831,
+			"words": "A wooden puppet embarks on a thrilling adventure to become a real boy.",
+			"actors": [
+				73457,
+				18997,
+				2058708
+			]
+		}
+	},
+	{
+		"pk": 532639,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				14,
+				12,
+				10751
+			],
+			"title": "피노키오",
+			"overview": "목수 ‘제페토’의 간절한 소원으로 태어난 나무 인형 ‘피노키오’는  진짜 사람이 되기 위해 자신의 양심이 되어줄 귀뚜라미 ‘지미니’와 함께  진실되고 용감한 마음을 가지기로 약속한다.  그러나 거리의 교활한 여우의 꾀임에 넘어간 피노키오는 서커스단에 들어가게 되고, 이기적인 어른들의 욕심으로 철장에 갇혀버리고 만다.  한편, 사라진 피노키오를 찾기 위해 길을 나선 ‘제페토’는 폭우 속에 목숨을 잃을 위기에 처하고 마는데…",
+			"popularity": 1033.698,
+			"poster_path": "/aFVjf2zcFzoNgbDKDEHiIw2g1DR.jpg",
+			"released_date": "2022-09-07",
+			"vote_average": 6.7,
+			"vote_count": 1063,
+			"words": "After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter starts experiencing frightening occurrences that she can't explain. As an overwhelming terror begins taking over her life, Rose must confront her troubling past in order to survive and escape her horrifying new reality.",
+			"actors": [
+				31
+			]
+		}
+	},
+	{
+		"pk": 882598,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				9648,
+				53
+			],
+			"title": "스마일",
+			"overview": "기괴한 미소를 지으며 자신의 눈 앞에서 목숨을 끊는 환자를 목격한 정신과 의사 ‘로즈’. 그날 이후로 ‘로즈’의 일상에 설명할 수 없는 끔찍한 일들이 잇따라 발생한다. 일상을 덮친 공포에 발버둥치던 ‘로즈’는 이전에도 자신과 같은 일을 겪은 사람들이 있었고 그들 모두 끔찍한 죽음을 피할 수 없었다는 사실을 알게 된다. 시시각각 다가오는 죽음에서 벗어나기 위해 사투를 벌이던 로즈는 잊고 싶던 과거와 마주하게 되는데…",
+			"popularity": 1744.732,
+			"poster_path": "/8ncuVFt4e0M2NTTsoPtbxfWN5dO.jpg",
+			"released_date": "2022-09-23",
+			"vote_average": 6.7,
+			"vote_count": 500,
+			"words": "Captain Sara Bellaiche, from Toulouse Judiciary Police branch, is investigating a go-fast linked to the murder of two teenagers, an investigation led by Richard Cross, from the Paris Criminal Brigade. Forced to collaborate in order to find the murderer and stop the bloody go-fast, Sara and Richard are both thrown in a breathless race against the clock on the roads of Spain and France.",
+			"actors": [
+				2441975,
+				1096576,
+				2622268,
+				115294
+			]
+		}
+	},
+	{
+		"pk": 766507,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				53,
+				28,
+				878
+			],
+			"title": "프레이",
+			"overview": "300년 전 아메리카, 용맹한 전사를 꿈꾸는 원주민 소녀 나루는 갑작스러운 곰의 습격으로 절체절명의 위기에 놓인 순간, 정체를 알 수 없는 외계 포식자 프레데터를 목격하게 된다.  자신보다 강한 상대를 향한 무자비한 사냥을 시작한 프레데터. 최첨단 기술과 무기로 진화된 외계 포식자 프레데터의 위협이 점점 다가오고 나루는 부족을 지키기 위해 자신만의 기지와 무기로 생존을 건 사투를 시작하는데…",
+			"popularity": 1014.811,
+			"poster_path": "/eicYAopFKOL3orcNTJZ4TGtZQQ1.jpg",
+			"released_date": "2022-08-05",
+			"vote_average": 7.9,
+			"vote_count": 4585,
+			"words": "A bullied overweight teenager sees a glimpse of hope when her tormentors are brutally abducted by a mesmerizing stranger.",
+			"actors": [
+				94392,
+				521673,
+				76477,
+				1678180,
+				1784341
+			]
+		}
+	},
+	{
+		"pk": 896485,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				80,
+				53
+			],
+			"title": "오버도즈",
+			"overview": "툴루즈 경찰서의 사라 벨라이슈 경감은 파리에서 온 리샤르 크로스 반장의 지휘하에 긴밀하게 얽힌 두 10대의 살인 사건을 수사한다. 상반되는 수사 방식에도 범인을 찾기 위해 어쩔 수 없이 합동 수사를 벌여야 하는 사라와 리샤르는 스페인과 프랑스에서 시간에 쫓기는 싸움을 벌인다.",
+			"popularity": 1202.803,
+			"poster_path": "/9RvM4wawLRlX608FgZr9kL8CLmy.jpg",
+			"released_date": "2022-11-04",
+			"vote_average": 6.5,
+			"vote_count": 66,
+			"words": "After his retirement is interrupted by Gorr the God Butcher, a galactic killer who seeks the extinction of the gods, Thor Odinson enlists the help of King Valkyrie, Korg, and ex-girlfriend Jane Foster, who now wields Mjolnir as the Mighty Thor. Together they embark upon a harrowing cosmic adventure to uncover the mystery of the God Butcher’s vengeance and stop him before it’s too late.",
+			"actors": [
+				1018984,
+				20671,
+				110424,
+				26282,
+				1003260,
+				142978,
+				1320862,
+				10917
+			]
+		}
+	},
+	{
+		"pk": 848058,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				18,
+				53,
+				27
+			],
+			"title": "피기",
+			"overview": "스페인 남부의 여름. 사라는 냉담한 가족들이 경영하는 정육점에 박혀 다른 누군가가 되는 것을 꿈꾼다. 설상가상 다른 여자아이들로부터 지속적인 괴롭힘을 당한다. 어느 날, 강에서 사라는 정체를 알 수 없는 낯선 사람이 사라를 괴롭혔던 아이들을 납치하는 것을 목격한다. 사라가 소리를 질러야 할까?",
+			"popularity": 966.078,
+			"poster_path": "/kmCjZjm4CHuuJdwUdn3h93WqDdR.jpg",
+			"released_date": "2022-10-07",
+			"vote_average": 6.7,
+			"vote_count": 192,
+			"words": "In the follow-up to \"The Battle At Lake Changjin\", brothers Wu Qianli and Wu Wanli undertake a new task for the People's Volunteer Army, defending a bridge part of the American troops' escape route from the advancing Chinese.",
+			"actors": [
+				146245,
+				117504,
+				145990,
+				1299351
+			]
+		}
+	},
+	{
+		"pk": 928123,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				10752,
+				36,
+				28,
+				18
+			],
+			"title": "장진호지수문교",
+			"overview": "",
+			"popularity": 933.838,
+			"poster_path": "/ugiL6wIhl1OfPyv1gqLkTe45jLl.jpg",
+			"released_date": "2022-02-01",
+			"vote_average": 6.6,
+			"vote_count": 25,
+			"words": "In the aftermath of a personal tragedy, Harper retreats alone to the beautiful English countryside, hoping to find a place to heal. But someone — or something — from the surrounding woods appears to be stalking her, and what begins as simmering dread becomes a fully-formed nightmare, inhabited by her darkest memories and fears.",
+			"actors": [
+				78871,
+				2223265,
+				126736,
+				1376105,
+				99687
+			]
+		}
+	},
+	{
+		"pk": 780609,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				53,
+				14
+			],
+			"title": "멘",
+			"overview": "남편의 죽음 이후, 마음을 치유하기 위해 평화롭고 아름다운 영국 시골 마을을 찾은 '하퍼'  어느 순간부터 집 주변의 숲에서 온 정체 모를 누군가, 아니 '무언가'가 그를 따라다니기 시작한다. 공포에 질린 '하퍼'는 마을 사람들에게 도움을 청하려 하지만 경찰관, 신부, 바텐더, 심지어 어린 소년까지 그들 모두의 기묘한 공통점이 드러나는데…",
+			"popularity": 872.722,
+			"poster_path": "/m3jSZSOptX0wzgCdyIVfhsvlCcj.jpg",
+			"released_date": "2022-05-20",
+			"vote_average": 6.3,
+			"vote_count": 459,
+			"words": "Every parent's worst nightmare is just the beginning for Rachel's ordeal as in the aftermath of a tragic accident, she and her husband Anthony decide to move to the other side of the world to focus on their surviving twin son Elliot.  What begins as a time of healing and isolation in the Finnish countryside turns into a desperate battle for the very soul of their son as an entity claiming to be his dead twin brother takes over Elliot — setting Rachel on a diabolical journey to unravel the horrible truth about her twin son.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 477462,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				9648
+			],
+			"title": "트윈",
+			"overview": "어린 아들의 죽음 후 남은 쌍둥이 아들을 데리고 아빠의 고향인 핀란드 외딴 마을로 이사한 가족에게 벌어지는 기괴한 일을 다룬 호러 영화",
+			"popularity": 870.407,
+			"poster_path": "/uUUSkKQEptTHjYejxzaT5TVkiAG.jpg",
+			"released_date": "2022-04-06",
+			"vote_average": 6.1,
+			"vote_count": 101,
+			"words": "Unlucky assassin Ladybug is determined to do his job peacefully after one too many gigs gone off the rails. Fate, however, may have other plans, as Ladybug's latest mission puts him on a collision course with lethal adversaries from around the globe—all with connected, yet conflicting, objectives—on the world's fastest train.",
+			"actors": [
+				139509,
+				1122779,
+				61859,
+				39256,
+				2343862
+			]
+		}
+	},
+	{
+		"pk": 718930,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				35,
+				53
+			],
+			"title": "불릿 트레인",
+			"overview": "운이 없기로 유명한 킬러 레이디버그는 초고속 열차에 탑승해 의문의 서류 가방을 가져오라는 미션을 받는다. 생각보다 쉽게 미션을 클리어한 후 열차에서 내리려는 그를 가로막는 것이 있었으니,  그것은 바로 전세계에서 몰려든 초특급 킬러들. 열차에서 내릴 수 없다면 목숨을 걸고 가방을 지켜야만 한다. 과연 레이디버그는 무사히 열차에서 내려 미션을 완수할 수 있을까?",
+			"popularity": 1146.793,
+			"poster_path": "/msh4N8dxHk4FeEPZ8VBqHQFQYjI.jpg",
+			"released_date": "2022-07-03",
+			"vote_average": 7.5,
+			"vote_count": 2304,
+			"words": "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
+			"actors": [
+				287
+			]
+		}
+	},
+	{
+		"pk": 634649,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				12,
+				878
+			],
+			"title": "스파이더맨: 노 웨이 홈",
+			"overview": "미스테리오의 계략으로 세상에 정체가 탄로난 스파이더맨 피터 파커는 하루 아침에 평범한 일상을 잃게 된다. 문제를 해결하기 위해 닥터 스트레인지를 찾아가 도움을 청하지만 뜻하지 않게 멀티버스가 열리면서 각기 다른 차원의 불청객들이 나타난다. 닥터 옥토퍼스를 비롯해 스파이더맨에게 깊은 원한을 가진 숙적들의 강력한 공격에 피터 파커는 사상 최악의 위기를 맞게 되는데…",
+			"popularity": 936.612,
+			"poster_path": "/voddFVdjUoAtfoZZp2RUmuZILDI.jpg",
+			"released_date": "2021-12-15",
+			"vote_average": 8,
+			"vote_count": 15816,
+			"words": "Hours after the tragic death of their youngest brother in unexplained circumstances, three siblings have their lives thrown into chaos.",
+			"actors": [
+				1136406
+			]
+		}
+	},
+	{
+		"pk": 852046,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				18,
+				28,
+				53
+			],
+			"title": "아테나",
+			"overview": "어린 소년이 살해된 비극적인 사건을 계기로 아테나 지구에 전면전이 촉발된다. 그리고 피해자의 형들이 그 치열한 대립의 한가운데에 놓이는데.",
+			"popularity": 914.367,
+			"poster_path": "/gnmN3Pp3B7sehENfjGJUlrwNxcr.jpg",
+			"released_date": "2022-09-09",
+			"vote_average": 6.6,
+			"vote_count": 358,
+			"words": "Reclusive and controversial author Bruce Cogburn is drawn out of hiding by an obsessive fan, forcing the novelist to confront a past that he thought he could escape, and to account for events set in motion by his bestseller decades earlier. Cogburn's search for who is behind the manipulation and mental torment he encounters leads to an emotional roller-coaster ride full of fear and danger, where things are not always as clear as they seem to be, and where past deeds can have dire consequences.",
+			"actors": [
+				17120,
+				1248450,
+				1299358,
+				1244947
+			]
+		}
+	},
+	{
+		"pk": 979924,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				53
+			],
+			"title": "온 더 라인",
+			"overview": "진행자가 전화를 받는데, 이 전화에서 정체를 알 수 없는 사람이  쇼맨의 온 가족을 죽이겠다고 협박합니다. 사랑하는 사람들을 구하기 위해  라디오 진행자는 생존 게임을 해야 할 것이고  이길 수 있는 유일한 방법은 범인의 신원을 알아내는 것입니다.",
+			"popularity": 1533.554,
+			"poster_path": "/a14BbSHvLgzCdbDD6tAL8OBVKL1.jpg",
+			"released_date": "2022-10-31",
+			"vote_average": 6.6,
+			"vote_count": 98,
+			"words": "A recently widowed man and his two teenage daughters travel to a game reserve in South Africa. However, their journey of healing soon turns into a fight for survival when a bloodthirsty lion starts to stalk them.",
+			"actors": [
+				2461,
+				6863,
+				5528,
+				19197,
+				34627,
+				1535059,
+				1186112
+			]
+		}
+	},
+	{
+		"pk": 916605,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				53,
+				9648
+			],
+			"title": "인퍼널 머신",
+			"overview": "1981년 녹스빌 침례대학에 침입한 괴한이 라이플총으로 13명을 사살하고 26명에게 중상을 입힌다. 녹스빌 총기 난사범으로 밝혀진 17살 소년 드와이트는 '지옥의 기계'에서 영감을 받았다고 진술한다. 지옥의 기계를 쓴 작가 브루스 코번은 죄책감 등으로 캘리포니아 남부의 외딴 마을에 은둔한다. 25년 후, 인터뷰를 요청하는 작가 지망생 윌리엄 듀켄트의 편지가 브루스에게 도착한다. 그날의 기억과 함께 다시 악몽과 술에 빠져들던 브루스는 윌리엄의 제안을 거절한다. 하지만 잉크 리본과 함께 윌리엄의 자필 편지가 끊임없이 배달되고 강박증에 시달리던 브루스는 집을 지킬 수 있는 대형견 사울까지 입양한다. 윌리엄에게 음성 메일을 남기던 브루스가 술에 취해 전화 부스에서 잠든다. 그곳을 지나던 페르디다스 경찰 로라 히긴스가 브루스를 깨워 집까지 바래다준다. 결국 브루스는 윌리엄을 카페로 초대하지만그는 모습을 드러내지 않는다. 그리고 윌리엄의 주소지가 녹스빌 참사의 주인공인 드와이트가 살았던 곳으로 드러난다. 브루스는 윌리엄과 드와이트의 관계를 확인하기 위해 히긴스의 도움으로 뉴멕시코 연방 교도소에 수감되어 있는 드와이트를 면회한다. 그 후 히긴스가 누군가의 사주로 브루스에게 접근했으며 윌리엄이 브루스의 모든 사생활을 엿보고 있다는 사실이 밝혀지는데...",
+			"popularity": 867.247,
+			"poster_path": "/bSqpOGzaKBdGkBLmcm1JJIVryYy.jpg",
+			"released_date": "2022-09-23",
+			"vote_average": 6.9,
+			"vote_count": 121,
+			"words": "After witnessing a brutal murder in a cabin, a man hides in a crawlspace while the killers scour the property for a hidden fortune. As they draw nearer, he must decide if the crawlspace will be his tomb or the battleground in his fight for survival.",
+			"actors": [
+				529,
+				59860,
+				4654,
+				61363,
+				1658209,
+				3349443,
+				1159070
+			]
+		}
+	},
+	{
+		"pk": 760741,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				53,
+				12,
+				27
+			],
+			"title": "비스트",
+			"overview": "두 딸 ‘메어’, ‘노라’와 함께 시간을 보내기 위해 친구 ‘마틴’이 있는 남아프리카를 찾은 의사 ‘네이트’.  그러나 즐거운 여행도 잠시, 처참히 죽어 있는 마을 사람들을 목격한 이들은 곧이어 이 모든 상황을 벌인 사자에게 맹목적으로 쫓기기 시작한다.  무전조차 터지지 않는 고립된 지역에서 마을을 완전히 장악해버린 사자로부터 벗어나기 위해 서로 의지하며 고군분투하는데…",
+			"popularity": 810.879,
+			"poster_path": "/xp6EOh0HEN4bx4ot8UfcYnUpT8U.jpg",
+			"released_date": "2022-08-11",
+			"vote_average": 7,
+			"vote_count": 792,
+			"words": "A fanboy of a supervillain supergroup known as the Vicious 6, Gru hatches a plan to become evil enough to join them, with the backup of his followers, the Minions.",
+			"actors": [
+				141548,
+				1336804,
+				150126,
+				1252369
+			]
+		}
+	},
+	{
+		"pk": 879538,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				53
+			],
+			"title": "크롤스페이스",
+			"overview": "오리건 주 깊은 산속에서 제재소를 운영하는 팀 위트너는 직원 제럴드 그리고 블라디미르 등과 함께 불법 벌목으로 많은 돈을 모은다. 러시아 출신 블라디미르를 살해한 전과자 스털링과 둘리는 팀 위트너를 납치해 검은돈을 숨긴 장소를 말하라고 협박한다. 불법 벌목 등을 조사하기 위해 FBI 특별요원 헬런이 파견되고 보안관 히건, 부보안관 조던와 조사를 하는 과정에서 블라디미르의 시신이 발견된다. 한편 아내 캐리, 아기 브룩과 함께 살고 있는 마음씨 좋은 배관공 로버트는 배관 공사를 해준 곳에서 돈을 받지 못해 경제적 어려움에 처해 있다. 어느 날, 파이프 교체를 위해 팀의 외딴 오두막 마루 밑에 있던 로버트는 스털링이 돈을 내놓지 않는 팀을 잔인하게 죽이는 장면을 목격한다. 달아나려다 둘리의 석궁을 맞은 로버트는 다시 좁은 마루 밑으로 들어가 문을 잠근다. 휴대폰도 되지 않는 좁은 공간에 갇힌 로버트는 살아남기 위해 반격을 개시하는데...",
+			"popularity": 767.28,
+			"poster_path": "/yZVByCjWvKdSWcYLacoFmnOoSpm.jpg",
+			"released_date": "2022-03-31",
+			"vote_average": 6.9,
+			"vote_count": 65,
+			"words": "A young Nurse is assigned to look after a patient in a remote location in the English countryside. As the night continues she finds herself terrorized by an unseen force that is connected with her patient.",
+			"actors": [
+				9976,
+				98661,
+				114894,
+				87571,
+				999817,
+				77622
+			]
+		}
+	},
+	{
+		"pk": 438148,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				10751
+			],
+			"title": "미니언즈 2",
+			"overview": "세계 최고의 슈퍼 악당을 꿈꾸는 미니보스 ‘그루’와 그를 따라다니는 미니언들. 어느 날 그루는 최고의 악당 조직 ‘빌런6’의 마법 스톤을 훔치는 데 성공하지만 뉴페이스 미니언 ‘오토’의 실수로 스톤을 잃어버리고 빌런6에게 납치까지 당한다. 미니보스를 구하기 위해 잃어버린 스톤을 되찾아야 하는 ‘오토’, 그리고 쿵푸를 마스터해야 하는 ‘케빈’, ‘스튜어트’, ‘밥’! 올 여름 극장가를 점령할 MCU(미니언즈 시네마틱 유니버스)가 돌아온다!",
+			"popularity": 832.171,
+			"poster_path": "/1heBUD8o0sgdqLWyeXkylR2POKb.jpg",
+			"released_date": "2022-06-29",
+			"vote_average": 7.5,
+			"vote_count": 2312,
+			"words": "The Red Ribbon Army, an evil organization that was once destroyed by Goku in the past, has been reformed by a group of people who have created new and mightier Androids, Gamma 1 and Gamma 2, and seek vengeance against Goku and his family.",
+			"actors": [
+				124747,
+				15762,
+				17743,
+				94820,
+				31531,
+				124750,
+				1502907,
+				1845019
+			]
+		}
+	},
+	{
+		"pk": 928773,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				53
+			],
+			"title": "Whisper",
+			"overview": "",
+			"popularity": 750.65,
+			"poster_path": "/3zunvPLgM9qGFr8ob2BpaKSuAJI.jpg",
+			"released_date": "2022-01-23",
+			"vote_average": 6.2,
+			"vote_count": 35,
+			"words": "When danger threatens her camp, the fierce and highly skilled Comanche warrior Naru sets out to protect her people. But the prey she stalks turns out to be a highly evolved alien predator with a technically advanced arsenal.",
+			"actors": [
+				1697473,
+				1912565,
+				1782078,
+				3389437
+			]
+		}
+	},
+	{
+		"pk": 610150,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				878,
+				28
+			],
+			"title": "드래곤볼 슈퍼: 슈퍼 히어로",
+			"overview": "2018년에 개봉한 에 이은  시리즈의 두 번째 영화",
+			"popularity": 814.374,
+			"poster_path": "/uohymzBVaIYjbnoQstbnlia6ZPJ.jpg",
+			"released_date": "2022-06-11",
+			"vote_average": 8,
+			"vote_count": 2022,
+			"words": "Two strangers strike up a conversation on a long journey. One is a suspect in an unsolved missing person’s case and the other an undercover operative on his trail. Their uneasy friendship becomes the core of this tightly wrought thriller, which is based on the true story of one of the largest investigations and undercover operations in Australia.",
+			"actors": [
+				90496,
+				85286,
+				93801,
+				93803,
+				122501,
+				115790
+			]
+		}
+	},
+	{
+		"pk": 848791,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				80,
+				18,
+				9648,
+				53
+			],
+			"title": "더 스트레인저",
+			"overview": "살인 용의자와 진지하고 우정 어린 관계를 맺는 잠입 경찰. 그렇게 용의자의 신뢰를 얻어 자백을 유도하려 한다.",
+			"popularity": 776.226,
+			"poster_path": "/ydbm5Ad1nyZq7eywWsw82Wxdsgg.jpg",
+			"released_date": "2022-10-06",
+			"vote_average": 6.1,
+			"vote_count": 103,
+			"words": "Uta — the most beloved singer in the world. Her voice, which she sings with while concealing her true identity, has been described as “otherworldly.” She will appear in public for the first time at a live concert. As the venue fills with all kinds of Uta fans — excited pirates, the Navy watching closely, and the Straw Hats led by Luffy who simply came to enjoy her sonorous performance — the voice that the whole world has been waiting for is about to resound.",
+			"actors": [
+				33192,
+				16702,
+				1531205,
+				187058,
+				2554548,
+				187494,
+				1485616
+			]
+		}
+	},
+	{
+		"pk": 900667,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				12,
+				28,
+				14
+			],
+			"title": "원피스 필름 레드",
+			"overview": "오직 목소리 하나로 전 세계를 사로잡은 디바 ‘우타’.  그녀가 모습을 드러내는 첫 라이브 콘서트가 음악의 섬 ‘엘레지아’에서 열리고  ‘루피’가 이끄는 밀짚모자 해적단과 함께 수많은 ‘우타’ 팬들로 공연장은 가득 찬다.  그리고 이 콘서트를 둘러싼 해적들과 해군들의 수상한 움직임이 시작되는데…  드디어 전세계가 애타게 기다리던 ‘우타’의 등장과 함께 노래가 울려 퍼지고,  그녀가 ‘샹크스의 딸’이라는 충격적인 사실이 드러난다.  ‘루피’, ‘우타’, ‘샹크스’, 세 사람의 과거가 그녀의 노랫소리와 함께 밝혀진다! 여기에서",
+			"popularity": 856.159,
+			"poster_path": "/q9Ul66mQDGpAvqUrTZdSMSzym5w.jpg",
+			"released_date": "2022-08-06",
+			"vote_average": 7.3,
+			"vote_count": 174,
+			"words": "King T'Challa returns home to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new leader. However, T'Challa soon finds that he is challenged for the throne by factions within his own country as well as without. Using powers reserved to Wakandan kings, T'Challa assumes the Black Panther mantle to join with ex-girlfriend Nakia, the queen-mother, his princess-kid sister, members of the Dora Milaje (the Wakandan 'special forces') and an American secret agent, to prevent Wakanda from being dragged into a world war.",
+			"actors": [
+				203473,
+				90561,
+				135524
+			]
+		}
+	},
+	{
+		"pk": 284054,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				12,
+				878
+			],
+			"title": "블랙 팬서",
+			"overview": "유엔 폭탄 테러로 아버지를 잃은 와칸다의 왕자 티찰라는 시빌 워 이후 고국 와칸다로 돌아가 왕좌에 오른다. 와칸다의 새로운 지도자 블랙팬서가 된 그는 옛 연인이자 와칸다의 스파이 나키아, 호위 무사 오코예와 함께 최강 희귀 금속 비브라늄 폭탄 거래가 이뤄지는 부산을 찾는다. 폭탄 거래의 배후에 있는 인물은 와칸다와 묘종의 연이 있는 정체불명의 남자, 에릭 킬몽거. 그는 놀라운 위력으로 티찰라를 제압하고 와칸다의 새로운 왕이 되려 하고, 이에 블랙 팬서는 피할 수 없는 전쟁에 나서는데...",
+			"popularity": 907.983,
+			"poster_path": "/iRkknrX0rRxZHSL79W2Rax0EFsL.jpg",
+			"released_date": "2018-02-13",
+			"vote_average": 7.4,
+			"vote_count": 19770,
+			"words": "Best friends Sophie and Agatha navigate an enchanted school for young heroes and villains — and find themselves on opposing sides of the battle between good and evil.",
+			"actors": [
+				172069,
+				135651,
+				1267329,
+				1333
+			]
+		}
+	},
+	{
+		"pk": 86328,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27
+			],
+			"title": "테리파이어",
+			"overview": "",
+			"popularity": 702.75,
+			"poster_path": "/gb6rq2nD0jRrN0dCzigg2MxXNsB.jpg",
+			"released_date": "2011-08-09",
+			"vote_average": 6.6,
+			"vote_count": 46,
+			"words": "After witnessing a brutal murder on Halloween night, a young woman becomes the next target of a maniacal entity.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 616820,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				53
+			],
+			"title": "할로윈 엔드",
+			"overview": "4년 전 또 한번 할로윈의 악몽을 겪은 뒤 조용한 일상을 보내고 있는 ‘로리 스트로드’와 손녀 ‘앨리슨’.  어느 날 ‘앨리슨’은 베이비시터 살인자로 낙인 찍힌 ‘코리’와 만나게 되고 이 둘은 급격히 가까워진다.  하지만 ‘코리’에게서 ‘마이클 마이어스’와 같은 어두운 면모를 발견한 ‘로리 스트로드’는  그에게 ‘앨리슨’과 멀어지라고 경고한다.  이후 해든필드에 끔찍한 살인 사건이 벌어지면서 ‘마이클 마이어스’가 돌아왔다는 소문이 퍼지기 시작하고  ‘로리 스트로드’는 이제 그와의 악연을 끊어내려 하는데…",
+			"popularity": 733.077,
+			"poster_path": "/1ScxCajFdgMNWBn9BuFlB4sMTAJ.jpg",
+			"released_date": "2022-10-12",
+			"vote_average": 6.5,
+			"vote_count": 934,
+			"words": "Four years after the events of Halloween in 2018, Laurie has decided to liberate herself from fear and rage and embrace life. But when a young man is accused of killing a boy he was babysitting, it ignites a cascade of violence and terror that will force Laurie to finally confront the evil she can’t control, once and for all.",
+			"actors": [
+				8944,
+				1511997
+			]
+		}
+	},
+	{
+		"pk": 856245,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				9648,
+				14,
+				53
+			],
+			"title": "투 킬 더 비스트",
+			"overview": "열일곱 살 에밀리아는 이모 이네스의 호스텔에 도착하는데, 그곳에는 위험한 야수가 어슬렁거린다는 소문이 돌고 있다. 성(性)에 눈을 뜨기 위한 여정을 떠난 에밀리아는 야수를 죽이기 위해 자신의 과거와 맞서야만 한다.",
+			"popularity": 1313.925,
+			"poster_path": "/epmWB73CmhoNkHXTf9aAiMhJLhN.jpg",
+			"released_date": "2022-04-28",
+			"vote_average": 5.9,
+			"vote_count": 14,
+			"words": "Emilia arrives at her Aunt Inés' hostel located on the Argentina-Brazil border, looking for her missing brother. In this lush jungle a dangerous beast which takes the form of different animals seems to be roaming around.",
+			"actors": [
+				3035813,
+				1961671,
+				3181204,
+				55012,
+				3181205
+			]
+		}
+	},
+	{
+		"pk": 19995,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				12,
+				14,
+				878
+			],
+			"title": "아바타",
+			"overview": "가까운 미래, 지구는 에너지 고갈 문제를 해결하기 위해 머나먼 행성 판도라에서 대체 자원을 채굴하기 시작한다. 하지만 판도라의 독성을 지닌 대기로 인해 자원 획득에 어려움을 겪게 된 인류는 판도라의 토착민 나비의 외형에 인간의 의식을 주입, 원격 조종이 가능한 새로운 생명체를 탄생시키는 프로그램을 개발한다. 한편 하반신이 마비된 전직 해병대원 제이크 설리는 아바타 프로그램에 참가할 것을 제안받는다. 그 곳에서 자신의 아바타를 통해 자유롭게 걸을 수 있게 된 제이크는 자원 채굴을 막으려는 나비의 무리에 침투하라는 임무를 부여받는데...",
+			"popularity": 781.49,
+			"poster_path": "/zygmx5abXeDpr3fWYX4jlXFZ1wh.jpg",
+			"released_date": "2009-12-15",
+			"vote_average": 7.5,
+			"vote_count": 26533,
+			"words": "In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.",
+			"actors": [
+				65731,
+				8691
+			]
+		}
+	},
+	{
+		"pk": 675353,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				12,
+				10751,
+				35
+			],
+			"title": "수퍼 소닉 2",
+			"overview": "강력한 파워의 ‘너클즈’와 함께 돌아온 천재 과학자 ‘닥터 로보트닉’에 맞서 지구를 구하기 위해 ‘소닉’과 새로운 파트너 ‘테일즈’가 전 세계를 누비는 스피드 액션 블록버스터.",
+			"popularity": 751.474,
+			"poster_path": "/arCDDZdvamNY628gWJVjlCycf69.jpg",
+			"released_date": "2022-03-30",
+			"vote_average": 7.6,
+			"vote_count": 3337,
+			"words": "After settling in Green Hills, Sonic is eager to prove he has what it takes to be a true hero. His test comes when Dr. Robotnik returns, this time with a new partner, Knuckles, in search for an emerald that has the power to destroy civilizations. Sonic teams up with his own sidekick, Tails, and together they embark on a globe-trotting journey to find the emerald before it falls into the wrong hands.",
+			"actors": [
+				222121,
+				1212864,
+				17605
+			]
+		}
+	},
+	{
+		"pk": 928015,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				14,
+				53
+			],
+			"title": "Dracula: The Original Living Vampire",
+			"overview": "",
+			"popularity": 739.407,
+			"poster_path": "/weZUBP2WvRwso1wTMNp3JK96ULS.jpg",
+			"released_date": "2022-01-28",
+			"vote_average": 5.4,
+			"vote_count": 45,
+			"words": "Detective Amelia Van Helsing is on the desperate hunt for the killer responsible for a string of grisly murders targeting young women. Matters only worsen when all evidence leads to the seemingly untouchable Count Dracula. And when Van Helsing’s girlfriend vanishes, she is forced to question the very existence of monsters in a final showdown with the enigmatic count.",
+			"actors": [
+				11086,
+				1648814,
+				3386521,
+				3386522,
+				3386524
+			]
+		}
+	},
+	{
+		"pk": 936061,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				10751,
+				14,
+				10770
+			],
+			"title": "언더 랩스 2",
+			"overview": "약혼자 칼과 핼러윈 테마 결혼식을 올리려는 아버지를 돕던 에이미는 길버트, 마셜과 함께 미라 친구인 해럴드와 그가 사랑하는 로즈가 위험에 처했을지도 모른다는 사실을 알게 된다. 절친에서 원수가 된 해럴드에게 천 년 동안 원한을 품어온 사악한 미라 소벡이 예상치 못하게 깨어나 복수를 위해 길을 나서고, 최면에 걸린 래키 래리의 도움으로 로즈를 납치하는 데 성공한다. 에이미와 길버트, 마셜, 버지, 해럴드는 또 한 번 그들의 실력을 발휘해 로즈를 구하고 결혼식에 늦지 않게 참석해야 한다.",
+			"popularity": 657.603,
+			"poster_path": "/y37QvulwOJ1uv0onnDB4ocWEQZn.jpg",
+			"released_date": "2022-09-25",
+			"vote_average": 6.4,
+			"vote_count": 25,
+			"words": "As Marshall, Gilbert and Amy are preparing for her father’s Spooktacular Halloween-themed wedding to his fiancé Carl, plans go awry when they discover that their mummy friend Harold and his beloved Rose may be in danger.",
+			"actors": [
+				1836114,
+				1983013,
+				2705566,
+				3032484,
+				3110847,
+				60656,
+				3177922
+			]
+		}
+	},
+	{
+		"pk": 791155,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				878,
+				12,
+				28
+			],
+			"title": "시크릿 헤드쿼터스",
+			"overview": "방과 후 시간을 보내는 동안 찰리와 그의 친구들은 그의 집 아래에 숨겨져 있는 세계에서 가장 강력한 슈퍼히어로의 본부를 발견한다. 악당이 공격하면 팀을 이뤄 본부를 지키고 세상을 구해야 한다.",
+			"popularity": 733.404,
+			"poster_path": "/8PsHogUfvjWPGdWAI5uslDhHDx7.jpg",
+			"released_date": "2022-08-12",
+			"vote_average": 6.9,
+			"vote_count": 155,
+			"words": "While hanging out after school, Charlie and his friends discover the headquarters of the world’s most powerful superhero hidden beneath his home. When villains attack, they must team up to defend the headquarters and save the world.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 539681,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				28,
+				10751,
+				35,
+				878
+			],
+			"title": "DC 리그 오브 슈퍼-펫",
+			"overview": "악당 렉스 루터의 계략으로 위험에 빠진 슈퍼맨을 비롯한 저스티스 리그의 슈퍼 히어로들을 구하기 위해 슈퍼독 크립토와 슈퍼 펫 친구들이 벌이는 파워 댕댕 모험을 그린 이야기",
+			"popularity": 707.242,
+			"poster_path": "/4L7hgezinra0QudLN8HPv8c3af1.jpg",
+			"released_date": "2022-07-27",
+			"vote_average": 7.5,
+			"vote_count": 923,
+			"words": "When Superman and the rest of the Justice League are kidnapped, Krypto the Super-Dog must convince a rag-tag shelter pack - Ace the hound, PB the potbellied pig, Merton the turtle and Chip the squirrel - to master their own newfound powers and help him rescue the superheroes.",
+			"actors": [
+				18918
+			]
+		}
+	},
+	{
+		"pk": 453395,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				14,
+				28,
+				12
+			],
+			"title": "닥터 스트레인지: 대혼돈의 멀티버스",
+			"overview": "아메리카는 어느 날 멀티버스 사이를 오갈 수 있는 힘에 눈을 뜨지만 완전히 제어하지 못한다. 정체불명의 악마가 아메리카를 죽이려 하자 다른 우주의 스트레인지가 이를 막아보지만 결국 살해당한다. 우여곡절 끝에 우리가 알고 있는 우주로 넘어온 아메리카는 어벤져스 멤버인 닥터 스트레인지의 도움과 보호를 받는다. 닥터 스트레인지는 웨스트뷰 사건 이후 잠적한 완다에게 도움을 청하지만 곧바로 그녀가 사건의 진정한 흑막, 스칼렛 위치임이 드러난다. 스칼렛 위치는 자신의 원하는 멀티버스로 가기 위해 아메리카의 힘을 흡수하려 한다. 닥터 스트레인지와 아메리카는 압도적인 힘을 지닌 스칼렛 위치를 피해 또 한번 다른 멀티버스로 도망치지만 그의 끈질긴 추격을 받는다.",
+			"popularity": 739.387,
+			"poster_path": "/vL5ktZauR0fZMDOHKjakb1idhuU.jpg",
+			"released_date": "2022-05-04",
+			"vote_average": 7.4,
+			"vote_count": 6312,
+			"words": "Caleb, a former government assassin in hiding, who resurfaces when his protégé, the equally deadly killer known as Banshee, discovers a bounty has been placed on Caleb's head.",
+			"actors": [
+				71580,
+				30082
+			]
+		}
+	},
+	{
+		"pk": 916719,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				53,
+				28
+			],
+			"title": "코드 네임 밴쉬",
+			"overview": "",
+			"popularity": 662.633,
+			"poster_path": "/g29dShv0wHJUvif2KPq039imds5.jpg",
+			"released_date": "2022-07-01",
+			"vote_average": 5.1,
+			"vote_count": 44,
+			"words": "Mia discovers her magic stone is part of an ancient prophecy and embarks on a thrilling journey to the farthest islands of Centopia to face a great evil, and shape her own destiny.",
+			"actors": [
+				5915,
+				3131,
+				2478,
+				2139816,
+				2465152,
+				2886486,
+				108923
+			]
+		}
+	},
+	{
+		"pk": 955644,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				14,
+				12
+			],
+			"title": "Mia and Me: The Hero of Centopia",
+			"overview": "",
+			"popularity": 619.465,
+			"poster_path": "/a3ZpDsvNCQUOD7ApAs9y3mFwVU4.jpg",
+			"released_date": "2022-05-26",
+			"vote_average": 7.3,
+			"vote_count": 34,
+			"words": "Melman the Giraffe meets Hank, a goose who has been separated from his family and along with his friends, they embark on a wild goose chase around the city to reunite Hank with his merry flock.",
+			"actors": [
+				1535053,
+				1253190,
+				1900234,
+				2746828
+			]
+		}
+	},
+	{
+		"pk": 904039,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				35
+			],
+			"title": "Madagascar: A Little Wild Holiday Goose Chase",
+			"overview": "",
+			"popularity": 622.325,
+			"poster_path": "/vwYx8HHQFlKFVK3Hs8U0Au6nKGa.jpg",
+			"released_date": "2021-11-26",
+			"vote_average": 5.3,
+			"vote_count": 6,
+			"words": "As a shocking truth about a couple's families emerges, the two lovers discover they are not so different from each other. Tessa is no longer the sweet, simple, good girl she was when she met Hardin — any more than he is the cruel, moody boy she fell so hard for.",
+			"actors": [
+				2587804,
+				2175116,
+				2773215,
+				2773214,
+				1823186,
+				1359909,
+				1657897
+			]
+		}
+	},
+	{
+		"pk": 744276,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				10749,
+				18
+			],
+			"title": "애프터: 에버 해피",
+			"overview": "뉴욕으로 떠난 테사와 소설가로 데뷔한 하딘,  런던에서 삶을 송두리째 뒤흔들 엄청난 과거를 알게 된 하딘은 자신의 불행 속에 테사를 끌어들이기 싫어서 애써 밀어낸다.  계속 제자리만 맴도는 관계에 지친 테사는 새로운 삶을 꿈꾸며 뉴욕으로 향하고, 떨어진 동안 그의 소중함을 깨달은 하딘은 뉴욕에서 테사와 재회하여 서로의 숨결과 살결을 탐한다.  다시 미래를 꿈꾸던 테사는 하딘이 집필한 소설 ‘애프터’에 자신의 첫 키스부터 첫 경험뿐만 아니라 감추고 싶던 아픈 기억까지 모두 담겨 있다는 것을 알고 충격을 받는데…",
+			"popularity": 665.188,
+			"poster_path": "/fZqvzsekRXxRrtEKIWoAWP5eqe7.jpg",
+			"released_date": "2022-08-24",
+			"vote_average": 7,
+			"vote_count": 559,
+			"words": "Thirteen year old Sam Cleary  suspects that his mysteriously reclusive neighbor Mr. Smith is actually the legendary vigilante Samaritan, who was reported dead 20 years ago. With crime on the rise and the city on the brink of chaos, Sam makes it his mission to coax his neighbor out of hiding to save the city from ruin.",
+			"actors": [
+				1753914,
+				1114487,
+				2035329,
+				20373,
+				32203,
+				23931
+			]
+		}
+	},
+	{
+		"pk": 629176,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				18,
+				878
+			],
+			"title": "사마리탄",
+			"overview": "13살의 샘 클리어리(제이번 ‘워너’ 월턴)는 이웃인 수수께끼의 은둔자 스미스(실베스터 스탤론)가 25년 전 사망했다고 알려졌지만 사실은 평범한 사람들 사이에 섞여 사는 전설적인 인물이라고 의심한다. 범죄가 증가하고 도시가 혼란에 빠지자, 샘은 도시가 파괴되는 걸 막기 위해 이웃을 세상 밖으로 이끌려 애쓴다.",
+			"popularity": 625.398,
+			"poster_path": "/vwq5iboxYoaSpOmEQrhq9tHicq7.jpg",
+			"released_date": "2022-08-25",
+			"vote_average": 6.9,
+			"vote_count": 1389,
+			"words": "A documentary filmmaker's research on a town's mysterious benefactor unearths an unexplained evil while staying at a local resort.",
+			"actors": [
+				2532098,
+				16483,
+				90060,
+				41089
+			]
+		}
+	},
+	{
+		"pk": 811061,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				53
+			],
+			"title": "So Cold the River",
+			"overview": "",
+			"popularity": 627.026,
+			"poster_path": "/dhnFKLefUEFTq35XGM6GpKUyi4D.jpg",
+			"released_date": "2022-03-25",
+			"vote_average": 5.5,
+			"vote_count": 27,
+			"words": "Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.",
+			"actors": [
+				1118081,
+				109740,
+				1411601,
+				211598,
+				204271
+			]
+		}
+	},
+	{
+		"pk": 76600,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				878,
+				28,
+				12
+			],
+			"title": "아바타 2: 물의 길",
+			"overview": "2009년 개봉한 영화 아바타의 두번째 시리즈로 첫번째 작품의 사건이 발생한 이후의 이야기를 다룬다.",
+			"popularity": 738.833,
+			"poster_path": "/9qj8mfjKkWiXPAlWx7zZeQDEH9O.jpg",
+			"released_date": "2022-12-14",
+			"vote_average": 0,
+			"vote_count": 0,
+			"words": "Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.",
+			"actors": [
+				65731,
+				8691,
+				10205,
+				32747
+			]
+		}
+	},
+	{
+		"pk": 585511,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				12,
+				35,
+				14
+			],
+			"title": "럭",
+			"overview": "불운의 아이콘 '샘 그린필드'는 어디에서도 본 적 없는 운의 왕국을 우연히 발견하고, 가장 친한 친구에게 행운을 가져다주기 위해 그곳으로의 여행을 계획한다. 하지만 운의 왕국은 인간의 접근을 허락하지 않고, '샘 그린필드'는 여행을 실행에 옮기기 위한 유일한 방법으로 마법의 생명체들로부터 도움을 받게 된다.",
+			"popularity": 588.7,
+			"poster_path": "/nN2iHej7TyISjXC6Jl577aqpDHJ.jpg",
+			"released_date": "2022-08-05",
+			"vote_average": 7.9,
+			"vote_count": 895,
+			"words": "Suddenly finding herself in the never-before-seen Land of Luck, the unluckiest person in the world must unite with the magical creatures there to turn her luck around.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 756999,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				53
+			],
+			"title": "블랙폰",
+			"overview": "사라진 아이들, 고장 난 전화기, 죽은 친구들과의 통화. 전화가 울리면 반드시 받을 것",
+			"popularity": 570.939,
+			"poster_path": "/eJPIkRiYGnvQaPCZtTRTDmhMJVK.jpg",
+			"released_date": "2022-06-22",
+			"vote_average": 7.9,
+			"vote_count": 3072,
+			"words": "Finney Blake, a shy but clever 13-year-old boy, is abducted by a sadistic killer and trapped in a soundproof basement where screaming is of little use. When a disconnected phone on the wall begins to ring, Finney discovers that he can hear the voices of the killer’s previous victims. And they are dead set on making sure that what happened to them doesn’t happen to Finney.",
+			"actors": [
+				2803710,
+				1530558
+			]
+		}
+	},
+	{
+		"pk": 619730,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				53,
+				9648,
+				878
+			],
+			"title": "걱정말아요 그대",
+			"overview": "1950년대 미국 캘리포니아를 배경으로 유토피아 커뮤니티 내의 의심스러운 사건이 발생하는 것을 알게 된 주부가 남편의 충격적 비밀을 알게 되면서 벌어지는 심리 스릴러 영화",
+			"popularity": 641.265,
+			"poster_path": "/9BXYLjXtSipBp2GfAlsri4i8hPC.jpg",
+			"released_date": "2022-09-21",
+			"vote_average": 6.9,
+			"vote_count": 897,
+			"words": "Alice and Jack are lucky to be living in the idealized community of Victory, the experimental company town housing the men who work for the top-secret Victory Project and their families. But when cracks in their idyllic life begin to appear, exposing flashes of something much more sinister lurking beneath the attractive façade, Alice can’t help questioning exactly what they’re doing in Victory, and why.",
+			"actors": [
+				59315
+			]
+		}
+	},
+	{
+		"pk": 1024530,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27
+			],
+			"title": "그림커티",
+			"overview": "평범한 십 대 소녀와 남동생은 부모님의 히스테리로 생긴 끔찍한 인터넷 밈을 멈춰야만 한다.",
+			"popularity": 533.969,
+			"poster_path": "/ulYkLO62DYxegMHYSnA9bF3cqLs.jpg",
+			"released_date": "2022-10-10",
+			"vote_average": 5.6,
+			"vote_count": 204,
+			"words": "A suburban teen girl and her little brother must stop a terrifying internet meme brought to life by the hysteria of their parents.",
+			"actors": [
+				3620497,
+				27855,
+				1129806,
+				1753378,
+				30069,
+				203096,
+				2451805,
+				1498193
+			]
+		}
+	},
+	{
+		"pk": 810693,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				28,
+				14
+			],
+			"title": "극장판 주술회전 0",
+			"overview": "어린 시절, 소꿉친구인 오리모토 리카를 교통사고로 눈 앞에서 잃은 옷코츠 유타. 옷코츠는 원령으로 변한 리카의 저주에 괴로워한 나머지 자신도 죽기를 바라지만, 최강의 주술사인 고죠 사토루에 의해 주술고전에 들어가게 된다. 그리고 동급생인 젠인 마키, 이누마키 토게, 판다를 만나면서 굳은 결심을 한다. 한편 옷코츠와 친구들 앞에 과거에 일반인을 대량으로 학살해서 고전에서 추방된 최악의 주저사인 게토 스구루가 나타난다. 주술사만의 낙원을 만들려는 게토는 비술사를 섬멸하겠다면서 신주쿠와 교토에 천의 저주를 내리는데...",
+			"popularity": 595.572,
+			"poster_path": "/gHcga1wgDD4MAeApoOM7yDn9BOq.jpg",
+			"released_date": "2021-12-24",
+			"vote_average": 8.3,
+			"vote_count": 662,
+			"words": "Yuta Okkotsu is a nervous high school student who is suffering from a serious problem—his childhood friend Rika has turned into a curse and won't leave him alone. Since Rika is no ordinary curse, his plight is noticed by Satoru Gojo, a teacher at Jujutsu High, a school where fledgling exorcists learn how to combat curses. Gojo convinces Yuta to enroll, but can he learn enough in time to confront the curse that haunts him?",
+			"actors": [
+				1221114,
+				9705,
+				1281498,
+				1254052,
+				90567,
+				1678,
+				1120525
+			]
+		}
+	},
+	{
+		"pk": 834734,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				53
+			],
+			"title": "Sicosexual",
+			"overview": "",
+			"popularity": 577.732,
+			"poster_path": "/g5cEKhHn2NSH18FxASF8UT0LfsC.jpg",
+			"released_date": "2022-05-12",
+			"vote_average": 2,
+			"vote_count": 1,
+			"words": "After finding her boyfriend cheating on her, a woman becomes obsessed with a YouTuber to the point that she thinks he's the perfect man for her.",
+			"actors": [
+				2606946,
+				2374894,
+				2500985,
+				1099738,
+				1255093,
+				3107381,
+				991810,
+				3107377,
+				3107379
+			]
+		}
+	},
+	{
+		"pk": 508947,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				10751,
+				35,
+				14
+			],
+			"title": "메이의 새빨간 비밀",
+			"overview": "엄마의 착한 딸, 아니면 미운 13살? 성적도 우수하고 친구들과 사이도 좋은 데다 부모와도 친밀한 관계를 유지하고 있는, 똑 부러지면서도 엉뚱한 매력의 소유자 메이는 요즘 질풍노도의 시기를 겪느라 고민이 많다. 이 나이에 엄마의 과잉보호를 받자니 스트레스가 이만저만이 아닌 데다, 관심사, 인간관계, 신체 등 그녀의 모든 것이 변하고 있기 때문. 그런데 이 와중에 흥분하면 거대한 레서판다로 변신하는 비밀까지 떠안게 되다니! 아침도 먹어야 하고 학교도 가야 하는데, 이 엄청난 비밀을 어떻게 숨겨야 할까?",
+			"popularity": 558.078,
+			"poster_path": "/hsOhOcX7qDy7bPwbrt1OoITngrf.jpg",
+			"released_date": "2022-03-01",
+			"vote_average": 7.5,
+			"vote_count": 3517,
+			"words": "Thirteen-year-old Mei is experiencing the awkwardness of being a teenager with a twist – when she gets too excited, she transforms into a giant red panda.",
+			"actors": [
+				3156344,
+				25540
+			]
+		}
+	},
+	{
+		"pk": 579974,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				18
+			],
+			"title": "RRR: 라이즈 로어 리볼트",
+			"overview": "위험한 임무에 나선 용맹한 전사. 영국을 위해 일하는 냉혹한 경찰과 맞대결을 펼친다. 독립 이전의 인도를 배경으로 한 대서사극.",
+			"popularity": 557.293,
+			"poster_path": "/d0W61w08KPAxO63uuM0Xspxb27l.jpg",
+			"released_date": "2022-03-24",
+			"vote_average": 7.8,
+			"vote_count": 503,
+			"words": "A fictional history of two legendary revolutionaries' journey away from home before they began fighting for their country in the 1920s.",
+			"actors": [
+				148037,
+				147023
+			]
+		}
+	},
+	{
+		"pk": 812488,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				53,
+				14,
+				27
+			],
+			"title": "Mete miedo",
+			"overview": "",
+			"popularity": 522.12,
+			"poster_path": "/tMJnQ3loIIIjkX5pVxv5foMJeaz.jpg",
+			"released_date": "2022-09-02",
+			"vote_average": 6.4,
+			"vote_count": 20,
+			"words": "While waiting for a kidney transplant, a young pianist finds an unexpected connection with her doctor — and the courage to fulfill her musical dreams.",
+			"actors": [
+				557713,
+				2482584,
+				1811021,
+				3032131,
+				1629790
+			]
+		}
+	},
+	{
+		"pk": 635302,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				28,
+				12,
+				14
+			],
+			"title": "극장판 귀멸의 칼날: 무한열차편",
+			"overview": "혈귀로 변해버린 여동생 네즈코를 인간으로 되돌릴 단서를 찾아 비밀조직 귀살대에 들어간 탄지로. 젠이츠, 이노스케와 새로운 임무 수행을 위해 무한열차에 탑승 후 귀살대 최강 검사 염주 렌고쿠와 합류한다. 달리는 무한열차에서 승객들이 하나 둘 흔적 없이 사라지자 숨어있는 식인 혈귀의 존재를 직감하는 렌고쿠. 귀살대 탄지로 일행과 최강 검사 염주 렌고쿠는 어둠 속을 달리는 무한열차에서 모두의 목숨을 구하기 위해 예측불가능한 능력을 가진 혈귀와 목숨을 건 혈전을 시작하는데...",
+			"popularity": 586.252,
+			"poster_path": "/mxdVTei65ymzhJlalIEtR1qSgV2.jpg",
+			"released_date": "2020-10-16",
+			"vote_average": 8.3,
+			"vote_count": 2781,
+			"words": "In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.",
+			"actors": [
+				1256603,
+				1563442,
+				119145,
+				233590,
+				224413
+			]
+		}
+	},
+	{
+		"pk": 962232,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				10749,
+				18,
+				35
+			],
+			"title": "비욘드 유니버스",
+			"overview": "신장 이식을 기다리고 있는 젊은 피아니스트. 한 의사와 예상치 못한 교감을 나누며 음악적 꿈을 이룰 수 있는 용기를 얻게 된다.",
+			"popularity": 550.18,
+			"poster_path": "/jv8PbopI3r3p0HrQJbLYcOzFHle.jpg",
+			"released_date": "2022-10-27",
+			"vote_average": 8.2,
+			"vote_count": 110,
+			"words": "Tad would love for his archeologist colleagues to accept him as one of their own, but he always messes everything up. Tad accidentally destroys a sarcophagus and unleashes an ancient spell endangering the lives of his friends: Mummy, Jeff and Belzoni. With everyone against him and only helped by Sara, he sets off on an adventure that will take him from Mexico to Chicago and from Paris to Egypt, in order to put an end to the curse of the Mummy.",
+			"actors": [
+				1563169,
+				3505217,
+				1783088,
+				55012,
+				1267733,
+				10061,
+				1252069,
+				1904585,
+				1578696
+			]
+		}
+	},
+	{
+		"pk": 414906,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				80,
+				9648,
+				53
+			],
+			"title": "더 배트맨",
+			"overview": "지난 2년 간 고담시의 어둠 속에서 범법자들을 응징하며 배트맨으로 살아온 브루스 웨인. 알프레드와 제임스 고든 경위의 도움 아래 그는 도시의 부패한 공직자들과 고위 관료들 사이에서 복수의 화신으로 활약한다. 고담의 시장 선거를 앞두고 고담의 엘리트 집단을 목표로 잔악한 연쇄살인을 저지르는 수수께끼 킬러 리들러가 나타나자, 최고의 탐정 브루스 웨인이 수사에 나서고 남겨진 단서를 풀어가며 캣우먼, 펭귄, 카마인 팔코네, 리들러를 차례대로 만난다. 사이코 범인의 미스터리를 수사하면서 그 모든 증거가 자신을 향한 의도적인 메시지였음을 깨닫고,  리들러에게 농락 당한 배트맨은 광기에 사로잡힌다. 범인의 무자비한 계획을 막고 오랫동안 고담시를 썩게 만든 권력 부패의 고리를 끊어야 하지만, 부모님의 죽음에 얽힌 진실이 밝혀지자 복수와 정의 사이에서 갈등하는데...",
+			"popularity": 612.469,
+			"poster_path": "/zGgrDMJCnE0s4EDX0L4X1wXFgZv.jpg",
+			"released_date": "2022-03-01",
+			"vote_average": 7.7,
+			"vote_count": 6719,
+			"words": "A young girl is kidnapped during a powerful storm. Her mother joins forces with her mysterious neighbour to set off in pursuit of the kidnapper. Their journey will test their limits and expose the dark secrets of their past.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 676701,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				12,
+				16,
+				35,
+				10751,
+				14
+			],
+			"title": "Tadeo Jones 3: La Tabla Esmeralda",
+			"overview": "",
+			"popularity": 962.856,
+			"poster_path": "/8ZJjRunZbkMSXcRHiqAdQiecXYz.jpg",
+			"released_date": "2022-08-24",
+			"vote_average": 7.7,
+			"vote_count": 68,
+			"words": "When five lovely young girls who hate studying hire part-time tutor Futaro, he guides not only their education but also their hearts. Time spent has brought them all closer, with feelings growing within the girls and Futaro. As they finish their third year of high school and their last school festival approaches, they set their sights on what’s next. Is there a future with one of them and Futaro?",
+			"actors": [
+				1164823,
+				1021607,
+				3641083,
+				3641084,
+				132450,
+				2838300,
+				2701958,
+				2777909
+			]
+		}
+	},
+	{
+		"pk": 429473,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				53,
+				18
+			],
+			"title": "루",
+			"overview": "반려견과 함께 조용히 살아가던 퉁명스러운 성격의 여인. 폭풍우 속에 이웃의 어린 딸이 납치되자 구조에 나서, 사나운 자연과 어두운 과거에 맞서 격렬한 싸움을 시작한다.",
+			"popularity": 523.24,
+			"poster_path": "/5F6NM04jwwng3bUE2Q0lGNmFjmw.jpg",
+			"released_date": "2022-09-23",
+			"vote_average": 6.7,
+			"vote_count": 361,
+			"words": "Rosario in the 80s. The disappearance of a man during the military dictatorship. Two young people from the court must do everything possible to solve the case while facing police corruption and various dangers that put their lives at risk.",
+			"actors": [
+				19,
+				59017,
+				130253,
+				206405
+			]
+		}
+	},
+	{
+		"pk": 568124,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				35,
+				10751,
+				14
+			],
+			"title": "엔칸토: 마법의 세계",
+			"overview": "콜롬비아의 깊은 산 속, 놀라운 마법과 활기찬 매력이 넘치는 세계 엔칸토. 이곳을 만든 장본인은 마드리갈 가문의 기둥인 알마 할머니다. 그녀는 젊었을 때 세 쌍둥이를 데리고 이곳으로 오던 중에 위기를 맞았다. 그때 그녀가 들고 있던 촛불에 기적이 일어났고 그이후로 마법의 능력이 손주 세대까지 대물림된다. 3대에 걸친 이대가족은 음식으로 병을 고치는 능력, 꽃을 피우는 능력, 날씨를 조종 하는 능력 등 저마다 독특한 능력을 지니게 됐다. 하지만 가족 중 유일하게 미라벨만 아무런 능력이 없다. 어느 날 엔칸토가 지닌 마법의 힘이 위험에 처하고 가족들은 점차 자신의 능력을 잃어가기 시작한다. 이를 감지한 미라벨은 유일하게 평범한 자신이 특별한 이 가족의 마지막 희망일지 모른다고 생각하는데...",
+			"popularity": 560.392,
+			"poster_path": "/b8gz7UKMwMz39mz6EH5Jjicjdth.jpg",
+			"released_date": "2021-10-13",
+			"vote_average": 7.7,
+			"vote_count": 7565,
+			"words": "In this interactive adventure, Barbie goes on a cross-country trek with friends and makes big decisions about the future. Which dream will she choose?",
+			"actors": [
+				968367
+			]
+		}
+	},
+	{
+		"pk": 820067,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				35,
+				10749
+			],
+			"title": "극장판 5등분의 신부",
+			"overview": "「낙제 직전」「공부가 싫은」미소녀 다섯 쌍둥이를  아르바이트 가정 교사로서 「졸업」까지 이끈 후타로.  배우에 전념하기 위해 휴학하기로 한 이치카의 공부를 봐주면서  「학교 축제」 준비에 힘쓰는 후타로와,  후회 없는 「학교 축제」를 만들기 위해 평소 이상으로 노력하는 요츠바.  어지러운 날들이 지나고 정신을 차려보니 「학교 축제」 전날.  후타로는 포기하지 않고 힘쓰는 이츠키의 모습에 힘입어,  니노의 각오와 미쿠의 결의, 그리고 이치카·요츠바·이츠키에 대한 마음의 답을 찾는다.  저마다의 생각을 안고 있는 와중,  드디어 시작된 고교 생활 최후의(마지막) 이벤트인 「학교 축제」 첫날.  『학교 축제 첫날 15시에 교실에 와줘』  교실에 모인 다섯 쌍둥이는, 후타로에게 어떠한 마음을 고백 받게 될까?",
+			"popularity": 529.595,
+			"poster_path": "/63SDXxNKOA4ZfXvRCkF9B1y14Us.jpg",
+			"released_date": "2022-05-20",
+			"vote_average": 9.1,
+			"vote_count": 95,
+			"words": "A hard-on-his-luck hound finds himself in a town full of cats in need of a hero to defend them from a ruthless villain's wicked plot to wipe their village off the map. With help from a reluctant mentor, our underdog must assume the role of town samurai and team up with the villagers to save the day.",
+			"actors": [
+				233590,
+				119143,
+				1072776,
+				1530921,
+				992869,
+				1325949,
+				1255699,
+				224413
+			]
+		}
+	},
+	{
+		"pk": 982317,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27
+			],
+			"title": "11th Hour Cleaning",
+			"overview": "",
+			"popularity": 503.745,
+			"poster_path": "/kkWEQx1qJfdOkCvXQTIOQDrMaa1.jpg",
+			"released_date": "2022-07-05",
+			"vote_average": 5.5,
+			"vote_count": 14,
+			"words": "A rock climbing adventure between two friends turns into a terrifying nightmare. After Kelly captures the murder of her best friend on camera, she becomes the next target of a tight knit group of friends who will stop at nothing to destroy the evidence and anyone in their way. Desperate for her safety, she begins a treacherous climb up a mountain cliff and her survival instincts are put to the test when she becomes trapped with the killers just 20 feet away.",
+			"actors": [
+				1854123,
+				1454355,
+				2077778,
+				1569175
+			]
+		}
+	},
+	{
+		"pk": 941959,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				53
+			],
+			"title": "Un crimen argentino",
+			"overview": "",
+			"popularity": 493.114,
+			"poster_path": "/1iGVhDwTaLMPYVK2DeOLa1uAKjN.jpg",
+			"released_date": "2022-08-25",
+			"vote_average": 6.2,
+			"vote_count": 11,
+			"words": "After discovering he has powers, 11-year-old Jonathan Kent and assassin-turned-Boy-Wonder Damian Wayne must join forces to rescue their fathers (Superman & Batman) and save the planet from the malevolent alien force known as Starro.",
+			"actors": [
+				1208258,
+				2483053,
+				1208255,
+				3618,
+				559510,
+				116362,
+				99113,
+				103431
+			]
+		}
+	},
+	{
+		"pk": 1034470,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				35,
+				10751,
+				16
+			],
+			"title": "바비: 모험을 떠나요",
+			"overview": "바비와 친구들이 미국을 가로질러 여행을 떠난다. 미래에 대한 중요한 결정도 내려야 한다는데? 바비는 어떤 꿈을 선택할까? 인터랙티브한 모험 속으로 함께 떠나보자!",
+			"popularity": 484.928,
+			"poster_path": "/a2a1Y6a6UriLJ0U7cGjphPOWQPK.jpg",
+			"released_date": "2022-10-25",
+			"vote_average": 6.5,
+			"vote_count": 4,
+			"words": "Franco Escamilla takes the stage in California for a comedy special filled with humorous observations on gossiping, the pandemic and airport experiences.",
+			"actors": [
+				63333,
+				3038265,
+				1440178,
+				2112099,
+				181175
+			]
+		}
+	},
+	{
+		"pk": 366672,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				10751,
+				35,
+				16,
+				28
+			],
+			"title": "블레이드 퍼피 워리어",
+			"overview": "고양이로 가득한 마을에서 위대한 워리어가 되는 꿈을 가진 사냥개 행크가 자신의 운명을 찾아 떠나는 이야기",
+			"popularity": 497.135,
+			"poster_path": "/qXiIWXlDld14EBgcwlzzvi89y0g.jpg",
+			"released_date": "2022-07-14",
+			"vote_average": 6.7,
+			"vote_count": 181,
+			"words": "An influential cheerleader finds herself held captive by a masked psychopath with a God complex. She must complete a series of sadistic social media challenges to save her life and the lives of her fellow captives. However, the masked kidnapper has a secret agenda for his most recent victim.",
+			"actors": [
+				39995,
+				2231,
+				17835,
+				14639,
+				1752,
+				938
+			]
+		}
+	},
+	{
+		"pk": 924482,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				53,
+				12,
+				9648,
+				28,
+				80
+			],
+			"title": "더 렛지",
+			"overview": "친구와 함께 암벽등반을 간 켈리는  그곳에서 만난 남성들에게 친구가 살해당하는 것을 목격하고 카메라로 찍는데…  쫓아오는 그들을 피할 곳은 눈앞의 거대한 암벽뿐...",
+			"popularity": 532.439,
+			"poster_path": "/qXU3lr4YmyT8y6kaX1CcpRiqia2.jpg",
+			"released_date": "2022-02-18",
+			"vote_average": 6.3,
+			"vote_count": 126,
+			"words": "Reclusive author Loretta Sage writes about exotic places in her popular adventure novels that feature a handsome cover model named Alan. While on tour promoting her new book with Alan, Loretta gets kidnapped by an eccentric billionaire who hopes she can lead him to the ancient city's lost treasure that featured in her latest story. Alan, determined to prove he can be a hero in real life and not just on the pages of her books, sets off to rescue her.",
+			"actors": [
+				1197948,
+				1173231,
+				2931841,
+				1866221,
+				1414117,
+				1085939
+			]
+		}
+	},
+	{
+		"pk": 886396,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				28,
+				878
+			],
+			"title": "배트맨과 슈퍼맨: 아들들의 전투",
+			"overview": "",
+			"popularity": 485.707,
+			"poster_path": "/nBaVsNvUxIuvhPw3xTaAJIw8me4.jpg",
+			"released_date": "2022-10-17",
+			"vote_average": 7.9,
+			"vote_count": 134,
+			"words": "After a couple finds a traumatized child of unknown origins, wife Paula must decipher the girl's strange behaviors to unlock her identity and dark past.",
+			"actors": [
+				1774679,
+				1277364,
+				75037,
+				963818,
+				1221888,
+				1352628,
+				78798
+			]
+		}
+	},
+	{
+		"pk": 1039026,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				35
+			],
+			"title": "Franco Escamilla: Voyerista auditivo",
+			"overview": "",
+			"popularity": 506.91,
+			"poster_path": "/nIwNj5OJksZ7IIZDQT3cgVeYlPh.jpg",
+			"released_date": "2022-10-23",
+			"vote_average": 8.7,
+			"vote_count": 52,
+			"words": "A sexual wellness company gains fame and followers, then members come forward with shocking allegations.",
+			"actors": [
+				2021651
+			]
+		}
+	},
+	{
+		"pk": 969160,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				53
+			],
+			"title": "Deinfluencer",
+			"overview": "",
+			"popularity": 464.519,
+			"poster_path": "/gLnrBoSENk32SKjHDiZv7E4zwzK.jpg",
+			"released_date": "2022-10-01",
+			"vote_average": 6,
+			"vote_count": 3,
+			"words": "Two demon brothers enlist the aid of Kat Elliot — a tough teen with a load of guilt — to summon them to the Land of the Living. But what Kat demands in return leads to a brilliantly bizarre and comedic adventure like no other.",
+			"actors": [
+				3529232,
+				3529234,
+				2480289,
+				2511041
+			]
+		}
+	},
+	{
+		"pk": 752623,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				12,
+				35
+			],
+			"title": "로스트 시티",
+			"overview": "전설의 트레저를 차지하기 위해 재벌 페어팩스(다니엘 래드클리프)는  유일한 단서를 알고 있는 베스트셀러 작가 로레타(산드라 블록)를 납치하게 된다.  어쩔 수 없는 비지니스 관계로 사라진 그녀를 찾아야만 하는 책 커버모델 앨런(채닝 테이텀)은  의문의 파트너(브래드 피트)와 함께 위험한 섬에서 그녀를 구하고 무사히 탈출해야만 하는데…  적과 자연의 위험이 도사리는 일촉즉발 화산섬.",
+			"popularity": 495.728,
+			"poster_path": "/8kZapNBZYGJu7AUbJVBDMmQgO1D.jpg",
+			"released_date": "2022-03-24",
+			"vote_average": 6.7,
+			"vote_count": 2202,
+			"words": "Tanjirō Kamado, joined with Inosuke Hashibira, a boy raised by boars who wears a boar's head, and Zenitsu Agatsuma, a scared boy who reveals his true power when he sleeps, boards the Infinity Train on a new mission with the Fire Hashira, Kyōjurō Rengoku, to defeat a demon who has been tormenting the people and killing the demon slayers who oppose it!",
+			"actors": [
+				18277,
+				38673
+			]
+		}
+	},
+	{
+		"pk": 960875,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				53,
+				9648
+			],
+			"title": "Jaula",
+			"overview": "",
+			"popularity": 494.823,
+			"poster_path": "/z0iZuYNM0hUyHZeldIdXf4aSrPy.jpg",
+			"released_date": "2022-09-09",
+			"vote_average": 6.3,
+			"vote_count": 112,
+			"words": "Clawdeen Wolf, half human and half werewolf, has recently started attending Monster High, a school for monsters in all forms. After quickly befriending her classmates Frankie Stein and Draculaura, Clawdeen feels like she has finally found a place where she can truly be herself, or so she thinks. Soon, a devious plan to destroy Monster High threatens to reveal her real identity and Clawdeen must learn to embrace her true monster heart before it's too late.",
+			"actors": [
+				3623,
+				1050908,
+				1102408,
+				1972707
+			]
+		}
+	},
+	{
+		"pk": 511817,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				35,
+				14,
+				12
+			],
+			"title": "웬델 & 와일드",
+			"overview": "교활한 악마 형제 웬델 과 와일드 는 어두운 과거와 죄책감으로 가득한 10대 소녀 캣 엘리엇에게 산 자들의 세상으로 자신들을 소환해 달라고 도움을 청한다. 그러나 캣이 두 형제에게 요구한 대가는 다른 무엇과도 비교할 수 없는 놀랍도록 기괴하고 코믹한 모험으로 이어져, 삶과 죽음의 법칙을 무시하는 판타지가 펼쳐진다.",
+			"popularity": 428.876,
+			"poster_path": "/5dsX6UAHqkQz1kiV8bs8SvjyVNa.jpg",
+			"released_date": "2022-10-21",
+			"vote_average": 6.8,
+			"vote_count": 113,
+			"words": "A man wakes in a hospital with no memory, and quickly finds himself on the run in a locked down hospital with the Cartel on his tail.",
+			"actors": [
+				298410,
+				291263
+			]
+		}
+	},
+	{
+		"pk": 335795,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				12,
+				10751,
+				10770
+			],
+			"title": "몬스터 하이: 더 무비",
+			"overview": "",
+			"popularity": 448.767,
+			"poster_path": "/tn3GWm0Erehkpur8PUuYWxGpul5.jpg",
+			"released_date": "2022-10-06",
+			"vote_average": 7.1,
+			"vote_count": 126,
+			"words": "Despite his family’s baffling generations-old ban on music, Miguel dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz. Desperate to prove his talent, Miguel finds himself in the stunning and colorful Land of the Dead following a mysterious chain of events. Along the way, he meets charming trickster Hector, and together, they set off on an extraordinary journey to unlock the real story behind Miguel's family history.",
+			"actors": [
+				3302924,
+				1630438
+			]
+		}
+	},
+	{
+		"pk": 759507,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				12,
+				53
+			],
+			"title": "블랙아웃: 사라진 기억",
+			"overview": "기억을 잃은 채 멕시코 병원에서 깨어난 남자. 그는 얼마 지나지 않아 자기가 카르텔에 쫓기는 신세임을 알게 된다. 어떻게든 진실을 밝혀라, 최대한 빨리.",
+			"popularity": 478.137,
+			"poster_path": "/xDgnmbdWS59NtTPdzujdZGuPUPZ.jpg",
+			"released_date": "2022-10-12",
+			"vote_average": 5.5,
+			"vote_count": 83,
+			"words": "In the late 1990s, the arrival of elderly invalid Patrick into Marion and Tom’s home triggers the exploration of seismic events from 40 years previous: the passionate relationship between Tom and Patrick at a time when homosexuality was illegal.",
+			"actors": [
+				19536,
+				37260,
+				1134885,
+				1733,
+				1059040,
+				1310902,
+				1471680,
+				1223246,
+				1928408
+			]
+		}
+	},
+	{
+		"pk": 354912,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				10751,
+				16,
+				14,
+				10402,
+				35,
+				12
+			],
+			"title": "코코",
+			"overview": "미구엘은 멕시코의 자랑인 에르네스토 델라 크루즈 같은 뮤지션이 되길 꿈꾸지만 미구엘 집안 사람들에게 음악은 금기다. 먼 옛날 조상 중에 음악 때문에 가족을 버린 인물이 있었기 때문. 미구엘은 죽은 자의 날이 되자 실력으로 인정받겠다는 결심을 하고 경연 무대에 오르려 하는데, 우연히 에르네스토의 기타에 손을 댔다가 죽은 자들의 세상에 들어서게 된다. 이승과 저승을 이어주는 마리골드 꽃길을 건너 죽은 자들의 세상에 도착한 미구엘은 거짓말과 위변조가 장기인 헥터를 만난다. 그리고 꿈에 그리던 우상 에르네스토를 만나러 가는 여정에서 가족의 비밀을 알게 된다.",
+			"popularity": 458.56,
+			"poster_path": "/6AANwKhjIEVyya95oW4IA6joL1Z.jpg",
+			"released_date": "2017-10-27",
+			"vote_average": 8.2,
+			"vote_count": 16487,
+			"words": "A newly engaged and spoiled hotel heiress finds herself in the care of a handsome, blue-collar lodge owner and his precocious daughter after getting total amnesia in a skiing accident.",
+			"actors": [
+				115919,
+				1010957,
+				1143305,
+				2185223
+			]
+		}
+	},
+	{
+		"pk": 744114,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				18,
+				10749
+			],
+			"title": "나의 경찰관",
+			"overview": "금지된 사랑과 변화하는 사회 관습을 아름답게 그려낸 이야기. 경찰관 톰(해리 스타일스), 교사 매리언(에마 코린), 미술관 큐레이터 패트릭(데이비드 도슨) 간 40년의 세월을 뛰어넘는 사랑의 삼각관계를 담아낸다.",
+			"popularity": 440.289,
+			"poster_path": "/wdbiMjXd4CxPfCx4r4Jfy8cGec0.jpg",
+			"released_date": "2022-10-21",
+			"vote_average": 8.2,
+			"vote_count": 255,
+			"words": "Yeon-du asks her best friend Bora to collect all the information she can about Baek Hyun-jin while she is away in the U.S. for heart surgery. Bora decides to get close to Baek's best friend, Pung Woon-ho first. However, Bora's clumsy plan unfolds in an unexpected direction. In 1999, a year before the new century, Bora, who turns seventeen, falls into the fever of first love.",
+			"actors": [
+				1052109,
+				2324569
+			]
+		}
+	},
+	{
+		"pk": 833097,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				10749,
+				35
+			],
+			"title": "폴링 포 크리스마스",
+			"overview": "스키 여행 중 사고로 기억을 잃은 철없는 상속녀. 아내와 사별 후 힘든 상황에 놓인 남자와 딸의 포근한 보살핌 속에 크리스마스를 보낸다.",
+			"popularity": 576.794,
+			"poster_path": "/6GkphwL9s6dZb3DoQS9OQ4LcPgY.jpg",
+			"released_date": "2022-11-10",
+			"vote_average": 7,
+			"vote_count": 138,
+			"words": "Togo just wants to watch his neighbors' homes, wash their cars and clean up their sidewalks. But the drug traffickers want more from him.",
+			"actors": [
+				49265,
+				232501,
+				1622199,
+				138887,
+				1978944
+			]
+		}
+	},
+	{
+		"pk": 851644,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				10749,
+				18
+			],
+			"title": "20세기 소녀",
+			"overview": "보라의 둘도 없는 친구 연두는 심장 수술을 위해 미국에 가면서 자신이 좋아하는 남자 백현진에 대한 모든 정보를 수집해 달라고 보라에게 부탁한다. 보라는 백현진의 가장 친한 친구 풍운호와 먼저 친해지기로 한다. 하지만 보라의 서투른 계획은 예상치 못한 방향으로 전개된다. 새로운 세기가 오기 1년 전인 1999년, 17세가 된 보라는 첫사랑의 열병에 빠진다.",
+			"popularity": 483.204,
+			"poster_path": "/xM9Jt2sA6QcvLuHKM0RI3BMtFc5.jpg",
+			"released_date": "2022-10-06",
+			"vote_average": 8.8,
+			"vote_count": 235,
+			"words": "In town for a job interview, a young woman arrives at her Airbnb late at night only to find that it has been mistakenly double-booked and a strange man is already staying there. Against her better judgement, she decides to stay the night anyway, but soon discovers that there is much more to be afraid of in the house than the other guest.",
+			"actors": [
+				140335,
+				2377671,
+				3218480,
+				1806235,
+				240145,
+				1333031,
+				1988291
+			]
+		}
+	},
+	{
+		"pk": 884363,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				80,
+				18
+			],
+			"title": "토고",
+			"overview": "도로에 주차된 차량을 관리하며 살아가는 남자. 마약상들이 그와 친구들에게 거리에서 마약을 팔 것을 종용하자, 생계 수단을 지키기 위해 분연히 일어선다.",
+			"popularity": 484.465,
+			"poster_path": "/5YZ8JKV8i437z6O4YQ2IEzcSlsD.jpg",
+			"released_date": "2022-10-05",
+			"vote_average": 6.5,
+			"vote_count": 54,
+			"words": "The tale of an extraordinary family, the Madrigals, who live hidden in the mountains of Colombia, in a magical house, in a vibrant town, in a wondrous, charmed place called an Encanto. The magic of the Encanto has blessed every child in the family—every child except one, Mirabel. But when she discovers that the magic surrounding the Encanto is in danger, Mirabel decides that she, the only ordinary Madrigal, might just be her exceptional family's last hope.",
+			"actors": [
+				230222,
+				3268997,
+				3268998,
+				1168673,
+				3268999,
+				3269000,
+				3269001
+			]
+		}
+	},
+	{
+		"pk": 913290,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				53
+			],
+			"title": "바바리안",
+			"overview": "면접을 위해 디트로이트에 온 여성은 임대주택을 예약하지만 밤늦게 오니, 이중 예약으로, 이미 낯선 이가 있음을 알게 된다. 본의 아니게, 저녁을 보내기로 하지만, 곧 불청객보다 더 두려운 것이 많다는 걸 알게 된다.",
+			"popularity": 444.995,
+			"poster_path": "/pMlnxNg0NXmxlp5MHsQBGDWeU9j.jpg",
+			"released_date": "2022-09-08",
+			"vote_average": 7,
+			"vote_count": 682,
+			"words": "A US soldier suffers a traumatic brain injury while fighting in Afghanistan and struggles to adjust to life back home in New Orleans. When she meets local mechanic James, the pair begin to forge an unexpected bond.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 595586,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				18
+			],
+			"title": "더 브릿지",
+			"overview": "군인 린지(제니퍼 로렌스)는 사고로 인한 상처를 입고 고향인 뉴올리언스로 돌아와 적응하려고 고군분투한다. 동네 자동차 정비공 제임스(브라이언 타이리 헨리)를 만나고 둘은 예상하지 못한 유대감을 형성하기 시작한다.",
+			"popularity": 429.763,
+			"poster_path": "/wNSfX8GOCfusviA9yxuKv9Tc9Gq.jpg",
+			"released_date": "2022-10-28",
+			"vote_average": 6.8,
+			"vote_count": 82,
+			"words": "When a vintage Jack-in-the-box is opened by a dying woman, she enters into a deal with the demon within that would see her illness cured in return for helping it claim six innocent victims.",
+			"actors": [
+				72129,
+				226366
+			]
+		}
+	},
+	{
+		"pk": 801071,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27
+			],
+			"title": "The Jack in the Box: Awakening",
+			"overview": "",
+			"popularity": 417.689,
+			"poster_path": "/3Ib8vlWTrAKRrTWUrTrZPOMW4jp.jpg",
+			"released_date": "2022-02-24",
+			"vote_average": 6.4,
+			"vote_count": 187,
+			"words": "After finding a host body in investigative reporter Eddie Brock, the alien symbiote must face a new enemy, Carnage, the alter ego of serial killer Cletus Kasady.",
+			"actors": [
+				1733286
+			]
+		}
+	},
+	{
+		"pk": 580489,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				878,
+				28,
+				12
+			],
+			"title": "베놈 2: 렛 데어 비 카니지",
+			"overview": "‘베놈'과 완벽한 파트너가 된 ‘에디 브록' 앞에 ‘클리터스 캐서디'가 ‘카니지'로 등장, 앞으로 닥칠 대혼돈의 세상을 예고한다. 대혼돈의 시대가 시작되고, 악을 악으로 처단할 것인가?",
+			"popularity": 421.017,
+			"poster_path": "/1Lh9LER4xRQ3INFFi2dfS2hpRwv.jpg",
+			"released_date": "2021-09-30",
+			"vote_average": 6.9,
+			"vote_count": 8202,
+			"words": "The Elric brothers meet their toughest opponent yet — a lone serial killer with a large scar on his forehead.",
+			"actors": [
+				2524,
+				57755,
+				1812
+			]
+		}
+	},
+	{
+		"pk": 960700,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				14,
+				28,
+				12
+			],
+			"title": "강철의 연금술사 완결편: 복수자 스카",
+			"overview": "이마에 커다란 흉터가 있는 단독 연쇄 살인범. 지금 엘릭 형제 앞에 사상 최강의 적이 나타난다. 《강철의 연금술사》 실사 영화 완결편 2부작 중 첫 번째 작품.",
+			"popularity": 451.759,
+			"poster_path": "/epyZbxy59fLsYv7x2nsnuNT6qvt.jpg",
+			"released_date": "2022-05-20",
+			"vote_average": 7,
+			"vote_count": 135,
+			"words": "Professor Albus Dumbledore knows the powerful, dark wizard Gellert Grindelwald is moving to seize control of the wizarding world. Unable to stop him alone, he entrusts magizoologist Newt Scamander to lead an intrepid team of wizards and witches. They soon encounter an array of old and new beasts as they clash with Grindelwald's growing legion of followers.",
+			"actors": [
+				1247874,
+				1488591,
+				1255487,
+				1129267,
+				119244
+			]
+		}
+	},
+	{
+		"pk": 338953,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				14,
+				12,
+				28
+			],
+			"title": "신비한 동물들과 덤블도어의 비밀",
+			"overview": "1930년대, 제2차 세계대전에 마법사들이 개입하게 되면서 강력한 어둠의 마법사 그린델왈드의 힘이 급속도로 커진다. 덤블도어는 뉴트 스캐맨더에게 위대한 마법사 가문 후손, 마법학교의 유능한 교사, 머글 등으로 이루어진 팀에게 임무를 맡긴다. 이에 뉴트와 친구들은 머글과의 전쟁을 선포한 그린델왈드와 추종자들, 그의 위험한 신비한 동물들에 맞서 세상을 구할 거대한 전쟁에 나선다. 한편 전쟁의 위기가 최고조로 달한 상황 속에서 덤블도어는 더 이상 방관자로 머물 수 없는 순간을 맞이하고, 서서히 숨겨진 비밀이 드러나는데...",
+			"popularity": 432.803,
+			"poster_path": "/uvQbXjMgC5weQepx4jLJJ60H3N0.jpg",
+			"released_date": "2022-04-06",
+			"vote_average": 6.8,
+			"vote_count": 2952,
+			"words": "In the aftermath of Terrifier 2, the third installment will continue to follow Sienna and Jonathan as they uncover Art the Clown's background and his connection to their late father.",
+			"actors": [
+				37632,
+				9642,
+				132157,
+				998225,
+				1394648
+			]
+		}
+	},
+	{
+		"pk": 1034541,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				14,
+				53
+			],
+			"title": "Terrifier 3",
+			"overview": "",
+			"popularity": 400.292,
+			"poster_path": "/A2ouWngHdomaAyFAPMI7VOpOLvS.jpg",
+			"released_date": "",
+			"vote_average": 0,
+			"vote_count": 0,
+			"words": "When Van Helsing's mysterious invention, the \"Monsterfication Ray,\" goes haywire, Drac and his monster pals are all transformed into humans, and Johnny becomes a monster. In their new mismatched bodies, Drac and Johnny must team up and race across the globe to find a cure before it's too late, and before they drive each other crazy.",
+			"actors": [
+				1880016,
+				1882502,
+				2787720,
+				1676771,
+				105656
+			]
+		}
+	},
+	{
+		"pk": 585083,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				35,
+				10751,
+				14,
+				12
+			],
+			"title": "몬스터 호텔 4: 뒤바뀐 세계",
+			"overview": "드락이 트랜실베니아 호텔을 딸 마비스와 사위 조니에게 넘길려고 한다.  그런데 조니의 형편없는 호텔 계획을 들은 드락은 걱정을 한다.  드라은 인간인 조니에게 오직 몬스터만 호텔 사업을 이끌어 갈 수 있다고 장난을 친다.  그러자 조니는 몬스터가 되기로 결심하고,  반헬싱의 신비한 발명품인 '몬스터피케이션 레이'가 엉망이 되면서  조이는 몬스터가 됐지만, 드락과 그의 친구들은 인간으로 변하게 된다.  과연, 드락과 조니는 그들이 저지른 실수들을 바로 잡을 수 있을까?",
+			"popularity": 465.814,
+			"poster_path": "/6zt5l4DYV1kLPL5Vqz1kLq3THXD.jpg",
+			"released_date": "2022-02-25",
+			"vote_average": 7.1,
+			"vote_count": 1277,
+			"words": "Camila is a young member of an elite police unit. During an operation in a dangerous area, she turns up in the middle of a ritual, in which their members burnt themselves to death. She suffers severe burns all over her body and goes into a coma. In her long recovery, her friend Fatima, a criminal prosecutor, and her partner and ex-boyfriend Ángel will help her. But Camila acts strange, she is distant, emotionless. The albino, a female figure who is attached to her soul since the ritual episode, is here to play a game with the three of them.",
+			"actors": [
+				77948,
+				62861
+			]
+		}
+	},
+	{
+		"pk": 1005776,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				53
+			],
+			"title": "V/H/S/99",
+			"overview": "",
+			"popularity": 423.392,
+			"poster_path": "/g4Tg6R1MUTw0hef6Q7ohZHWk3O8.jpg",
+			"released_date": "2022-09-15",
+			"vote_average": 6.4,
+			"vote_count": 89,
+			"words": "A teenager’s home video leads to a series of horrifying revelations.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 768744,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				28,
+				12,
+				878
+			],
+			"title": "나의 히어로 아카데미아 더 무비: 월드 히어로즈 미션",
+			"overview": "전 세계 개성 보유자 섬멸을 목표로 하는 수수께끼 조직 휴머라이즈. 그들이 각국에 설치한 '이디오 트리거 밤'으로부터 사람들을 구하기 위해 세계 선발 히어로 팀이 결성된다! 세계 각국의 프로 히어로와 유에이 고교 히어로과 학생들이 소집되어 각 지역에서 폭탄 회수 임무를 맡게 되는데... 엔데버 사무소에서 인턴 중인 미도리야, 바쿠고, 토도로키는 오세온에서 작전 수행 중, 어떠한 사건에 휘말리게 되고 미도리야는 이를 계기로 만난 운반책 소년 로디와 함께 경찰, 빌런의 공격을 받으며 전국에 지명수배된다. 한편, 휴머라이즈의 지도자 플렉트 턴이 범행을 예고하며 세계는 패닉에 빠지고, 히어로 팀은 절체절명의 상황에 위험을 무릅쓰고 폭탄 회수에 나서는데... 제한시간은 단 2시간! 전 세계와 히어로들의 미래가 '그들' 손에 달렸다!",
+			"popularity": 444.511,
+			"poster_path": "/rqyVJKWCZCWwYK5eDVYyo0jauN6.jpg",
+			"released_date": "2021-08-06",
+			"vote_average": 7.6,
+			"vote_count": 314,
+			"words": "A mysterious group called Humarize strongly believes in the Quirk Singularity Doomsday theory which states that when quirks get mixed further in with future generations, that power will bring forth the end of humanity. In order to save everyone, the Pro-Heroes around the world ask UA Academy heroes-in-training to assist them and form a world-class selected hero team. It’s up to the heroes to save the world and the future of heroes in what is the most dangerous crisis to take place yet in My Hero Academia.",
+			"actors": [
+				1325962,
+				1245094,
+				149894,
+				126704
+			]
+		}
+	},
+	{
+		"pk": 629542,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				28,
+				12,
+				80,
+				35
+			],
+			"title": "배드 가이즈",
+			"overview": "작전 설계부터 금고 해제, 해킹, 액션, 위장까지 완벽한 팀플레이를 펼치는 자타공인 최고의 나쁜 녀석들이 한순간의 실수로 체포된다.  하지만 그들도 착해질 수 있다는 ‘마멀레이드 박사’의 주장으로 나쁜 녀석들은 바른 생활 갓생 프로젝트에 투입되고, 이들은 다시 한번 자유의 몸을 위해 태어나 처음으로 바른 생활에 도전하게 되는데…  나쁜 녀석들의 사상 초유 바른 생활 갓생 프로젝트가 시작된다!",
+			"popularity": 403.951,
+			"poster_path": "/k5TL1oBUqSr6dL9NlHGRr3vJcXd.jpg",
+			"released_date": "2022-03-17",
+			"vote_average": 7.7,
+			"vote_count": 1139,
+			"words": "When the Bad Guys, a crew of criminal animals, are finally caught after years of heists and being the world’s most-wanted villains, Mr. Wolf brokers a deal to save them all from prison.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 1015724,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				12,
+				9648,
+				35,
+				16,
+				10751
+			],
+			"title": "Trick or Treat Scooby-Doo!",
+			"overview": "",
+			"popularity": 391.407,
+			"poster_path": "/wZccw4Hj9ZF1yimnfPsX9rl3HvB.jpg",
+			"released_date": "2022-10-04",
+			"vote_average": 7.4,
+			"vote_count": 114,
+			"words": "Mystery Inc. has cracked the case to top all cases! They’ve tracked down Coco Diablo, the head of a notorious costume crime syndicate. With Coco and her kitty in prison, Mystery Inc. thinks that they can finally enjoy a break. Wrong! Suddenly, menacing doppelgänger ghosts of the Scooby crew and favorite classic foes show up in Coolsville to threaten Halloween. Now it’s up to the meddling kids to unmask the latest scoundrel and save Halloween!",
+			"actors": [
+				15831,
+				15761,
+				26457,
+				132354
+			]
+		}
+	},
+	{
+		"pk": 639933,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				12,
+				14
+			],
+			"title": "노스맨",
+			"overview": "아버지를 죽이고 왕위를 차지한 숙부를 향한 복수를 다짐한 왕자. 자신의 정체를 숨기고 바이킹 전사로 성장한다! 운명을 지배하는 바이킹의 처절한 복수가 시작된다!",
+			"popularity": 409.364,
+			"poster_path": "/Aedz3vL7rC5fO0t7vQK7KUMwiW5.jpg",
+			"released_date": "2022-04-07",
+			"vote_average": 7.2,
+			"vote_count": 2666,
+			"words": "Prince Amleth is on the verge of becoming a man when his father is brutally murdered by his uncle, who kidnaps the boy's mother. Two decades later, Amleth is now a Viking who's on a mission to save his mother, kill his uncle and avenge his father.",
+			"actors": [
+				28846
+			]
+		}
+	},
+	{
+		"pk": 299536,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				12,
+				28,
+				878
+			],
+			"title": "어벤져스: 인피니티 워",
+			"overview": "타노스는 6개의 인피니티 스톤을 획득해 신으로 군림하려 한다. 그것은 곧 인류의 절반을 학살해 우주의 균형을 맞추겠다는 뜻. 타노스는 닥터 스트레인지가 소유한 타임 스톤, 비전의 이마에 박혀 있는 마인드 스톤을 차지하기 위해 지구를 침략한다. 아이언맨과 스파이더맨은 가디언즈 오브 갤럭시의 멤버들과 타노스를 상대한다. 지구에선 캡틴 아메리카, 완다, 블랙 위도우, 블랙 팬서 등이 비전을 지키기 위해 뭉친다.",
+			"popularity": 455.599,
+			"poster_path": "/kmP6viwzcEkZeoi1LaVcQemcvZh.jpg",
+			"released_date": "2018-04-25",
+			"vote_average": 8.3,
+			"vote_count": 25726,
+			"words": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
+			"actors": [
+				3223,
+				74568,
+				16828,
+				16851
+			]
+		}
+	},
+	{
+		"pk": 718789,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				28,
+				12,
+				10751,
+				878
+			],
+			"title": "버즈 라이트이어",
+			"overview": "나, 버즈 라이트이어. 인류 구원에 필요한 자원을 감지하고 현재 수많은 과학자들과 미지의 행성으로 향하고 있다. 이번 미션은 인류의 역사를 새롭게 쓸 것이라 확신한다. 잘못된 신호였다. 이곳은 삭막하고 거대한 외계 생물만이 살고 있는 폐허의 땅이다. 나의 실수로 모두가 이곳에 고립되고 말았다. 모두를 구하기 위해서 모든 것을 제자리에 돌려 놔야 한다. 실수를 바로잡기 위한 탈출 미션을 위해 1년의 준비를 마쳤다. 어쩌다 한 팀이 된 정예 부대와 이 미션을 수행할 예정이다. 우주를 집어삼킬 저그 황제와 대규모 로봇 군사의 위협이 계속되지만 나는 절대 포기할 수 없다. 그런데... 여긴 또 어디지? 시간 속에 갇힌 건가?",
+			"popularity": 403.434,
+			"poster_path": "/oMa5NjFxK8Csp6uVQ0tRuF1pWM5.jpg",
+			"released_date": "2022-06-15",
+			"vote_average": 7.2,
+			"vote_count": 2352,
+			"words": "A group of crime scene cleaners struggle to escape a murder house after becoming trapped by an ancient Nordic demon that is hell-bent on driving them insane.",
+			"actors": [
+				16828
+			]
+		}
+	},
+	{
+		"pk": 921360,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				80,
+				53
+			],
+			"title": "와이어 룸",
+			"overview": "",
+			"popularity": 397.224,
+			"poster_path": "/b9ykj4v8ykjRoGB7SpI1OuxblNU.jpg",
+			"released_date": "2022-09-02",
+			"vote_average": 6.8,
+			"vote_count": 103,
+			"words": "Having cleared his name, genius mechanic Lino has only one goal in mind: getting revenge on the corrupt cops who killed his brother and his mentor.",
+			"actors": [
+				6863,
+				62,
+				1395206,
+				53185,
+				84315,
+				2594065,
+				2852349
+			]
+		}
+	},
+	{
+		"pk": 818397,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				53,
+				80
+			],
+			"title": "메모리",
+			"overview": "단 한번의 실패도 실수도 용납할 수 없는 킬러 ‘알렉스’(리암 니슨). 어느 날, 그에게 새로운 의뢰가 들어온다.  오직 자신의 신념에 따라 움직인 그는 이 사건에 한 소녀가 연관되어 있음을 알게 되고 단칼에 거절한다.  의뢰를 거절했다는 이유로, 모두의 표적이 되어버린 그는 오래된 병으로 인해 희미해져 가는 기억을 붙잡고,  소녀와 자신을 지키기 위해 의뢰에 연관된 모든 것들을 응징하기로 한다.  한편, 멕시코 국경에서 사건을 맹렬히 쫓던 FBI 요원 ‘빈센트’(가이 피어스)는 ‘알렉스’를 만나게 되고, 두 사람은 이 사건의 거대한 비밀과 마주하게 되는데···  사라지는 기억, 더욱 선명해지는 정의! 마지막 응징이 시작된다!",
+			"popularity": 401.839,
+			"poster_path": "/fWkFnlCQLtfIBGnhMKVw2dttEDk.jpg",
+			"released_date": "2022-04-28",
+			"vote_average": 7.1,
+			"vote_count": 929,
+			"words": "New recruit Justin Rosa must monitor arms-smuggling cartel member Eddie Flynn — and keep him alive at all costs. When a SWAT team descends on Flynn’s home, Rosa breaks protocol and contacts the gangster directly to save his life. As gunmen break into the Wire Room and chaos erupts, Mueller and Rosa make a final, desperate stand against the corrupt agents and officials who seek to destroy evidence and kill them both.",
+			"actors": [
+				1340712,
+				1291040,
+				3347250,
+				1338519,
+				3375433,
+				3375435
+			]
+		}
+	},
+	{
+		"pk": 532870,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				53,
+				27
+			],
+			"title": "런 스윗하트 런",
+			"overview": "싱글 맘(엘라 벌린스카)이 고객과의 식사로 시작한 저녁 이후 극악무도하고 어떤 방법으로도 제지할 수 없는 폭행범(필로우 애스백)에게 쫓기는 끔찍한 다크 스릴러다.",
+			"popularity": 360.91,
+			"poster_path": "/9xf3aiAxjx2H34EwwVFFlOrr0nt.jpg",
+			"released_date": "2020-01-27",
+			"vote_average": 6.1,
+			"vote_count": 58,
+			"words": "Alex, an assassin-for-hire, finds that he's become a target after he refuses to complete a job for a dangerous criminal organization. With the crime syndicate and FBI in hot pursuit, Alex has the skills to stay ahead, except for one thing: he is struggling with severe memory loss, affecting his every move. Alex must question his every action and whom he can ultimately trust.",
+			"actors": [
+				2092879,
+				90060,
+				9048
+			]
+		}
+	},
+	{
+		"pk": 993145,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				80
+			],
+			"title": "불릿 프루프",
+			"overview": "마약조직 보스를 상대로 강도행각을 벌인 아마추어 초짜 도둑은 어쩌다 보스의 아내를 납치하는 꼴이 되어버린다. 그는 돈을 갖고 튀는 일과, 보스의 아내를 돕기 위해 우회하는 일 사이에서 괴로워한다. 하지만 일단, 이 레이싱에서 빠져나가는 길만이 살길. 그 후는 나중에 생각하자!",
+			"popularity": 391.781,
+			"poster_path": "/cj6YmTAU7Jvn3w6d2NfjQzpX7Pw.jpg",
+			"released_date": "2022-08-19",
+			"vote_average": 5.6,
+			"vote_count": 21,
+			"words": "A woman runs for her life though the streets of Los Angeles after her blind date suddenly turns violent.",
+			"actors": [
+				980,
+				3302929,
+				1808592,
+				2490322,
+				64670,
+				1213265
+			]
+		}
+	},
+	{
+		"pk": 1032950,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27
+			],
+			"title": "헬홀",
+			"overview": "1987년 폴란드. 미스터리한 실종 사건을 수사하던 한 경찰관이 외딴 수도원에 잠입해 그곳의 성직자에 대한 어두운 진실을 발견한다.",
+			"popularity": 376.487,
+			"poster_path": "/3retN9fNG3fXJlUjasDsyfZqT7T.jpg",
+			"released_date": "2022-10-26",
+			"vote_average": 6.1,
+			"vote_count": 106,
+			"words": "The Thief  pulls off the robbery of a lifetime when he robs the psychotic drug lord, Temple. The plan goes off without a hitch until the Thief discovers a stowaway in his getaway car - Temple's pregnant wife, Mia.",
+			"actors": [
+				1515486,
+				107571
+			]
+		}
+	},
+	{
+		"pk": 438695,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				12,
+				35
+			],
+			"title": "씽2게더",
+			"overview": "대국민 오디션 이후 각자의 자리에서 꿈을 이루고 있는 버스터 문(매튜 맥커너히)과 크루들에게 레드 쇼어 시티에서 전 세계가 주목하는 사상 최고의 쇼가 펼쳐진다는 소식이 들려오고 버스터 문과 크루들은 도전에 나선다. 그러나 최고의 스테이지에 서기 위한 경쟁은 이전과는 비교도 할 수 없을 만큼 치열하고, 버스터 문은 완벽한 라이브를 위해 종적을 감춘 레전드 뮤지션 클레이(보노)를 캐스팅하겠다는 파격 선언을 하는데!",
+			"popularity": 367.604,
+			"poster_path": "/xe8dVB2QiCxLWFV77V4dpZcOvYB.jpg",
+			"released_date": "2021-12-01",
+			"vote_average": 8,
+			"vote_count": 3262,
+			"words": "In a monastery cut off from the world, the monks run a clinic for the possessed. One day, a young policeman Marek comes to the convent. Posing as a clergyman, he penetrates monastic life and tries to explain the recent, mysterious disappearance of several tormented inmates. It turns out, however, that there is no way out of the monastery.",
+			"actors": [
+				10297,
+				368,
+				1245,
+				1303037,
+				1540615,
+				52842
+			]
+		}
+	},
+	{
+		"pk": 781099,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				53
+			],
+			"title": "멈출 수 없는",
+			"overview": "소설가 마르셀 벨메르와 출판사 사장인 그의 아내 잔느의 저택에 가사도우미로 고용된 미스터리한 소녀 글로리아는 대체 어떤 사람일까? 마르셀의 베스트셀러 「멈출 수 없는」은 어떤 비밀을 감추고 있는 걸까? 안그래도 자신의 거짓말에 시달리는 마르셀에게 이젠 지옥같은 악몽이 기다리고 있을 뿐이다. (제26회 부산국제영화제)",
+			"popularity": 368.122,
+			"poster_path": "/cIdnkWNpEO7pwCUV3Jv5qKiKTlt.jpg",
+			"released_date": "2022-03-31",
+			"vote_average": 5.7,
+			"vote_count": 34,
+			"words": "Buster and his new cast now have their sights set on debuting a new show at the Crystal Tower Theater in glamorous Redshore City. But with no connections, he and his singers must sneak into the Crystal Entertainment offices, run by the ruthless wolf mogul Jimmy Crystal, where the gang pitches the ridiculous idea of casting the lion rock legend Clay Calloway in their show. Buster must embark on a quest to find the now-isolated Clay and persuade him to return to the stage.",
+			"actors": [
+				47820,
+				26107,
+				67532,
+				2916724,
+				82288
+			]
+		}
+	},
+	{
+		"pk": 862965,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				80,
+				18,
+				9648,
+				53
+			],
+			"title": "에밀리 더 크리미널",
+			"overview": "",
+			"popularity": 630.934,
+			"poster_path": "/iZvzMpREGiqDQ5eYbx8z70qPgst.jpg",
+			"released_date": "2022-08-12",
+			"vote_average": 6.8,
+			"vote_count": 165,
+			"words": "Desperately seeking inspiration for the follow-up novel to his bestseller \"Inexorable\", Marcel Bellmer moves in his wife's old family mansion with his family.",
+			"actors": [
+				119592,
+				25382,
+				11150
+			]
+		}
+	},
+	{
+		"pk": 1024535,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27
+			],
+			"title": "매트리악",
+			"overview": "약물 과다 복용으로 죽음의 문턱까지 갔던 한 여자가 과거의 트라우마를 극복하기 위해 어린 시절 살던 집으로 돌아가지만, 그곳에서 진짜 악마를 마주하게 된다.",
+			"popularity": 611.37,
+			"poster_path": "/e90B2eRgN3iyvc9I7c7z9fC3CrL.jpg",
+			"released_date": "2022-10-11",
+			"vote_average": 5.2,
+			"vote_count": 38,
+			"words": "Emily, who is saddled with student debt and locked out of the job market due to a minor criminal record, gets involved in a credit card scam that pulls her into the criminal underworld of Los Angeles, ultimately leading to deadly consequences.",
+			"actors": [
+				62932,
+				71083,
+				1602723,
+				1013049,
+				3701107
+			]
+		}
+	},
+	{
+		"pk": 773867,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				80,
+				35,
+				12
+			],
+			"title": "서울대작전",
+			"overview": "1988년 서울올림픽을 앞두고, 드라이버와 정비 전문가 등이 모인 팀이 특수 위장 작전에 투입된다. 작전의 목표는 대규모 돈세탁 조직의 실체를 밝히고 와해하는 것. VIP 비자금 수사 작전에 투입된 상계동 슈프림팀의 쾌속 질주를 담은 카체이싱 액션 블록버스터",
+			"popularity": 364.33,
+			"poster_path": "/zukuy8slSFF1OpokjGtGwuMcAQV.jpg",
+			"released_date": "2022-08-26",
+			"vote_average": 6.9,
+			"vote_count": 100,
+			"words": "Afflicted with a mysterious disease after surviving an overdose, a woman returns to her childhood home to confront her personal demons but instead discovers a real one.",
+			"actors": [
+				572225,
+				1257601,
+				2633250,
+				1988291,
+				1024396,
+				112785
+			]
+		}
+	},
+	{
+		"pk": 626735,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				18,
+				35
+			],
+			"title": "도그",
+			"overview": "이라크 파병으로 인한 후유증으로 부대 복귀가 불가능한 특수부대 출신 미군 ‘잭슨’. 어느 날 그의 동료의 사망소식을 듣고, 그의 군견 ‘룰루’를  2400km나 떨어진 그의 장례식장에 데려가면 복직을 추천해주겠다는 상관의 제안을 받는다. 잭슨은 이를 수락하지만, 룰루 또한 이미 전투 후유증으로 사나운 사고뭉치가 되어 있었다. 잭슨과 룰루는 서로에 대한 마음도 열지 못한 채 둘만의 여정을 떠나게 되는데…",
+			"popularity": 404.73,
+			"poster_path": "/6Kcy1Pt0RSlD6yvTx0oGG1wpIsH.jpg",
+			"released_date": "2022-02-17",
+			"vote_average": 7.4,
+			"vote_count": 992,
+			"words": "Chasing speed, dreams and money, a team of drivers get involved in the slush fund investigation of a powerful figure during the 1988 Seoul Olympics.",
+			"actors": [
+				11665,
+				129104,
+				18977,
+				19,
+				41421,
+				191270,
+				29020,
+				1467350,
+				216782
+			]
+		}
+	},
+	{
+		"pk": 497582,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				12,
+				9648,
+				35,
+				80
+			],
+			"title": "에놀라 홈즈",
+			"overview": "열여섯 생일을 맞은 셜록의 여동생, 에놀라 홈즈. 사라진 엄마를 찾아 런던으로 향한다. 명석한 두뇌의 대명사인 오빠까지 따돌리고, 위험에 빠진 귀족 청년의 미스터리와 엮이는데. 사건을 추적하며, 홈즈 가문답게 예리한 추리력이 폭발한다. 미스터리 가득한 이 모험, 무사히 마칠 수 있을까?",
+			"popularity": 333.846,
+			"poster_path": "/p4MvhGNFJSiFVF71njidCnZxpnJ.jpg",
+			"released_date": "2020-09-23",
+			"vote_average": 7.3,
+			"vote_count": 4884,
+			"words": "An army ranger and his dog embark on a road trip along the Pacific Coast Highway to attend a friend's funeral.",
+			"actors": [
+				1356210,
+				73968,
+				1558986,
+				1283
+			]
+		}
+	},
+	{
+		"pk": 919355,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				14,
+				12,
+				28
+			],
+			"title": "드래곤 나이트",
+			"overview": "전쟁이 패하고 용들이 모두 죽고 몇 년 후, 외로운 기사는 악마 군주 아바돈에 맞서 군대를 일으키기 위해 아고노스 땅을 여행합니다.  힐러의 환영에서 한 마리의 드래곤이 아직 살아 있다는 사실이 밝혀졌을 때, 열정적인 젊은 스콰이어와 함께 기사는 전설적인 생물을 찾기 위해 출발합니다. 아바돈의 군대가 인간 왕국에 내려올 때, 용은 인간의 땅을 황폐화시키기 전에 무리를 물리칠 마지막 희망입니다. 그러나 생물이 존재하기라도 합니까? 그리고 만약 그렇다면, 다시 한 번 그들을 위해 싸울 것입니까?",
+			"popularity": 372.85,
+			"poster_path": "/zkGFADykBtfPfTv7YJooxTH52ph.jpg",
+			"released_date": "2022-03-21",
+			"vote_average": 7.1,
+			"vote_count": 32,
+			"words": "Many years after the war has been lost, and all the dragons slain, a lone knight travels the lands of Agonos seeking to raise an army against the demon lord Abaddon. When a healer's vision reveals that one dragon still lives, and together with an eager young squire, the knight sets off in search of the fabled creature. As the armies of Abaddon descend on the human kingdoms, the dragon is their last hope of fending off the horde, before it lays waste to the lands of men. But does the creature even exist? And if it does, will it fight for them once more?",
+			"actors": [
+				3356551,
+				2598151,
+				3356554,
+				1626737
+			]
+		}
+	},
+	{
+		"pk": 43641,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				28,
+				878,
+				14
+			],
+			"title": "슈퍼맨/샤잠!: 돌아온 블랙 아담",
+			"overview": "슈퍼맨과 샤잠이 편을 먹고 우주에서 돌아온 악당 블랙 아담과 2:1로 맞서 싸우는 내용이다.악당이 얼마나 강한지 슈퍼맨 하나로는 상대가 되지 않을 정도다.\r 언제나 불량배에게 괴롭힘만 당하는 불쌍한 아이, 그러나 이 아이가 바로 슈퍼 파워를 지니게 될 운명을 가진 샤잠. 집없는 아이 샤잠에 대한 취재를 하던 슈퍼맨 켄트... 그때 들이닥친 블랙 아담. 도망치던 아이는 지하철에서  마법사를 만나게 되고 드뎌 샤잠이 되는 파워를 얻게된 후, 슈퍼맨과 팀을 이뤄 블랙 아담에 맞서는데...",
+			"popularity": 359.584,
+			"poster_path": "/3MgwChvi42N1RnhQE9A4pQVHyUY.jpg",
+			"released_date": "2010-11-16",
+			"vote_average": 7.2,
+			"vote_count": 1024,
+			"words": "Chosen the world’s protector against the Seven Deadly Enemies of Man – pride, envy, greed, hatred, selfishness, laziness and injustice – young Billy Batson accepts his destiny as Captain Marvel. Battling alongside Superman against nefarious Black Adam, Billy soon discovers the challenge super heroes ultimately face: is it revenge or justice?",
+			"actors": [
+				59222,
+				3035,
+				16743,
+				16896
+			]
+		}
+	},
+	{
+		"pk": 526896,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				878,
+				14
+			],
+			"title": "모비우스",
+			"overview": "희귀혈액병을 앓고 있는 생화학자 모비우스는 동료인 마르틴과 함께 치료제 개발에 몰두한다. 흡혈 박쥐를 연구하던 중 마침내 치료제 개발에 성공한 모비우스는 새 생명과 강력한 힘을 얻게 되지만, 동시에 흡혈을 하지 않고는 생명을 유지할 수 없게 된다. 그러던 중 모비우스와 같은 병을 앓고 있던 그의 친구 마일로도 모비우스와 같은 힘을 얻게 되는데…",
+			"popularity": 378.709,
+			"poster_path": "/8uiV88A5eB7PjMTtY6lQBUZ0Cpl.jpg",
+			"released_date": "2022-03-30",
+			"vote_average": 6.3,
+			"vote_count": 2894,
+			"words": "Dangerously ill with a rare blood disorder, and determined to save others suffering his same fate, Dr. Michael Morbius attempts a desperate gamble. What at first appears to be a radical success soon reveals itself to be a remedy potentially worse than the disease.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 961484,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				53
+			],
+			"title": "분노의 추격자",
+			"overview": "아내가 사라졌다!  평소와 다를 바 없던 귀갓길,\r ‘윌’이 주유를 위해 자리를 비운 사이\r 아내 ‘리사’가 흔적도 없이 사라진다.  사소한 실마리조차 남기지 않고 증발한 ‘리사’\r ‘윌’이 그녀를 찾기 위해 분투할수록\r 드러나는 증거들은 그를 범인으로 지목하고…  그 누구도 믿을 수 없는 최악의 상황!",
+			"popularity": 349.495,
+			"poster_path": "/nnfm6vscrAX8LDCC73T1OwdcalZ.jpg",
+			"released_date": "2022-05-19",
+			"vote_average": 6.6,
+			"vote_count": 472,
+			"words": "After Will Spann's wife suddenly vanishes at a gas station, his desperate search to find her leads him down a dark path that forces him to run from authorities and take the law into his own hands.",
+			"actors": [
+				78452,
+				10727,
+				77164
+			]
+		}
+	},
+	{
+		"pk": 1015602,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				35
+			],
+			"title": "심슨 가족: 웰컴 투 더 클럽",
+			"overview": "디즈니+ 데이를 맞아 리사 심슨은 공주로 변신하기로 마음먹는다. 악명 높은 디즈니 악당들을 만난 리사는 나쁜 사람이 되는 게 더 재미있겠다는 사실에 놀란다.",
+			"popularity": 360.844,
+			"poster_path": "/kxB9E6fo0ycHzd13oOTHmGa5Njd.jpg",
+			"released_date": "2022-09-08",
+			"vote_average": 6.7,
+			"vote_count": 112,
+			"words": "Heart set on becoming a princess, Lisa Simpson is surprised to learn being bad might be more fun.",
+			"actors": [
+				5586,
+				34983,
+				200,
+				91606,
+				87819
+			]
+		}
+	},
+	{
+		"pk": 883083,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				18,
+				36
+			],
+			"title": "혼자가 아닌",
+			"overview": "19세기 마케도니아, 200살의 마녀 마리아는 어린 소녀를 납치해 자신의 대를 잇는 마녀로 키우고자 한다. 그러나 16세가 된 네베나 자신과 같아지자 마리아는 흥미를 잃고 그녀를 버린다. 네베나는 버려진 숲에서 우연히 만난 한 시골 여자를 죽이고 그녀의 모습을 취한다. 다양한 인간으로의 삶을 경험하면서 경이로움과 고난에 매료된 젊은 마녀, 네베나는 인간의 삶에 대한 호기심과 이를 이해하기 위해 자신이 가진 무시무시한 힘을 휘두르며 마을 사람들을 모두를 죽인다. 사라졌던 마리아가 다시 나타나자 마녀의 대를 이어야 하는 자신이 운명 앞에서 고통스러운 결정을 내려야 한다.",
+			"popularity": 427.893,
+			"poster_path": "/kJ1bSR2T16yzgRMSySpbAJzF3rM.jpg",
+			"released_date": "2022-04-01",
+			"vote_average": 6.6,
+			"vote_count": 139,
+			"words": "In an isolated mountain village in 19th century Macedonia, a young feral witch accidentally kills a peasant. She assumes the peasant's shape to see what life is like in her skin, igniting a deep seated curiosity to experience life inside the bodies of others.",
+			"actors": [
+				1617466
+			]
+		}
+	},
+	{
+		"pk": 1040603,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				99
+			],
+			"title": "오르가즘 주식회사: 쾌락을 판 어느 회사의 진실",
+			"overview": "섹슈얼 웰니스를 표방한 신생 회사. 이들이 내세운 ‘오르가즘 명상’ 방법이 유명해지면서 추종자들이 늘어간다. 하지만 곧 멤버들로부터 충격적인 고발이 쏟아지기 시작한다.",
+			"popularity": 597.726,
+			"poster_path": "/yqI3XQ1nmvxFpBus1BescRrRBAj.jpg",
+			"released_date": "2022-11-05",
+			"vote_average": 6,
+			"vote_count": 17,
+			"words": "During transport from the Philippines to South Korea, a group of dangerous criminals unites to stage a coordinated escape attempt. As the jailbreak escalates into a bloody, all-out riot, the fugitives and their allies from the outside exact a brutal terror campaign against the special agents onboard the ship.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 799379,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				878,
+				28,
+				53
+			],
+			"title": "늑대사냥",
+			"overview": "동남아시아로 도피한 인터폴 수배자들을 이송할 움직이는 교도소 프론티어 타이탄. 극악무도한 이들과 베테랑 형사들이 필리핀 마닐라 항구에 모이고 탈출을 꿈꾸는 종두, 한국으로 돌아가야만 하는 도일을 비롯해 이들은 각자의 목적과 경계심을 품고 탑승한다. 한국으로 향하던 중, 태평양 한 가운데에서 이들에게는 지금까지 보지 못한 극한의 상황과 마주하게 되는데…",
+			"popularity": 359.025,
+			"poster_path": "/op2y1gvqKhAh4yAPLwc4PlX3XRv.jpg",
+			"released_date": "2022-09-28",
+			"vote_average": 6.9,
+			"vote_count": 28,
+			"words": "With the help of the \"Dragon Sin of Wrath\" Meliodas and the worst rebels in history, the Seven Deadly Sins, the \"Holy War\", in which four races, including Humans, Goddesses, Fairies and Giants fought against the Demons, is finally over. At the cost of the \"Lion Sin of Pride\" Escanor's life, the Demon King was defeated and the world regained peace. After that, each of the Sins take their own path.",
+			"actors": [
+				1255411,
+				1713025,
+				1872629,
+				1252017,
+				93996,
+				1020859,
+				1418581
+			]
+		}
+	},
+	{
+		"pk": 843241,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				14
+			],
+			"title": "일곱 개의 대죄: 빛에 저주받은 자들",
+			"overview": "마침내 성전이 끝났다. 3천 년에 걸친 싸움에 종지부를 찍은 일곱 대죄. 하지만 혼돈을 바라는 자들이 모두 사라진 것은 아니었으니. 새로운 적에 맞서 세계를 구한 대죄인들이 다시 집결한다.",
+			"popularity": 370.939,
+			"poster_path": "/c6LuZgSe1FFbnSPrZWyvh9f4ZEs.jpg",
+			"released_date": "2021-07-02",
+			"vote_average": 7.8,
+			"vote_count": 408,
+			"words": "A young street-smart, Nathan Drake and his wisecracking partner Victor “Sully” Sullivan embark on a dangerous pursuit of “the greatest treasure never found” while also tracking clues that may lead to Nathan’s long-lost brother.",
+			"actors": [
+				149894,
+				1325034,
+				151182,
+				936275,
+				1154452,
+				131563,
+				2271837
+			]
+		}
+	},
+	{
+		"pk": 335787,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				12
+			],
+			"title": "언차티드",
+			"overview": "평범한 삶을 살던 네이선은 인생을 바꿀 뜻밖의 제안을 받는다. 그의 미션은 크루와 함께 사라진 형과 500년 전 잃어버린 천문학적인 가치를 지닌 트레져를 찾아내는 것. 그러나 몬카다의 위협 속, 누구보다 빠르게 미지의 세계에 닿기 위해 결단을 내려야만 하는데…",
+			"popularity": 368.881,
+			"poster_path": "/2R8smeSDkPx6TKIRveKPXi0JVI6.jpg",
+			"released_date": "2022-02-10",
+			"vote_average": 7.1,
+			"vote_count": 3880,
+			"words": "An American priest working in Mexico is considered a saint by many local parishioners. However, due to a botched exorcism, he carries a secret that’s eating him alive until he gets an opportunity to face his demon one final time.",
+			"actors": [
+				1136406
+			]
+		}
+	},
+	{
+		"pk": 836225,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27
+			],
+			"title": "엑소시즘 오브 갓",
+			"overview": "멕시코 디오스에서 사역 중이던 미국인 신부 피터는 귀신 들린 마갈리 수녀에 대한 엑소시즘 도중 악령에 홀려 그녀를 탐하는 죄를 짓는다. 18년 후, 피터는 고아들과 소외된 자를 도우며 성인으로 칭송받는다. 어느 날, 원인을 알 수 없는 역병으로 4명의 아이들이 세상을 떠나고 피터는 자신이 지은 과거의 잘못에 대한 하나님의 징벌이라고 자책한다. 피터는 파문을 각오하고 잘못을 고하기 위해 발두치 주교를 찾아가지만, 교황청에서 피터를 주목하고 있다는 말을 들은 후 지원받은 약과 장비를 들고 돌아온다. 그날 밤, 악령 들린 하나님의 아들 예수에 대한 악몽을 꾼 피터는 우리베 교도소장의 전화를 받고 사라가도 코라존 교도소를 방문한다. 마갈리는 악마에 사로잡힌 에스페란자가 피터의 딸이라고 말하며 악령을 쫓아내 달라고 부탁한다. 피터는 에스페란자에 대한 엑소시즘을 위해 최고의 구마 사제인 마이클 신부에게 도움을 요청한다. 피터와 마이클 신부는 에스페란자의 육체를 빌려 돌아온 악마 발반에 맞서 구마 의식을 행하는데...",
+			"popularity": 339.36,
+			"poster_path": "/9X9wKbF0ED1AQpgIkvq0MG4Y4wi.jpg",
+			"released_date": "2022-03-11",
+			"vote_average": 7.2,
+			"vote_count": 691,
+			"words": "The collection with which Neonlicious was to make her debut mysteriously disappears. Now you have to use all your creativity and improvise new designs for the big parade!",
+			"actors": [
+				58942,
+				1601451,
+				1050186,
+				1212803,
+				133766
+			]
+		}
+	},
+	{
+		"pk": 1039627,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16
+			],
+			"title": "L.O.L. Surprise! Winter Fashion Show",
+			"overview": "",
+			"popularity": 318.851,
+			"poster_path": "/ik65OsEXbik1I0Di7SX9Sqv04e9.jpg",
+			"released_date": "2022-10-24",
+			"vote_average": 7.6,
+			"vote_count": 16,
+			"words": "Hellbent on taking over Earthrealm, Kano viciously attacks town after town with the aid of three cold-blooded Black Dragon mercenaries. Those who don’t submit are annihilated but one young man won’t bend the knee to Kano: Kenshi.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 1007401,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				28,
+				14
+			],
+			"title": "Mortal Kombat Legends: Snow Blind",
+			"overview": "",
+			"popularity": 324.486,
+			"poster_path": "/xvjCiv1xNlK1kNnoe1nul899vIp.jpg",
+			"released_date": "2022-10-09",
+			"vote_average": 8,
+			"vote_count": 78,
+			"words": "Residents in a lonely gulch of inland California bear witness to an uncanny, chilling discovery.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 762504,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				9648,
+				878,
+				53
+			],
+			"title": "놉",
+			"overview": "거대하고, 주목받길 원하고, 미쳤다. 나쁜 기적이라는 것도 있을까?",
+			"popularity": 331.252,
+			"poster_path": "/52McjY2vAEiF0lJe8iBdOBNuyok.jpg",
+			"released_date": "2022-07-20",
+			"vote_average": 7,
+			"vote_count": 2001,
+			"words": "In 1970s London amidst the punk rock revolution, a young grifter named Estella is determined to make a name for herself with her designs. She befriends a pair of young thieves who appreciate her appetite for mischief, and together they are able to build a life for themselves on the London streets. One day, Estella’s flair for fashion catches the eye of the Baroness von Hellman, a fashion legend who is devastatingly chic and terrifyingly haute. But their relationship sets in motion a course of events and revelations that will cause Estella to embrace her wicked side and become the raucous, fashionable and revenge-bent Cruella.",
+			"actors": [
+				206919,
+				74688
+			]
+		}
+	},
+	{
+		"pk": 337404,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				35,
+				80
+			],
+			"title": "크루엘라",
+			"overview": "재능은 있지만 밑바닥 인생을 살던 에스텔라는 우여곡절 끝에 런던에 오게 된다. 그곳에서 운명처럼 재스퍼와 호레이스를 만난 에스텔라는 뛰어난 패션 감각을 이용해 완벽한 변장과 빠른 손놀림으로 런던 거리를 싹쓸이한다. 도둑질이 지겹게 느껴질 때 쯤, 꿈에 그리던 리버티 백화점에 들어가게 된 에스텔라. 그곳에서 런던 패션계를 꽉 쥐고 있는 남작 부인을 만나 충격적 사건을 겪게 되며, 에스텔라는 런던 패션계를 발칵 뒤집을 파격 아이콘 크루엘라로 새롭게 태어나게 되는데...",
+			"popularity": 338.524,
+			"poster_path": "/ejnSfKiUgqyiqdiLMc1wGAwvyTN.jpg",
+			"released_date": "2021-05-26",
+			"vote_average": 8.1,
+			"vote_count": 7660,
+			"words": "After years in the limelight, Selena Gomez achieves unimaginable stardom. But just as she reaches a new peak, an unexpected turn pulls her into darkness. This uniquely raw and intimate documentary spans her six-year journey into a new light.",
+			"actors": [
+				54693
+			]
+		}
+	},
+	{
+		"pk": 1022256,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				99,
+				10402
+			],
+			"title": "셀레나 고메즈: 마이 마인드 앤드 미",
+			"overview": "수년간 세상의 주목을 받으며 셀레나 고메즈는 상상을 초월한 인기를 얻는다. 하지만 인기가 절정에 도달했을 때, 예상하지 못했던 사건으로 셀레나는 어둠 속에 빠진다. 이 유례없이 생생하고 은밀한 다큐멘터리는 셀레나가 새로운 빛을 찾아 떠나는 6년간의 여정을 다룬다.",
+			"popularity": 318.98,
+			"poster_path": "/oMpsswJv8x4vnOnIKqs4xJs2Kn3.jpg",
+			"released_date": "2022-11-04",
+			"vote_average": 8.7,
+			"vote_count": 118,
+			"words": "Legendary Space Ranger Buzz Lightyear embarks on an intergalactic adventure alongside a group of ambitious recruits and his robot companion Sox.",
+			"actors": [
+				77948
+			]
+		}
+	},
+	{
+		"pk": 807356,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				9648,
+				53,
+				27
+			],
+			"title": "왓쳐",
+			"overview": "한 젊은 미국 여성이 남편과 함께 루마니아의 부쿠레슈티로 이사한 뒤 길 건너편 아파트에서 자신을 지켜보는 낯선 사람이 연쇄 살인범일 수도 있다고 의심을 하기 시작하면서 여성에게 벌어지는 공포스러운 이야기를 담은 영화",
+			"popularity": 563.286,
+			"poster_path": "/dXCjoI3jdtBrwPHgVsyNLkl8Rvs.jpg",
+			"released_date": "2022-06-03",
+			"vote_average": 6.3,
+			"vote_count": 284,
+			"words": "As a serial killer stalks the city, Julia — a young actress who just moved to town with her husband — notices a mysterious stranger watching her from across the street.",
+			"actors": [
+				1094091,
+				1327613,
+				39659
+			]
+		}
+	},
+	{
+		"pk": 459151,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				35,
+				12,
+				10751
+			],
+			"title": "보스 베이비 2",
+			"overview": "베이비 주식회사의 레전드 보스 베이비에서 인생 만렙 CEO가 된 `테드`. 베이비인 줄 알았던 조카 `티나`가 알고 보니 베이비 주식회사 소속이라니! 뉴 보스 베이비 `티나`의 지시로 `테드`는 형과 함께 다시 베이비로 돌아가야만 하는데…",
+			"popularity": 336.015,
+			"poster_path": "/zGaeo3fNXCcnttUQMgZr1FW0t4V.jpg",
+			"released_date": "2021-07-01",
+			"vote_average": 7.5,
+			"vote_count": 2104,
+			"words": "The Templeton brothers — Tim and his Boss Baby little bro Ted — have become adults and drifted away from each other. But a new boss baby with a cutting-edge approach and a can-do attitude is about to bring them together again … and inspire a new family business.",
+			"actors": [
+				1541380,
+				24362,
+				61980,
+				992427,
+				1471841,
+				2016862,
+				2016864
+			]
+		}
+	},
+	{
+		"pk": 566525,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				12,
+				14
+			],
+			"title": "샹치와 텐 링즈의 전설",
+			"overview": "초인적인 능력을 가진 텐 링즈의 힘으로 수세기 동안 어둠의 세상을 지배해 온 웬우. 샹치는 아버지 웬우 밑에서 암살자로 훈련을 받았지만 이를 거부하고 평범함 삶을 선택한다. 샌프란시스코로 떠나와 자신의 진짜 이름을 숨긴 채 션이란 가명으로 살아가는 샹치. 웬우가 수장으로 있는 조직 텐 링즈의 일원인 레이저 피스트가 찾아와 샹치의 펜던트를 훔쳐가자 샹치는 친구 케이티와 함께 연이 끊겼던 동생 샤링을 염려하며 그녀가 숨어 지내는 마카오로 찾아간다. 텐 링즈의 마법 같은 힘을 통해 수천년 동안 지구의 역사를 혼란에 빠뜨렸던 웬우는 자신의 아들딸을 다시 불러들여 새로운 계략을 꾸민다.",
+			"popularity": 343.681,
+			"poster_path": "/14L4NGrqO4r7gJtVRiSRP5rNsL5.jpg",
+			"released_date": "2021-09-01",
+			"vote_average": 7.7,
+			"vote_count": 7390,
+			"words": "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 1025169,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				99
+			],
+			"title": "더 트랩트 13: 태국 동굴 조난 사건",
+			"overview": "2018년 탐루앙 동굴에 고립된 태국의 유소년 축구팀 선수들. 이들의 기적적인 생환 스토리를 담은 강렬한 다큐멘터리. 구조된 소년들의 입을 통해 당시의 경험과 뒷이야기들을 들어본다.",
+			"popularity": 350.613,
+			"poster_path": "/seeEc3xNttsx308AB0iFtqKVyjG.jpg",
+			"released_date": "2022-10-05",
+			"vote_average": 6.3,
+			"vote_count": 5,
+			"words": "In this compelling documentary, members of the Thai youth soccer team tell their stories of getting trapped in Tham Luang Cave in 2018 — and surviving.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 864959,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				12,
+				35,
+				27,
+				10751
+			],
+			"title": "브리지 홀로우의 저주",
+			"overview": "동네의 핼러윈 장식에 생명을 불어넣은 악령. 덕분에 사방이 난장판이 되자, 핼러윈을 싫어하는 아빠가 마지못해 10대 딸과 팀을 이룬다.",
+			"popularity": 334.067,
+			"poster_path": "/t6P9l6tcVnWLS1ADUAfkUCGQhm0.jpg",
+			"released_date": "2022-10-14",
+			"vote_average": 6.9,
+			"vote_count": 281,
+			"words": "A Halloween-hating dad reluctantly teams up with his teenage daughter when an evil spirit wreaks havoc by making their town's decorations come to life.",
+			"actors": [
+				9562,
+				2029806
+			]
+		}
+	},
+	{
+		"pk": 1006851,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				878,
+				35,
+				28
+			],
+			"title": "오피스 인베이전",
+			"overview": "같은 광산 회사에 다니는 절친 삼인방이 힘을 합친다. 광산을 약탈하고 인간을 몰살하려 하는 무시무시한 외계인들로부터 소중한 회사를 지키기 위하여!",
+			"popularity": 323.265,
+			"poster_path": "/khcVwO0gwguC1CndbxtH1bzk4aj.jpg",
+			"released_date": "2022-08-10",
+			"vote_average": 5.8,
+			"vote_count": 88,
+			"words": "Three friends come together to defend their valuable mining company from…aliens?! What could possibly go wrong?",
+			"actors": [
+				1465473,
+				2047714,
+				2583040,
+				1331083,
+				1184468,
+				3644212
+			]
+		}
+	},
+	{
+		"pk": 975120,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				35,
+				10751
+			],
+			"title": "Padre no hay mas que Uno 3",
+			"overview": "",
+			"popularity": 329.444,
+			"poster_path": "/k2v9xSPtiyxCNxaRGtj7COwdgG3.jpg",
+			"released_date": "2022-07-15",
+			"vote_average": 7.7,
+			"vote_count": 150,
+			"words": "Christmas is coming. The children accidentally break a Nativity scene figurine from their father's collection and must by all means get an equal one, the problem is that it is a unique antique piece. Sara, the eldest daughter breaks up with her boyfriend, Ocho, who will try to recover her favors with the help of her father-in-law, Javier. Precisely Javier's father-in-law, Marisa's father, will be welcomed into the family home to spend the holidays after her recent separation, which will not leave Javier's mother, Milagros, indifferent. Rocío, the folklore of the family, who has been playing the Virgin for several Christmases, is relegated this year to playing the shepherdess, something that her father, Javier, is not willing to assume.",
+			"actors": [
+				10847,
+				93467,
+				1423088,
+				112607,
+				231486,
+				6536
+			]
+		}
+	},
+	{
+		"pk": 1008779,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28
+			],
+			"title": "La Princesa",
+			"overview": "",
+			"popularity": 332.421,
+			"poster_path": "/ksxiXqwPuEjh3gct1zUpyzNoQFt.jpg",
+			"released_date": "2022-02-01",
+			"vote_average": 7.4,
+			"vote_count": 74,
+			"words": "Refusing to marry a drug lord, Grecia is determined to pay her father's debt herself. To earn the money, she decides to bet in the Sinaloa palenques, where she meets Armando. He is immediately captivated by her beauty and fearless attitude. But, little does he know that falling for her will be his most dangerous endeavor. Based on the famous corrido hit \"La Princesa\", by Alfredo Ríos \"El Komander\".",
+			"actors": [
+				544443,
+				1889623,
+				2092366,
+				1077564,
+				955278
+			]
+		}
+	},
+	{
+		"pk": 791373,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				12,
+				14,
+				878
+			],
+			"title": "잭 스나이더의 저스티스 리그",
+			"overview": "슈퍼맨이 죽고 지구에 어둠의 그림자가 드리운다. 마더박스를 차지하기 위해 빌런 스테픈울프가 파라데몬 군단을 이끌고 지구에 온 것이다. 지구를 지키기 위해 목숨을 바친 슈퍼맨의 희생이 헛되지 않도록 하기 위해 브루스 웨인은 다이애나 프린스와 적에 맞서기로 한다. 배트맨과 원더 우먼은 새로이 등장한 위협에 맞서 싸우기 위해 특별한 능력을 가진 메타휴먼, 아쿠아맨과 사이보그, 플래시를 찾아가 설득하여 힘을 합친다. 드디어 한 팀이 된 저스티스 리그. 혹시 스테픈울프와 데사드 그리고 다크사이드를 물리치기에 너무 늦어버린 것이 아닐까?",
+			"popularity": 372.434,
+			"poster_path": "/qd7iPB26bwMPZqRcnflzAeDkMn.jpg",
+			"released_date": "2021-03-18",
+			"vote_average": 8.2,
+			"vote_count": 8309,
+			"words": "Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.",
+			"actors": [
+				880,
+				73968,
+				90633,
+				117642,
+				132157,
+				9273,
+				16940,
+				2882,
+				44735
+			]
+		}
+	},
+	{
+		"pk": 829560,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				10749,
+				18
+			],
+			"title": "또 다른 365일",
+			"overview": "신뢰 문제를 극복하려 애쓰는 라우라와 마시모의 관계가 흔들리는 가운데, 끈질긴 나초가 둘을 갈라놓으려 한다.",
+			"popularity": 344.196,
+			"poster_path": "/4N9BqdesW3YD7ZM2dlTOYefkCEM.jpg",
+			"released_date": "2022-08-19",
+			"vote_average": 6.6,
+			"vote_count": 560,
+			"words": "Laura and Massimo's relationship hangs in the balance as they try to overcome trust issues while a tenacious Nacho works to push them apart.",
+			"actors": [
+				2511949
+			]
+		}
+	},
+	{
+		"pk": 674,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				12,
+				14,
+				10751
+			],
+			"title": "해리 포터와 불의 잔",
+			"overview": "요즘 들어 매일 꾸는 악몽 때문에 이마의 상처에 더욱 통증을 느끼는 해리는 친구 론과 헤르미온느와 함께 퀴디치 월드컵에 참가해 악몽에서 벗어날 수 있게 돼 마냥 기쁘다. 그러나 퀴디치 캠프장 근방 하늘에 불길한 기운이 나타난다. 바로 마왕 볼드모트의 상징인 어둠의 표식이 나타난 것. 볼드모트가 13년 전에 자취를 감춘 뒤, 감히 모습을 드러내지 못했던 그의 추종자 데스 이터들이 그 표식을 불러낸 것이다. 두려움으로 가득 찬 해리는 안전한 호그와트 마법학교로 돌아가고 싶어한다. 덤블도어 교장이라면 자신을 지켜줄 수 있을 것이기에. 그러나 올해는 예년과 상황이 좀 다른데...",
+			"popularity": 334.086,
+			"poster_path": "/h6BhNwNXg0IEbs2PoWfCX9QEvgl.jpg",
+			"released_date": "2005-11-16",
+			"vote_average": 7.8,
+			"vote_count": 17900,
+			"words": "When Harry Potter's name emerges from the Goblet of Fire, he becomes a competitor in a grueling battle for glory among three wizarding schools—the Triwizard Tournament. But since Harry never submitted his name for the Tournament, who did? Now Harry must confront a deadly dragon, fierce water demons and an enchanted maze only to find himself in the cruel grasp of He Who Must Not Be Named.",
+			"actors": [
+				10980,
+				10989,
+				10990,
+				1923,
+				5469,
+				5658,
+				2039,
+				8436,
+				4566
+			]
+		}
+	},
+	{
+		"pk": 951368,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				53,
+				10770,
+				28
+			],
+			"title": "Your Boyfriend Is Mine",
+			"overview": "",
+			"popularity": 311.187,
+			"poster_path": "/2OOYNZLKjdX8Z5KNyz7zZnHmodJ.jpg",
+			"released_date": "2022-03-19",
+			"vote_average": 6.8,
+			"vote_count": 38,
+			"words": "Over the objection of his girlfriend, Ben agrees to take a job as the “live in” man servant to a wealthy businesswoman, Amanda, but quickly realizes he has made a deal with the devil, and has put himself and his girlfriend in mortal jeopardy",
+			"actors": [
+				928116,
+				2568538
+			]
+		}
+	},
+	{
+		"pk": 968857,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				53
+			],
+			"title": "Looks Can Kill",
+			"overview": "",
+			"popularity": 343.79,
+			"poster_path": "/1uy2PNFwtkqH3mhGd6irk5aeIrF.jpg",
+			"released_date": "2022-02-01",
+			"vote_average": 4.5,
+			"vote_count": 10,
+			"words": "A group of models is killed off, one by one, and everyone is a suspect.",
+			"actors": [
+				3254592,
+				1565408,
+				3254594,
+				2961806
+			]
+		}
+	},
+	{
+		"pk": 672,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				12,
+				14
+			],
+			"title": "해리 포터와 비밀의 방",
+			"overview": "해리 포터에겐 이번 여름방학이 별로 즐겁질 못했다. 마법이라면 질색을 하는 페투니아 이모와 버논 이모부의 구박도 그렇지만, 무엇보다 속상한 건 단짝이었던 론 위즐리와 헤르미온느 그레인저가 그 사이 자신을 까맣게 잊었는지 자신의 편지에 답장 한 통 없다는 것.  그러던 어느날 꼬마 집요정 도비가 해리의 침실에 나타나 뜻밖의 얘기를 한다. 호그와트 마법학교로 돌아가면 무서운 일을 당할 거라는 것. 도비는 해리를 학교에 못 가게 하려고 자신이 여태까지 론과 헤르미온느의 답장을 가로채 왔음을 고백한다. 그러나 도비와 더즐리 가족의 방해에도 불구, 해리는 론과 그의 형제들이 타고 온 하늘을 나는 자동차를 타고 이모집을 탈출, 따뜻한 가족애가 넘치는 론의 집으로 가는데...",
+			"popularity": 322.219,
+			"poster_path": "/sfs4U6XpiKFngbbSzrpZbkM1ySI.jpg",
+			"released_date": "2002-11-13",
+			"vote_average": 7.7,
+			"vote_count": 18922,
+			"words": "Cars fly, trees fight back, and a mysterious house-elf comes to warn Harry Potter at the start of his second year at Hogwarts. Adventure and danger await when bloody writing on a wall announces: The Chamber Of Secrets Has Been Opened. To save Hogwarts will require all of Harry, Ron and Hermione’s magical abilities and courage.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 541134,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				18,
+				80,
+				9648
+			],
+			"title": "그 남자, 좋은 간호사",
+			"overview": "과도한 업무로 지친 중환자실 간호사. 다행히 새로 온 동료가 직장과 집에서 힘이 되어주고 있다. 하지만 한 환자가 의문사를 당하면서 좋은 사람인 줄 알았던 동료 간호사가 달리 보이기 시작하는데.",
+			"popularity": 294.259,
+			"poster_path": "/cC1wNkQpvdkQPqmY5Io9HzglrlB.jpg",
+			"released_date": "2022-10-19",
+			"vote_average": 7.1,
+			"vote_count": 473,
+			"words": "Suspicious that her colleague is responsible for a series of mysterious patient deaths, a nurse risks her own life to uncover the truth in this gripping thriller based on true events.",
+			"actors": [
+				83002,
+				37632
+			]
+		}
+	},
+	{
+		"pk": 796256,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				9648
+			],
+			"title": "오프시즌",
+			"overview": "",
+			"popularity": 280.057,
+			"poster_path": "/zlX4WdEMzVomRukPjVQx6U9jtBS.jpg",
+			"released_date": "2022-03-11",
+			"vote_average": 5.8,
+			"vote_count": 51,
+			"words": "Upon receiving a mysterious letter that her mother's grave has been vandalized, Marie travels to the desolate island town where she's buried. Just as she arrives, the island closes for the season, leaving Marie trapped in a nightmare.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 484907,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				9648,
+				18,
+				27
+			],
+			"title": "홈바운드",
+			"overview": "홀리는 새 남편의 가족을 만나기 위해 작은 시골 마을로 향한다. 예상치 못하게 그곳에서 남편의 전 부인의 실종 사건과 홀리를 불안하게 하는 두 아이들을 마주하게 되는데...",
+			"popularity": 307.639,
+			"poster_path": "/kgaadQfeX9yi30oBCreM7cxurqj.jpg",
+			"released_date": "2022-04-01",
+			"vote_average": 3.7,
+			"vote_count": 10,
+			"words": "A young woman arrives at the home of her new husband's estranged family to find the children behaving in increasingly unnerving ways.",
+			"actors": [
+				112824,
+				43034,
+				1503909,
+				1279512,
+				1640423
+			]
+		}
+	},
+	{
+		"pk": 406759,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				878
+			],
+			"title": "문폴",
+			"overview": "궤도를 이탈한 달이 지구를 향해 떨어지기 시작하면서 지구의 중력과 모든 물리적인 법칙이 붕괴된다. 거대한 해일과 지진, 화산폭발, 쓰나미와 이상기후까지 상상조차 불가능했던 모든 재난으로 전 세계는 공포와 혼란에 빠진다. 달과 충돌까지 남은 시간은 단 30일. NASA 연구원 파울러, 전직 우주 비행사 브라이언, 그리고 우주 덕후 KC는 달을 막을 방법을 찾기 위해 마지막 우주선에 오른다.",
+			"popularity": 309.69,
+			"poster_path": "/2xmJCxrt5t2dFhvwvmxZ5Cy577j.jpg",
+			"released_date": "2022-02-03",
+			"vote_average": 6.4,
+			"vote_count": 2013,
+			"words": "A mysterious force knocks the moon from its orbit around Earth and sends it hurtling on a collision course with life as we know it.",
+			"actors": [
+				4587,
+				17178,
+				1440574
+			]
+		}
+	},
+	{
+		"pk": 820232,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				16,
+				14
+			],
+			"title": "귀멸의 칼날: 남매의 연",
+			"overview": "혈귀의 습격으로 가족을 잃은 소년 ‘탄지로’. 유일하게 살아남은 여동생 ‘네즈코’마저 혈귀로 변해 버리고 마는데…. ‘탄지로’는 ‘네즈코’를 인간으로 되돌리기 위해- 그리고 가족을 죽인 혈귀를 심판하기 위해- ‘귀살대’의 길을 가기로 결의한다. 혹독한 훈련 끝에 귀살대 대원으로 거듭난 ‘탄지로’는 복수의 칼날을 들고 목숨 건 사투를 시작하는데… 소년이여, 여동생을 구하기 위해 칼날을 들어라! 인간과 혈귀가 엮어낸 애절한 오누이의 이야기가 지금 시작된다-!",
+			"popularity": 306.457,
+			"poster_path": "/3vlBg3kTsHioTy7owIDXFHNXBNk.jpg",
+			"released_date": "2019-03-29",
+			"vote_average": 8.2,
+			"vote_count": 54,
+			"words": "Tanjiro finds his family slaughtered and the lone survivor, his sister Nezuko Kamado, turned into a Demon. To his surprise, however, Nezuko still shows signs of human emotion and thought. Thus begins Tanjiro's journey to seek out the Demon who killed their family and turn his sister human again. A recap film of Kimetsu no Yaiba, covering episodes 1-5 with extra footage.",
+			"actors": [
+				1256603,
+				1563442,
+				9705,
+				552683,
+				149894,
+				1324646,
+				110665,
+				90571,
+				84508
+			]
+		}
+	},
+	{
+		"pk": 774825,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				35,
+				12,
+				10751
+			],
+			"title": "아이스 에이지: 벅의 대모험",
+			"overview": "모두의 사랑을 받는 선사 시대 포유류들의 유쾌한 모험이 계속된다. 누나 엘리와 따로 떨어진 스릴을 찾는 주머니쥐 형제 크래시와 에디는 그들만의 공간을 찾아 길을 나서지만, 곧 거대한 지하 동굴에 갇히게 되고, 모험을 사랑하는 공룡 사냥꾼 애꾸눈 족제비 벅 와일드의 도움으로 위험에서 벗어난 둘은 벅과 함께 잃어버린 세계에 서식하는 난폭한 공룡들과 마주한다.",
+			"popularity": 281.758,
+			"poster_path": "/iKFpQoNiS2q9AZ3dEPv1zfkmHvs.jpg",
+			"released_date": "2022-01-28",
+			"vote_average": 6.7,
+			"vote_count": 1385,
+			"words": "The fearless one-eyed weasel Buck teams up with mischievous possum brothers Crash & Eddie as they head off on a new adventure into Buck's home: The Dinosaur World.",
+			"actors": [
+				11108,
+				1240645,
+				3332754,
+				929511
+			]
+		}
+	},
+	{
+		"pk": 671,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				12,
+				14
+			],
+			"title": "해리 포터와 마법사의 돌",
+			"overview": "해리 포터는 위압적인 버논 숙부와 냉담한 이모 페투니아, 욕심 많고 버릇없는 사촌 더즐리 밑에서 갖은 구박을 견디며 계단 밑 벽장에서 생활한다. 이모네 식구들 역시 해리와의 동거가 불편하기는 마찬가지. 이모 페투니아에겐 해리가 이상한 언니 부부에 관한 기억을 떠올리게 만드는 달갑지 않은 존재다. 11살 생일이 며칠 앞으로 다가왔지만 한번도 생일파티를 치르거나 제대로 된 생일선물을 받아 본 적이 없는 해리로서는 특별히 신날 것도 기대 할 것도 없다. 11살 생일을 며칠 앞둔 어느 날 해리에게 초록색 잉크로 쓰여진 한 통의 편지가 배달된다. 그 편지의 내용은 다름 아닌 해리의 11살 생일을 맞이하여 호그와트에서 보낸 입학 초대장이었다. 그리고 해리의 생일을 축하하러 온 거인 해그리드는 해리가 모르고 있었던 해리의 진정한 정체를 알려주는데...",
+			"popularity": 301.443,
+			"poster_path": "/unEtC8uWn2lcQLnwKG9PZJX0h0c.jpg",
+			"released_date": "2001-11-16",
+			"vote_average": 7.9,
+			"vote_count": 23532,
+			"words": "Harry Potter has lived under the stairs at his aunt and uncle's house his whole life. But on his 11th birthday, he learns he's a powerful wizard—with a place waiting for him at the Hogwarts School of Witchcraft and Wizardry. As he learns to harness his newfound powers with the help of the school's kindly headmaster, Harry uncovers the truth about his parents' deaths—and about the villain who's to blame.",
+			"actors": [
+				3182135
+			]
+		}
+	},
+	{
+		"pk": 755566,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				14,
+				27,
+				35
+			],
+			"title": "데이 시프트",
+			"overview": "LA에 사는 남자. 일주일 안에 딸의 교육비와 치아 교정비를 마련해야 한다. 가족을 위해 목숨 걸고 일하러 가는 이 남자의 직업은 뱀파이어 사냥꾼!",
+			"popularity": 303.687,
+			"poster_path": "/8utntaGYeQI5NDKgnA5ioIMW92w.jpg",
+			"released_date": "2022-08-12",
+			"vote_average": 6.9,
+			"vote_count": 1291,
+			"words": "Chickie wants to support his friends fighting in Vietnam, so he does something wild—personally bring them American beer. What starts as a well-meaning journey quickly changes Chickie’s life and perspective. Based on a true story.",
+			"actors": [
+				134
+			]
+		}
+	},
+	{
+		"pk": 597922,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				18,
+				35,
+				10752
+			],
+			"title": "지상 최대 맥주배달 작전",
+			"overview": "치키(잭 에프론)는 베트남 전쟁에서 싸우는 친구들을 응원하고 싶은 마음에 직접 미국 맥주를 가져다주는 말도 안 되는 일을 하기로 하지만, 선의로 시작한 그 일은 곧 치키의 삶과 관점을 바꾸게 된다. 실화를 바탕으로 한 이야기.",
+			"popularity": 297.049,
+			"poster_path": "/dXrBUpSXsqn09Trf8KKsQMIwDfH.jpg",
+			"released_date": "2022-09-30",
+			"vote_average": 7.9,
+			"vote_count": 336,
+			"words": "An urban legend says that lighting fireworks at an abandoned airfield will beckon the “summer ghost,” a spirit that can answer any question. Three teenagers, Tomoya, Aoi, and Ryo, each have their own reason to show up one day. When a ghost named Ayane appears, she reveals she is only visible to those “who are about to touch their death.” Compelled by the ghost and her message, Tomoya begins regularly visiting the airfield to uncover the true purpose of her visits.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 798544,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				18,
+				9648,
+				14
+			],
+			"title": "썸머 고스트",
+			"overview": "인터넷을 통해 서로 알게 된 '토모야', '아오이', '료'. 아이들은 여름철 불꽃놀이와 함께 모습을 드러낸다는 의문의 여자 유령 '썸머 고스트'를 찾아 떠난다.  원치 않는 인생을 살고 있어서, 마음 붙일 곳 없이 외롭기만 해서, 빛나야 할 미래를 빼앗겨 버려서...  세 사람에겐 저마다 '썸머 고스트'를 찾는 이유가 있다. 십 대의 끝자락, 어쩌면 가장 특별했을 한여름 밤의 이야기.",
+			"popularity": 302.534,
+			"poster_path": "/xKH44zYwhviUnnkOy7ReZeEcIp3.jpg",
+			"released_date": "2021-11-12",
+			"vote_average": 7.6,
+			"vote_count": 36,
+			"words": "",
+			"actors": [
+				2279389
+			]
+		}
+	},
+	{
+		"pk": 950044,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				10402
+			],
+			"title": "Wakanda",
+			"overview": "",
+			"popularity": 484.745,
+			"poster_path": "/gimlLbjGjZBnktEH15eLER9XKne.jpg",
+			"released_date": "2018-07-06",
+			"vote_average": 8,
+			"vote_count": 4,
+			"words": "A group of middle schoolers discover a Spirit Halloween store is haunted and must survive the night.",
+			"actors": [
+				1083010,
+				1267329,
+				82104,
+				1447932,
+				9780
+			]
+		}
+	},
+	{
+		"pk": 961427,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				14,
+				12,
+				10751
+			],
+			"title": "Spirit Halloween: The Movie",
+			"overview": "",
+			"popularity": 278.733,
+			"poster_path": "/akWDID6zfsWHJhGCAAcbwbytU55.jpg",
+			"released_date": "2022-09-30",
+			"vote_average": 6.7,
+			"vote_count": 25,
+			"words": "One day during summer vacation, a palm-sized alien named Papi appears from a small rocket that Nobita picks up. He is the president of Pirika, a small planet in outer space, and has come to Earth to escape the rebels. Doraemon and his friends are puzzled by Papi’s small size, but as they play together using the secret tool “Small Light”, they gradually become friends. However, a whale-shaped space battleship comes to earth and attacks Doraemon, Nobita and the others in order to capture Papi. Feeling responsible for getting everyone involved, Papi tries to stand up to the rebels. Doraemon and his friends leave for the planet Pirika to protect their dear friend and his home.",
+			"actors": [
+				1062,
+				38581,
+				2100528,
+				2389315,
+				3503008,
+				68751
+			]
+		}
+	},
+	{
+		"pk": 782054,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				878,
+				12
+			],
+			"title": "도라에몽: 진구의 우주소전쟁 리틀스타워즈 2021",
+			"overview": "여름방학 어느 날, 진구가 주운 작은 로켓 안에서 손바닥만 한 우주인 ‘파피’가 나타난다!  우주의 머나먼 곳에 있는 작은 별 ‘피리카’의 대통령인 그는  반란군에게서 도망쳐 지구에 왔다고 한다.  처음에는 너무 작은 ‘파피’의 사이즈에 당황하던 도라에몽과 진구는  비밀도구 ‘스몰 라이트’로 작아져서 함께 놀며 친구가 된다.  그러나 고래 형태의 우주전함이 ‘파피’를 붙잡기 위해 지구에 나타나 이들을 공격하고,  모두를 끌어들인 것에 책임감을 느낀 ‘파피’는 홀로 반란군에 맞서고자 하는데…  소중한 친구 ‘파피’와 그의 별을 지키기 위한  도라에몽과 친구들의 우주 모험이 시작된다!",
+			"popularity": 290.477,
+			"poster_path": "/1SJZmO5NbBEOLHYeou1OyfgcG9k.jpg",
+			"released_date": "2022-03-04",
+			"vote_average": 5.6,
+			"vote_count": 5,
+			"words": "As Lord Voldemort tightens his grip on both the Muggle and wizarding worlds, Hogwarts is no longer a safe haven. Harry suspects perils may even lie within the castle, but Dumbledore is more intent upon preparing him for the final battle fast approaching. Together they work to find the key to unlock Voldemorts defenses and to this end, Dumbledore recruits his old friend and colleague Horace Slughorn, whom he believes holds crucial information. Even as the decisive showdown looms, romance blossoms for Harry, Ron, Hermione and their classmates. Love is in the air, but danger lies ahead and Hogwarts may never be the same again.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 948276,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				18,
+				53
+			],
+			"title": "사라진 탄환 2",
+			"overview": "누명을 벗은 천재 자동차 정비공 리노. 이제 그의 마음속에 남은 목표는 단 하나. 동생과 멘토를 죽인 비리 경찰들에게 복수하는 것이다.",
+			"popularity": 503.201,
+			"poster_path": "/A84Usw0jwhh5RPAKZV7gwP532Fl.jpg",
+			"released_date": "2022-11-10",
+			"vote_average": 7.5,
+			"vote_count": 61,
+			"words": "A couple on a romantic getaway find themselves stranded at sea when a tropical storm sweeps away their villa. In order to survive, they are forced to fight the elements, while sharks circle below.",
+			"actors": [
+				220692,
+				1145003,
+				83966,
+				221633,
+				126771
+			]
+		}
+	},
+	{
+		"pk": 767,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				12,
+				14
+			],
+			"title": "해리 포터와 혼혈왕자",
+			"overview": "어둠의 세력이 더욱 강력해져 머글 세계와 호그와트까지 위협해온다. 위험한 기운을 감지한 덤블도어 교수는 다가올 전투에 대비하기 위해 해리 포터와 함께 대장정의 길을 나선다. 볼드모트를 물리칠 수 있는 유일한 단서이자 그의 영혼을 나누어 놓은 7개의 호크룩스를 파괴하는 미션을 수행해야만 하는 것! 또한 덤블도어 교수는 호크룩스를 찾는 기억여행에 결정적 도움을 줄 슬러그혼 교수를 호그와트로 초청한다. 한편 학교에서는 계속된 수업과 함께 로맨스의 기운도 무르익는다. 해리는 자신도 모르게 지니에게 점점 끌리게 되고, 새로운 여자 친구가 생긴 론에게 헤르미온느는 묘한 질투심을 느끼는데...",
+			"popularity": 315.863,
+			"poster_path": "/fHfnrfpQXt91XN4XBh9DMDFuYdq.jpg",
+			"released_date": "2009-07-07",
+			"vote_average": 7.7,
+			"vote_count": 16770,
+			"words": "Carezza and Sorriso, brothers very different from each other and in quarrel since childhood, will have to put aside their controversies to recover the legendary Dune Buggy, once belonged to their beloved father and now stolen from him by Torsillo, an unscrupulous building speculator, and his son Raniero. In doing so, they will forge an unusual alliance with a circus community, headed by the beautiful and dangerous Miriam and threatened by Torsillo's dirty business. Between daring chases, memorable fights and delicate meals based on beer and sausages, will the two brothers be able to find their beloved car?",
+			"actors": [
+				10980,
+				10989,
+				10990,
+				10993,
+				477
+			]
+		}
+	},
+	{
+		"pk": 803114,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				53,
+				27
+			],
+			"title": "더 리퀸",
+			"overview": "",
+			"popularity": 276.185,
+			"poster_path": "/i0z8g2VRZP3dhVvvSMilbOZMKqR.jpg",
+			"released_date": "2022-01-28",
+			"vote_average": 5.1,
+			"vote_count": 246,
+			"words": "A beautiful, strong-willed young royal refuses to wed the cruel sociopath to whom she is betrothed and is kidnapped and locked in a remote tower of her father’s castle. With her scorned, vindictive suitor intent on taking her father’s throne, the princess must protect her family and save the kingdom.",
+			"actors": [
+				5588,
+				77013
+			]
+		}
+	},
+	{
+		"pk": 838197,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				35,
+				28
+			],
+			"title": "다 비켜, 우리 화났어",
+			"overview": "버드 스펜서와 테렌스 힐의 1970년대 영화를 리부트한 작품. 25년간 소원했던 두 형제가 다시 만나 아버지가 아끼던 듄 버기를 되찾으러 나선다.",
+			"popularity": 284.778,
+			"poster_path": "/yt40jRlEkpx34XbxlZqvotFRGzW.jpg",
+			"released_date": "2022-03-23",
+			"vote_average": 5.4,
+			"vote_count": 86,
+			"words": "Luca and his best friend Alberto experience an unforgettable summer on the Italian Riviera. But all the fun is threatened by a deeply-held secret: they are sea monsters from another world just below the water’s surface.",
+			"actors": [
+				131630,
+				125699,
+				145326,
+				69036
+			]
+		}
+	},
+	{
+		"pk": 759175,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				14,
+				28
+			],
+			"title": "프린세스",
+			"overview": "아름답고 강인한 공주는 사악한 정혼자와의 혼약을 거부하고, 성의 외딴 탑에 감금된다. 이에 모욕감을 느낀 정혼자는 공주 아버지의 왕위를 찬탈하려고 하고, 공주는 무슨 일이 있어도 가족과 왕국을 지켜야만 한다.",
+			"popularity": 273.617,
+			"poster_path": "/9pCoqX24a6rE981fY1O3PmhiwrB.jpg",
+			"released_date": "2022-06-16",
+			"vote_average": 6.9,
+			"vote_count": 578,
+			"words": "A divorced couple teams up and travels to Bali to stop their daughter from making the same mistake they think they made 25 years ago.",
+			"actors": [
+				2405508,
+				1473841
+			]
+		}
+	},
+	{
+		"pk": 508943,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				16,
+				35,
+				10751,
+				14
+			],
+			"title": "루카",
+			"overview": "이탈리아 리비에라의 해변 마을. 마을 사람들 사이엔 인근에 바다괴물이 산다는 전설이 떠돈다. 실제로 바다에는 루카(제이콥 트렘블레이)를 비롯한 바다괴물 가족들이 산다. 루카의 부모는 루카에게 바다 밖을 경계하라 이르지만, 루카는 기어이 바다 밖 세상으로 향한다. 루카는 육지에선 인간의 모습으로 변하지만 물에 닿으면 바다괴물의 모습으로 돌아간다. 바다괴물 친구이자 육지 생활 선배인 알베르토(잭 딜런 그레이저)는 루카에게 두 다리로 걷는 법부터 자유와 일탈의 짜릿함까지 맛보게 한다. 급기야 인간 마을로 들어간 둘은 줄리아(엠마 버만)와 친구가 돼 함께 수영, 사이클, 파스타 빨리 먹기 3종 대회에 참가하는데...",
+			"popularity": 277.266,
+			"poster_path": "/cgQMmwPtSInmIvoQLJhoByBelGA.jpg",
+			"released_date": "2021-06-17",
+			"vote_average": 7.9,
+			"vote_count": 6830,
+			"words": "WWII American Army Medic Desmond T. Doss, who served during the Battle of Okinawa, refuses to kill people and becomes the first Conscientious Objector in American history to receive the Congressional Medal of Honor.",
+			"actors": [
+				1277188
+			]
+		}
+	},
+	{
+		"pk": 800939,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				10749,
+				35
+			],
+			"title": "티켓 투 파라다이스",
+			"overview": "한때, 미치게 사랑했지만 지금은 인생의 원수가 되어버린 이혼한 부부 ‘조지아’(줄리아 로버츠)와 ‘데이빗’(조지 클루니).  대학을 졸업하고 변호사로 대형 로펌 입사를 앞둔 딸 ‘릴리’(케이틀린 디버)가 여행지 발리에서 만난 운명 같은 사랑과 결혼을 선포하자 딸이 자신들과 같은 실수를 반복하는 걸 볼 수 없는 그들은 어쩔 수 없이 동맹을 맺고 결혼을 막으려는 계획을 세우게 된다.  그러나 거듭되는 작전에도 불구하고 딸 ‘릴리’의 결혼식은 순조롭게만 진행되고 같은 목표를 향해 합심하는 이들도 서로에게 조금씩 감정의 변화가 생기게 되는데... 이혼 커플의 딸 결혼 반대 프로젝트는 성공할 수 있을까?",
+			"popularity": 346.466,
+			"poster_path": "/sjfzr7bNLMw4u2HaTdRUxhDspuw.jpg",
+			"released_date": "2022-09-08",
+			"vote_average": 7,
+			"vote_count": 290,
+			"words": "When a cheer squad practices their routines on Halloween weekend in an abandoned school, they are picked off one by one by an unknown killer.",
+			"actors": [
+				1204,
+				1461
+			]
+		}
+	},
+	{
+		"pk": 324786,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				18,
+				36,
+				10752
+			],
+			"title": "핵소 고지",
+			"overview": "비폭력주의자인 도스는 전쟁으로부터 조국과 소중한 사람들을 지키기 위해 총을 들지 않아도 되는 의무병으로 육군에 자진 입대한다. 총을 들 수 없다는 이유로 필수 훈련 중 하나인 총기 훈련 마저 거부한 도스는 동료 병사들과 군 전체의 비난과 조롱을 받게 된다. 결국 군사재판까지 받게 되지만 끝까지 자신의 신념을 굽히지 않은 도스에게 군 상부는 오키나와 전투에 총기 없이 의무병으로 참전할 것을 허락하는데…",
+			"popularity": 298.101,
+			"poster_path": "/nlvcNogJK9R9iIj0YINApQE36FF.jpg",
+			"released_date": "2016-10-07",
+			"vote_average": 8.2,
+			"vote_count": 11621,
+			"words": "Billionaire sportsman Buddy King unwinds by hunting human captives on his remote mountain estate. But his latest victim, Ava Bravo is no easy target.",
+			"actors": [
+				37625,
+				65731,
+				4937,
+				20374,
+				3052,
+				123879
+			]
+		}
+	},
+	{
+		"pk": 831410,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				53,
+				27,
+				35,
+				10770
+			],
+			"title": "Bring It On: Cheer or Die",
+			"overview": "",
+			"popularity": 292.235,
+			"poster_path": "/ciRq9QUBpFWNsFKs2opG5tP157.jpg",
+			"released_date": "2022-09-27",
+			"vote_average": 6.5,
+			"vote_count": 61,
+			"words": "The Eternals are a team of ancient aliens who have been living on Earth in secret for thousands of years. When an unexpected tragedy forces them out of the shadows, they are forced to reunite against mankind’s most ancient enemy, the Deviants.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 927341,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				53,
+				28,
+				12,
+				80,
+				9648,
+				18,
+				10752
+			],
+			"title": "Hunting Ava Bravo",
+			"overview": "",
+			"popularity": 260.896,
+			"poster_path": "/etc6HKBEhNySNnYU2nRgbSeIyoW.jpg",
+			"released_date": "2022-04-01",
+			"vote_average": 6.5,
+			"vote_count": 81,
+			"words": "Washed-up MMA fighter Cole Young, unaware of his heritage, and hunted by Emperor Shang Tsung's best warrior, Sub-Zero, seeks out and trains with Earth's greatest champions as he prepares to stand against the enemies of Outworld in a high stakes battle for the universe.",
+			"actors": [
+				36628,
+				46772,
+				3383821,
+				3383819,
+				2911738
+			]
+		}
+	},
+	{
+		"pk": 524434,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				878,
+				28,
+				12
+			],
+			"title": "이터널스",
+			"overview": "이터널스는 7천년 전 우주선 도모를 타고 지구에 온 순간부터 지구를 사랑한 히어로들이다. 이들의 임무는 기괴한 크리처 데비안츠에게서 인간을 지키는 것. 임무를 부여한 이는 그들을 탄생시킨 천상의 존재 셀레스티얼이다. 이터널스는 시간의 흐름을 느낄 수 없기에, 공간을 기준 삼아 연대기를 구성하는 뱀파이어처럼 세계 곳곳에 흩어져 자신만의 삶을 살아가고 있다. 물질을 변화시키는 세르시는 런던에서 박물관 학자가 됐고, 우주의 기운을 총처럼 쏘는 킹고는 발리우드 배우로 살며, 타인을 조종하는 드루이그는 아마존에 소국을 만들었다. 괴력의 소유자 길가메시는 호주 사막에서 정신 건강이 위험해진 테나를 돌보며 살고 있다. 세르시는 데비안츠의 공세가 심해지자 오랜 연인 이카리스, 소녀처럼 보이는 불멸의 존재 스프라이트와 함께 이터널스를 불러모으기 시작한다.",
+			"popularity": 306.621,
+			"poster_path": "/aNtAP8ZzUMdnCPoqYgVOcgI0Eh4.jpg",
+			"released_date": "2021-11-03",
+			"vote_average": 7,
+			"vote_count": 6492,
+			"words": "A tenacious party girl fights to survive after three thieves commandeer her luxury yacht. Unable to escape and trapped on the yacht at high seas, the prey becomes the hunter as she turns the tables on the intruders and takes matters into her own hands.",
+			"actors": []
+		}
+	},
+	{
+		"pk": 460465,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				14,
+				12
+			],
+			"title": "모탈 컴뱃",
+			"overview": "어스렐름와 아웃월드의 최강 챔피언들이 지구의 운명을 걸고 벌이는 서바이벌 대혈전 모탈 컴뱃. MMA 격투 선수 콜 영은 대전을 앞두고 선택 받은 전사들을 사전에 제거하려는 서브제로의 공격을 받는다. 지구와 가족을 보호하고 자기 혈통의 비밀을 알아내기 위해 모탈 컴뱃 토너먼트에 참가해 죽음의 전투를 치러야 한다!",
+			"popularity": 289.748,
+			"poster_path": "/3dTg1pgasstOa0XJTwt3dBFHjFf.jpg",
+			"released_date": "2021-04-07",
+			"vote_average": 7.2,
+			"vote_count": 4956,
+			"words": "27 years after overcoming the malevolent supernatural entity Pennywise, the former members of the Losers' Club, who have grown up and moved away from Derry, are brought back together by a devastating phone call.",
+			"actors": [
+				1610940,
+				136347,
+				51684,
+				13275,
+				9195,
+				1525689,
+				101015
+			]
+		}
+	},
+	{
+		"pk": 999205,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				53,
+				28
+			],
+			"title": "더 요트",
+			"overview": "최근 가석방된 벨라 덴튼(루비 로즈)은 아버지의 동료라는 미서(프랭크 그릴로)에게서 오래전 연락이 끊긴 아버지의 죽음에 관한 소식과 자신에게 남겼다는 초호화 요트를 인수해 가라는 전화를 받고 미시시피로 향한다. 그곳에서 뜻밖의 행운을 자축하던 벨라는 세계 일주 중인 미첼(패트릭 슈왈제네거)을 만나 요트에서 함께 밤을 보낸다.  같은 시각, 괴한들이 침입해 정박 중이던 요트를 출항시키고, 망망대해에 홀로 남겨진 벨라는 요트에 감춰진 엄청난 진실을 마주하게 되는데…!",
+			"popularity": 267.101,
+			"poster_path": "/lDzoW7XAi10TkGXIswqw3nMyOqd.jpg",
+			"released_date": "2022-08-31",
+			"vote_average": 6.9,
+			"vote_count": 40,
+			"words": "While searching for her missing mother, intrepid teen Enola Holmes uses her sleuthing skills to outsmart big brother Sherlock and help a runaway lord.",
+			"actors": [
+				1246972,
+				1053422,
+				81685,
+				2447500,
+				37149,
+				2462138,
+				35619
+			]
+		}
+	},
+	{
+		"pk": 474350,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				27,
+				14
+			],
+			"title": "그것: 두 번째 이야기",
+			"overview": "27년마다 아이들이 사라지는 마을 데리, 또 다시 ‘그것’이 나타났다. 27년 전, 가장 무서워하는 것의 모습으로 나타나 아이들을 잡아먹는 그것 페니와이즈에 맞섰던 ‘루저 클럽’ 친구들은 어른이 되어도 더 커져만 가는 그것의 공포를 끝내기 위해 피할 수 없는 마지막 대결에 나선다.",
+			"popularity": 251.064,
+			"poster_path": "/kkkS7NYPY4QZcZY6vfkAx0vjJRa.jpg",
+			"released_date": "2019-09-04",
+			"vote_average": 6.9,
+			"vote_count": 7326,
+			"words": "After being involuntarily discharged from the U.S. Special Forces, James Harper decides to support his family by joining a private contracting organization alongside his best friend and under the command of a fellow veteran. Overseas on a covert mission, Harper must evade those trying to kill him while making his way back home.",
+			"actors": [
+				137905,
+				1274508,
+				1559689,
+				1148455
+			]
+		}
+	},
+	{
+		"pk": 628900,
+		"model": "movies.movie",
+		"fields": {
+			"genres": [
+				28,
+				53
+			],
+			"title": "더 컨트랙터",
+			"overview": "특수부대 중사 출신 ‘제임스 하퍼’는 전역을 명 받고 법의 테두리 밖에서 국가에 충성하는 극비 조직에 합류한다. 그에게 주어진 첫번째 미션은, 전세계를 혼란에 빠뜨릴 바이러스 테러를 막는 것. 그러나, 미션 수행 도중 거대한 음모에 휘말리게 되고 충격과 위기를 겪게 되는데… 더 이상 물러설 곳은 없다.  모든 것을 건, 새로운 미션이 시작된다!",
+			"popularity": 276.471,
+			"poster_path": "/fZid9LbFTZV7NjM0qMwL1mPjhqu.jpg",
+			"released_date": "2022-03-10",
+			"vote_average": 6.5,
+			"vote_count": 570,
+			"words": "",
+			"actors": [
+				62064,
+				11107,
+				94098
+			]
+		}
+	}
+]

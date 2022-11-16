@@ -3,7 +3,7 @@
     <nav >
       <div class="navDiv">
       <div>
-        <router-link to="/">
+        <router-link to="/home">
           <font-awesome-icon icon="fa-solid fa-house" />
         </router-link>
       </div>
@@ -60,7 +60,7 @@ nav a {
   color: #2c3e50;
 }
 
-nav a.router-link-exact-active {
+nav a.router-link-active {
   color: #ffda4f;
 }
 

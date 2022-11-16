@@ -15,50 +15,26 @@
 
       </div>
     </div>
-    <div class="RightDiv">
+    
+    <div class="RightDiv" @click="searchDetailPage">
       <!-- for 문으로 detailDiv 여러개 돌릴꺼 -->
-      <div class="detailDiv">
-        <div class="detailImgDiv">
-          <img src="../../assets/starisborn.jpg" class="detailImg" />
-        </div>
-        
-        <div>
-          <div class="detailTitle">title</div>
+      <router-link :to="{ name: 'SearchDetailView' }">
+        <div class="detailDiv">
+          <div class="detailImgDiv">
+            <img src="../../assets/starisborn.jpg" class="detailImg" />
+          </div>
           <div>
-            Greed and class discrimination threaten the newly formed symbiotic
-            relationship between the wealthy Park family and the destitute Kim
-            clan.
+            <div class="detailTitle">title</div>
+            <div>
+              Greed and class discrimination threaten the newly formed symbiotic
+              relationship between the wealthy Park family and the destitute Kim
+              clan.
+            </div>
           </div>
         </div>
-      </div>
-      <div class="detailDiv">
-        <div class="detailImgDiv">
-          <img src="../../assets/starisborn.jpg" class="detailImg" />
-        </div>
-        <div>
-          <div class="detailTitle">title</div>
-          <div>
-            Greed and class discrimination threaten the newly formed symbiotic
-            relationship between the wealthy Park family and the destitute Kim
-            clan.
-          </div>
-        </div>
-      </div>
+      </router-link>
 
-      <div class="detailDiv">
-        <div class="detailImgDiv">
-          <img src="../../assets/starisborn.jpg" class="detailImg" />
-        </div>
-        
-        <div>
-          <div class="detailTitle">title</div>
-          <div>
-            Greed and class discrimination threaten the newly formed symbiotic
-            relationship between the wealthy Park family and the destitute Kim
-            clan.
-          </div>
-        </div>
-      </div>
+
     </div>
   </div>
 </template>
@@ -66,6 +42,9 @@
   <script>
 export default {
   name: "SearchPage",
+  methods: {
+    searchDetailPage() {},
+  },
 };
 </script>
   
@@ -80,7 +59,7 @@ export default {
   margin-top: 3rem;
   padding: 30px;
 }
-.searchInput{
+.searchInput {
   width: 300px;
   padding: 0;
   border: none;
@@ -90,28 +69,27 @@ export default {
   background-color: black;
   box-shadow: none;
 }
-.searchSelectDiv{
+.searchSelectDiv {
   width: 270px;
   margin-top: 3rem;
 }
-.searchSelect{
+.searchSelect {
   margin: 1rem;
   padding: 0.3rem 1rem;
 }
-.searchSelect:hover{
-  border:1px solid #ffda4f;
+.searchSelect:hover {
+  border: 1px solid #ffda4f;
   border-radius: 5px;
 }
-.searchSelect:focus{
-  border:1px solid #ffda4f;
+.searchSelect:focus {
+  border: 1px solid #ffda4f;
 }
 
-.searchInput:focus{
+.searchInput:focus {
   border: none;
   box-shadow: none;
   border-bottom: 3px solid white;
   outline: none;
-
 }
 
 .RightDiv {
@@ -120,7 +98,7 @@ export default {
 }
 .detailDiv {
   display: flex;
-  margin: 40px 0 ;
+  margin: 40px 0;
 }
 .detailImg {
   width: 150px;
@@ -129,7 +107,7 @@ export default {
   border-radius: 15%;
   margin: 0 20px;
 }
-.detailImgDiv{
+.detailImgDiv {
   padding: 0;
   margin: 0;
   width: 200px;
@@ -139,5 +117,4 @@ export default {
   font-weight: bold;
   margin-bottom: 10px;
 }
-
 </style>
