@@ -684,7 +684,7 @@ def verify_destination(location):
     return location
 
 
-def main():
+if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(
@@ -765,7 +765,3 @@ def main():
     if args.remove:
         if not is_bdist_wininst:
             uninstall(args.destination)
-
-
-if __name__ == "__main__":
-    main()

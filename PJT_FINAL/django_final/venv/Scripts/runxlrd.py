@@ -1,4 +1,4 @@
-#!C:\FinalPJT_with_LMH\django-final\venv\Scripts\python.exe
+#!C:\FinalPJT_with_LMH\PJT_FINAL\django_final\venv\Scripts\python.exe
 # Copyright (c) 2005-2012 Stephen John Machin, Lingfo Pty Ltd
 # This script is part of the xlrd package, which is released under a
 # BSD-style licence.
