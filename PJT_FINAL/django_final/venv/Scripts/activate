@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\FinalPJT_with_LMH\django-final\venv"
+VIRTUAL_ENV="C:\FinalPJT_with_LMH\PJT_FINAL\django_final\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
