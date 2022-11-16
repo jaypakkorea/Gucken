@@ -4,14 +4,14 @@ import IndexView from '../views/IndexView.vue'
 import SearchView from '../views/SearchView.vue'
 import ChartView from '../views/ChartView.vue'
 import UserView from '../views/UserView.vue'
-
+import SearchDetailView from '../views/SearchDetailView.vue'
 
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/home',
     name: 'index',
     component: IndexView
   },
@@ -19,6 +19,11 @@ const routes = [
     path: '/search',
     name: 'search',
     component: SearchView
+  },
+  {
+    path: '/search/detial/',
+    name: 'SearchDetailView',
+    component: SearchDetailView
   },
   {
     path: '/chart',
