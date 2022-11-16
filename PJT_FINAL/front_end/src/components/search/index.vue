@@ -100,6 +100,11 @@ export default {
   display: flex;
   margin: 40px 0;
 }
+.detailImgDiv {
+  padding: 0;
+  margin: 0;
+  width: 200px;
+}
 .detailImg {
   width: 150px;
   height: 150px;
@@ -107,11 +112,7 @@ export default {
   border-radius: 15%;
   margin: 0 20px;
 }
-.detailImgDiv {
-  padding: 0;
-  margin: 0;
-  width: 200px;
-}
+
 .detailTitle {
   font-size: 1.3rem;
   font-weight: bold;
