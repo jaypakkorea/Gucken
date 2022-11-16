@@ -7,9 +7,9 @@ from django.shortcuts import get_object_or_404, get_list_or_404
 from .serializers import *
 from .models import Movie
 
-import pandas as pd
-import numpy as np
-
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+from jellyfish import jaro_winkler_similarity
 
 
 @api_view(['GET'])
@@ -19,6 +19,25 @@ def movie_list(request):
         serializer = MovieListSerializer(movies, many=True)
         return Response(serializer.data)
 
+
+@api_view(['GET'])
+def search_movie(request, movie_name):
+    movies = get_list_or_404(Movie)
+    serializer = MovieSearchSerializer(movies, many=True)
+    serializer = serach(serializer.data, movie_name)
+    return Response(serializer[:10])
+
+
+# 편집거리 알고리즘
+def serach(lst, keyword):
+    fetch_data = []
+    for data in lst:
+        tmp = {'pk': 0, 'title': '', 'poster_path':'', 'similarity':''}
+        tmp['pk'] = data['pk']; tmp['title'] = data['title']; tmp['poster_path'] = data['poster_path']
+        tmp['similarity'] = jaro_winkler_similarity(keyword, data['title'])
+        fetch_data.append(tmp)
+    fetch_data.sort(key=lambda x : -x['similarity'])
+    return fetch_data
 
 
 
