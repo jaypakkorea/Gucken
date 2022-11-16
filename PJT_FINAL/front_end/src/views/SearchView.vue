@@ -17,6 +17,6 @@ export default {
 .SearchContainer{
   margin-left: 50px;
   background-color: black;
-  height: 100vh;
+  min-height: 100vh;
 }
 </style>

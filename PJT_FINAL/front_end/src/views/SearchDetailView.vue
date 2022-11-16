@@ -18,7 +18,6 @@ export default {
 <style>
 .SearchContainer{
     margin-left: 50px;
-    height: 100vh;
 }
 
 </style>

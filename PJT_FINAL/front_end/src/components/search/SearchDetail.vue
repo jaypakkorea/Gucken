@@ -109,8 +109,8 @@ export default {
             rgba(20, 20, 20, 0.5) 10%,
             rgba(20, 20, 20, 0.75) 25%,
             rgba(20, 20, 20, 0.9) 50%,
-            black 75%,
-            black 100%
+            rgba(20, 20, 20, 0.9) 65%,
+            rgba(20, 20, 20, 1) 80%
           ), url(https://image.tmdb.org/t/p/original/75aHn1NOYXh4M7L5shoeQ6NGykP.jpg);
         background-size: cover;
   padding-top: 2rem;
