@@ -52,7 +52,7 @@ export default {
     userid() {
       console.log("111")
       console.log(this.$store.getters.currentUser)
-      return this.$store.getters.currentUser.id ? this.$store.getters.currentUser.id : 'guest'
+      return this.$store.getters.currentUser.pk
     }
   },
   created() {

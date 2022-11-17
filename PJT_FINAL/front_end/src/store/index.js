@@ -130,19 +130,23 @@ export default new Vuex.Store({
       .catch((err) => console.error(err));
     },
 
-    fetchCurrentUser({ commit, getters }) {
-      if (getters.isLoggedIn) {
+    fetchCurrentUser(context) {
+      if (this.getters.isLoggedIn) {
         axios({
           method: 'get',
           url: `${API_URL}/accounts/user/`,
+          headers : {
+            Authorization : `Token ${context.state.token}`
+          }
         })
         .then((res) => {
           console.log('hi')
           console.log(res)
-          commit("SET_CURRENT_USER", res.data)
+          context.commit("SET_CURRENT_USER", res.data)
         })
-        .catch((err) => {console.log('잠깐만') 
-        console.error(err)})
+        .catch((err) => {
+          console.log('잠깐만') 
+          console.error(err)})
       }
     },
     
