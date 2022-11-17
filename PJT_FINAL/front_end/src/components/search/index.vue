@@ -65,9 +65,10 @@ export default {
   methods: {
     onInputKeyword() {
       const movieName = this.keyword
+      console.log(this.keyword)
       this.$store.dispatch('search', movieName)
+      this.keyword = null
       // console.log(movieName)
-      // console.log(this.keyword)
       // console.log(typeof movieName)
     },
     searchDetailPage() {},
