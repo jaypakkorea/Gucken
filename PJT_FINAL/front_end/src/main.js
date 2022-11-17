@@ -7,7 +7,7 @@ import 'aos/dist/aos.css'
 import VueCarousel from 'vue-carousel';
 import Carousel3d from 'vue-carousel-3d';
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faHouse, faMagnifyingGlass, faVideo, faCircleUser, faAngleLeft} from '@fortawesome/free-solid-svg-icons'
+import { faHouse, faMagnifyingGlass, faVideo, faCircleUser, faAngleLeft, faMedal, faTrophy, faAward} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -16,7 +16,7 @@ import VueGlide from 'vue-glide-js'
 import 'vue-glide-js/dist/vue-glide.css'
 import VueCalendarHeatmap from 'vue-calendar-heatmap'
 
-library.add(faHouse, faMagnifyingGlass, faVideo, faCircleUser, faAngleLeft)
+library.add(faHouse, faMagnifyingGlass, faVideo, faCircleUser, faAngleLeft, faMedal, faTrophy, faAward)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 
