@@ -26,6 +26,7 @@ class MovieSearchSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Movie
+<<<<<<< HEAD
         fields = ('pk', 'overview', 'title', 'poster_path', 'similarity',)
 
 # 유저 정보
@@ -101,3 +102,6 @@ class ActorSerializer(serializers.ModelSerializer):
         model = Actor
         fields = ('name', 'profile_path', 'movies')
 
+=======
+        fields = ('pk', 'overview', 'title', 'poster_path', 'similarity',)
+>>>>>>> 529aa7e6828c44d96ec544f86510ae2785f364d4

@@ -36,7 +36,11 @@ def search_movie(request, movie_name):
 def serach(lst, keyword):
     fetch_data = []
     for data in lst:
+<<<<<<< HEAD
         tmp = {'pk': 0, 'title': '', 'overview' : '' , 'poster_path':'', 'similarity':''}
+=======
+        tmp = {'pk': 0, 'title': '', 'overview': '' , 'poster_path':'', 'similarity':''}
+>>>>>>> 529aa7e6828c44d96ec544f86510ae2785f364d4
         tmp['pk'] = data['pk']; tmp['title'] = data['title']; tmp['overview'] = data['overview']; tmp['poster_path'] = data['poster_path']
         tmp['similarity'] = jaro_winkler_similarity(keyword, data['title'])
         fetch_data.append(tmp)

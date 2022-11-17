@@ -58,10 +58,11 @@ nav {
 nav a {
   font-weight: bold;
   color: #2c3e50;
+  font-size: 1.5rem;
 }
 
 nav a.router-link-active {
   color: #ffda4f;
 }
-
+a{text-decoration:none; color: white}
 </style>
