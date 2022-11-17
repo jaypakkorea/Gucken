@@ -54,7 +54,7 @@ const routes = [
     component: userSignUp
   },
   {
-    path: '/user/profile/:username',
+    path: '/user/profile/:userid',
     name: 'userProfile',
     component: userProfile
   },

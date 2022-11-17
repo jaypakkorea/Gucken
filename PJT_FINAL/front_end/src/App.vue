@@ -19,9 +19,9 @@
       </div>
       <div>
         <!-- 로그인 됬으몈 -->
-        <router-link v-if="isLogin" to="/user/profile/:username">
+        <!-- <router-link v-if="isLogin" to="/user/profile/:username"> -->
 
-        <!-- <router-link v-if="isLogin" :to="{ name: 'userProfile', params: { username } }"> -->
+        <router-link v-if="isLogin" :to="{ name: 'userProfile', params: { userid } }">
           <font-awesome-icon icon="fa-solid fa-circle-user" />
         </router-link>
         <!-- 로그인 안됬으면 -->
@@ -49,11 +49,15 @@ export default {
     isLogin() {
       return this.$store.getters.isLogin
     },
-    username() {
-      return this.currentUser.username ? this.currentUser.username : 'guest'
+    userid() {
+      console.log("111")
+      console.log(this.$store.getters.currentUser)
+      return this.$store.getters.currentUser.id ? this.$store.getters.currentUser.id : 'guest'
     }
-
   },
+  created() {
+    this.userid()
+  }
   // methods: {
   //   getArticles() {
   //     if (this.isLogin === true) { 

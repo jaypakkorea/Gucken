@@ -18,12 +18,12 @@ export default new Vuex.Store({
     topmovies: [],
     search: [],
     movie: [],
-    token: null,
-
+    token: localStorage.getItem("token") || "",
+    currentUser: {},
   },
   getters: {
     isLoggedIn: (state) => !!state.token,
-
+    currentUser: (state) => state.currentUser,
     isLogin(state) {
       return state.token ? true : false
     }
@@ -44,6 +44,7 @@ export default new Vuex.Store({
       router.push({name: 'index'})
     },
     SET_TOKEN: (state, token) => (state.token = token),
+    SET_CURRENT_USER: (state, user) => (state.currentUser = user),
 
   },
   actions: {
@@ -87,6 +88,8 @@ export default new Vuex.Store({
         .then((res) => {
           // console.log(res)
           context.commit('SIGN_UP', res.data.key)
+          localStorage.setItem("token", this.state.token)
+          context.dispatch("fetchCurrentUser")
         })
         .catch((err) => {
           alert(err.message)
@@ -106,6 +109,8 @@ export default new Vuex.Store({
         console.log('hi')
         const token = res.data.key
         context.commit('SAVE_TOKEN', token)
+        localStorage.setItem("token", token)
+        context.dispatch("fetchCurrentUser")
       })
       .catch((err) => {
         alert(err.message)
@@ -124,6 +129,23 @@ export default new Vuex.Store({
       })
       .catch((err) => console.error(err));
     },
+
+    fetchCurrentUser({ commit, getters }) {
+      if (getters.isLoggedIn) {
+        axios({
+          method: 'get',
+          url: `${API_URL}/accounts/user/`,
+        })
+        .then((res) => {
+          console.log('hi')
+          console.log(res)
+          commit("SET_CURRENT_USER", res.data)
+        })
+        .catch((err) => {console.log('잠깐만') 
+        console.error(err)})
+      }
+    },
+    
     addList(context, moviePk) {
       axios({
         method: 'post',
