@@ -92,7 +92,6 @@ a,
 }
 .SearchFlexDiv {
   display: flex;
-  margin-left: 3rem;
   color: white;
   width: 100%;
   height: fit-content;
