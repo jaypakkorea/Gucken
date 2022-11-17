@@ -36,6 +36,7 @@ export default {
   name: "LoginUser",
   data() {
     return {
+      email: null,
       username: null,
       password: null,
     }
@@ -50,7 +51,6 @@ export default {
         password: password,
       }
       this.$store.dispatch('logIn', payload)
-      console.log('logingogo',payload);
     }
   }
 };

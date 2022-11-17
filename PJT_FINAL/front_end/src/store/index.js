@@ -101,7 +101,8 @@ export default new Vuex.Store({
       })
       .then((res) => {
         console.log('hi')
-        context.commit('SAVE_TOKEN', res.data.key)
+        const token = res.data.key
+        context.commit('SAVE_TOKEN', token)
       })
       .catch((err) => {
         alert(err.message)
@@ -110,7 +111,7 @@ export default new Vuex.Store({
     addList(context, moviePk) {
       axios({
         method: 'post',
-        url: `${API_URL}/movie/addlist/${moviePk}`,
+        url: `${API_URL}/movies/${moviePk}/addlist/`,
         headers : {
           Authorization : `Token ${context.state.token}`
         }
@@ -120,7 +121,7 @@ export default new Vuex.Store({
         context.commit('ADD_LIST', res.data)
       })
       .catch(err => console.log(err))
-    }
+    },
   },
   modules: {
   }

@@ -10,7 +10,9 @@
         <div class="detail_flexdiv">
           <div>2018</div>
           <!-- <div> Top 10 Movie </div> -->
-          <b-button variant="warning">Add List</b-button>
+          <b-button variant="warning"
+            @click="likeMovie"
+          >Add List</b-button>
         </div>
         <div style="width: 80%;">내용이야다무엠누람누이라ㅜㅁㄴ이룸ㄴㅇㅎ무넹훔ㄴㅇㄹ'ㅏㅁㅎ/ㄴㅇ;ㅏㅠ니뮹내용이야다무엠누람누이라ㅜㅁㄴ이룸ㄴㅇㅎ무넹훔ㄴㅇㄹ'ㅏㅁㅎ/ㄴㅇ;ㅏㅠ니뮹</div>
         <div class="detail_actors">
@@ -80,6 +82,8 @@ export default {
   data() {
     return {
       myKeyword: this.movie,
+      is_liked: false,
+
       urlList:[],
       video:[],
       VideoData:'',
@@ -121,7 +125,12 @@ export default {
       .catch((error)=>{
         console.log('something wrong!')
         console.log(error)
-      })
+      })  
+    },
+    likeMovie() {
+      const moviePk = this.movie.id
+      this.$store.dispatch('addList', moviePk)
+      this.is_liked = !this.is_liked
     },
   },
   created(){
