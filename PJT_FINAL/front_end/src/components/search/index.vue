@@ -42,15 +42,6 @@
           </div>
         </div>
       </router-link>
-<<<<<<< HEAD
-
-      <div v-for="movie in search" :key="movie.pk" >
-        <p style="color:red;">{{movie.overview}}</p>
-        <br>
-      </div>
-
-=======
->>>>>>> 529aa7e6828c44d96ec544f86510ae2785f364d4
     </div>
   </div>
 </template>
