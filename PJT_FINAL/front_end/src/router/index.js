@@ -7,6 +7,7 @@ import UserView from '../views/UserView.vue'
 import userSignUp from '../views/UserSignUp.vue'
 import SearchDetailView from '../views/SearchDetailView.vue'
 import userProfile from '../views/UserProfileView.vue'
+import LogoutView from '../views/LogoutView.vue'
 
 
 Vue.use(VueRouter)
@@ -41,6 +42,11 @@ const routes = [
     path: '/user',
     name: 'user',
     component: UserView
+  },
+  {
+    path: '/logout',
+    name: 'logout',
+    component: LogoutView
   },
   {
     path: '/user/signup',

@@ -22,6 +22,8 @@ export default new Vuex.Store({
 
   },
   getters: {
+    isLoggedIn: (state) => !!state.token,
+
     isLogin(state) {
       return state.token ? true : false
     }
@@ -40,8 +42,9 @@ export default new Vuex.Store({
     SAVE_TOKEN(state, token) {
       state.token = token
       router.push({name: 'index'})
-      alert('로그인 성공')
-    }
+    },
+    SET_TOKEN: (state, token) => (state.token = token),
+
   },
   actions: {
     getTop10Movies(context) {
@@ -107,6 +110,19 @@ export default new Vuex.Store({
       .catch((err) => {
         alert(err.message)
       })
+    },
+    logout(context) {
+      axios({
+        method: 'post',
+        url: `${API_URL}/accounts/logout/`,
+      })
+      .then(() => {
+        context.commit("SET_TOKEN", "")
+        localStorage.setItem("token", "")
+        alert("성공적으로 logout 되었습니다.")
+        router.push({ name: "index" })
+      })
+      .catch((err) => console.error(err));
     },
     addList(context, moviePk) {
       axios({

@@ -19,18 +19,20 @@
       </div>
       <div>
         <!-- 로그인 됬으몈 -->
-        <router-link v-if="isLogin" to="/user">
+        <router-link v-if="isLogin" to="/user/profile/:username">
+
+        <!-- <router-link v-if="isLogin" :to="{ name: 'userProfile', params: { username } }"> -->
           <font-awesome-icon icon="fa-solid fa-circle-user" />
         </router-link>
         <!-- 로그인 안됬으면 -->
-        <router-link v-if="!isLogin" to="/user/signup">
+        <router-link v-if="!isLogin" to="/user">
           <font-awesome-icon icon="fa-solid fa-circle-user" />
         </router-link>
       </div>
       <div>
-        <router-link v-if="isLogin" to="/home">
-          <p>아웃</p>             
-        </router-link>
+        <router-link v-if="isLogin" to="/logout">
+          <font-awesome-icon icon="fas fa-power-off" />
+          </router-link>
       </div>
 
     </div>
@@ -46,7 +48,11 @@ export default {
   computed:{
     isLogin() {
       return this.$store.getters.isLogin
+    },
+    username() {
+      return this.currentUser.username ? this.currentUser.username : 'guest'
     }
+
   },
   // methods: {
   //   getArticles() {
