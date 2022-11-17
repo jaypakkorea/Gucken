@@ -48,7 +48,7 @@
         frameborder="0"
       ></iframe>
     </b-tab>
-    <b-tab title="COMMUNITY">
+    <b-tab title="COMMUNITY" >
       <div class="detailCommunityDiv">
         <div class="CommunitysDiv">
           <div class="CommunityDiv" v-for="ss in 5" :key="ss">
@@ -77,18 +77,31 @@ export default {
       myKeyword: '블랙팬서2',
       urlList:[],
       video:[],
-      VideoData:''
+      VideoData:'',
+      myApi:'',
+      myAPIList: ['AIzaSyDvjcb7odUilSZEcCyXBY2rX9z0fTYYWvQ',
+      'AIzaSyDAes3uWN2F5a2_2EHBBFuIm0Ctv8Hpj1A',
+      'AIzaSyCN9uPuXJyXoVjTvkOA8g5ivcUGsGKDiK8',
+      // 'AIzaSyATqBywB8sPKs2PrAv_FMEp4Xy7OWzqXOI',
+      'AIzaSyDEgtL7oYOo_OJBvIqq2MJhVxDV-IYwekc',
+      'AIzaSyBLMEBNxzyohh-zUFGFvHA5ZpI-TLmM4JE',
+      'AIzaSyDd-ndJ5GJOKwdBhILSGmAmDneCZEnzrKw'],
+      tabIndex: 0,
     };
   },
   methods : {
+    pick(){
+      const idx = Math.floor(Math.random() * this.myAPIList.length)
+      this.myApi = this.myAPIList[idx];
+    },
     InputGetEvent(keyword){
       this.myKeyword = keyword
       const baseURL = "https://www.googleapis.com/youtube/v3/search"
-      const API_KEY = 'AIzaSyDEgtL7oYOo_OJBvIqq2MJhVxDV-IYwekc'
+      // const API_KEY = 'AIzaSyCN9uPuXJyXoVjTvkOA8g5ivcUGsGKDiK8'
     axios
       .get(baseURL, {
         params: {
-          key: API_KEY,
+          key:  this.myApi ,
           part: "snippet",
           type: "video",
           q: this.myKeyword+'공식 예고편',
@@ -107,7 +120,8 @@ export default {
     },
   },
   created(){
-    this.InputGetEvent(this.myKeyword)
+    // this.pick()
+    // this.InputGetEvent(this.myKeyword)
   }
 }
 </script>
@@ -139,6 +153,12 @@ export default {
   z-index: -1;
   filter: grayscale(100%);
   opacity: 0.8;
+}
+.nav-link{
+  color: white !important;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  color: black !important;
 }
 .homeTag{
   text-decoration: none;
@@ -198,14 +218,29 @@ export default {
   font-size: 7rem;
   width: 70%;
 }
+
 .detailCommunityDiv{
   margin-top: 50px;
   width: 100%;
   min-height: 500px;
-  /* background-color: lightgray;
-  opacity: 0.7; */
-  border: 1px solid red;
+  padding-top: 1rem;
+  position: relative;
+  z-index: 1;
 }
+.detailCommunityDiv::after{
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: black;
+  opacity: 0.2;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
 .CommunitysDiv{
   margin: 20px 50px;
 }
