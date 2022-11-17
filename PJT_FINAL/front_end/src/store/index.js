@@ -20,13 +20,15 @@ export default new Vuex.Store({
     movie: [],
     token: localStorage.getItem("token") || "",
     currentUser: {},
+    profile: {},
   },
   getters: {
     isLoggedIn: (state) => !!state.token,
     currentUser: (state) => state.currentUser,
     isLogin(state) {
       return state.token ? true : false
-    }
+    },
+    profile: (state) => state.profile,
   },
   mutations: {
     GET_TOP10_MOVIES(state, topmovies) {
@@ -45,6 +47,7 @@ export default new Vuex.Store({
     },
     SET_TOKEN: (state, token) => (state.token = token),
     SET_CURRENT_USER: (state, user) => (state.currentUser = user),
+    SET_PROFILE: (state, profile) => (state.profile = profile),
 
   },
   actions: {
@@ -106,7 +109,6 @@ export default new Vuex.Store({
         }
       })
       .then((res) => {
-        console.log('hi')
         const token = res.data.key
         context.commit('SAVE_TOKEN', token)
         localStorage.setItem("token", token)
@@ -140,14 +142,22 @@ export default new Vuex.Store({
           }
         })
         .then((res) => {
-          console.log('hi')
-          console.log(res)
           context.commit("SET_CURRENT_USER", res.data)
         })
         .catch((err) => {
           console.log('잠깐만') 
           console.error(err)})
       }
+    },
+    fetchProfile(context, payload) {
+      axios({
+        method: 'get',
+        url: `${API_URL}/profile/${payload}/`,
+      })
+      .then((res) => {
+        console.log(res.data)
+        context.commit("SET_PROFILE", res.data)
+      })
     },
     
     addList(context, moviePk) {
@@ -159,7 +169,6 @@ export default new Vuex.Store({
         }
       })
       .then((res) => {
-        // console.log(res)
         context.commit('ADD_LIST', res.data)
       })
       .catch(err => console.log(err))

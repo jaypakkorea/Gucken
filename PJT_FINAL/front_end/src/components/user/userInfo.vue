@@ -2,7 +2,6 @@
   <div class="SearchFlexDiv">
     <div class="UserLeftDiv">
         <img class="userImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM5z7l_V183adxjX0NHjejDhNSdunjN8UoTkZIBKts_Q&s" alt="">
-
         <div class="userIconDiv"> 
             <font-awesome-icon icon="fa-solid fa-trophy" />
             <font-awesome-icon icon="fa-solid fa-medal" />
@@ -35,12 +34,39 @@
 
   </b-tabs>
     </div>
+    <div style="color : red">
+        
+        <h1> {{profile.id}}</h1>
+        <h1> {{profile.username}}</h1>
+        <h1> {{profile.followings}}</h1>
+        <h1>  {{profile.followers}}</h1>
+        <h1> {{profile.following_count}}</h1>
+        <h1>  {{profile.follower_count}}</h1>
+        <h1> {{profile.date_joined}}</h1>
+        <p>  {{profile.like_movies}}</p>
+        
+    </div>
   </div>
 </template>
 
 <script>
+
 export default {
-    name:'UserInfo'
+    name:'UserInfo',
+    computed: {
+        profile(){
+            return this.$store.getters.profile
+        }
+    },
+    methods: {
+        fetchProfile(){
+            const payload =  parseInt(this.$route.params.userid)
+            this.$store.dispatch("fetchProfile", payload);
+        }
+    },
+    created() {
+        this.fetchProfile()
+    },
 }
 </script>
 
