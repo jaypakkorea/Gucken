@@ -24,4 +24,4 @@ class MovieSearchSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Movie
-        fields = ('pk', 'words', 'title', 'poster_path', 'similarity',)
+        fields = ('pk', 'overview', 'title', 'poster_path', 'similarity',)
