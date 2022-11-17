@@ -57,6 +57,12 @@ def add_list(request, movie_pk):
         serializer = MovieSerializer(movie)
         return Response(serializer.data)
 
+@api_view(['GET'])
+def movie_detail(request, movie_pk):
+    movie = get_object_or_404(Movie, pk=movie_pk)
+    serializr = MovieSerializer(movie)
+    return Response(serializr.data)
+    
 #가중치 반영 top 10 영화 목록 
 @api_view(['GET'])
 def top_movie(request):

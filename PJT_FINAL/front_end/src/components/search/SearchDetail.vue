@@ -5,7 +5,8 @@
     </router-link>
     <div class="detail_div">
       <div class="detail_left_div">
-        <div class="detail_title">{{this.myKeyword}}</div>
+        <p>{{this.movie}}</p>
+        <div class="detail_title">{{this.movie.title}}</div>
         <div class="detail_flexdiv">
           <div>2018</div>
           <!-- <div> Top 10 Movie </div> -->
@@ -72,9 +73,13 @@ import axios from 'axios'
 
 export default {
   name:'DetailVue',
+  props : {
+    movie : Object,
+    
+  },
   data() {
     return {
-      myKeyword: '블랙팬서2',
+      myKeyword: this.movie,
       urlList:[],
       video:[],
       VideoData:'',

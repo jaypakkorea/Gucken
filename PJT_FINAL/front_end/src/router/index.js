@@ -27,7 +27,7 @@ const routes = [
     component: SearchView
   },
   {
-    path: '/search/detial/',
+    path: '/movies/:moviePk',
     name: 'SearchDetailView',
     component: SearchDetailView
   },

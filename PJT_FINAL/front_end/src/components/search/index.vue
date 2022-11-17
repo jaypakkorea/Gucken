@@ -28,7 +28,7 @@
         class="routerLink"
         v-for="movie in search"
         :key="movie.pk"
-        :to="{ name: 'SearchDetailView' }"
+        :to="{ name: 'SearchDetailView', params: { moviePk: movie.pk } }"
       >
         <div class="detailDiv">
           <div class="detailImgDiv">
