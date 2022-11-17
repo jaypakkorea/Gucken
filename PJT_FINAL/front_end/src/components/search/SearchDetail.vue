@@ -128,7 +128,7 @@ export default {
       })  
     },
     likeMovie() {
-      const moviePk = this.moviePk
+      const moviePk = this.movie.id
       this.$store.dispatch('addList', moviePk)
       this.is_liked = !this.is_liked
     },
