@@ -12,7 +12,7 @@ class User(AbstractUser):
     # blank = False,
     # verbose_name='email',
     # max_length=50,
-    # unique=True,
+    # unique=False,
     # )
     
     profile_pic = ProcessedImageField(

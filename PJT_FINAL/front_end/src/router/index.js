@@ -6,6 +6,7 @@ import ChartView from '../views/ChartView.vue'
 import UserView from '../views/UserView.vue'
 import userSignUp from '../views/UserSignUp.vue'
 import SearchDetailView from '../views/SearchDetailView.vue'
+import userProfile from '../views/UserProfileView.vue'
 
 
 Vue.use(VueRouter)
@@ -45,6 +46,11 @@ const routes = [
     path: '/user/signup',
     name: 'userSignUp',
     component: userSignUp
+  },
+  {
+    path: '/user/profile/:username',
+    name: 'userProfile',
+    component: userProfile
   },
 ]
 
