@@ -12,7 +12,7 @@
       </div>
       <div class="loginInputDiv">
         <div>PASSWORD CHECK</div>
-        <input v-model="password2" class="loginInput" type="password" />
+        <input v-model="password2" @keyup.enter="signUp" class="loginInput" type="password" />
       </div>
       <div  class="loginInputDiv">
         <b-button @click="signUp" variant="warning" class="loginButton">회원가입</b-button>

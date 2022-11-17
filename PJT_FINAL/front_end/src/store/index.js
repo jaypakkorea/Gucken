@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
 import createPersistedState from 'vuex-persistedstate'
+import router from '@/router'
 
 
 Vue.use(Vuex)
@@ -16,16 +17,31 @@ export default new Vuex.Store({
   state: {
     topmovies: [],
     search: [],
+    movie: [],
     token: null,
 
   },
   getters: {
+    isLogin(state) {
+      return state.token ? true : false
+    }
   },
   mutations: {
     GET_TOP10_MOVIES(state, topmovies) {
       state.topmovies = topmovies
     },
     SET_SEARCH: (state, search) => (state.search = search),
+    ADD_LIST: (state, movie) => (state.movie = movie),
+    SIGN_UP(state,token){
+      state.token = token
+      console.log('회원가입 성공')
+      router.push({name: 'user'})
+    },
+    SAVE_TOKEN(state, token) {
+      state.token = token
+      router.push({name: 'index'})
+      alert('로그인 성공')
+    }
   },
   actions: {
     getTop10Movies(context) {
@@ -67,23 +83,44 @@ export default new Vuex.Store({
       })
         .then((res) => {
           // console.log(res)
-          context.commit('SAVE_TOKEN', res.data.key)
+          context.commit('SIGN_UP', res.data.key)
+        })
+        .catch((err) => {
+          alert(err.message)
         })
     },
     logIn(context, payload) {
+      const username = payload.username
+      const password = payload.password
       axios({
         method: 'post',
         url: `${API_URL}/accounts/login/`,
         data: {
-          username: payload.username,
-          password: payload.password,
+          username , password
         }
       })
-        .then((res) => {
-          // console.log(res)
-          context.commit('SAVE_TOKEN', res.data.key)
-        })
+      .then((res) => {
+        console.log('hi')
+        context.commit('SAVE_TOKEN', res.data.key)
+      })
+      .catch((err) => {
+        alert(err.message)
+      })
     },
+    addList(context, moviePk) {
+      axios({
+        method: 'post',
+        url: `${API_URL}/movie/addlist/${moviePk}`,
+        headers : {
+          Authorization : `Token ${context.state.token}`
+        }
+      })
+      .then((res) => {
+        // console.log(res)
+        context.commit('ADD_LIST', res.data)
+      })
+      .catch(err => console.log(err))
+    }
   },
   modules: {
   }

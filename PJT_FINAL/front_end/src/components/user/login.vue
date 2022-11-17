@@ -8,7 +8,7 @@
       </div>
       <div class="loginInputDiv">
         <div>PASSWORD</div>
-        <input v-model="password" class="loginInput" type="password" />
+        <input v-model="password" @keyup.enter="logIn" class="loginInput" type="password" />
       </div>
       <div class="loginInputDiv">
         <b-button @click="logIn" variant="warning" class="loginButton">LOGIN</b-button>
@@ -50,7 +50,7 @@ export default {
         password: password,
       }
       this.$store.dispatch('logIn', payload)
-      console.log('123123',payload);
+      console.log('logingogo',payload);
     }
   }
 };
@@ -69,6 +69,7 @@ export default {
   width: 400px;
 }
 .loginInput {
+  font-family: 'Courier New', Courier, monospace;
   width: 400px;
   font-size: 2rem;
   background: none;

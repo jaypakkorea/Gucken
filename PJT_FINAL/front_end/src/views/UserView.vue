@@ -1,5 +1,6 @@
 <template>
   <div class="SearchContainer">
+    
     <userIndex/>
   </div>
 </template>

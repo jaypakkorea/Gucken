@@ -39,7 +39,7 @@
       </router-link>
 
       <div v-for="movie in search" :key="movie.pk" >
-        <p style="color:red;">{{movie.title}}</p>
+        <p style="color:red;">{{movie.overview}}</p>
         <br>
       </div>
 

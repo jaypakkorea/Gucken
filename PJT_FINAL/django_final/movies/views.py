@@ -7,6 +7,10 @@ from django.shortcuts import get_object_or_404, get_list_or_404
 from .serializers import *
 from .models import Movie
 
+# permission Decorators
+from rest_framework.decorators import permission_classes
+from rest_framework.permissions import IsAuthenticated
+
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from jellyfish import jaro_winkler_similarity
@@ -32,14 +36,26 @@ def search_movie(request, movie_name):
 def serach(lst, keyword):
     fetch_data = []
     for data in lst:
-        tmp = {'pk': 0, 'title': '', 'poster_path':'', 'similarity':''}
-        tmp['pk'] = data['pk']; tmp['title'] = data['title']; tmp['poster_path'] = data['poster_path']
+        tmp = {'pk': 0, 'title': '', 'overview' : '' , 'poster_path':'', 'similarity':''}
+        tmp['pk'] = data['pk']; tmp['title'] = data['title']; tmp['overview'] = data['overview']; tmp['poster_path'] = data['poster_path']
         tmp['similarity'] = jaro_winkler_similarity(keyword, data['title'])
         fetch_data.append(tmp)
     fetch_data.sort(key=lambda x : -x['similarity'])
     return fetch_data
 
 
+@api_view(['POST'])
+def add_list(request, movie_pk):
+    user = request.user
+    movie = get_object_or_404(Movie, pk=movie_pk)
+    if movie.like_users.filter(pk=user.pk).exists():
+        movie.like_users.remove(user)
+        serializer = MovieSerializer(movie)
+        return Response(serializer.data)
+    else:
+        movie.like_users.add(user)
+        serializer = MovieSerializer(movie)
+        return Response(serializer.data)
 
 #가중치 반영 top 10 영화 목록 
 @api_view(['GET'])

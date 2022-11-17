@@ -23,20 +23,29 @@ INSTALLED_APPS = [
     'accounts',
     'movies',
 
-    # 3rd party apps
-    'django_seed',
     'rest_framework',
+
+    # CORS policy
+    "corsheaders",
+
+    # Auth
     'rest_framework.authtoken',
-    'corsheaders',
-
-    # DRF auth 담당
     'dj_rest_auth',
-    'dj_rest_auth.registration',
 
-    # sinup을 위해 필요
+    # registration
+    'django.contrib.sites',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'dj_rest_auth.registration',
+
+
+    # 3rd party apps
+    'django_seed',
+
+    # # OpenAPI 3.0
+    # 'drf_spectacular',
+
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -45,6 +54,23 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+
+REST_FRAMEWORK = {
+    # Authentication
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+
+    # permission
+    'DEFAULT_PERMISSION_CLASSES': [
+        # 'rest_framework.permissions.IsAuthenticated',
+        'rest_framework.permissions.AllowAny',
+    ],
+
+    # spectacular Settings
+    # 'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -50,6 +50,21 @@ export default {
   name: "IndexPage",
   components:{
     IndexCarousel2D
+  },
+  computed: {
+    inLogin() {
+      return this.$store.getters.isLogin
+    }
+  },
+  methods : {
+    addList() {
+      if (this.isLogin) {
+        this.$store.dispatch('addList')
+      } else {
+        alert ( '로그인이 필요한 서비스 입니다.')
+        this.$router.push({name: 'user'})
+      }
+    }
   }
 };
 </script>

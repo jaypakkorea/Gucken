@@ -6,13 +6,14 @@ from imagekit.processors import ResizeToFill
 
 
 class User(AbstractUser):
-    # followings = models.ManyToManyField('self', symmetrical=False, related_name='followers')
-    email = models.EmailField(
-    blank = True,
-    verbose_name='email',
-    max_length=50,
-    unique=True,
-    )
+    followings = models.ManyToManyField('self', symmetrical=False, related_name='followers')
+    username = models.EmailField(unique=True)
+    # email = models.EmailField(
+    # blank = False,
+    # verbose_name='email',
+    # max_length=50,
+    # unique=True,
+    # )
     
     profile_pic = ProcessedImageField(
     		blank = True,
