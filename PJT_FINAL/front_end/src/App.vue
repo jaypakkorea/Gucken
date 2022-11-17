@@ -18,15 +18,48 @@
         </router-link>
       </div>
       <div>
-        <router-link to="/user">
+        <!-- 로그인 됬으몈 -->
+        <router-link v-if="isLogin" to="/user">
+          <font-awesome-icon icon="fa-solid fa-circle-user" />
+        </router-link>
+        <!-- 로그인 안됬으면 -->
+        <router-link v-if="!isLogin" to="/user/signup">
           <font-awesome-icon icon="fa-solid fa-circle-user" />
         </router-link>
       </div>
+      <div>
+        <router-link v-if="isLogin" to="/home">
+          <p>아웃</p>             
+        </router-link>
+      </div>
+
     </div>
     </nav>
     <router-view />
   </div>
 </template>
+
+<script>
+
+
+export default {
+  computed:{
+    isLogin() {
+      return this.$store.getters.isLogin
+    }
+  },
+  // methods: {
+  //   getArticles() {
+  //     if (this.isLogin === true) { 
+  //       alert('로그인 되어있음')
+  //     } else {
+  //       alert('로그인이 필요한 서비스 입니다.')
+  //       this.$router.push({ name: 'LogInView'})
+  //     }
+  //   }
+  // }
+}
+</script>
 
 <style>
 body {

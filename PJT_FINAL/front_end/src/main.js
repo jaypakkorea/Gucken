@@ -16,7 +16,7 @@ import VueGlide from 'vue-glide-js'
 import 'vue-glide-js/dist/vue-glide.css'
 import VueCalendarHeatmap from 'vue-calendar-heatmap'
 
-library.add(faHouse, faMagnifyingGlass, faVideo, faCircleUser, faAngleLeft, faMedal, faTrophy, faAward)
+library.add( faHouse, faMagnifyingGlass, faVideo, faCircleUser, faAngleLeft, faMedal, faTrophy, faAward)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 
