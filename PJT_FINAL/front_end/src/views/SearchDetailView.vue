@@ -1,7 +1,6 @@
 <template>
     <div class="SearchContainer">
         <DetailVue :movie="movie"/>
-
     </div>
 </template>
 
@@ -44,7 +43,6 @@ export default {
 
 <style>
 .SearchContainer{
-    margin-left: 50px;
     font-family: Staatliches;
 }
 
