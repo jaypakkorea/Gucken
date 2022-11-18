@@ -50,7 +50,6 @@ export default {
       return this.$store.getters.isLogin
     },
     userid() {
-      console.log("111")
       console.log(this.$store.getters.currentUser)
       return this.$store.getters.currentUser.pk
     }

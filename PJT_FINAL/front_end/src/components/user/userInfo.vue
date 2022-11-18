@@ -11,48 +11,58 @@
     </div>
     <div class="UserRightDiv">
         <b-tabs content-class="mt-3">
-    <b-tab title="PROFILE" active>
+    <b-tab title="PROFILE" >
         <div class="userProfileDiv">
             <div class="userTextName">Name</div>
-            <div class="userText">M.H</div>
+            <div class="userText">{{profile.username.split('@')[0]}}</div>
             <div class="userTextName">Follower</div>
-            <div class="userText">23,000</div>
+            <div class="userText">{{profile.followers}}</div>
             <div class="userTextName">Following</div>
-            <div class="userText">12,313</div>
+            <div class="userText">{{profile.followings}}</div>
             <div class="userTextName">Add Movie</div>
-            <div class="userText">452</div>
+            <div class="userText">{{profile.like_movies.length}}</div>
             <div class="userTextName">Joined</div>
-            <div class="userText">03 / 2019</div>
+            <div class="userText">{{profile.date_joined.split('T')[0].replace(/-/g,' / ')}}</div>
         </div>
     </b-tab>
     <b-tab title="ARTICLES">
         
     </b-tab>
-    <b-tab title="ADD LIST">
-        
+    <b-tab title="ADD LIST" active>
+    <carousel
+      :loop="true"
+      v-bind:autoplay="true"
+      :per-page="2"
+      :mouse-drag="true"
+      speed="3000"
+      autoplay-timeout="5000"
+      id="carousel2Dcontentaddlist"
+      style="transition: transform 0.5s ease 0s"
+    >
+      <slide
+        v-for="(topmovie, index) in profile.like_movies"
+        :key="topmovie.id"
+        :index="index"
+      >
+        <router-link
+        :to="{ name: 'SearchDetailView', params: { moviePk: topmovie.id } }">
+          <AddCardDiv :topmovie="topmovie.poster_path" />
+        </router-link>
+      </slide>
+    </carousel>
     </b-tab>
-
   </b-tabs>
-    </div>
-    <div style="color : red">
-        
-        <h1> {{profile.id}}</h1>
-        <h1> {{profile.username}}</h1>
-        <h1> {{profile.followings}}</h1>
-        <h1>  {{profile.followers}}</h1>
-        <h1> {{profile.following_count}}</h1>
-        <h1>  {{profile.follower_count}}</h1>
-        <h1> {{profile.date_joined}}</h1>
-        <p>  {{profile.like_movies}}</p>
-        
-    </div>
+    </div>        
   </div>
 </template>
 
 <script>
+import AddCardDiv from "./addListCard.vue";
+import { Carousel, Slide } from "vue-carousel";
 
 export default {
     name:'UserInfo',
+    components:{AddCardDiv, Carousel, Slide},
     computed: {
         profile(){
             return this.$store.getters.profile
@@ -104,4 +114,14 @@ export default {
 }.userProfileDiv{
     padding-top: 2rem;
 }
+#carousel2Dcontentaddlist
+  > div.VueCarousel-pagination
+  > div
+  > button.VueCarousel-dot.VueCarousel-dot--active {
+  background-color: #ffc107 !important;
+}
+#carousel2Dcontentaddlist > div.VueCarousel-pagination > div > button:nth-child {
+  background-color: white;
+}
+
 </style>

@@ -187,6 +187,7 @@ export default {
         const moviePk = this.movie.id;
         this.$store.dispatch("addList", moviePk);
         this.is_liked = !this.is_liked;
+        alert('좋아요 완료')
       }
 
     },
