@@ -21,31 +21,45 @@
         <div class="searchSelect" @click="searchGenre(16)">애니메이션</div>
       </div>
     </div>
-    
-    <div style="font-size:0.5rem; color : red" v-for="movie in GenreMovies" :key="movie.pk">
-      {{ movie.title }}
-    </div>
-    
+
     <div class="RightDiv" @click="searchDetailPage">
       <!-- for 문으로 detailDiv 여러개 돌릴꺼 -->
-      <router-link
-        class="routerLink"
-        v-for="movie in search"
-        :key="movie.pk"
-        :to="{ name: 'SearchDetailView', params: { moviePk: movie.pk } }"
-      >
-        <div class="detailDiv">
-          <div class="detailImgDiv">
-            <indexSearchImg :poster_path="movie.poster_path" />
-          </div>
-          <div>
-            <div class="detailTitle">{{ movie.title }}</div>
-            <div class="detailOverviewDiv">
-              {{ movie.overview }}
+      <div v-if="!this.listState">
+        <router-link
+          class="routerLink"
+          v-for="movie in GenreMovies"
+          :key="movie.pk"
+          :to="{ name: 'SearchDetailView', params: { moviePk: movie.pk } }"
+        >
+          <div class="detailDiv">
+            <div class="detailImgDiv">
+              <indexSearchImg :poster_path="movie.poster_path" />
+            </div>
+            <div>
+              <div class="detailTitle">{{ movie.title }}</div>
+              <div class="detailOverviewDiv">{{ movie.overview }}</div>
             </div>
           </div>
-        </div>
-      </router-link>
+        </router-link>
+      </div>
+      <div v-if="this.listState">
+        <router-link
+          class="routerLink"
+          v-for="movie in search"
+          :key="movie.pk"
+          :to="{ name: 'SearchDetailView', params: { moviePk: movie.pk } }"
+        >
+          <div class="detailDiv">
+            <div class="detailImgDiv">
+              <indexSearchImg :poster_path="movie.poster_path" />
+            </div>
+            <div>
+              <div class="detailTitle">{{ movie.title }}</div>
+              <div class="detailOverviewDiv">{{ movie.overview }}</div>
+            </div>
+          </div>
+        </router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -57,6 +71,7 @@ export default {
   data() {
     return {
       keyword: "",
+      listState: 0
     };
   },
   components: { indexSearchImg },
@@ -67,7 +82,7 @@ export default {
     },
     GenreMovies() {
       return this.$store.state.genre;
-    },
+    }
     // img_url(){
     //     return  ``
     // }
@@ -78,16 +93,22 @@ export default {
       console.log(this.keyword);
       this.$store.dispatch("search", movieName);
       this.keyword = null;
+      this.listState = 1;
     },
     searchDetailPage() {},
-    searchGenre(genreId){
+    searchGenre(genreId) {
       this.$store.dispatch("searchGenre", genreId);
+      this.listState = 0;
     },
-    allGenre(){
+    allGenre() {
       this.$store.dispatch("searchGenreAll");
+      this.listState = 0;
     }
-
   },
+  created(){
+    this.allGenre()
+    this.listState = 0;
+  }
 };
 </script>
   
@@ -99,7 +120,7 @@ a,
   text-decoration: none;
   color: white;
 }
-.routerLink:hover{
+.routerLink:hover {
   font-weight: bold;
 }
 .SearchFlexDiv {
@@ -112,27 +133,27 @@ a,
   z-index: 1;
 }
 
-.SearchFlexDiv::after{
+.SearchFlexDiv::after {
   width: 100%;
   height: 100%;
   content: "";
   background: linear-gradient(
-            to left,
-            rgba(20, 20, 20, 0.5) 10%,
-            rgba(20, 20, 20, 0.7) 25%,
-            rgba(20, 20, 20, 0.8) 50%,
-            rgba(20, 20, 20, 0.9) 65%,
-            rgba(20, 20, 20, 0.9) 100%
-          ), url(  https://image.tmdb.org/t/p/original/s3GFi8SXz3zMOkjzMtRW1Nql8GI.jpg
-);
-        background-size: cover;  position: absolute;
+      to left,
+      rgba(20, 20, 20, 0.5) 10%,
+      rgba(20, 20, 20, 0.7) 25%,
+      rgba(20, 20, 20, 0.8) 50%,
+      rgba(20, 20, 20, 0.9) 65%,
+      rgba(20, 20, 20, 0.9) 100%
+    ),
+    url(https://image.tmdb.org/t/p/original/s3GFi8SXz3zMOkjzMtRW1Nql8GI.jpg);
+  background-size: cover;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
   filter: grayscale(100%);
   opacity: 0.8;
 }
-
 
 .LeftDiv {
   width: 30%;
