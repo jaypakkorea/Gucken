@@ -10,6 +10,11 @@ class MovieListSerializer(serializers.ModelSerializer):
         model = Movie
         fields = ('id', 'title', 'vote_average', 'vote_count')
 
+class MovieGenreSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Movie
+        fields = ('id', 'title', 'genres', 'overview')
 
 
 class TopMovieListSerializer(serializers.ModelSerializer):

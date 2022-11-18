@@ -5,7 +5,7 @@ from rest_framework import status
 from django.shortcuts import get_object_or_404, get_list_or_404
 
 from .serializers import *
-from .models import Movie
+from .models import *
 
 # permission Decorators
 from rest_framework.decorators import permission_classes
@@ -23,6 +23,28 @@ def movie_list(request):
         serializer = MovieListSerializer(movies, many=True)
         return Response(serializer.data)
 
+
+
+@api_view(['GET'])
+def drama_movie(request, genre_pk):
+    if request.method == 'GET':
+            movies = get_list_or_404(Movie)
+
+            serializer = MovieGenreSerializer(movies, many=True)
+            serializer = genre_serach(serializer.data , genre_pk)
+            return Response(serializer[:10])
+
+# 해당하는 장르 찾기
+def genre_serach(lst, genre_pk):
+    fetch_data = []
+    print(lst[0]['genres'])
+    for data in lst:
+        if genre_pk in data['genres'] :
+            tmp = {'pk': 0, 'title': '', 'overview': '' , 'genres': ''}
+            tmp['pk'] = data['id']; tmp['title'] = data['title']; tmp['overview'] = data['overview']; tmp['genres'] = data['genres']
+            fetch_data.append(tmp)
+    
+    return fetch_data
 
 @api_view(['GET'])
 def search_movie(request, movie_name):
