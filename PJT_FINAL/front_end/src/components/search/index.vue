@@ -12,16 +12,20 @@
         />
       </div>
       <div class="searchSelectDiv">
-        <div class="searchSelect">All</div>
-        <div class="searchSelect">드라마</div>
-        <div class="searchSelect">코미디</div>
-        <div class="searchSelect">액션</div>
-        <div class="searchSelect">스릴러</div>
-        <div class="searchSelect">모험</div>
-        <div class="searchSelect">애니메이션</div>
+        <div class="searchSelect" @click="allGenre">All</div>
+        <div class="searchSelect" @click="searchGenre(18)">드라마</div>
+        <div class="searchSelect" @click="searchGenre(35)">코미디</div>
+        <div class="searchSelect" @click="searchGenre(28)">액션</div>
+        <div class="searchSelect" @click="searchGenre(53)">스릴러</div>
+        <div class="searchSelect" @click="searchGenre(12)">모험</div>
+        <div class="searchSelect" @click="searchGenre(16)">애니메이션</div>
       </div>
     </div>
-
+    
+    <div style="font-size:0.5rem; color : red" v-for="movie in GenreMovies" :key="movie.pk">
+      {{ movie.title }}
+    </div>
+    
     <div class="RightDiv" @click="searchDetailPage">
       <!-- for 문으로 detailDiv 여러개 돌릴꺼 -->
       <router-link
@@ -61,6 +65,9 @@ export default {
       console.log(this.$store.state.search);
       return this.$store.state.search;
     },
+    GenreMovies() {
+      return this.$store.state.genre;
+    },
     // img_url(){
     //     return  ``
     // }
@@ -71,10 +78,15 @@ export default {
       console.log(this.keyword);
       this.$store.dispatch("search", movieName);
       this.keyword = null;
-      // console.log(movieName)
-      // console.log(typeof movieName)
     },
-    // searchDetailPage() {},
+    searchDetailPage() {},
+    searchGenre(genreId){
+      this.$store.dispatch("searchGenre", genreId);
+    },
+    allGenre(){
+      this.$store.dispatch("searchGenreAll");
+    }
+
   },
 };
 </script>
