@@ -24,20 +24,24 @@ def movie_list(request):
         return Response(serializer.data)
 
 
+@api_view(['GET'])
+def all_genre_movie(request):
+    if request.method == 'GET':
+        movies = get_list_or_404(Movie)
+        serializer = MovieGenreSerializer(movies, many=True)
+        return Response(serializer.data[:20])
 
 @api_view(['GET'])
-def drama_movie(request, genre_pk):
+def genre_movie(request, genre_pk):
     if request.method == 'GET':
-            movies = get_list_or_404(Movie)
-
-            serializer = MovieGenreSerializer(movies, many=True)
-            serializer = genre_serach(serializer.data , genre_pk)
-            return Response(serializer[:10])
+        movies = get_list_or_404(Movie)
+        serializer = MovieGenreSerializer(movies, many=True)
+        serializer = genre_serach(serializer.data , genre_pk)
+        return Response(serializer[:20])
 
 # 해당하는 장르 찾기
 def genre_serach(lst, genre_pk):
     fetch_data = []
-    print(lst[0]['genres'])
     for data in lst:
         if genre_pk in data['genres'] :
             tmp = {'pk': 0, 'title': '', 'overview': '' , 'genres': ''}

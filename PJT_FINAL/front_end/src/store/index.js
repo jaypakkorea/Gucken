@@ -21,6 +21,7 @@ export default new Vuex.Store({
     token: localStorage.getItem("token") || "",
     currentUser: {},
     profile: {},
+    genre : {},
   },
   getters: {
     isLoggedIn: (state) => !!state.token,
@@ -48,7 +49,7 @@ export default new Vuex.Store({
     SET_TOKEN: (state, token) => (state.token = token),
     SET_CURRENT_USER: (state, user) => (state.currentUser = user),
     SET_PROFILE: (state, profile) => (state.profile = profile),
-
+    SET_SEARCH_GENRE : (state, genre) => (state.genre = genre),
   },
   actions: {
     getTop10Movies(context) {
@@ -73,6 +74,34 @@ export default new Vuex.Store({
       .then((res) => {
         console.log(res, context)
         context.commit('SET_SEARCH', res.data)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+    },
+    // 장르 선택 all
+    searchGenreAll(context){
+      axios({
+        method: 'get',
+        url: `${API_URL}/movies/search/genre/all`,
+      })
+      .then((res) => {
+        console.log(res, context)
+        context.commit('SET_SEARCH_GENRE', res.data)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+    },
+    // 특정장르 선택
+    searchGenre(context, genreId){
+      axios({
+        method: 'get',
+        url: `${API_URL}/movies/search/genre/${genreId}`,
+      })
+      .then((res) => {
+        console.log(res, context)
+        context.commit('SET_SEARCH_GENRE', res.data)
       })
       .catch((err) => {
         console.log(err)
@@ -145,7 +174,6 @@ export default new Vuex.Store({
           context.commit("SET_CURRENT_USER", res.data)
         })
         .catch((err) => {
-          console.log('잠깐만') 
           console.error(err)})
       }
     },
