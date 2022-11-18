@@ -79,9 +79,6 @@ export default {
       this.$store.dispatch("search", movieName);
       this.keyword = null;
     },
-<<<<<<< HEAD
-     searchDetailPage() {},
-=======
     searchDetailPage() {},
     searchGenre(genreId){
       this.$store.dispatch("searchGenre", genreId);
@@ -90,7 +87,6 @@ export default {
       this.$store.dispatch("searchGenreAll");
     }
 
->>>>>>> 6624184f46ef904553cdc66ae76837e67c93fc8e
   },
 };
 </script>

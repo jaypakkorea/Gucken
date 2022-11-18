@@ -22,6 +22,7 @@ export default new Vuex.Store({
     currentUser: {},
     profile: {},
     genre : {},
+    community:[],
   },
   getters: {
     isLoggedIn: (state) => !!state.token,
@@ -50,6 +51,7 @@ export default new Vuex.Store({
     SET_CURRENT_USER: (state, user) => (state.currentUser = user),
     SET_PROFILE: (state, profile) => (state.profile = profile),
     SET_SEARCH_GENRE : (state, genre) => (state.genre = genre),
+    ADD_COMMUNUTY:(state, community) => (state.community = community)
   },
   actions: {
     getTop10Movies(context) {
@@ -200,6 +202,26 @@ export default new Vuex.Store({
         context.commit('ADD_LIST', res.data)
       })
       .catch(err => console.log(err))
+    },
+    createCommumity(context, community) {
+      const title = community.title
+      const content = community.content
+      axios({
+        method: 'post',
+        url: `${API_URL}`,
+        headers : {
+          Authorization : `Token ${context.state.token}`
+        },
+        data: {
+          title , content
+        }
+      })
+      .then((res) => {
+        context.commit('ADD_COMMUNUTY', res.data)
+      })
+      .catch((err) => {
+        alert(err.message)
+      })
     },
   },
   modules: {

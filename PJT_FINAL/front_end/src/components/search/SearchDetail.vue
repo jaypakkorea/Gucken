@@ -68,9 +68,11 @@
               <b-button v-b-modal.modal-1>
                 <font-awesome-icon class="pluscommunuty" icon="fa-solid fa-plus" />
               </b-button>
+              <!-- 모달로 게시글 받는곳 -->
               <b-modal class="communityModal" size="xl" id="modal-1" title="게시글 작성">
                 <div>
-                  <b-form-textarea size="lg" no-resize rows="7" id="textarea-no-resize" type="text" ></b-form-textarea>
+                  <b-form-input v-model="title" style="margin-bottom:30px;" size="lg" placeholder="제목을 입력하세요"></b-form-input>
+                  <b-form-textarea v-model="content" size="lg" placeholder="내용을 입력하세요" no-resize rows="7" id="textarea-no-resize" type="text" ></b-form-textarea>
                   <div style="margin-left:35%; margin-top:100px;">
                   <div @mouseleave="showCurrentRating(0)" style="display:inline-block;">
                     <star-rating :show-rating="false" @current-rating="showCurrentRating" @rating-selected="setCurrentSelectedRating" :increment="0.1"></star-rating>
@@ -84,7 +86,7 @@
                     variant="warning"
                       size="xl"
                       class="float-right"
-                      @click="submitcommunity"
+                      @click="addCommunity"
                     >SUBMIT</b-button>
                   </div>
                 </template>
@@ -139,6 +141,8 @@ export default {
     currentRating: "점수를 등록해 주세요!",
     currentSelectedRating: "점수를 등록해 주세요!",
     boundRating: 3,
+    title:null,
+    content:null,
     };
   },
   methods: {
@@ -175,9 +179,6 @@ export default {
       this.$store.dispatch("addList", moviePk);
       this.is_liked = !this.is_liked;
     },
-    addCommunity() {
-      console.log("ㅎㅇㅎㅇ");
-    },
     setRating: function(rating) {
       this.rating =  rating * 2 ;
     },
@@ -186,7 +187,18 @@ export default {
     },
     setCurrentSelectedRating: function(rating) {
       this.currentSelectedRating =  rating* 2 ;
+    },
+    addCommunity() {
+      const title = this.title
+      const content = this.content
+
+      const community = {
+        title: title,
+        content: content,
+      }
+      this.$store.dispatch('createCommumity', community)
     }
+    
   },
   created() {
     // this.pick()
