@@ -55,6 +55,22 @@ class RatingSerializer(serializers.ModelSerializer):
         read_only_fields = ('movie',)
 
 
+#영화 평점 create
+class ArticleSerializer(serializers.ModelSerializer):
+    
+    class UserSerializer(serializers.ModelSerializer):
+        class Meta:
+            model = User
+            fields = ('pk', 'username',)
+
+    user = UserSerializer(read_only=True)
+    
+    
+    class Meta:
+        model = Rating
+        fields = ('pk', 'user', 'movie', 'title', 'content', 'rate', 'created_at', 'updated_at',)
+
+
 # 단일 영화 상세 정보
 class MovieSerializer(serializers.ModelSerializer):
 
@@ -67,12 +83,26 @@ class MovieSerializer(serializers.ModelSerializer):
         class Meta:
             model = Actor
             fields = ('name',)
+    
+    class ArticleSerializer(serializers.ModelSerializer):
+    
+        class UserSerializer(serializers.ModelSerializer):
+            class Meta:
+                model = User
+                fields = ('pk', 'username',)
+
+        user = UserSerializer(read_only=True)
+    
+        class Meta:
+            model = Rating
+            fields = ('pk', 'user', 'movie', 'title', 'content', 'rate', 'created_at', 'updated_at',)
 
     genres = GenreSerializer(read_only=True, many=True)
     actors = ActorSerializer(read_only=True, many=True)
     like_movies = UserSerializer(read_only=True, many=True)
     ratings = RatingSerializer(many=True)
-
+    article = ArticleSerializer(read_only=True, many=True)
+    
     class Meta:
         model = Movie
         exclude = ('popularity', 'tagline', 'vote_count', 'words',)
@@ -108,9 +138,8 @@ class ActorSerializer(serializers.ModelSerializer):
 
 
 
+class ArticleListSerializer(serializers.ModelSerializer):
 
-class ArticleSerializer(serializers.ModelSerializer):
-    
     class UserSerializer(serializers.ModelSerializer):
         class Meta:
             model = User
@@ -118,9 +147,6 @@ class ArticleSerializer(serializers.ModelSerializer):
 
     user = UserSerializer(read_only=True)
     
-
-    
     class Meta:
         model = Rating
         fields = ('pk', 'user', 'movie', 'title', 'content', 'rate', 'created_at', 'updated_at',)
-
