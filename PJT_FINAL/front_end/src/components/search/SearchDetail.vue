@@ -413,9 +413,8 @@ export default {
   height: 60vh;
 }
 #modal-1{
-  top: 10vh;
+  top: 5vh;
   color: white;
-
 }
 .modal-header{
   border-bottom: none !important;
@@ -424,17 +423,31 @@ export default {
   border-top: none !important;
 }
 .modal-content{
-  background-color: rgb(63, 63, 63) !important;
+  /* background-color: rgb(63, 63, 63) !important; */
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100%;
+  max-width: 100%;
+  background-image: url('https://res.klook.com/image/upload/Mobile/City/szhx3ytpgfnhpbmsngk0.jpg');
 }
 #modal-1___BV_modal_header_ > button{
-  background-color: rgb(63, 63, 63);
+  background-color: transparent;
   border: none;
   font-size: 3rem;
+  margin-top: -10px;
 }
 #textarea-no-resize{
   font-size: 2rem;
   color: black;
   font-weight: bold;
 }
+#modal-1___BV_modal_footer_ > div > button{
+  width: 130px;
+  height: 50px;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
 
 </style>
