@@ -16,7 +16,10 @@
         :key="topmovie.id"
         :index="index"
       >
-        <IndexCard :topmovie="topmovie.poster_path" />
+        <router-link
+        :to="{ name: 'SearchDetailView', params: { moviePk: topmovie.id } }">
+          <IndexCard :topmovie="topmovie.poster_path" />
+        </router-link>
       </slide>
     </carousel>
     <div class="CardTitle2">Recommend</div>
