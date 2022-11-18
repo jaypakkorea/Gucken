@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e67b0593-89b2-405b-ab2c-4ab855ceeb35" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../FINAL with LMH.md" beforeDir="false" afterPath="$PROJECT_DIR$/../FINAL with LMH.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_final/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_final/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_final/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/django_final/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_final/django_final/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_final/django_final/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_final/movies/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_final/movies/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/src/components/user/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/src/components/user/login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/src/components/user/signUp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/src/components/user/signUp.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/src/components/user/userInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/src/components/user/userInfo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/src/store/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2HifVb0PYGviIN7U3O1pi1VDnUY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e67b0593-89b2-405b-ab2c-4ab855ceeb35" name="Default Changelist" comment="" />
+      <created>1668772853094</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668772853094</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

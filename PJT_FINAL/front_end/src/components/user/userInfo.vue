@@ -35,7 +35,7 @@
   </b-tabs>
     </div>
     <div style="color : red">
-        
+        <p>{{profile}}</p>
         <h1> {{profile.id}}</h1>
         <h1> {{profile.username}}</h1>
         <h1> {{profile.followings}}</h1>

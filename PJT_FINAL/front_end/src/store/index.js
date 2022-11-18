@@ -111,14 +111,13 @@ export default new Vuex.Store({
       axios({
         method: 'post',
         url: `${API_URL}/accounts/signup/`,
-        data: {
-          username: payload.username,
-          password1: payload.password1,
-          password2: payload.password2,
-        }
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+        data: payload
       })
         .then((res) => {
-          // console.log(res)
+          console.log('hi', res.data)
           context.commit('SIGN_UP', res.data.key)
           localStorage.setItem("token", this.state.token)
           context.dispatch("fetchCurrentUser")

@@ -2,6 +2,7 @@
   <div class="loginDiv">
     <div class="loginLogo">LOGIN</div>
     <div class="loginSenterDiv">
+
       <div class="loginInputDiv">
         <div>E-MAIL</div>
         <input  v-model="username" class="loginInput" type="email" />
@@ -25,6 +26,12 @@
             class="loginButton"
             :to="{ name: 'userSignUp' }"
           >간편 회원가입</b-button>
+          <b-button
+            style="margin-top:4rem; opacity:0.5;"
+            variant="light"
+            class="loginButton"
+
+          >google</b-button>
         <!-- </router-link> -->
       </div>
     </div>
@@ -32,6 +39,8 @@
 </template>
 
 <script>
+
+
 export default {
   name: "LoginUser",
   data() {
@@ -51,12 +60,18 @@ export default {
         password: password,
       }
       this.$store.dispatch('logIn', payload)
-    }
+    },
   }
-};
+}
 </script>
 
 <style>
+.userImg{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
 .loginLogo {
   padding: 2rem;
   font-size: 5rem;

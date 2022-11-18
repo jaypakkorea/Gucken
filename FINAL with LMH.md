@@ -23,7 +23,17 @@ npm i vue-chartjs chart.js
 
 ```
 
+프로필 이미지
 
+https://ordinary-code.tistory.com/170
+
+https://dongyeopgu.github.io/django/django_image_upload.html
+
+구글 계정으로 로그인
+
+```
+https://medium.com/chanjongs-programming-diary/django-rest-framework%EB%A1%9C-%EC%86%8C%EC%85%9C-%EB%A1%9C%EA%B7%B8%EC%9D%B8-api-%EA%B5%AC%ED%98%84%ED%95%B4%EB%B3%B4%EA%B8%B0-google-kakao-github-2ccc4d49a781
+```
 
 
 

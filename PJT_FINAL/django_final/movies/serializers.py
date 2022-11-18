@@ -14,7 +14,7 @@ class MovieGenreSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Movie
-        fields = ('id', 'title', 'genres', 'overview')
+        fields = ('id', 'title', 'vote_average', 'genres', 'overview')
 
 
 class TopMovieListSerializer(serializers.ModelSerializer):
@@ -31,7 +31,7 @@ class MovieSearchSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Movie
-        fields = ('pk', 'overview', 'title', 'poster_path', 'similarity',)
+        fields = ('pk', 'overview', 'title', 'vote_average', 'poster_path', 'similarity',)
 
 # 유저 정보
 class UserSerializer(serializers.ModelSerializer):

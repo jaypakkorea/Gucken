@@ -1,7 +1,19 @@
 from pathlib import Path
 
+# #google로 로그인
+# import os
+# import json
+# import sys
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+
+# #google로 로그인
+# ROOT_DIR = os.path.dirname(BASE_DIR)
+# SECRET_BASE_FILE = os.path.join(BASE_DIR, 'secrets.json')
+# secrets = json.loads(open(SECRET_BASE_FILE).read())
+# for key, value in secrets.items():
+#     setattr(sys.modules[__name__], key, value)
 
 
 # Quick-start development settings - unsuitable for production
@@ -46,6 +58,9 @@ INSTALLED_APPS = [
     # # OpenAPI 3.0
     # 'drf_spectacular',
 
+    # #google로 로그인
+    # 'allauth.socialaccount.providers.google',
+
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -55,6 +70,24 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+# #google로 로그인
+# SITE_ID = 1
+# ACCOUNT_USER_MODEL_USERNAME_FIELD = True # username 필드 사용 x
+# ACCOUNT_EMAIL_REQUIRED = False            # email 필드 사용 o
+# ACCOUNT_USERNAME_REQUIRED = True        # username 필드 사용 x
+# ACCOUNT_AUTHENTICATION_METHOD = 'email'
+
+# REST_USE_JWT = True
+
+# from datetime import timedelta
+
+# SIMPLE_JWT = {
+#     'ACCESS_TOKEN_LIFETIME': timedelta(hours=2),
+#     'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
+#     'ROTATE_REFRESH_TOKENS': False,
+#     'BLACKLIST_AFTER_ROTATION': True,
+# }
+# # 여기까지
 
 REST_FRAMEWORK = {
     # Authentication
