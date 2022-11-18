@@ -30,8 +30,8 @@ export default {
             url: `${API_URL}/movies/${this.$route.params.moviePk}`
         })
         .then((res) => {
-        console.log(res)
         this.movie = res.data
+        console.log(this.movie)
         })
         .catch((err) => {
         console.log(err)

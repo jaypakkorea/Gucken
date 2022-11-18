@@ -29,7 +29,7 @@
         </div>
         <div class="detail_rate">
           <div>
-            <div style="font-size:3rem;">MOVIE</div>
+            <div style="font-size:3rem;">GENRE</div>
             <div class="d-flex">
               <div
                 v-for="names in this.movie.genres"
@@ -145,6 +145,11 @@ export default {
     content:null,
     };
   },
+  computed : {
+    isLogin(){
+      return this.$store.getters.isLogin
+    }
+  },
   methods: {
     pick() {
       const idx = Math.floor(Math.random() * this.myAPIList.length);
@@ -175,9 +180,15 @@ export default {
         });
     },
     likeMovie() {
-      const moviePk = this.movie.id;
-      this.$store.dispatch("addList", moviePk);
-      this.is_liked = !this.is_liked;
+      if (!this.isLogin) {
+        alert('로그인이 필요한 서비스 입니다')
+        this.$router.push({name:'user'})
+      } else {
+        const moviePk = this.movie.id;
+        this.$store.dispatch("addList", moviePk);
+        this.is_liked = !this.is_liked;
+      }
+
     },
     setRating: function(rating) {
       this.rating =  rating * 2 ;
@@ -189,16 +200,44 @@ export default {
       this.currentSelectedRating =  rating* 2 ;
     },
     addCommunity() {
-      const title = this.title
-      const content = this.content
+      const API_URL = 'http://127.0.0.1:8000'
+      if (!this.isLogin) {
+        alert('로그인이 필요한 서비스 입니다')
+        this.$router.push({name:'user'})
+      } else {
+        const movie = this.movie.id
+        const rate = this.currentRating
+        const title = this.title
+        const content = this.content
+        if (!title) {
+          alert('제목을 입력해주세요')
+          return
+        } else if (!content) {
+          alert('내용을 입력해주세요')
+          return
+        }
+        console.log(movie, rate, title, content)
 
-      const community = {
-        title: title,
-        content: content,
+        axios({
+        method: 'post',
+        url: `${API_URL}/movies/${this.$route.params.moviePk}/articles/`,
+        data: {
+          movie, rate, title, content
+        },
+        headers: {
+          Authorization: `Token ${this.$store.state.token}`
+        }
+      })
+        .then((res) => {
+          console.log(res)
+          this.$router.push({ name: 'ArticleView' })
+        })
+        .catch((err) => {
+          console.log(err)
+        })
       }
-      this.$store.dispatch('createCommumity', community)
-    }
-    
+      }
+      
   },
   created() {
     // this.pick()

@@ -89,6 +89,32 @@ def movie_detail(request, movie_pk):
     serializr = MovieSerializer(movie)
     return Response(serializr.data)
     
+
+@api_view(['GET', 'POST'])
+def article_list_or_create(request, movie_pk):
+    movie = get_object_or_404(Movie, pk=movie_pk)
+    # def article_list():
+    #     # comment 개수 추가
+    #     articles = Article.objects.annotate(
+    #         comment_count=Count('comments', distinct=True),
+    #         like_count=Count('like_users', distinct=True)
+    #     ).order_by('-pk')
+    #     serializer = ArticleListSerializer(articles, many=True)
+    #     return Response(serializer.data)
+    
+    def create_article():
+        serializer = ArticleSerializer(data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save(user=request.user, movie=movie)
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+    if request.method == 'POST':
+        return create_article()
+    # elif request.method == 'GET':
+    #     return article_list()
+
+
+
 #가중치 반영 top 10 영화 목록 
 @api_view(['GET'])
 def top_movie(request):

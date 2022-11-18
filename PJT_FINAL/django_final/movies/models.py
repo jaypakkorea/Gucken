@@ -43,8 +43,11 @@ class Movie(models.Model):
 class Rating(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='ratings')
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE, related_name='ratings')
-    rate = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(10)])
-    review = models.TextField(null=True)
+    rate = models.FloatField(validators=[MinValueValidator(0), MaxValueValidator(10)])
+    title =  models.CharField(max_length=100)
+    content = models.TextField(null=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return self.user
