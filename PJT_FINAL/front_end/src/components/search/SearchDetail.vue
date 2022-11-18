@@ -93,16 +93,7 @@
                 
               </b-modal>
             </div>
-            <div class="detailCommunityDiv">
-              <div class="CommunitysDiv">
-                <div class="CommunityDiv" v-for="ss in 5" :key="ss">
-                  <img class="communityUserImg" src="../../assets/starisborn.jpg" alt />
-                  <div class="communityScore">3.5</div>
-                  <!-- communityScoreHigh / -->
-                  <div class="communutyText">지루해요</div>
-                </div>
-              </div>
-            </div>
+            <MovieArticles :movie=movie />
           </b-tab>
         </b-tabs>
       </div>
@@ -113,9 +104,14 @@
 <script>
 import axios from "axios";
 import StarRating from 'vue-star-rating'
+import MovieArticles from "./MovieArticles.vue";
 
 export default {
   name: "DetailVue",
+  components: {
+    StarRating,
+    MovieArticles
+  },
   props: {
     movie: Object
   },
@@ -216,6 +212,9 @@ export default {
         } else if (!content) {
           alert('내용을 입력해주세요')
           return
+        } else if (!rate) {
+          alert('평점을 남겨주세요')
+          return
         }
         console.log(movie, rate, title, content)
 
@@ -231,22 +230,19 @@ export default {
       })
         .then((res) => {
           console.log(res)
-          this.$router.push({ name: 'ArticleView' })
+          console.log(this.movie.id)
+          this.$router.push({ name: 'SearchDetailView', params: { moviePk: this.movie.id } })
         })
         .catch((err) => {
           console.log(err)
         })
       }
-      }
-      
+    },
   },
   created() {
     // this.pick()
     // this.InputGetEvent(this.myKeyword)
   },
-  components: {
-    StarRating
-}
 };
 </script>
 
