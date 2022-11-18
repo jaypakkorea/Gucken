@@ -74,7 +74,7 @@ export default {
       // console.log(movieName)
       // console.log(typeof movieName)
     },
-    searchDetailPage() {},
+    // searchDetailPage() {},
   },
 };
 </script>
