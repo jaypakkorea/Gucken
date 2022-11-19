@@ -61,7 +61,7 @@
         :index="index"
       >
         <router-link
-        :to="{ name: 'SearchDetailView', params: { moviePk: recommendmovie.id } }">
+        :to="{ name: 'SearchDetailView', params: { moviePk: recommendmovie.pk } }">
           <CardsRecommend :recommendmovie="recommendmovie.poster_path" />
         </router-link>
       </slide>    

@@ -12,7 +12,13 @@
         <div class="detail_flexdiv">
           <div>{{this.movie.release_date}}</div>
           <!-- <div> Top 10 Movie </div> -->
-          <b-button variant="warning" @click="likeMovie">Add List</b-button>
+          <!-- <b-button variant = "secondary" @click="likeMovie">Add List</b-button> -->
+          <!-- <button :class="{ 'btn-warning': is_liked }" @click="likeMovie">Add List</button> -->
+          <b-button v-if="is_liked"  variant = "outline-warning"
+          @click="likeMovie">Cancle</b-button>
+          <b-button v-if="!is_liked" variant = "warning"
+          @click="likeMovie">Like</b-button>
+
         </div>
         <div style="width: 80%;">{{this.movie.overview}}</div>
         <!-- 배우가 없을떄는 v-if로 div 자체가 뜨지 않게 하기 -->
@@ -181,7 +187,6 @@ export default {
         const moviePk = this.movie.id;
         this.$store.dispatch("addList", moviePk);
         this.is_liked = !this.is_liked;
-        alert('좋아요 완료')
       }
 
     },
@@ -246,6 +251,7 @@ export default {
 </script>
 
 <style>
+
 .detail_main_div {
   padding-top: 2rem;
   width: 100%;
