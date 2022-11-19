@@ -90,7 +90,7 @@ class MovieSerializer(serializers.ModelSerializer):
     class ActorSerializer(serializers.ModelSerializer):
         class Meta:
             model = Actor
-            fields = ('name', 'profile_path')
+            fields = ('pk', 'name', 'profile_path')
     
     class ArticleSerializer(serializers.ModelSerializer):
     

@@ -219,6 +219,22 @@ export default new Vuex.Store({
       })
       .catch(err => console.log(err))
     },
+    // changePassword(context, payload){
+    //   axios({
+    //     method: 'post',
+    //     url: `${API_URL}/`,
+    //     data: {
+    //       password1: payload.password1,
+    //       password2: payload.password2,
+    //     }
+    //   })
+    //   .then((res) => {
+    //     // 모르겠음,,
+    //   })
+    //   .catch((err) => {
+    //     alert(err.message)
+    //   })
+    // }
   },
   modules: {
   }
