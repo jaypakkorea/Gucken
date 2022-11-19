@@ -38,6 +38,7 @@
             <div>
               <div class="detailTitle">{{ movie.title }}</div>
               <div class="detailOverviewDiv">{{ movie.overview }}</div>
+              <div class="detailOverviewDiv">{{ movie.release_date }}</div>
             </div>
           </div>
         </router-link>
@@ -56,6 +57,7 @@
             <div>
               <div class="detailTitle">{{ movie.title }}</div>
               <div class="detailOverviewDiv">{{ movie.overview }}</div>
+              <div class="detailOverviewDiv">{{ movie.release_date}}</div>
             </div>
           </div>
         </router-link>

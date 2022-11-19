@@ -29,7 +29,7 @@ def all_genre_movie(request):
     if request.method == 'GET':
         movies = get_list_or_404(Movie)
         serializer = MovieGenreSerializer(movies, many=True)
-        return Response(serializer.data[:20])
+        return Response(serializer.data[:50])
 
 @api_view(['GET'])
 def genre_movie(request, genre_pk):
@@ -37,15 +37,15 @@ def genre_movie(request, genre_pk):
         movies = get_list_or_404(Movie)
         serializer = MovieGenreSerializer(movies, many=True)
         serializer = genre_serach(serializer.data , genre_pk)
-        return Response(serializer[:20])
+        return Response(serializer[:50])
 
 # 해당하는 장르 찾기
 def genre_serach(lst, genre_pk):
     fetch_data = []
     for data in lst:
         if genre_pk in data['genres'] :
-            tmp = {'pk': 0, 'title': '', 'overview': '' , 'genres': ''}
-            tmp['pk'] = data['id']; tmp['title'] = data['title']; tmp['overview'] = data['overview']; tmp['genres'] = data['genres']
+            tmp = {'pk': 0, 'title': '', 'overview': '' , 'genres': '', 'poster_path' : '', 'release_date' : '' }
+            tmp['pk'] = data['pk']; tmp['title'] = data['title']; tmp['overview'] = data['overview']; tmp['genres'] = data['genres'];  tmp['poster_path'] = data['poster_path']; tmp['release_date'] = data['release_date']
             fetch_data.append(tmp)
     
     return fetch_data
