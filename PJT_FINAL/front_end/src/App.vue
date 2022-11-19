@@ -14,7 +14,7 @@
       </div>
       <div>
         <router-link to="/chart">
-          <font-awesome-icon icon="fa-solid fa-video" />
+          <font-awesome-icon icon="fas fa-chart-line" />
         </router-link>
       </div>
       <div>
