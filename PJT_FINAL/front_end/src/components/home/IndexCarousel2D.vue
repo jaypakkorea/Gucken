@@ -44,6 +44,28 @@
         </router-link>
       </slide>    
     </carousel>
+
+    <div class="CardTitle2">Recommendation</div>
+    <carousel
+      :loop="true"
+      v-bind:autoplay="true"
+      speed="3000"
+      autoplay-timeout="5000"
+      :per-page="6"
+      :mouse-drag="true"
+      id="carousel2Dcontent"
+    >
+    <slide
+        v-for="(recommendmovie, index) in recommendmovies"
+        :key="recommendmovie.id"
+        :index="index"
+      >
+        <router-link
+        :to="{ name: 'SearchDetailView', params: { moviePk: recommendmovie.id } }">
+          <CardsRecommend :recommendmovie="recommendmovie.poster_path" />
+        </router-link>
+      </slide>    
+    </carousel>
   </div>
 </template>
 
@@ -51,6 +73,7 @@
 import { Carousel, Slide } from "vue-carousel";
 import IndexCard from "./Cards.vue";
 import CardsPopular from "./CardsPopular";
+import CardsRecommend from "./CardsRecommend";
 
 
 export default {
@@ -60,6 +83,7 @@ export default {
     Slide,
     IndexCard,
     CardsPopular,
+    CardsRecommend,
   },
   computed: {
     topmovies() {
@@ -67,6 +91,9 @@ export default {
     },
     popularmovies() {
       return this.$store.state.popularmovies;
+    },
+    recommendmovies() {
+      return this.$store.state.recommendationMovies;
     },
   },
   methods: {
@@ -76,11 +103,15 @@ export default {
     popularTop10Movies() {
       this.$store.dispatch("popularTop10Movies");
     },
+    userRecommendMovie(){
+      this.$store.dispatch("userRecommendMovie");
+    }
   },
   created() {
     this.getTop10Movies();
     this.popularTop10Movies();
-
+    this.userRecommendMovie();
+    console.log(this.$store.state.currentUser)
   },
 };
 </script>
