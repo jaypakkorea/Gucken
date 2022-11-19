@@ -19,13 +19,8 @@
         <div v-if="this.movie.actors" class="detail_actors">
           <!-- for 문으로 배우 리스트 돌면서 이름, 사진 보여주기 -->
           <div class="detail_actors_img" v-for="actor in this.movie.actors" :key="actor.name">
-            <img
-              class="detail_actors_img_crop"
-              src="https://image.tmdb.org/t/p/original/qSizF2i9gz6c6DbAC5RoIq8sVqX.jpg"
-              alt
-            />
-            {{actor.profile_path}}
-            {{actor.name}}
+            <actorImgCard :actor="actor"/>
+            <p>{{actor.name}}</p>
           </div>
         </div>
         <div class="detail_rate">
@@ -106,12 +101,13 @@
 import axios from "axios";
 import StarRating from 'vue-star-rating'
 import MovieArticles from "./MovieArticles.vue";
-
+import actorImgCard from"./actorImgCard.vue"
 export default {
   name: "DetailVue",
   components: {
     StarRating,
-    MovieArticles
+    MovieArticles,
+    actorImgCard,
   },
   props: {
     movie: Object
@@ -310,6 +306,7 @@ export default {
   display: flex;
   /* justify-content: space-between; */
   margin: 2rem 0;
+  flex-wrap: wrap;
 }
 .detail_rate {
   display: flex;
