@@ -19,9 +19,23 @@
 export default {
     name: "MovieArticles",
     props : {
-        movie : Object
+      movie : Object
     },
-
+    data() {
+    return {
+      articles: this.movie.ratings,
+    };
+  },
+    watch: {
+      articles: {
+        deep : true,
+        handler : function() {
+          this.articles = this.movie.ratings
+          console.log('The list of colours has changed!')
+          console.log(this.articles)
+        },
+      }
+  }
 }
 </script>
 

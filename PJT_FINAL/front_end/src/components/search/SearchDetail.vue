@@ -24,6 +24,7 @@
               src="https://image.tmdb.org/t/p/original/qSizF2i9gz6c6DbAC5RoIq8sVqX.jpg"
               alt
             />
+            {{actor.profile_path}}
             {{actor.name}}
           </div>
         </div>
@@ -233,7 +234,6 @@ export default {
       })
         .then((res) => {
           console.log(res)
-          console.log(this.movie.id)
           this.$router.push({ name: 'SearchDetailView', params: { moviePk: this.movie.id } })
           this.$refs['my-modal'].hide()
         })
