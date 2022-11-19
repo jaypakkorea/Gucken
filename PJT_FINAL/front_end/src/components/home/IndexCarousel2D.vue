@@ -23,7 +23,7 @@
       </slide>
     </carousel>
 
-    <div class="CardTitle2">Recommend</div>
+    <div class="CardTitle2">popularity</div>
     <carousel
       :loop="true"
       v-bind:autoplay="true"
