@@ -206,7 +206,6 @@ export default new Vuex.Store({
         context.commit("SET_PROFILE", res.data)
       })
     },
-    
     addList(context, moviePk) {
       axios({
         method: 'post',

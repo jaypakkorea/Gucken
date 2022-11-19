@@ -52,7 +52,7 @@
       </div>
       <div class="detail_right_div">
         <b-tabs content-class="mt-2">
-          <b-tab title="TRAILER" active>
+          <b-tab title="TRAILER" >
             <iframe
               style="margin-top:3rem;"
               id="ytplayer"
@@ -66,14 +66,14 @@
           <b-tab title="COMMUNITY">
             <div class="commumityButtonDiv">
               <b-button v-b-modal.modal-1>
-                <font-awesome-icon class="pluscommunuty" icon="fa-solid fa-plus" />
+                <font-awesome-icon @click="communnityOpen" class="pluscommunuty" icon="fa-solid fa-plus" />
               </b-button>
               <!-- 모달로 게시글 받는곳 -->
-              <b-modal class="communityModal" size="xl" id="modal-1" title="게시글 작성">
+              <b-modal class="communityModal" ref="my-modal"  size="xl" id="modal-1" title="게시글 작성">
                 <div>
                   <b-form-input v-model="title" style="margin-bottom:30px;" size="lg" placeholder="제목을 입력하세요"></b-form-input>
-                  <b-form-textarea v-model="content" size="lg" placeholder="내용을 입력하세요" no-resize rows="7" id="textarea-no-resize" type="text" ></b-form-textarea>
-                  <div style="margin-left:35%; margin-top:100px;">
+                  <b-form-textarea v-model="content" size="lg" placeholder="내용을 입력하세요" no-resize rows="5" id="textarea-no-resize" type="text" ></b-form-textarea>
+                  <div style="margin-left:35%; margin-top:50px;">
                   <div @mouseleave="showCurrentRating(0)" style="display:inline-block;">
                     <star-rating :show-rating="false" @current-rating="showCurrentRating" @rating-selected="setCurrentSelectedRating" :increment="0.1"></star-rating>
                   </div>
@@ -147,6 +147,7 @@ export default {
     }
   },
   methods: {
+
     pick() {
       const idx = Math.floor(Math.random() * this.myAPIList.length);
       this.myApi = this.myAPIList[idx];
@@ -196,12 +197,14 @@ export default {
     setCurrentSelectedRating: function(rating) {
       this.currentSelectedRating =  rating* 2 ;
     },
-    addCommunity() {
-      const API_URL = 'http://127.0.0.1:8000'
+    communnityOpen(){
       if (!this.isLogin) {
         alert('로그인이 필요한 서비스 입니다')
         this.$router.push({name:'user'})
-      } else {
+      }
+    },
+    addCommunity() {
+      const API_URL = 'http://127.0.0.1:8000'
         const movie = this.movie.id
         const rate = this.currentRating
         const title = this.title
@@ -232,11 +235,11 @@ export default {
           console.log(res)
           console.log(this.movie.id)
           this.$router.push({ name: 'SearchDetailView', params: { moviePk: this.movie.id } })
+          this.$refs['my-modal'].hide()
         })
         .catch((err) => {
           console.log(err)
         })
-      }
     },
   },
   created() {
@@ -390,6 +393,7 @@ export default {
 .communityScore {
   color: black;
   font-size: 2rem;
+  margin: 0 20px;
   padding: 0 20px;
   border-radius: 5px;
   z-index: 10;
@@ -398,7 +402,7 @@ export default {
 .communityScoreHigh {
   color: black;
   font-size: 2rem;
-  padding: 0 20px;
+  padding: 0;
   border-radius: 5px;
   z-index: 10;
   background-color: #ffda4f;
@@ -424,12 +428,25 @@ export default {
 }
 .modal-content{
   /* background-color: rgb(63, 63, 63) !important; */
+  width: 90%;
+  height: fit-content;
+  position: relative;
+  z-index: 2;
+}
+.modal-content::after{
+  background-image: url('https://res.klook.com/image/upload/Mobile/City/szhx3ytpgfnhpbmsngk0.jpg');
   background-size:contain;
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 100%;
-  max-width: 100%;
-  background-image: url('https://res.klook.com/image/upload/Mobile/City/szhx3ytpgfnhpbmsngk0.jpg');
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: grayscale(50%);
+  opacity: 0.7;
 }
 #modal-1___BV_modal_header_ > button{
   background-color: transparent;
