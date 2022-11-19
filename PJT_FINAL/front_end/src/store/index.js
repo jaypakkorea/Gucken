@@ -41,7 +41,8 @@ export default new Vuex.Store({
     SIGN_UP(state,token){
       state.token = token
       console.log('회원가입 성공')
-      router.push({name: 'user'})
+      console.log(this.state.currentUser)
+      router.push({name: 'userProfile', params: { userid: this.state.currentUser }})
     },
     SAVE_TOKEN(state, token) {
       state.token = token

@@ -47,7 +47,6 @@ export default {
       }
 
       this.$store.dispatch('signUp', payload)
-      console.log('123123',payload);
 
     }
   }
