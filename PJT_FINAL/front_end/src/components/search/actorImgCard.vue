@@ -1,7 +1,7 @@
 <template>
-  <div v-b-modal.modal-actor >
+  <div v-b-modal ="this.actor.name">
     <img class="detail_actors_img_crop" alt="Vue logo" :src="link_url" />
-    <b-modal ref="my-modal" hide-footer size="lg" id="modal-actor">
+    <b-modal ref="my-modal" hide-footer size="xl" :id="this.actor.name">
       <iframe class="actoriframe" :src="iframe_url" frameborder="0"></iframe>
       
     </b-modal>
@@ -28,5 +28,11 @@ export default {
 .actoriframe{
   width: 100%;
   height: 80vh;
+}
+#Michael\ Caine___BV_modal_header_ > button{
+  background-color: transparent;
+  border: none;
+  font-size: 3rem;
+  margin-top: -10px;
 }
 </style>
