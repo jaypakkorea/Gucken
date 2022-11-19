@@ -1,6 +1,7 @@
 <template>
   <div>
     <img id="cardFilm" alt="Vue logo" :src="link_url" />
+    <img id="cardFilm" alt="Vue logo" :src="link_url2" />
   </div>
 </template>
 
@@ -10,10 +11,12 @@ export default {
   data() {
     return {
         link_url: `https://image.tmdb.org/t/p/original/${this.topmovie}`,
+        link_url2: `https://image.tmdb.org/t/p/original/${this.popularmovies}`,
     };
   },
   props:{
-    topmovie:String
+    topmovie:String,
+    popularmovies : String
   },
 
 };

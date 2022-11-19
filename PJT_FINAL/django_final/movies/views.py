@@ -112,6 +112,28 @@ def article_list_or_create(request, movie_pk):
 
 
 
+#popularity top 10 영화 목록 
+@api_view(['GET'])
+def popularity_movie(request):
+
+    if request.method == 'GET':
+        # movies = get_list_or_404(Movie)
+        # serializer = PopularityMovieListSerializer(movies, many=True)
+        # movie_list = []
+        # for movie in serializer.data:
+        #     movie_list.append((movie, movie['popularity']))
+
+        # sorted_movie_list = sorted(movie_list, key=lambda x : x[1], reverse = True)
+        # final_serializer = []
+        # for i in range(10):
+        #     final_serializer.append(sorted_movie_list[i])
+
+        final_data = [675353, 335787, 414906, 453395, 629542, 634649, 752623, 628900, 508947, 406759]
+        final_movie = [get_object_or_404(Movie, pk=i) for i in final_data]
+        final_serializer = PopularityMovieListSerializer(final_movie, many=True)
+        return Response(final_serializer.data)
+
+
 #가중치 반영 top 10 영화 목록 
 @api_view(['GET'])
 def top_movie(request):

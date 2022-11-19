@@ -16,6 +16,7 @@ export default new Vuex.Store({
   ],
   state: {
     topmovies: [],
+    popularmovies : [],
     search: [],
     movie: [],
     token: localStorage.getItem("token") || "",
@@ -35,6 +36,9 @@ export default new Vuex.Store({
   mutations: {
     GET_TOP10_MOVIES(state, topmovies) {
       state.topmovies = topmovies
+    },
+    GET_POPULAR_TOP10_MOVIES(state, popularmovies) {
+      state.popularmovies = popularmovies
     },
     SET_SEARCH: (state, search) => (state.search = search),
     ADD_LIST: (state, movie) => (state.movie = movie),
@@ -63,6 +67,19 @@ export default new Vuex.Store({
         console.log(res, context)
         // console.log(res.data)
         context.commit('GET_TOP10_MOVIES', res.data)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+    },
+    popularTop10Movies(context) {
+      axios({
+        method: 'get',
+        url: `${API_URL}/movies/popularity/`,
+      })
+      .then((res) => {
+        console.log(res, context)
+        context.commit('GET_POPULAR_TOP10_MOVIES', res.data)
       })
       .catch((err) => {
         console.log(err)

@@ -22,6 +22,7 @@
         </router-link>
       </slide>
     </carousel>
+
     <div class="CardTitle2">Recommend</div>
     <carousel
       :loop="true"
@@ -32,34 +33,16 @@
       :mouse-drag="true"
       id="carousel2Dcontent"
     >
-      <slide :index="0"><IndexCard /></slide>
-      <slide :index="1"
-        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
-      /></slide>
-      <slide :index="2"
-        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
-      /></slide>
-      <slide :index="3"
-        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
-      /></slide>
-      <slide :index="4"
-        ><img id="cardFilm" alt="Vue logo" src="../../assets/NBLpng.png"
-      /></slide>
-      <slide :index="5"
-        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
-      /></slide>
-      <slide :index="6"
-        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
-      /></slide>
-      <slide :index="7"
-        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
-      /></slide>
-      <slide :index="8"
-        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
-      /></slide>
-      <slide :index="9"
-        ><img id="cardFilm" alt="Vue logo" src="../../assets/starisborn.jpg"
-      /></slide>
+    <slide
+        v-for="(popularmovies, index) in popularmovies"
+        :key="popularmovies.id"
+        :index="index"
+      >
+        <router-link
+        :to="{ name: 'SearchDetailView', params: { moviePk: popularmovies.id } }">
+          <CardsPopular :popularmovies="popularmovies.poster_path" />
+        </router-link>
+      </slide>    
     </carousel>
   </div>
 </template>
@@ -67,6 +50,8 @@
 <script>
 import { Carousel, Slide } from "vue-carousel";
 import IndexCard from "./Cards.vue";
+import CardsPopular from "./CardsPopular";
+
 
 export default {
   name: "IndexCarousel2D",
@@ -74,20 +59,28 @@ export default {
     Carousel,
     Slide,
     IndexCard,
+    CardsPopular,
   },
   computed: {
     topmovies() {
-      console.log(this.$store.state.topmovies);
       return this.$store.state.topmovies;
+    },
+    popularmovies() {
+      return this.$store.state.popularmovies;
     },
   },
   methods: {
     getTop10Movies() {
       this.$store.dispatch("getTop10Movies");
     },
+    popularTop10Movies() {
+      this.$store.dispatch("popularTop10Movies");
+    },
   },
   created() {
     this.getTop10Movies();
+    this.popularTop10Movies();
+
   },
 };
 </script>
