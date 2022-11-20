@@ -71,7 +71,7 @@
                 <font-awesome-icon @click="communnityOpen" class="pluscommunuty" icon="fa-solid fa-plus" />
               </b-button>
               <!-- 모달로 게시글 받는곳 -->
-              <b-modal class="communityModal" ref="my-modal"  size="xl" id="modal-1" title="게시글 작성">
+              <b-modal centered class="communityModal" ref="my-modal"  size="xl" id="modal-1" title="게시글 작성">
                 <div>
                   <b-form-input v-model="title" style="margin-bottom:30px;" size="lg" placeholder="제목을 입력하세요"></b-form-input>
                   <b-form-textarea v-model="content" size="lg" placeholder="내용을 입력하세요" no-resize rows="5" id="textarea-no-resize" type="text" ></b-form-textarea>
@@ -108,6 +108,8 @@ import axios from "axios";
 import StarRating from 'vue-star-rating'
 import MovieArticles from "./MovieArticles.vue";
 import actorImgCard from"./actorImgCard.vue"
+import Swal from 'sweetalert2';
+
 export default {
   name: "DetailVue",
   components: {
@@ -137,7 +139,7 @@ export default {
       ],
       tabIndex: 0,
       rating: 0,
-    currentRating: "점수를 등록해 주세요!",
+    currentRating: 0,
     currentSelectedRating: "점수를 등록해 주세요!",
     boundRating: 3,
     title:null,
@@ -212,13 +214,13 @@ export default {
         const title = this.title
         const content = this.content
         if (!title) {
-          alert('제목을 입력해주세요')
+          Swal.fire('제목을 입력해주세요', '', 'error')
           return
         } else if (!content) {
-          alert('내용을 입력해주세요')
+          Swal.fire('내용을 입력해주세요', '', 'error')
           return
-        } else if (!rate) {
-          alert('평점을 남겨주세요')
+        } else if (rate<=0) {
+          Swal.fire('평점을 남겨주세요', '', 'error')
           return
         }
         console.log(movie, rate, title, content)
@@ -237,6 +239,15 @@ export default {
           console.log(res)
           this.$router.push({ name: 'SearchDetailView', params: { moviePk: this.movie.id } })
           this.$refs['my-modal'].hide()
+          Swal.fire({
+            html: '게시글 작성 성공~🎉',
+            confirmButtonText: `확인`,
+            confirmButtonColor: '#FFC83A',
+            timer: 1500,
+            width: 450,
+            allowEnterKey: false,
+          });
+          this.$router.go()
         })
         .catch((err) => {
           console.log(err)
@@ -420,7 +431,6 @@ export default {
   height: 60vh;
 }
 #modal-1{
-  top: 5vh;
   color: white;
 }
 .modal-header{

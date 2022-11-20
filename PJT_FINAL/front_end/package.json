@@ -14,6 +14,7 @@
     "bootstrap-vue": "^2.23.1",
     "chart.js": "^3.9.1",
     "core-js": "^3.8.3",
+    "sweetalert2": "^11.6.9",
     "vue": "^2.7.14",
     "vue-calendar-heatmap": "^0.8.4",
     "vue-carousel": "^0.18.0",
