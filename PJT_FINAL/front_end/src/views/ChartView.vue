@@ -1,10 +1,13 @@
 <template>
   <div>
+    <ChartIndex/>
   </div>
 </template>
 
 <script>
-export default {
+import ChartIndex from '../components/chart/index.vue'
+export default { 
+  components:{ChartIndex}
 
 }
 </script>
