@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="SearchContainer">
     <ChartIndex/>
   </div>
 </template>
