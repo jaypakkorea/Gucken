@@ -39,6 +39,7 @@ class ProfileSerializer(serializers.ModelSerializer):
 
     # like_articles = ArticleSerializer(many=True)
     followers = FollowFollowingSerializer(many=True, read_only=True)
+    followings = FollowFollowingSerializer(many=True, read_only=True)
     follower_count = serializers.IntegerField(source='followers.count', read_only=True)
     following_count = serializers.IntegerField(source='followings.count', read_only=True)
     ratings = RatingSerializer(many=True)

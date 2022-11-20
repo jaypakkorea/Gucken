@@ -30,13 +30,15 @@
             <div class="userTextName">Name</div>
             <div class="userText">{{profile.username.split('@')[0]}}</div>
             <div class="userTextName">Follower</div>
-            <div  style="display:flex; flex-direction: row;" v-for="follower in profile.followers" :key="follower.id">
-              <div>
-                <followerProfile :follower="follower" />
-              </div>
+            <div class="userText">{{profile.follower_count}}</div>
+            <div v-for="follower in profile.followers" :key="follower.id">
+                <div><followerProfile :follower="follower" /></div>
             </div>
             <div class="userTextName">Following</div>
-            <div class="userText">{{profile.followings}}</div>
+            <div class="userText">{{profile.following_count}}</div>
+            <div v-for="following in profile.followings" :key="following.id">
+                <div><followingProfile :following="following" /></div>
+            </div>
             <div class="userTextName">Add Movie</div>
             <div class="userText">{{profile.like_movies.length}}</div>
             <div class="userTextName">Joined</div>
@@ -110,6 +112,7 @@ import AddCardDiv from "./addListCard.vue";
 import { Carousel, Slide } from "vue-carousel";
 import ProfileArticles from "./ProfileArticles.vue";
 import followerProfile from "./followerProfile.vue";
+import followingProfile from "./followingProfile.vue";
 
 
 export default {
@@ -122,7 +125,7 @@ export default {
       selectedFile: '' ,
     };
   },
-  components: { AddCardDiv, Carousel, Slide, ProfileArticles, followerProfile },
+  components: { AddCardDiv, Carousel, Slide, ProfileArticles, followerProfile,followingProfile },
   computed: {
     profile() {
       return this.$store.getters.profile;
