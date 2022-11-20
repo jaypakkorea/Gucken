@@ -1,11 +1,15 @@
 <template>
   <div class="SearchFlexDiv">
     <div class="UserLeftDiv">
-      <img
+      <img button 
         class="userImg"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM5z7l_V183adxjX0NHjejDhNSdunjN8UoTkZIBKts_Q&s"
-        alt
+        :src="userProfile"
+        alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM5z7l_V183adxjX0NHjejDhNSdunjN8UoTkZIBKts_Q&s"
+        @click="$refs.profileImage.click()"
       />
+
+      <input style="display: none" type="file"  @change="inputProfilePic" ref="profileImage"  class="input-file" value="프로필 변경"  >
+
       <div class="userIconDiv">
         <font-awesome-icon icon="fa-solid fa-trophy" />
         <font-awesome-icon icon="fa-solid fa-medal" />
@@ -37,7 +41,9 @@
           <div class="userButtonDiv2" v-if="!correctState">
             <div >
               <b-button size="lg" style="margin-right: 100px;" v-b-modal.modal-password >비밀번호 변경</b-button>
-              <b-button size="lg">프로필 사진 변경</b-button>
+              <input type="file"  @change="inputProfilePic" ref="profileImage"  class="input-file">
+              <b-button @click="updateProfilePic" size="lg">프로필 사진 변경</b-button>
+
               <b-modal class="communityModal" ref="my-modal"  size="md" id="modal-password" title="게시글 작성">
                 <div>
                   <b-form-input v-model="password1" style="margin-bottom:30px;" size="lg" placeholder="새로운 비밀번호를 입력하세요"></b-form-input>
@@ -50,6 +56,7 @@
                       size="xl"
                       class="float-right"
                       @click="addChangePassword"
+                      enctype=“multipart/form-data”
                     >변경하기</b-button>
                   </div>
                 </template>
@@ -103,15 +110,34 @@ export default {
       correctState: 1,
       password1:null,
       password2: null,
+      selectedFile: '' ,
     };
   },
   components: { AddCardDiv, Carousel, Slide, ProfileArticles },
   computed: {
     profile() {
       return this.$store.getters.profile;
-    }
+    },
+    userProfile(){
+      if (this.profile.profile_pic) {
+        return `http://localhost:8000${this.profile.profile_pic}`  
+      } else {
+        return 'http://localhost:8000/media/profile/images/default.jpg'
+      }
+    } 
   },
   methods: {
+    inputProfilePic(event){
+      this.selectedFile = event.target.files[0]
+      this.updateProfilePic()
+    },
+    updateProfilePic(){
+      let fd = new FormData();
+      fd.append('profile_pic', this.selectedFile)
+      this.$store.dispatch("updateProfilePic", fd)
+      window.location.reload(true);
+    },
+
     followIng(){
       const payload = parseInt(this.$route.params.userid);
       this.$store.dispatch("followIng", payload);
@@ -144,6 +170,7 @@ export default {
 
     this.fetchProfile();
   }
+
 };
 </script>
 

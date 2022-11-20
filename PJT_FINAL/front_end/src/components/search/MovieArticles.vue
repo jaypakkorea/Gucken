@@ -4,6 +4,7 @@
         <div class="CommunitysDiv">
             <div v-b-modal="article.id+'가나다'"  class="CommunityDiv" v-for="article in movie.ratings" :key="article.id">
               <!-- <divstyle="display:flex; border:1px solid red;"> -->
+                <avatarProfile :article="article.user" />
                 <div class="communutyText">{{article.user.username.split('@')[0]}}</div>
                   <div class="communityScore">{{article.rate}}</div>
                 <div style="margin-right:20px;">{{article.title}}</div>
@@ -49,6 +50,8 @@
 <script>
 import axios from "axios";
 import Swal from 'sweetalert2';
+import avatarProfile from"./avatarProfile.vue"
+
 
 export default {
     name: "MovieArticles",
@@ -60,6 +63,16 @@ export default {
       articles: this.movie.ratings,
       recontent:null,
     };
+  },
+  components : {avatarProfile},
+  computed: {
+    userProfile(){
+      if (this.article.user.profile_pic) {
+        return `http://localhost:8000${this.article.user.profile_pic}`  
+      } else {
+        return 'http://localhost:8000/media/profile/images/default.jpg'
+      }
+    } 
   },
     watch: {
       articles: {

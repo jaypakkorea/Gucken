@@ -46,9 +46,7 @@ export default new Vuex.Store({
     ADD_LIST: (state, movie) => (state.movie = movie),
     SIGN_UP(state,token){
       state.token = token
-      console.log('회원가입 성공')
-      console.log(this.state.currentUser)
-      router.push({name: 'userProfile', params: { userid: this.state.currentUser }})
+      router.push({name: 'index'})
     },
     SAVE_TOKEN(state, token) {
       state.token = token
@@ -236,6 +234,24 @@ export default new Vuex.Store({
         context.commit('ADD_LIST', res.data)
       })
       .catch(err => console.log(err))
+    },
+    updateProfilePic(context, info){
+      const userId = this.state.profile.id
+      axios({
+        url: `${API_URL}/profile/${userId}/update/`,
+        method: "put",
+        data : info,
+        headers: {
+          "Content-Type": "multipart/form-data",
+          Authorization : `Token ${context.state.token}`
+        },
+      })
+      .then((res) => {
+        console.log(res)
+      })
+      .catch((err) => {
+        alert(err.message)
+      });
     },
     followIng(context, payload) {
       axios({

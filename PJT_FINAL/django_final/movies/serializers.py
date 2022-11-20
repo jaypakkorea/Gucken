@@ -21,7 +21,7 @@ class PopularityMovieListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Movie
-        fields = '__all__'
+        exclude = ('popularity', 'tagline', 'vote_count', 'words', 'budget', 'revenue','runtime',)
 
 
 class MovieGenreSerializer(serializers.ModelSerializer):
@@ -36,7 +36,7 @@ class TopMovieListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Movie
-        fields = '__all__'
+        exclude = ('popularity', 'tagline', 'words', 'budget', 'revenue','runtime',)
 
 
 
@@ -60,7 +60,7 @@ class RatingSerializer(serializers.ModelSerializer):
     class UserSerializer(serializers.ModelSerializer):
         class Meta:
             model = User
-            fields =('pk', 'username',)
+            fields =('pk', 'username', 'profile_pic')
 
     user = UserSerializer(read_only=True)
 

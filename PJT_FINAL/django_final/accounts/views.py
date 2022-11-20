@@ -23,9 +23,6 @@ def profile(request, user_pk):
 def follow(request, user_pk):
     profile_user = get_object_or_404(get_user_model(), pk=user_pk)
     me = request.user
-    print(profile_user, me)
-    print(profile_user.pk, me)
-
     
     if me != profile_user:
         if me.followings.filter(pk=profile_user.pk).exists():
@@ -40,22 +37,25 @@ def follow(request, user_pk):
 
 
 @api_view(['POST', 'PUT'])
-def update_profile(request, username):
+def update_profile(request, user_pk):
 
-    profile_user = get_object_or_404(get_user_model(), username=username)
+    profile_user = get_object_or_404(get_user_model(), pk=user_pk)
     me = request.user
+    print(profile_user)
+    print(request.data)
     if request.method == 'PUT':
-        profile = profile_user.profile
+        print(me)
         if me == profile_user:
-            serializer = ProfileSerializer(instance=profile, data=request.data)
+            print(request.data)
+            serializer = ProfileUpdateSerializer(instance=request.user, data=request.data)
             if serializer.is_valid(raise_exception=True):
                 serializer.save()
                 return Response(serializer.data)
     
     if request.method == 'POST':
         if me == profile_user:
-            serializer = ProfileSerializer(data=request.data)
+            serializer = ProfileUpdateSerializer(data=request.data)
             if serializer.is_valid(raise_exception=True):
-                serializer.save(user=request.user)
+                serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
 
