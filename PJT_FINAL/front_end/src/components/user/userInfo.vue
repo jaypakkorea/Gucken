@@ -56,7 +56,21 @@
             </div>
           </div>
         </b-tab>
-        <b-tab title="ARTICLES"></b-tab>
+        <b-tab title="ARTICLES">
+          <h1 style="color:red">{{profile.ratings_count}}</h1>
+          <p>{{profile.ratings[0].title}}</p>
+          <p>{{profile.ratings[0].rate}}</p>
+          <p>{{profile.ratings[0].title}}</p>
+          <p>{{profile.ratings[0].content}}</p>
+          <p>{{profile.ratings[0].created_at}}</p>
+          <p>{{profile.ratings[0].movie}}</p>
+          <p>{{profile.ratings[1].title}}</p>
+          <p>{{profile.ratings[1].rate}}</p>
+          <p>{{profile.ratings[1].title}}</p>
+          <p>{{profile.ratings[1].content}}</p>
+          <p>{{profile.ratings[1].created_at}}</p>
+          <p>{{profile.ratings[1].movie}}</p>
+        </b-tab>
         <b-tab title="ADD LIST" active>
           <carousel
             :loop="true"
@@ -95,6 +109,7 @@ export default {
       correctState: 1,
       password1:null,
       password2: null,
+      profileArticles : null
     };
   },
   components: { AddCardDiv, Carousel, Slide },
@@ -119,10 +134,14 @@ export default {
         password2,
       }
       this.$store.dispatch('changePassword', payload)
-    }
+    },
 
   },
   created() {
+    console.log(this.$store.state.profile)
+    console.log(this.$store.state.currentUser)
+    console.log('yes')
+
     this.fetchProfile();
   }
 };
