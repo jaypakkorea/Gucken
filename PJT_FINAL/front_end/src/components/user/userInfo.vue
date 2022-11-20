@@ -56,21 +56,11 @@
             </div>
           </div>
         </b-tab>
+        
         <b-tab title="ARTICLES">
-          <h1 style="color:red">{{profile.ratings_count}}</h1>
-          <p>{{profile.ratings[0].title}}</p>
-          <p>{{profile.ratings[0].rate}}</p>
-          <p>{{profile.ratings[0].title}}</p>
-          <p>{{profile.ratings[0].content}}</p>
-          <p>{{profile.ratings[0].created_at}}</p>
-          <p>{{profile.ratings[0].movie}}</p>
-          <p>{{profile.ratings[1].title}}</p>
-          <p>{{profile.ratings[1].rate}}</p>
-          <p>{{profile.ratings[1].title}}</p>
-          <p>{{profile.ratings[1].content}}</p>
-          <p>{{profile.ratings[1].created_at}}</p>
-          <p>{{profile.ratings[1].movie}}</p>
+          <ProfileArticles :profile=profile />
         </b-tab>
+
         <b-tab title="ADD LIST" active>
           <carousel
             :loop="true"
@@ -101,6 +91,8 @@
 <script>
 import AddCardDiv from "./addListCard.vue";
 import { Carousel, Slide } from "vue-carousel";
+import ProfileArticles from "./ProfileArticles.vue";
+
 
 export default {
   name: "UserInfo",
@@ -109,10 +101,9 @@ export default {
       correctState: 1,
       password1:null,
       password2: null,
-      profileArticles : null
     };
   },
-  components: { AddCardDiv, Carousel, Slide },
+  components: { AddCardDiv, Carousel, Slide, ProfileArticles },
   computed: {
     profile() {
       return this.$store.getters.profile;
