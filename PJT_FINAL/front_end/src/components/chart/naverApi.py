@@ -45,3 +45,7 @@ for movie in movie_list:
         print(response_body.decode('utf-8'))
     else:
         print("Error Code:" + rescode)
+
+# 받아온 데이터로 카드 만들고, 카드 눌렀을때 아이프레임으로(items.link) 모달 띄우면 이쁠듯
+# link 받아온 거에서 백슬러쉬 없애고 src에 보내줘야됨
+# <iframe class="actoriframe" src="https://movie.naver.com/movie/bi/mi/basic.nhn?code=223816" frameborder="0"></iframe>
