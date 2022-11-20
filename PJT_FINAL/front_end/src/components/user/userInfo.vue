@@ -1,12 +1,16 @@
 <template>
   <div class="SearchFlexDiv">
     <div class="UserLeftDiv">
-      <img button 
+      <!-- <img button 
         class="userImg"
         :src="userProfile"
         alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM5z7l_V183adxjX0NHjejDhNSdunjN8UoTkZIBKts_Q&s"
         @click="$refs.profileImage.click()"
-      />
+      /> -->
+      <b-avatar button size="15rem" 
+        :src="userProfile"
+        alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM5z7l_V183adxjX0NHjejDhNSdunjN8UoTkZIBKts_Q&s"
+        @click="$refs.profileImage.click()"></b-avatar>
 
       <input style="display: none" type="file"  @change="inputProfilePic" ref="profileImage"  class="input-file" value="프로필 변경"  >
 
@@ -26,7 +30,11 @@
             <div class="userTextName">Name</div>
             <div class="userText">{{profile.username.split('@')[0]}}</div>
             <div class="userTextName">Follower</div>
-            <div class="userText">{{profile.followers}}</div>
+            <div  style="display:flex; flex-direction: row;" v-for="follower in profile.followers" :key="follower.id">
+              <div>
+                <followerProfile :follower="follower" />
+              </div>
+            </div>
             <div class="userTextName">Following</div>
             <div class="userText">{{profile.followings}}</div>
             <div class="userTextName">Add Movie</div>
@@ -101,6 +109,7 @@
 import AddCardDiv from "./addListCard.vue";
 import { Carousel, Slide } from "vue-carousel";
 import ProfileArticles from "./ProfileArticles.vue";
+import followerProfile from "./followerProfile.vue";
 
 
 export default {
@@ -113,7 +122,7 @@ export default {
       selectedFile: '' ,
     };
   },
-  components: { AddCardDiv, Carousel, Slide, ProfileArticles },
+  components: { AddCardDiv, Carousel, Slide, ProfileArticles, followerProfile },
   computed: {
     profile() {
       return this.$store.getters.profile;

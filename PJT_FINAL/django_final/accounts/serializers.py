@@ -12,10 +12,13 @@ class UserSerializer(serializers.ModelSerializer):
 
 class ProfileSerializer(serializers.ModelSerializer):
 
-    followers = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
-    follower_count = serializers.IntegerField(source='followers.count', read_only=True)
-    following_count = serializers.IntegerField(source='followings.count', read_only=True)
     
+    class FollowFollowingSerializer(serializers.ModelSerializer):
+        
+        class Meta:
+            model = User
+            fields = ('id','username', 'profile_pic')
+
     class RatingSerializer(serializers.ModelSerializer):
         
         class UserSerializer(serializers.ModelSerializer):
@@ -35,6 +38,9 @@ class ProfileSerializer(serializers.ModelSerializer):
             fields = ('id', 'title', 'overview', 'poster_path', 'release_date', 'like_users',)
 
     # like_articles = ArticleSerializer(many=True)
+    followers = FollowFollowingSerializer(many=True, read_only=True)
+    follower_count = serializers.IntegerField(source='followers.count', read_only=True)
+    following_count = serializers.IntegerField(source='followings.count', read_only=True)
     ratings = RatingSerializer(many=True)
     like_movies = MovieSerializer(many=True)
     ratings_count = serializers.IntegerField(source='ratings.count', read_only=True)
@@ -42,6 +48,8 @@ class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = '__all__'
+
+
 
 class ProfileUpdateSerializer(serializers.ModelSerializer):
     class Meta:
