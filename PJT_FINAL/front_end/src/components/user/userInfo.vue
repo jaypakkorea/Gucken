@@ -11,7 +11,9 @@
         <font-awesome-icon icon="fa-solid fa-medal" />
         <font-awesome-icon icon="fa-solid fa-award" />
       </div>
-      <b-button variant="warning" class="followButton">FOLLOW</b-button>
+      <!-- <b-button  v-if="!parseInt(this.$route.params.userid) === this.$store.state.currentUser.pk" 
+        variant="warning" class="followButton">FOLLOW</b-button> -->
+      <b-button variant="warning" class="followButton" @click="followIng">FOLLOW</b-button>
     </div>
     <div class="UserRightDiv">
       <b-tabs content-class="mt-3">
@@ -56,7 +58,7 @@
             </div>
           </div>
         </b-tab>
-        
+
         <b-tab title="ARTICLES">
           <ProfileArticles :profile=profile />
         </b-tab>
@@ -110,6 +112,10 @@ export default {
     }
   },
   methods: {
+    followIng(){
+      const payload = parseInt(this.$route.params.userid);
+      this.$store.dispatch("followIng", payload);
+    },
     fetchProfile() {
       const payload = parseInt(this.$route.params.userid);
       this.$store.dispatch("fetchProfile", payload);
@@ -131,6 +137,9 @@ export default {
   created() {
     console.log(this.$store.state.profile)
     console.log(this.$store.state.currentUser)
+    console.log(this.$route.params.userid)
+    console.log(typeof parseInt(this.$route.params.userid))
+    console.log(typeof this.$store.state.currentUser.pk)
     console.log('yes')
 
     this.fetchProfile();

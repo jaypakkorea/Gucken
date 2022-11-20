@@ -237,6 +237,19 @@ export default new Vuex.Store({
       })
       .catch(err => console.log(err))
     },
+    followIng(context, payload) {
+      axios({
+        method: 'post',
+        url: `${API_URL}/profile/${payload}/follow/`,
+        headers : {
+          Authorization : `Token ${context.state.token}`
+        }
+      })
+      .then((res) => {
+        context.commit('SET_PROFILE', res.data)
+      })
+      .catch(err => console.log(err))
+    }
     // changePassword(context, payload){
     //   axios({
     //     method: 'post',
