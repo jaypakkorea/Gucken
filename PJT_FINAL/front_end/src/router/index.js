@@ -8,7 +8,8 @@ import userSignUp from '../views/UserSignUp.vue'
 import SearchDetailView from '../views/SearchDetailView.vue'
 import userProfile from '../views/UserProfileView.vue'
 import LogoutView from '../views/LogoutView.vue'
-
+// import LikeRecommendation from '../components/chart/LikeRecommendation.vue'
+import InputRecommendtion from '../components/chart/InputRecommendtion.vue'
 
 Vue.use(VueRouter)
 
@@ -37,6 +38,16 @@ const routes = [
     path: '/chart',
     name: 'chart',
     component: ChartView
+  },
+  // {
+  //   path: '/chart/like',
+  //   name: 'LikeRecommendation',
+  //   component: LikeRecommendation
+  // },
+  {
+    path: '/chart/input',
+    name: 'InputRecommendtion',
+    component: InputRecommendtion
   },
   {
     path: '/user',
