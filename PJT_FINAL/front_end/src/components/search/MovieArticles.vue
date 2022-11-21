@@ -14,33 +14,6 @@
                 
                 <b-modal centered ref="my-modal" hide-footer size="xl" :id="article.id+'가나다'">
                   <commentList :article=article />
-                  <!-- <div class="communityDetailModal">
-                    <div  class="communityDetailDate">{{article.created_at.split('T')[0].replace(/-/g,' / ')}}</div>
-                    <div  class="communityDetailDate">작성자 : {{article.user.username.split('@')[0]}}</div>
-
-                  <div class="communityDetailTitle">{{article.title}} </div>
-                  <div class="communityDetailContent">
-                    <div>{{article.content}} </div>
-                  </div>
-                  <div>
-                    <div class="communityDetailListDiv">댓글 목록</div>
-                    <div> 댓글1</div>
-                    <div> 댓글2</div>
-                    <div>{{article.id}}</div>
-                  </div>
-                  <div>
-                    <b-form-textarea v-model="recontent" size="lg" 
-                      placeholder="댓글을 입력하세요"
-                      no-resize rows="3" 
-                      id="textarea-no-resize2" 
-                      type="text" 
-                      @keyup.enter="addReCommunity"
-                      ></b-form-textarea>
-                      <div style="display:flex; justify-content:right;">
-                      <b-button v-on:click="addReCommunity">작성</b-button>
-                      </div>
-                  </div>
-                  </div> -->
                 </b-modal>
               <!-- </div> -->
             </div>

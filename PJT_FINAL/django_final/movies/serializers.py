@@ -124,24 +124,11 @@ class MovieSerializer(serializers.ModelSerializer):
             model = Actor
             fields = ('pk', 'name', 'profile_path')
     
-    class ArticleSerializer(serializers.ModelSerializer):
-    
-        class UserSerializer(serializers.ModelSerializer):
-            class Meta:
-                model = User
-                fields = ('pk', 'username',)
-
-        user = UserSerializer(read_only=True)
-    
-        class Meta:
-            model = Rating
-            fields = '__all__'
 
     genres = GenreSerializer(read_only=True, many=True)
     actors = ActorSerializer(read_only=True, many=True)
     like_movies = UserSerializer(read_only=True, many=True)
     ratings = RatingSerializer(many=True)
-    article = ArticleSerializer(read_only=True, many=True)
     
     class Meta:
         model = Movie
