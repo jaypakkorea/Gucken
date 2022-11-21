@@ -7,15 +7,33 @@
   <div class="communityDetailContent">
     <div>{{article.content}} </div>
   </div>
+  <div class="communityLike">
+    <!--  좋아요 안 한 사람 -->
+    <b-button @click="likeCommunity" v-if="!communityLike"  class="likeButton" variant="outline-danger">🤍</b-button>
+    <!-- 좋아요 한 사람은 -->
+    <b-button @click="likeCommunity" v-if="communityLike"  class="likeButton" variant="outline-danger">❤</b-button>
+    <div style="text-align: left;">0 명이 이 게시글을 좋아합니다.</div>
+  </div>
   <div>
     <div class="communityDetailListDiv">댓글 목록</div>
-    <div  v-for="comment in comments" :key="comment.pk">
+    <div style="margin-bottom:1rem;"  v-for="comment in comments" :key="comment.pk">
       <!-- <commentProfile/> -->
-      <div><commentProfile :comment="comment" /></div>
-      <div>{{comment.user.username.split('@')[0]}}</div>
-      <div>{{comment.content}}</div>
-      <div>{{comment.created_at.split('T')[0].replace(/-/g,' / ')}}</div>
-    </div>
+      <div class="d-flex ">
+        <div><commentProfile :comment="comment" /></div>
+        <div class="d-flex" style="margin-left:1rem; margin-top:0.3rem; width: 100%; justify-content:space-between;">
+          <div>
+            <div style="font-size:0.8rem;">{{comment.user.username.split('@')[0]}}</div>
+            <div style="font-size:0.7rem;">{{comment.created_at.split('T')[0].replace(/-/g,' / ')}}</div>
+          </div>
+          <div>
+            <b-button @click="likeRecommunity" v-if="!RecommunityLike"  class="likeButton" size="sm" variant="outline-danger">🤍</b-button>
+            <!-- 좋아요 한 사람은 -->
+            <b-button @click="likeRecommunity" v-if="RecommunityLike" class="likeButton" size="sm" variant="outline-danger">❤</b-button>
+          </div>
+        </div>
+      </div>
+        <div style="margin-top:0.5rem; font-weight: bold;">{{comment.content}}</div>
+    </div >
   </div>
   <div>
     <b-form-textarea v-model="recontent" size="lg" 
@@ -43,7 +61,9 @@ export default {
   data() {
     return {
       recontent : null,
-      comments : null
+      comments : null,
+      communityLike : false,
+      RecommunityLike : false,
     }
   },
   components: { commentProfile },
@@ -57,6 +77,9 @@ export default {
       } else {
         return 'http://localhost:8000/media/profile/images/default.jpg'
       }
+    },
+    isLogin(){
+      return this.$store.getters.isLogin
     }
   },
   created () {
@@ -113,9 +136,37 @@ export default {
           console.log(err)
         })
     },
+    likeCommunity() {
+      if (!this.isLogin) {
+        Swal.fire('로그인이 필요한 서비스 입니다')
+        this.$router.push({name:'user'})
+      } else {
+        this.communityLike = !this.communityLike;
+      }
+
+    },
+    likeRecommunity() {
+      if (!this.isLogin) {
+        Swal.fire('로그인이 필요한 서비스 입니다')
+        this.$router.push({name:'user'})
+      } else {
+
+        this.RecommunityLike = !this.RecommunityLike;
+      }
+
+    },
   }
 };
 </script>
 
 <style>
+.communityLike{
+  margin-top: -3rem;
+  text-align: end;
+  margin-bottom: 1rem;
+}
+.likeButton{
+  color: red;
+  font-size: 2rem;
+}
 </style>

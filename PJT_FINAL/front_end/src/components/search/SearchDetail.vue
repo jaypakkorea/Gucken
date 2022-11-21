@@ -182,7 +182,7 @@ export default {
     },
     likeMovie() {
       if (!this.isLogin) {
-        alert('로그인이 필요한 서비스 입니다')
+        Swal.fire('로그인이 필요한 서비스 입니다')
         this.$router.push({name:'user'})
       } else {
         const moviePk = this.movie.id;
@@ -202,7 +202,7 @@ export default {
     },
     communnityOpen(){
       if (!this.isLogin) {
-        alert('로그인이 필요한 서비스 입니다')
+        Swal.fire('로그인이 필요한 서비스 입니다')
         this.$router.push({name:'user'})
       }
     },
@@ -323,6 +323,7 @@ export default {
   /* justify-content: space-between; */
   margin: 2rem 0;
   flex-wrap: wrap;
+  max-width: 500px;
 }
 .detail_rate {
   display: flex;
