@@ -53,23 +53,47 @@ def all_genre_movie(request):
         return Response(serializer.data[:50])
 
 
+
+
+
+
+
 # 해당하는 장르 찾기
 @api_view(['GET'])
 def genre_movie(request, genre_pk):
     if request.method == 'GET':
         movies = get_list_or_404(Movie)
         serializer = MovieGenreSerializer(movies, many=True)
-        serializer = genre_serach(serializer.data , genre_pk)
-        return Response(serializer[:50])
 
-def genre_serach(lst, genre_pk):
+        dramaGenre = [994, 996, 1018, 1052, 1088, 1116, 1124, 1164, 1213, 1245, 1251, 1259, 1262, 1265, 1278, 1280, 1359, 1360, 1366, 1367, 1372, 1391, 1398, 1402, 1417, 1422, 1427, 1429, 1433, 1440, 1443, 1491, 1523, 1538, 1541, 1544, 1548, 1555, 1567, 1574, 1578, 1579, 1580, 1585, 1587, 1592, 1600, 1607, 1632, 1633]
+        comedyGenre = [792, 793, 797, 801, 802, 804, 805, 819, 820, 821, 823, 824, 826, 828, 829, 838, 840, 843, 844, 853, 857, 859, 866, 870, 871, 873, 874, 877, 881, 887, 891, 901, 903, 905, 907, 916, 921, 925, 934, 935, 947, 949, 961, 962, 967, 975, 978, 979, 982, 990]
+        actionGenre = [593, 594, 595, 596, 597, 598, 599, 600, 606, 612, 613, 615, 616, 624, 625, 627, 628, 629, 637, 638, 639, 640, 641, 642, 643, 648, 650, 654, 655, 665, 666, 670, 678, 686, 687, 688, 702, 703, 705, 711, 713, 745, 746, 769, 770, 773, 780, 783, 786, 788]
+        thrillerGenre = [381, 387, 388, 389, 401, 403, 404, 406, 409, 421, 422, 423, 424, 436, 439, 451, 453, 458, 459, 462, 464, 468, 470, 473, 475, 489, 490, 492, 497, 504, 506, 508, 509, 510, 522, 524, 527, 539, 546, 548, 550, 551, 553, 568, 574, 581, 582, 587, 590, 592]
+        adventureGenre = [186, 192, 197, 203, 205, 207, 219, 220, 221, 223, 226, 227, 229, 233, 234, 235, 238, 240, 241, 242, 243, 246, 248, 251, 261, 262, 267, 269, 272, 274, 275, 278, 279, 284, 289, 290, 293, 297, 309, 311, 322, 327, 334, 335, 338, 345, 346, 350, 379, 380]
+        aniGenre=[13, 14, 15, 16, 19, 28, 38, 55, 59, 64, 65, 69, 70, 71, 73, 76, 78, 79, 80, 88, 93, 98, 99, 101, 103, 104, 108, 109, 110, 111, 113, 116, 117, 137, 138, 141, 142, 144, 145, 146, 147, 153, 155, 162, 167, 173, 175, 177, 184, 185]
+        if genre_pk == 18 :
+            serializer = genre_serach(serializer.data , dramaGenre)
+        if genre_pk == 35 :
+            serializer = genre_serach(serializer.data , comedyGenre)
+        if genre_pk == 28 :
+            serializer = genre_serach(serializer.data , actionGenre)
+        if genre_pk == 53 :
+            serializer = genre_serach(serializer.data , thrillerGenre)
+        if genre_pk == 12 :
+            serializer = genre_serach(serializer.data , adventureGenre)
+        if genre_pk == 16 :
+            serializer = genre_serach(serializer.data , aniGenre)
+        return Response(serializer)
+
+def genre_serach(lst, genre):
     fetch_data = []
+
     for data in lst:
-        if genre_pk in data['genres'] :
-            tmp = {'pk': 0, 'title': '', 'overview': '' , 'genres': '', 'poster_path' : '', 'release_date' : '' }
-            tmp['pk'] = data['pk']; tmp['title'] = data['title']; tmp['overview'] = data['overview']; tmp['genres'] = data['genres'];  tmp['poster_path'] = data['poster_path']; tmp['release_date'] = data['release_date']
+        if data['pk'] in genre :
+            tmp = {'pk': 0, 'title': '', 'overview' : '', 'poster_path' : '', 'release_date' : ''}
+            tmp['pk'] = data['pk']; tmp['title'] = data['title']; tmp['overview'] = data['overview']; tmp['poster_path'] = data['poster_path']; tmp['release_date'] = data['release_date'];
             fetch_data.append(tmp)
-    
+
     return fetch_data
 
 
@@ -155,11 +179,12 @@ def search_movie(request, movie_name):
 
 def serach(lst, keyword):
     fetch_data = []
-    for data in lst:
-        tmp = {'pk': 0, 'title': '', 'overview': '' , 'poster_path':'', 'similarity':''}
-        tmp['pk'] = data['pk']; tmp['title'] = data['title']; tmp['overview'] = data['overview']; tmp['poster_path'] = data['poster_path']
-        tmp['similarity'] = jaro_winkler_similarity(keyword, data['title'])
-        fetch_data.append(tmp)
+    for data in lst :
+        if data['poster_path'] :
+            tmp = {'pk': 0, 'title': '', 'overview': '' , 'poster_path':'', 'similarity':''}
+            tmp['pk'] = data['pk']; tmp['title'] = data['title']; tmp['overview'] = data['overview']; tmp['poster_path'] = data['poster_path']
+            tmp['similarity'] = jaro_winkler_similarity(keyword, data['title'])
+            fetch_data.append(tmp)
     fetch_data.sort(key=lambda x : -x['similarity'])
     return fetch_data
 
@@ -199,7 +224,13 @@ def user_like_movie(request, user_pk):
     serializer = UserLikeMovieListSerializer(user)
     movies = get_list_or_404(Movie)
     movies_serializer = RecommendMovieListSerializer(movies, many=True)
-    
+
+    # movies_serializer_first = RecommendMovieListSerializer(movies, many=True)
+    # movies_serializer= []
+    # for movie in movies_serializer_first:
+    #     if movie['poster_path']:
+    #         movies_serializer.append(movie)
+
     # user가 좋아요한 영화 key값 담기
     movie_key = [data['pk'] for data in serializer.data.get('like_movies')]
 
@@ -216,7 +247,6 @@ def user_like_movie(request, user_pk):
           
     # 유사 영화 pk 반환
     result = recommend_movies_names(xMovie, idx, movies_serializer)
-
     # 유사 영화 pk 기반 querySet 생성
     final_movie = [get_object_or_404(Movie, pk=i) for i in result]
     final_serializer = UserChoiceSimilarMovieSerializer(final_movie, many=True)

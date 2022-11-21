@@ -121,7 +121,7 @@ export default new Vuex.Store({
         url: `${API_URL}/movies/search/genre/all`,
       })
       .then((res) => {
-        console.log('123456',res, context)
+        console.log('123456',res)
         context.commit('SET_SEARCH_GENRE', res.data)
       })
       .catch((err) => {

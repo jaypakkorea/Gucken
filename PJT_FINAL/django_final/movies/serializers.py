@@ -40,7 +40,7 @@ class RecommendMovieListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Movie
-        fields = ('pk', 'words',)
+        fields = ('pk', 'words', 'poster_path')
 
 class PopularityMovieListSerializer(serializers.ModelSerializer):
 
@@ -53,7 +53,7 @@ class MovieGenreSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Movie
-        fields = ('pk', 'title', 'overview', 'genres', 'poster_path', 'release_date')
+        fields = ('pk', 'title', 'overview', 'poster_path', 'release_date')
 
 
 
@@ -72,6 +72,7 @@ class MovieSearchSerializer(serializers.ModelSerializer):
     class Meta:
         model = Movie
         fields = ('pk', 'overview', 'title', 'poster_path', 'similarity',)
+
 
 # 유저 정보
 class UserSerializer(serializers.ModelSerializer):
@@ -193,6 +194,7 @@ class UserLikeMovieListSerializer(serializers.ModelSerializer):
     class Meta:
         model = get_user_model()
         fields = ('pk', 'username', 'like_movies',)
+
 
 # 사용자가 선택 또는 좋아요 한 영화와 비슷한 영화
 class UserChoiceSimilarMovieSerializer(serializers.ModelSerializer):
