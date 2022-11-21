@@ -55,9 +55,6 @@ def all_genre_movie(request):
 
 
 
-
-
-
 # 해당하는 장르 찾기
 @api_view(['GET'])
 def genre_movie(request, genre_pk):
@@ -128,8 +125,8 @@ def article_list_or_create(request, movie_pk):
     movie = get_object_or_404(Movie, pk=movie_pk)
 
     def article_list():
-        articles = get_object_or_404
-        serializer = MovieSerializer(movie, many=True)
+        articles = movie.ratings.all()
+        serializer = ArticleSerializer(articles, many=True)
         return Response(serializer.data)
     
     def create_article():
@@ -142,7 +139,6 @@ def article_list_or_create(request, movie_pk):
         return create_article()
     elif request.method == 'GET':
         return article_list()
-
 
 
 #popularity top 10 영화 목록 

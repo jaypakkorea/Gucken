@@ -4,7 +4,7 @@
     <div class="mainVideo min-w-full min-h-full">
       <video muted autoplay loop class="w-full h-full">
         <source
-          src="http://localhost:8000/media/main.mp4"
+          src="../../assets/mainVideo2.mp4"
           type='video/mp4;'
         />
       </video>

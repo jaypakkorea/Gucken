@@ -166,19 +166,23 @@ class ActorSerializer(serializers.ModelSerializer):
 
 
 
-# class ArticleListSerializer(serializers.ModelSerializer):
-
-#     class UserSerializer(serializers.ModelSerializer):
-#         class Meta:
-#             model = User
-#             fields = ('pk', 'username',)
-
-#     user = UserSerializer(read_only=True)
+class ArticleListSerializer(serializers.ModelSerializer):
     
-#     class Meta:
-#         model = Rating
-#         fields = ('pk', 'user', 'movie', 'title', 'content', 'rate', 'created_at', 'updated_at',)
+    class UserSerializer(serializers.ModelSerializer):
 
+        def __str__():
+            return self.name.username
+            
+        class Meta:
+            model = User
+            fields = ('pk', 'username',)
+        
+
+    user = UserSerializer(read_only=True)
+
+    class Meta:
+        model = Rating
+        fields = ('pk', 'movie', 'title', 'content', 'rate', 'created_at', 'updated_at',)
 
 # 사용자가 좋아요 누른 영화
 class UserLikeMovieListSerializer(serializers.ModelSerializer):

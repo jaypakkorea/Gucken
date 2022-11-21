@@ -51,8 +51,8 @@ class Rating(models.Model):
     like_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='like_ratings')
 
 
-    def __str__(self):
-        return self.user
+    # def __str__(self):
+    #     return self.user
 
 class Comment(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='comments')
