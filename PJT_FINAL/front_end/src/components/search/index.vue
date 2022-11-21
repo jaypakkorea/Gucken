@@ -55,7 +55,7 @@
               <indexSearchImg :poster_path="movie.poster_path" />
             </div>
             <div>
-              <div class="detailTitle">{{ movie.title }}</div>
+              <div class="detailTitle" style="font-family: BMDOHYEON">{{ movie.title }}</div>
               <div class="detailOverviewDiv">{{ movie.overview }}</div>
               <div class="detailOverviewDiv">{{ movie.release_date}}</div>
             </div>
@@ -66,7 +66,7 @@
   </div>
 </template>
   
-  <script>
+<script>
 import indexSearchImg from "./indexSearchImg.vue";
 export default {
   name: "SearchPage",
@@ -114,8 +114,21 @@ export default {
 };
 </script>
   
-  <style>
-a,
+<style>
+@font-face {
+  font-family: BMDOHYEON;
+  src: url(../../fonts/BMDOHYEON_ttf.ttf);
+}
+@font-face {
+  font-family: BMJUA;
+  src: url(../../fonts/BMJUA_ttf.ttf);
+}
+@font-face {
+  font-family: BMHANNAAir_ttf;
+  src: url(../../fonts/BMHANNAAir_ttf.ttf);
+}
+
+
 .routerLink {
   --bs-link-color: none;
   --bs-link-hover-color: none;
@@ -173,6 +186,7 @@ a,
   border-bottom: 3px solid white;
   background-color: transparent;
   box-shadow: none;
+  font-family: BMJUA ;
 }
 .searchSelectDiv {
   width: 270px;
@@ -181,6 +195,7 @@ a,
 .searchSelect {
   margin: 1rem;
   padding: 0.3rem 1rem;
+  font-family: BMDOHYEON
 }
 .searchSelect:hover {
   border: 1px solid #ffda4f;
@@ -232,5 +247,6 @@ a,
   font-size: 1.2rem;
   color: gray;
   line-height: 2rem;
+  font-family: BMHANNAAir_ttf;
 }
 </style>

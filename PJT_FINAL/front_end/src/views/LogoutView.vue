@@ -5,12 +5,17 @@
 </template>
 
 <script>
+import Swal from 'sweetalert2';
+
 
 export default {
   name: 'LogoutView',
   components: {
   },
   methods: {
+    alserMessage(){
+      Swal.fire('제목을 입력해주세요', '', 'error')
+    },
     logout() {
       this.$store.dispatch('logout')
     }
