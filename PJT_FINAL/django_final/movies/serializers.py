@@ -170,8 +170,6 @@ class ArticleListSerializer(serializers.ModelSerializer):
     
     class UserSerializer(serializers.ModelSerializer):
 
-        def __str__():
-            return self.name.username
             
         class Meta:
             model = User

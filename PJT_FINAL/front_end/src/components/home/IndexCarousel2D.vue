@@ -90,7 +90,7 @@ export default {
 .carousel2D {
   position: absolute;
   top: 65%;
-  left: 10%;
+  left: 8%;
   z-index: 3;
   width: 90%;
 }

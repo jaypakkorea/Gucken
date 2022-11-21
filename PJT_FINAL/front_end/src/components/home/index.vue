@@ -39,26 +39,49 @@
   
 <script>
 import IndexCarousel2D from './IndexCarousel2D.vue'
+import axios from "axios";
 
 export default {
   name: "IndexPage",
   components:{
-    IndexCarousel2D
+    IndexCarousel2D,
+  },
+  data() {
+    return {
+      videoUrl: "",
+    }
+
   },
   computed: {
     inLogin() {
       return this.$store.getters.isLogin
     }
   },
+  created(){
+  },
   methods : {
-    addList() {
-      if (this.isLogin) {
-        this.$store.dispatch('addList')
-      } else {
-        alert ( '로그인이 필요한 서비스 입니다.')
-        this.$router.push({name: 'user'})
-      }
-    }
+    InputGetEvent() {
+      const baseURL = "https://www.googleapis.com/youtube/v3/search";
+
+      axios
+        .get(baseURL, {
+          params: {
+            key: "AIzaSyDvjcb7odUilSZEcCyXBY2rX9z0fTYYWvQ",
+            part: "snippet",
+            type: "video",
+            q: "avatar2" ,
+            maxResults: 1
+          }
+        })
+        .then(response => {
+          this.videoUrl = `https://www.youtube.com/embed/${response.data.items[0].id.videoId}?autoplay=1&mute=1`;
+          console.log(this.videoUrl);
+        })
+        .catch(error => {
+          console.log("something wrong!");
+          console.log(error);
+        });
+    },
   }
 };
 </script>
@@ -87,15 +110,17 @@ export default {
 }
 
 
+
 .mainVideo {
   position: absolute;
   /* left: 50px; */
+  right:0;
   top : 0;
-  width: 100%;
+  width:100%;
   overflow: hidden;
   margin: 0px;
   object-fit: fill;
-  z-index: -1;
+  z-index: 0;
 
 }
 
@@ -110,14 +135,12 @@ video {
 }
 
 .bg-overlay {
-  
   display: block;
   position: absolute;
   top: 0;
-  width: 100%;
   min-height: 150vh;
   content: " ";
-  z-index: -2;
+  z-index: 3;
   backface-visibility: hidden;
   background: black;
   background: linear-gradient(77deg, rgba(0, 0, 0, 0.6), transparent 85%);
@@ -128,7 +151,7 @@ video {
   text-align: center;
   position: absolute;
   top: 10%;
-  left: 10%;
+  left: 8%;
   font-family: Staatliches;
   text-align: left;
   font-size: 5rem;
