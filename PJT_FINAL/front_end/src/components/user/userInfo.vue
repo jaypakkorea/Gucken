@@ -77,7 +77,7 @@
         </b-tab>
 
         <b-tab title="ARTICLES">
-          <ProfileArticles :profile=profile />
+          <ProfileArticles :profile=profile :userProfile=userProfile />
         </b-tab>
 
         <b-tab title="ADD LIST" lazy >

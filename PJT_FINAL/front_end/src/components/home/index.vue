@@ -39,6 +39,7 @@
   
 <script>
 import IndexCarousel2D from './IndexCarousel2D.vue'
+import Swal from "sweetalert2";
 
 export default {
   name: "IndexPage",
@@ -55,7 +56,7 @@ export default {
       if (this.isLogin) {
         this.$store.dispatch('addList')
       } else {
-        alert ( '로그인이 필요한 서비스 입니다.')
+        Swal.fire( '로그인이 필요한 서비스 입니다.','','error')
         this.$router.push({name: 'user'})
       }
     }

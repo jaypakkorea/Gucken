@@ -94,7 +94,7 @@
                 </template>
               </b-modal>
             </div>
-            <MovieArticles :movie=movie />
+            <MovieArticles :movie=movie  />
           </b-tab>
         </b-tabs>
       </div>
@@ -182,7 +182,7 @@ export default {
     },
     likeMovie() {
       if (!this.isLogin) {
-        Swal.fire('로그인이 필요한 서비스 입니다')
+        Swal.fire('로그인이 필요한 서비스 입니다', '', 'error')
         this.$router.push({name:'user'})
       } else {
         const moviePk = this.movie.id;
@@ -202,7 +202,7 @@ export default {
     },
     communnityOpen(){
       if (!this.isLogin) {
-        Swal.fire('로그인이 필요한 서비스 입니다')
+        Swal.fire('로그인이 필요한 서비스 입니다', '', 'error')
         this.$router.push({name:'user'})
       }
     },
@@ -364,6 +364,7 @@ export default {
   padding-top: 1rem;
   position: relative;
   z-index: 1;
+  margin: auto 0;
 }
 .pluscommunuty {
   width: 40px;
@@ -390,6 +391,7 @@ export default {
 
 .CommunitysDiv {
   margin: 20px 50px;
+
 }
 .CommunityDiv {
   border: 1px solid white;
@@ -397,6 +399,7 @@ export default {
   margin: 10px 0;
   padding: 10px 20px;
   display: flex;
+  color: white;
 }
 .communityUserImg {
   width: 50px;
@@ -406,25 +409,54 @@ export default {
 }
 .communityScore {
   color: black;
-  font-size: 2rem;
-  margin: 0 20px;
+  font-size: 1.8rem;
+  margin: auto 30px;
   padding: 0 20px;
   border-radius: 5px;
-  z-index: 10;
   background-color: rgb(211, 209, 209);
+  min-width: 125px;
+  text-align: center;
+  max-height: 50px;
+  
+}
+.communityTitle{
+  margin-right:20px;
+  font-size:2rem;
+  font-weight:bold;
+  line-height: fit-content;
+  word-break: normal;
+  word-wrap:break-word;
+  min-width: 63%;
+  max-width: 63%;
+}
+.communityTitle2{
+  margin-right:20px;
+  font-size:2rem;
+  font-weight:bold;
+  line-height: fit-content;
+  word-break: normal;
+  word-wrap:break-word;
+  min-width: 55%;
+  max-width: 60%;
+}
+.communityDate{
+  
+  font-weight:bold;
+  margin: auto 0;
+
 }
 .communityScoreHigh {
   color: black;
   font-size: 2rem;
   padding: 0;
   border-radius: 5px;
-  z-index: 10;
   background-color: #ffda4f;
 }
 .communutyText {
   margin-left: 2rem;
   color: white;
   font-size: 2rem;
+  margin: auto 0;
 }
 
 .communityModal{
