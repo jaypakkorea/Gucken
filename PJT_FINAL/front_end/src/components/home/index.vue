@@ -17,14 +17,15 @@
         data-aos-duration="2000"
         data-aos-delay="1000"
       >
-        <p class="avatarTitle" style="font-family: BMDOHYEON">아바타 : <br />물의 길</p>
+      <p style=" font-size:1.4rem;font-family: BMHANNAAir_ttf" >COMMING SOON...</p>
+        <p class="avatarTitle" style="font-family: BMDOHYEON; line-height: 110%; margin-left: -7px">아바타 : <br />물의 길</p>
         <div class="avatarHead">
           <b-button variant="secondary" size="sm">ALL</b-button>
           <b-button variant="warning" size="sm" style="margin-left: 3rem">Watch</b-button>
           <p style="margin-left: 3rem">2022</p>
           
         </div>
-        <p class="avatarText" style="font-family: BMJUA_ttf">
+        <p class="avatarText" style="font-family: BMHANNAAir_ttf">
           2009년 개봉한 영화 아바타의 두번째 시리즈로  <br />
           첫번째 작품의 사건이 발생한 이후의 이야기를 다룬다.
           <br />
@@ -80,7 +81,10 @@ export default {
   font-family: BMJUA;
   src: url(../../fonts/BMJUA_ttf.ttf);
 }
-
+@font-face {
+  font-family: BMHANNAAir_ttf;
+  src: url(../../fonts/BMHANNAAir_ttf.ttf);
+}
 
 
 .mainVideo {
