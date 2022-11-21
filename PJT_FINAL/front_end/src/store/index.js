@@ -24,7 +24,7 @@ export default new Vuex.Store({
     profile: {},
     genre : {},
     community:[],
-    recommendationMovies: [],
+    // recommendationMovies: [],
   },
   getters: {
     isLoggedIn: (state) => !!state.token,
@@ -33,7 +33,7 @@ export default new Vuex.Store({
       return state.token ? true : false
     },
     profile: (state) => state.profile,
-    recommendationMovies: (state) => state.recommendationMovies,
+    // recommendationMovies: (state) => state.recommendationMovies,
   },
   mutations: {
     GET_TOP10_MOVIES(state, topmovies) {
@@ -56,7 +56,7 @@ export default new Vuex.Store({
     SET_CURRENT_USER: (state, user) => (state.currentUser = user),
     SET_PROFILE: (state, profile) => (state.profile = profile),
     SET_SEARCH_GENRE : (state, genre) => (state.genre = genre),
-    SET_RECOMMENDATION_MOVIES: (state, recommendation) => (state.recommendationMovies = recommendation),
+    // SET_RECOMMENDATION_MOVIES: (state, recommendation) => (state.recommendationMovies = recommendation),
 
   },
   actions: {
@@ -87,20 +87,20 @@ export default new Vuex.Store({
         console.log(err)
       })
     },
-    userRecommendMovie(context){
-      axios({
-        method: 'get',
-        url: `${API_URL}/movies/${this.state.currentUser.pk}/recommendation/`,
-      })
-      .then((res) => {
-        console.log(res, context)
-        console.log(this.state.currentUser.pk)
-        context.commit('SET_RECOMMENDATION_MOVIES', res.data)
-      })
-      .catch((err) => {
-        console.log(err)
-      })
-    },
+    // userRecommendMovie(context){
+    //   axios({
+    //     method: 'get',
+    //     url: `${API_URL}/movies/${this.state.currentUser.pk}/recommendation/`,
+    //   })
+    //   .then((res) => {
+    //     console.log(res, context)
+    //     console.log(this.state.currentUser.pk)
+    //     context.commit('SET_RECOMMENDATION_MOVIES', res.data)
+    //   })
+    //   .catch((err) => {
+    //     console.log(err)
+    //   })
+    // },
     search(context, movieName){
       axios({
         method: 'get',

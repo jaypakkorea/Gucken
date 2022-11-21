@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="SearchContainer">
         <IndexPage />
     </div>
 </template>
@@ -15,5 +15,9 @@ export default {
 </script>
 
 <style>
-
+.SearchContainer{
+  margin-left: 50px;
+  background-color: black;
+  min-height: 100vh;
+}
 </style>
