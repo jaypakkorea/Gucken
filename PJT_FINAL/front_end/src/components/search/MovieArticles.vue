@@ -9,7 +9,6 @@
                   <div class="communityScore">{{article.rate}}</div>
                 <div style="margin-right:20px;">{{article.title}}</div>
                 <div style="margin-right:20px;">{{article.content}}</div>
-
                 <div >{{article.created_at.split('T')[0].replace(/-/g,' / ')}}</div>
                 
                 <b-modal centered ref="my-modal" hide-footer size="xl" :id="article.id+'가나다'">
