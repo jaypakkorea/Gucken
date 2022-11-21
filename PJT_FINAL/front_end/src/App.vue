@@ -21,7 +21,7 @@
         <!-- 로그인 됬으몈 -->
         <!-- <router-link ="isLogin" to="/user/profile/:username"> -->
 
-        <router-link v-if="isLogin" :to="{ name: 'userProfile', params: { userid } }">
+        <router-link v-if="isLogin"  :to="{ name: 'userProfile', params: { userid } }">
           <font-awesome-icon icon="fa-solid fa-circle-user" />
         </router-link>
         <!-- 로그인 안됬으면 -->
