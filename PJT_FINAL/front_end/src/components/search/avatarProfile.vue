@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <b-avatar button @click="onClick" :src="userProfile"></b-avatar>
+  <div style="margin:auto 10px;">
+    <b-avatar  button @click="onClick" :src="userProfile"></b-avatar>
   </div>
 </template>
 

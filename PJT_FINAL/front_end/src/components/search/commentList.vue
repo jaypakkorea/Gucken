@@ -126,7 +126,7 @@ export default {
             html: '댓글 작성 성공~🎉',
             confirmButtonText: `확인`,
             confirmButtonColor: '#FFC83A',
-            timer: 1500,
+            timer: 1000,
             width: 450,
             allowEnterKey: false,
           });
@@ -138,7 +138,7 @@ export default {
     },
     likeCommunity() {
       if (!this.isLogin) {
-        Swal.fire('로그인이 필요한 서비스 입니다')
+        Swal.fire('로그인이 필요한 서비스 입니다', '', 'error')
         this.$router.push({name:'user'})
       } else {
         this.communityLike = !this.communityLike;
@@ -147,7 +147,7 @@ export default {
     },
     likeRecommunity() {
       if (!this.isLogin) {
-        Swal.fire('로그인이 필요한 서비스 입니다')
+        Swal.fire('로그인이 필요한 서비스 입니다', '', 'error')
         this.$router.push({name:'user'})
       } else {
 

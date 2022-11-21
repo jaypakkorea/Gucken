@@ -7,11 +7,15 @@
                 <avatarProfile :article="article.user" />
                 <p>{{article}}</p>
                 <div class="communutyText">{{article.user.username.split('@')[0]}}</div>
-                  <div class="communityScore">{{article.rate}}</div>
-                <div style="margin-right:20px;">{{article.title}}</div>
-                <div style="margin-right:20px;">{{article.content}}</div>
-                <div >{{article.created_at.split('T')[0].replace(/-/g,' / ')}}</div>
-                
+
+                <div class="communityScore" v-if="article.rate<=6">👎 {{article.rate}}</div>
+                <div
+                  class="communityScore"
+                  style="background-color:#ffda4f;"
+                  v-if="article.rate>6"
+                >👍 {{article.rate}}</div>
+                  <div class="communityTitle2">{{article.title}}<br/> <p style="font-size:1.3rem;">{{article.content}}</p></div>
+                <div class="communityDate">{{article.created_at.split('T')[0].replace(/-/g,' / ')}}</div>
                 <b-modal centered ref="my-modal" hide-footer size="xl" :id="article.id+'가나다'">
                   <commentList :article=article />
                 </b-modal>

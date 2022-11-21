@@ -3,6 +3,7 @@ import Vuex from 'vuex'
 import axios from 'axios'
 import createPersistedState from 'vuex-persistedstate'
 import router from '@/router'
+import Swal from "sweetalert2";
 
 
 Vue.use(Vuex)
@@ -159,7 +160,7 @@ export default new Vuex.Store({
           context.dispatch("fetchCurrentUser")
         })
         .catch((err) => {
-          alert(err.message)
+          Swal.fire(err.message, '', 'error')
         })
     },
     logIn(context, payload) {
@@ -179,7 +180,7 @@ export default new Vuex.Store({
         context.dispatch("fetchCurrentUser")
       })
       .catch((err) => {
-        alert(err.message)
+        Swal.fire(err.message, '', 'error')
       })
     },
     logout(context) {
@@ -190,7 +191,7 @@ export default new Vuex.Store({
       .then(() => {
         context.commit("SET_TOKEN", "")
         localStorage.setItem("token", "")
-        alert("성공적으로 logout 되었습니다.")
+        Swal.fire({html:"성공적으로 logout 되었습니다.", timer: 1500})
         router.push({ name: "index" })
       })
       .catch((err) => console.error(err));
@@ -250,7 +251,7 @@ export default new Vuex.Store({
         console.log(res)
       })
       .catch((err) => {
-        alert(err.message)
+        Swal.fire(err.message, '', 'error')
       });
     },
     followIng(context, payload) {

@@ -1,45 +1,56 @@
 <template>
-  <div class='mylogout'>
-    <div class='mylogout'></div>
+  <div class="mylogout">
+    <div class="mylogout"></div>
   </div>
 </template>
 
 <script>
-import Swal from 'sweetalert2';
-
+import Swal from "sweetalert2";
 
 export default {
-  name: 'LogoutView',
-  components: {
-  },
+  name: "LogoutView",
+  components: {},
   methods: {
-    alserMessage(){
-      Swal.fire('제목을 입력해주세요', '', 'error')
+    alserMessage() {
+      Swal.fire({
+        title: "로그아웃 하시겠습니까?",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "로그아웃",
+        cancelButtonText: "취소"
+      }).then(result => {
+        if (result.value) {
+          this.logout()
+        }
+      });
     },
     logout() {
-      this.$store.dispatch('logout')
+      this.$store.dispatch("logout");
     }
   },
   computed: {
     isLoggedIn() {
-      return this.$store.getters.isLoggedIn
-  }
+      return this.$store.getters.isLoggedIn;
+    }
   },
   created() {
     if (this.isLoggedIn) {
-      this.logout()
+      this.alserMessage();
     } else {
-      alert('잘못된 접근입니다.')
-      this.$router.back()
+      Swal.fire("잘못된 접근입니다.", '', 'error');
+      this.$router.back();
     }
   }
-}
+};
 </script>
 
 <style>
-.mylogout{
+.mylogout {
   margin-left: 50px;
   background-color: black;
   min-height: 100vh;
+  color: white;
 }
 </style>
