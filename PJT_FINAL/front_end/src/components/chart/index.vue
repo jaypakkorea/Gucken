@@ -57,7 +57,7 @@ export default {
       })
       .then((res) => {
         console.log('456123');
-        console.log('toppp',res)
+        console.log('toppp',res.data[0].poster_path)
         this.recommendmovies = res.data
         this.isLoading = false
       })
@@ -72,10 +72,10 @@ export default {
   },
   created() {
     setTimeout(() => this.rodingText = '영화 목록 가져오는 중...', 2000)
-    setTimeout(() => this.rodingText = '10,000개 데이터에서 비슷한 영화 찾는중...', 4000)
-    setTimeout(() => this.rodingText = '추천 영화 하나씩 담는 중...', 6500)
-    setTimeout(() => this.rodingText = '영화 목록 이쁘게 정리 중...', 9000)
-    setTimeout(() => this.rodingText = '영화 목록 포장하는 중...', 11000)
+    setTimeout(() => this.rodingText = '10,000개 데이터에서 비슷한 영화 찾는중...', 3500)
+    setTimeout(() => this.rodingText = '추천 영화 하나씩 담는 중...', 4500)
+    setTimeout(() => this.rodingText = '영화 목록 이쁘게 정리 중...', 6000)
+    setTimeout(() => this.rodingText = '영화 목록 포장하는 중...', 8000)
 
     this.userRecommendMovie()
   },

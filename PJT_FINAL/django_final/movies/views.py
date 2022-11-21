@@ -192,7 +192,6 @@ def serach(lst, keyword):
 
 # 추천 알고리즘
 def recommend_movies_names(xMovie, idx, movies):
-    
     # 불용어 제거
     countVec = CountVectorizer(max_features=10000, stop_words='english')
 
@@ -225,11 +224,6 @@ def user_like_movie(request, user_pk):
     movies = get_list_or_404(Movie)
     movies_serializer = RecommendMovieListSerializer(movies, many=True)
 
-    # movies_serializer_first = RecommendMovieListSerializer(movies, many=True)
-    # movies_serializer= []
-    # for movie in movies_serializer_first:
-    #     if movie['poster_path']:
-    #         movies_serializer.append(movie)
 
     # user가 좋아요한 영화 key값 담기
     movie_key = [data['pk'] for data in serializer.data.get('like_movies')]
@@ -238,7 +232,7 @@ def user_like_movie(request, user_pk):
     idx = []
     for key in movie_key:
         for i in range(len(movies_serializer.data)):
-            if key == movies_serializer.data[i]['pk']:
+            if key == movies_serializer.data[i]['pk'] and movies_serializer.data[i]['poster_path'][1]:
                 idx.append(i)
                 break
 
@@ -248,9 +242,9 @@ def user_like_movie(request, user_pk):
     # 유사 영화 pk 반환
     result = recommend_movies_names(xMovie, idx, movies_serializer)
     # 유사 영화 pk 기반 querySet 생성
+
     final_movie = [get_object_or_404(Movie, pk=i) for i in result]
     final_serializer = UserChoiceSimilarMovieSerializer(final_movie, many=True)
-
     return Response(final_serializer.data)
 
 
