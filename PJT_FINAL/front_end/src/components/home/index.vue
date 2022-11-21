@@ -39,11 +39,8 @@
   
 <script>
 import IndexCarousel2D from './IndexCarousel2D.vue'
-<<<<<<< HEAD
 import axios from "axios";
-=======
 import Swal from "sweetalert2";
->>>>>>> 9d2ea22f7787021b0d79a33b2e132f1bf6c01c5e
 
 export default {
   name: "IndexPage",
@@ -64,7 +61,6 @@ export default {
   created(){
   },
   methods : {
-<<<<<<< HEAD
     InputGetEvent() {
       const baseURL = "https://www.googleapis.com/youtube/v3/search";
 
@@ -87,7 +83,7 @@ export default {
           console.log(error);
         });
     },
-=======
+
     addList() {
       if (this.isLogin) {
         this.$store.dispatch('addList')
@@ -96,7 +92,6 @@ export default {
         this.$router.push({name: 'user'})
       }
     }
->>>>>>> 9d2ea22f7787021b0d79a33b2e132f1bf6c01c5e
   }
 };
 </script>
