@@ -31,13 +31,21 @@ export default {
         })
         .then((res) => {
         this.movie = res.data
-        console.log(this.movie)
         })
         .catch((err) => {
         console.log(err)
     })
     }
-  }
+    },
+    watch: {
+        movie: {
+        deep : true,
+        handler : function() {
+          console.log('The list of colours has changed!')
+          console.log(this.movie, 'ddd')
+        },
+      }
+    }
 }
 </script>
 

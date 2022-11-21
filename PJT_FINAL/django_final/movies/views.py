@@ -24,6 +24,24 @@ def movie_list(request):
         return Response(serializer.data)
 
 
+@api_view(['POST'])
+def create_comment(request, movie_pk, article_pk):
+    user = request.user
+    movie = get_object_or_404(Movie, pk=movie_pk)
+    article = get_object_or_404(Rating, pk=article_pk)
+
+    
+    serializer = CommentSerializer(data=request.data)
+    if serializer.is_valid(raise_exception=True):
+        serializer.save(article=article, user=user)
+
+        # 기존 serializer 가 return 되면, 단일 comment 만 응답으로 받게됨.
+        # 사용자가 댓글을 입력하는 사이에 업데이트된 comment 확인 불가 => 업데이트된 전체 목록 return 
+        comments = article.comments.all()
+        serializer = CommentSerializer(comments, many=True)
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+
 # 장루 무관 모든 영화 중 50개 
 @api_view(['GET'])
 def all_genre_movie(request):

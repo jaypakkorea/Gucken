@@ -22,12 +22,3 @@ class User(AbstractUser):
         	format = 'JPEG',
         	options = {'quality':90},
     		)
-
-class favorite(models.Model):
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    drama = models.IntegerField()
-    comedy = models.IntegerField()
-    action = models.IntegerField()
-    thriller = models.IntegerField()
-    adventure = models.IntegerField()
-    anime  = models.IntegerField()

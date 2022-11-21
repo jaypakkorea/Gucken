@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
-from .models import Movie, Actor, Genre, Rating
+from .models import Movie, Actor, Genre, Rating, Comment
 
 User = get_user_model()
 
@@ -9,6 +9,31 @@ class MovieListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Movie
         fields = ('pk', 'title', 'vote_average', 'vote_count')
+
+
+class CommentSerializer(serializers.ModelSerializer):
+    
+    class UserSerializer(serializers.ModelSerializer):
+        class Meta:
+            model = User
+            fields = ('pk', 'username', 'profile_pic')
+
+    user = UserSerializer(read_only=True)
+
+    class ArticleSerializer(serializers.ModelSerializer):
+    
+    
+        class Meta:
+            model = Rating
+            fields = ('pk',)
+
+    article = ArticleSerializer(read_only=True)
+    
+    class Meta:
+        model = Comment
+        fields = ('pk', 'user', 'article', 'content', 'created_at', 'updated_at',)
+        read_only_fields = ('article', )
+
 
 # 여러 영화 제공
 class RecommendMovieListSerializer(serializers.ModelSerializer):
@@ -110,7 +135,7 @@ class MovieSerializer(serializers.ModelSerializer):
     
         class Meta:
             model = Rating
-            fields = ('pk', 'user', 'movie', 'title', 'content', 'rate', 'created_at', 'updated_at',)
+            fields = '__all__'
 
     genres = GenreSerializer(read_only=True, many=True)
     actors = ActorSerializer(read_only=True, many=True)
@@ -153,18 +178,18 @@ class ActorSerializer(serializers.ModelSerializer):
 
 
 
-class ArticleListSerializer(serializers.ModelSerializer):
+# class ArticleListSerializer(serializers.ModelSerializer):
 
-    class UserSerializer(serializers.ModelSerializer):
-        class Meta:
-            model = User
-            fields = ('pk', 'username',)
+#     class UserSerializer(serializers.ModelSerializer):
+#         class Meta:
+#             model = User
+#             fields = ('pk', 'username',)
 
-    user = UserSerializer(read_only=True)
+#     user = UserSerializer(read_only=True)
     
-    class Meta:
-        model = Rating
-        fields = ('pk', 'user', 'movie', 'title', 'content', 'rate', 'created_at', 'updated_at',)
+#     class Meta:
+#         model = Rating
+#         fields = ('pk', 'user', 'movie', 'title', 'content', 'rate', 'created_at', 'updated_at',)
 
 
 # 사용자가 좋아요 누른 영화

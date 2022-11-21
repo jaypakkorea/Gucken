@@ -25,7 +25,7 @@
     </div>
     <div class="UserRightDiv">
       <b-tabs content-class="mt-3">
-        <b-tab title="PROFILE">
+        <b-tab title="PROFILE" active>
           <div class="userProfileDiv" v-if="correctState">
             <div class="userTextName">Name</div>
             <div class="userText">{{profile.username.split('@')[0]}}</div>
@@ -80,7 +80,7 @@
           <ProfileArticles :profile=profile />
         </b-tab>
 
-        <b-tab title="ADD LIST" active>
+        <b-tab title="ADD LIST" lazy >
           <carousel
             :loop="true"
             v-bind:autoplay="true"

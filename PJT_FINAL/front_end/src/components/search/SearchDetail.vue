@@ -65,7 +65,7 @@
               frameborder="0"
             ></iframe>
           </b-tab>
-          <b-tab title="COMMUNITY">
+          <b-tab title="COMMUNITY" lazy>
             <div class="commumityButtonDiv">
               <b-button v-b-modal.modal-1>
                 <font-awesome-icon @click="communnityOpen" class="pluscommunuty" icon="fa-solid fa-plus" />
@@ -92,7 +92,6 @@
                     >SUBMIT</b-button>
                   </div>
                 </template>
-                
               </b-modal>
             </div>
             <MovieArticles :movie=movie />
@@ -247,7 +246,7 @@ export default {
             width: 450,
             allowEnterKey: false,
           });
-          this.$router.go()
+          // this.$router.go()
         })
         .catch((err) => {
           console.log(err)
