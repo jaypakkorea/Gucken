@@ -11,9 +11,6 @@
         <div class="detail_title">{{this.movie.title}}</div>
         <div class="detail_flexdiv">
           <div>{{this.movie.release_date}}</div>
-          <!-- <div> Top 10 Movie </div> -->
-          <!-- <b-button variant = "secondary" @click="likeMovie">Add List</b-button> -->
-          <!-- <button :class="{ 'btn-warning': is_liked }" @click="likeMovie">Add List</button> -->
           <b-button v-if="is_liked"  variant = "outline-warning"
           @click="likeMovie">Cancle</b-button>
           <b-button v-if="!is_liked" variant = "warning"
@@ -94,7 +91,7 @@
                 </template>
               </b-modal>
             </div>
-            <MovieArticles :movie=movie  />
+            <MovieArticles :articles=articles />
           </b-tab>
         </b-tabs>
       </div>
@@ -143,15 +140,18 @@ export default {
     boundRating: 3,
     title:null,
     content:null,
+    articles : null
     };
   },
   computed : {
     isLogin(){
       return this.$store.getters.isLogin
+    },
+    realData(){
+      return this.$store.getters.isLogin
     }
   },
   methods: {
-
     pick() {
       const idx = Math.floor(Math.random() * this.myAPIList.length);
       this.myApi = this.myAPIList[idx];
@@ -206,6 +206,20 @@ export default {
         this.$router.push({name:'user'})
       }
     },
+    readArticles(){
+      const API_URL = 'http://127.0.0.1:8000'
+        axios({
+        method: 'get',
+        url: `${API_URL}/movies/${this.$route.params.moviePk}/articles/`,
+      })
+        .then((res) => {
+          console.log(res)
+          this.articles=res.data
+        })
+        .catch((err) => {
+          console.log(err)
+        })
+    },
     addCommunity() {
       const API_URL = 'http://127.0.0.1:8000'
         const movie = this.movie.id
@@ -238,15 +252,9 @@ export default {
           console.log(res)
           this.$router.push({ name: 'SearchDetailView', params: { moviePk: this.movie.id } })
           this.$refs['my-modal'].hide()
-          Swal.fire({
-            html: '게시글 작성 성공~🎉',
-            confirmButtonText: `확인`,
-            confirmButtonColor: '#FFC83A',
-            timer: 1500,
-            width: 450,
-            allowEnterKey: false,
-          });
-          // this.$router.go()
+          this.readArticles()
+          this.title = null
+          this.content = null
         })
         .catch((err) => {
           console.log(err)
@@ -254,6 +262,7 @@ export default {
     },
   },
   created() {
+    this.readArticles()
     // this.pick()
     // this.InputGetEvent(this.myKeyword)
   },

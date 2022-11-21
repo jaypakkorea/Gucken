@@ -2,7 +2,7 @@
   <div>
     <div class="detailCommunityDiv">
         <div class="CommunitysDiv">
-            <div v-b-modal="article.id+'가나다'"  class="CommunityDiv" v-for="article in movie.ratings" :key="article.id">
+            <div v-b-modal="article.id+'가나다'"  class="CommunityDiv" v-for="article in articles" :key="article.pk">
               <!-- <divstyle="display:flex; border:1px solid red;"> -->
                 <avatarProfile :article="article.user" />
                 <div class="communutyText">{{article.user.username.split('@')[0]}}</div>
@@ -32,11 +32,10 @@ import commentList from"./commentList.vue"
 export default {
     name: "MovieArticles",
     props : {
-      movie : Object
+      articles : Array
     },
     data() {
     return {
-      articles: this.movie.ratings,
       recontent:null,
     };
   },
