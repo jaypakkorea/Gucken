@@ -11,7 +11,7 @@
         :src="userProfile"
         alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM5z7l_V183adxjX0NHjejDhNSdunjN8UoTkZIBKts_Q&s"
         @click="$refs.profileImage.click()"></b-avatar>
-
+        
       <input style="display: none" type="file"  @change="inputProfilePic" ref="profileImage"  class="input-file" value="프로필 변경"  >
 
       <div class="userIconDiv">
@@ -30,52 +30,26 @@
             <div class="userTextName">Name</div>
             <div class="userText">{{profile.username.split('@')[0]}}</div>
             <div class="userTextName">Follower</div>
-            <div class="userText">{{profile.follower_count}}</div>
-            <div v-for="follower in profile.followers" :key="follower.id">
-                <div><followerProfile :follower="follower" /></div>
+            <div class="userText" @click="FollowerStateChange">{{profile.follower_count}}</div>
+            <div v-if="FollowerState && profile.follower_count"  class="followingsDiv">
+              <div v-for="follower in profile.followers" :key="follower.id">
+                  <div><followerProfile :follower="follower" /></div>
+              </div>
             </div>
             <div class="userTextName">Following</div>
-            <div class="userText">{{profile.following_count}}</div>
-            <div v-for="following in profile.followings" :key="following.id">
-                <div><followingProfile :following="following" /></div>
+            <div class="userText" @click="FollowingStateChange">{{profile.following_count}}</div>
+            <div v-if="FollowingState && profile.following_count" class="followingsDiv" >
+              <div v-for="following in profile.followings" :key="following.id">
+                  <followingProfile :following="following" />
+              </div>
             </div>
             <div class="userTextName">Add Movie</div>
             <div class="userText">{{profile.like_movies.length}}</div>
             <div class="userTextName">Joined</div>
             <div class="userText">{{profile.date_joined.split('T')[0].replace(/-/g,' / ')}}</div>
-            <div class="userButtonDiv">
-              <b-button style="margin-right: 50px;" @click="userForm">수정하기</b-button>
-              <b-button>회원탈퇴</b-button>
-            </div>
-          </div>
-          <div class="userButtonDiv2" v-if="!correctState">
-            <div >
-              <b-button size="lg" style="margin-right: 100px;" v-b-modal.modal-password >비밀번호 변경</b-button>
-              <input type="file"  @change="inputProfilePic" ref="profileImage"  class="input-file">
-              <b-button @click="updateProfilePic" size="lg">프로필 사진 변경</b-button>
-
-              <b-modal class="communityModal" ref="my-modal"  size="md" id="modal-password" title="게시글 작성">
-                <div>
-                  <b-form-input v-model="password1" style="margin-bottom:30px;" size="lg" placeholder="새로운 비밀번호를 입력하세요"></b-form-input>
-                  <b-form-input v-model="password2" style="margin-bottom:30px;" size="lg" placeholder="비밀번호를 다시 입력하세요"></b-form-input>
-                </div>
-                <template #modal-footer>
-                  <div>
-                    <b-button
-                    variant="warning"
-                      size="xl"
-                      class="float-right"
-                      @click="addChangePassword"
-                      enctype=“multipart/form-data”
-                    >변경하기</b-button>
-                  </div>
-                </template>
-                
-              </b-modal>
-            </div>
           </div>
         </b-tab>
-
+        
         <b-tab title="ARTICLES">
           <ProfileArticles :profile=profile :userProfile=userProfile />
         </b-tab>
@@ -123,6 +97,8 @@ export default {
       password1:null,
       password2: null,
       selectedFile: '' ,
+      FollowerState:0,
+      FollowingState:0,
     };
   },
   components: { AddCardDiv, Carousel, Slide, ProfileArticles, followerProfile,followingProfile },
@@ -170,6 +146,12 @@ export default {
       }
       this.$store.dispatch('changePassword', payload)
     },
+    FollowerStateChange(){
+      this.FollowerState = !this.FollowerState
+    },
+    FollowingStateChange(){
+      this.FollowingState = !this.FollowingState
+    }
 
   },
   created() {
@@ -189,8 +171,11 @@ export default {
 <style>
 .UserLeftDiv {
   margin: auto;
-  width: 35%;
+
   text-align: center;
+  position: fixed;
+  top: 10rem;
+  left: 10%;
 }
 .userImg {
   width: 200px;
@@ -200,6 +185,14 @@ export default {
 .followButton {
   width: 150px;
   margin-top: 150px;
+}
+.followingsDiv{
+  background-color: aliceblue;
+  color: black;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
 }
 .userIconDiv {
   margin: 150px auto;
@@ -213,6 +206,7 @@ export default {
 .UserRightDiv {
   padding: 5rem;
   width: 65%;
+  margin-left: 35%;
 }
 .userTextName {
   color: gray;
