@@ -31,7 +31,7 @@
       </div>
       <div>
         <router-link v-if="isLogin" to="/logout">
-          <font-awesome-icon icon="fas fa-power-off" />
+          <font-awesome-icon v-b-tooltip.hover.right title="LOGOUT" icon="fas fa-power-off" />
           </router-link>
       </div>
 
