@@ -17,6 +17,11 @@ def profile(request, user_pk):
     serializer = ProfileSerializer(user)
     return Response(serializer.data)
 
+@api_view(['GET'])
+def article_movie(request, movie_pk):
+    movie = get_object_or_404(Movie, pk=movie_pk)
+    serializer = ArticleMovieSerializer(movie)
+    return Response(serializer.data)
 
 @api_view(['POST'])
 # @permission_classes([AllowAny])
@@ -43,9 +48,7 @@ def update_profile(request, user_pk):
     me = request.user
 
     if request.method == 'PUT':
-        print(me)
         if me == profile_user:
-            print(request.data)
             serializer = ProfileUpdateSerializer(instance=request.user, data=request.data)
             if serializer.is_valid(raise_exception=True):
                 serializer.save()

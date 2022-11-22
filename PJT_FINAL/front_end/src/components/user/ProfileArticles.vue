@@ -10,6 +10,7 @@
         alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM5z7l_V183adxjX0NHjejDhNSdunjN8UoTkZIBKts_Q&s"
         @click="$refs.profileImage.click()"
       ></b-avatar>
+      <ProfileArticleMovie :movie=article.movie />
       <div class="communityScore" v-if="article.rate<=6">👎 {{article.rate}}</div>
       <div
         class="communityScore"
@@ -18,17 +19,22 @@
       >👍 {{article.rate}}</div>
       <div class="communityTitle">{{article.title}}<br/> <p style="font-size:1.3rem;">{{article.content}}</p></div>
       <div class="communityDate">{{article.created_at.split('T')[0].replace(/-/g,' / ')}}</div></div>
-      <div>{{profile}}</div>
       
   </div>
 </template>
   
-  <script>
+<script>
+import ProfileArticleMovie from './ProfileArticleMovie.vue'
+
+
 export default {
   name: "ProfileArticles",
   props: {
     profile: Object,
     userProfile: String
+  },
+  components:{
+    ProfileArticleMovie
   }
 };
 </script>
