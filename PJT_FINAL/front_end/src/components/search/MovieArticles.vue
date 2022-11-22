@@ -4,7 +4,7 @@
         <div class="CommunitysDiv">
             <div v-b-modal="article.pk+'가나다'"  class="CommunityDiv" v-for="article in articles" :key="article.pk">
               <!-- <divstyle="display:flex; border:1px solid red;"> -->
-                <avatarProfile :article="article.user" />
+                <avatarProfile :article="article.user" /> 
                 <div class="communutyText">{{article.user.username.split('@')[0]}}</div>
 
                 <div class="communityScore" v-if="article.rate<=6">👎 {{article.rate}}</div>

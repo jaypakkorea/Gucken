@@ -1,6 +1,8 @@
 <template>
   <div style="margin:auto 10px;">
-    <b-avatar  button @click="onClick" :src="userProfile"></b-avatar>
+    <router-link :to="{ name: 'userProfile', params: { userid: userId } }">
+      <b-avatar  button @click="onClick" :src="userProfile"></b-avatar>
+    </router-link>
   </div>
 </template>
 
@@ -17,6 +19,9 @@ export default {
       } else {
         return 'http://localhost:8000/media/profile/images/default.jpg'
       }
+    },
+    userId () {
+      return this.article.pk
     }
 	} 
 }

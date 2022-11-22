@@ -44,7 +44,7 @@
       @keyup.enter="addReCommunity"
       ></b-form-textarea>
       <div style="display:flex; justify-content:right;">
-      <b-button v-on:click="addReCommunity">작성</b-button>
+      <b-button v-on:click="addReCommunity"><font-awesome-icon icon="fa-solid fa-paper-plane" /></b-button>
       </div>
   </div>
   </div>

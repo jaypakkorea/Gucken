@@ -1,17 +1,5 @@
 <template>
   <div class="chartIndexDiv">
-    <div class="chartMainButtonDiv">
-      <router-link
-      :to="{ name: 'chart'}">
-        <div class="chartMainButton">
-          <b-button variant="warning" class="chartSelectButton" size="lg"> 좋아요 한 영화 와 비슷한 영화 추천받기 </b-button>
-        </div>
-      </router-link>
-      <router-link
-      :to="{ name: 'InputRecommendtion'}">
-      <div class="chartMainButton"><b-button class="chartSelectButton" size="lg"> 키워드 입력으로 영화 추천받기 </b-button></div>
-      </router-link>
-    </div>
     <div class="LankCardDiv">
       <div v-if="this.isLoading"> 
       <div class="lodingDiv"> 

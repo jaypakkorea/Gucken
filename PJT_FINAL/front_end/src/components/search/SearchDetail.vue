@@ -38,10 +38,10 @@
             </div>
           </div>
           <!-- 내 평점 -->
-          <div>
+          <!-- <div>
             <div style="font-size:3rem;">10.0</div>
             <div style="color:gray;">MyRATE</div>
-          </div>
+          </div> -->
           <!-- DB 평점 -->
           <div v-if="this.movie.vote_average">
             <div style="font-size:3rem;">{{this.movie.vote_average}}</div>
@@ -86,7 +86,7 @@
                       size="xl"
                       class="float-right"
                       @click="addCommunity"
-                    >SUBMIT</b-button>
+                    ><font-awesome-icon icon="fa-solid fa-paper-plane" /></b-button>
                   </div>
                 </template>
               </b-modal>
