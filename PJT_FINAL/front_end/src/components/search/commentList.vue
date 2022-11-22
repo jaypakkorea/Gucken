@@ -90,7 +90,7 @@ export default {
       const API_URL = 'http://127.0.0.1:8000'
       axios({
         method: 'get',
-        url: `${API_URL}/movies/${this.$route.params.moviePk}/articles/${this.article.id}/comments/`,
+        url: `${API_URL}/movies/${this.$route.params.moviePk}/articles/${this.article.pk}/comments/`,
       })
         .then((res) => {
           console.log(res.data, 'hiddd')
@@ -110,7 +110,7 @@ export default {
 
       axios({
         method: 'post',
-        url: `${API_URL}/movies/${this.$route.params.moviePk}/articles/${this.article.id}/comments/`,
+        url: `${API_URL}/movies/${this.$route.params.moviePk}/articles/${this.article.pk}/comments/`,
         data: {
           content: this.recontent,
         },
@@ -122,14 +122,6 @@ export default {
           console.log(res.data, 'hiddd')
           this.comments = res.data
          // this.$router.push({ name: 'SearchDetailView', params: { moviePk: this.movie.id } })
-          Swal.fire({
-            html: '댓글 작성 성공~🎉',
-            confirmButtonText: `확인`,
-            confirmButtonColor: '#FFC83A',
-            timer: 1000,
-            width: 450,
-            allowEnterKey: false,
-          });
           this.recontent = null;
         })
         .catch((err) => {

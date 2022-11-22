@@ -1,5 +1,7 @@
 <template>
-    <b-avatar badge button size="3rem" @click="onClick" :src="userProfile"></b-avatar>
+    <router-link :to="{ name: 'userProfile', params: { userid: userId } }">
+      <b-avatar badge button size="3rem" @click="onClick" :src="userProfile"></b-avatar>
+    </router-link>
 </template>
 
 <script>
@@ -15,6 +17,9 @@ export default {
       } else {
         return 'http://localhost:8000/media/profile/images/default.jpg'
       }
+    },
+    userId () {
+      return this.comment.user.pk
     }
   },
 }
