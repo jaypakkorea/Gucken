@@ -21,7 +21,7 @@
       </div>
       <!-- <b-button  v-if="!parseInt(this.$route.params.userid) === this.$store.state.currentUser.pk" 
         variant="warning" class="followButton">FOLLOW</b-button> -->
-      <b-button variant="warning" class="followButton" @click="followIng">FOLLOW</b-button>
+      <b-button v-if="!this.$store.state.currentUser.pk == profile.id" variant="warning" class="followButton" @click="followIng">FOLLOW</b-button>
     </div>
     <div class="UserRightDiv">
       <b-tabs content-class="mt-3">

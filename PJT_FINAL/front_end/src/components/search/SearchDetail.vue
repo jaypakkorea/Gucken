@@ -278,6 +278,7 @@ export default {
   min-height: 100vh;
   position: relative;
   z-index: 1;
+  overflow: auto;
   background-repeat: no-repeat;
 }
 .detail_main_div::after {
@@ -359,8 +360,8 @@ export default {
   margin: 0 auto;
 }
 .detail_right_div {
-  width: 65%;
-  margin-right: 50px;
+  width: 65%; 
+  padding-right: 100px;
 }
 .detail_title {
   margin-top: 3rem;
@@ -376,8 +377,8 @@ export default {
   margin: auto 0;
 }
 .pluscommunuty {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   color: #ffda4f;
   border-radius: 5px;
 }
@@ -409,6 +410,7 @@ export default {
   padding: 10px 20px;
   display: flex;
   color: white;
+  overflow: hidden;
 }
 .communityUserImg {
   width: 50px;
@@ -445,14 +447,12 @@ export default {
   line-height: fit-content;
   word-break: normal;
   word-wrap:break-word;
-  min-width: 55%;
-  max-width: 60%;
+
 }
 .communityDate{
   
   font-weight:bold;
   margin: auto 0;
-
 }
 .communityScoreHigh {
   color: black;
