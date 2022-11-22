@@ -128,7 +128,7 @@ export default {
         "AIzaSyDvjcb7odUilSZEcCyXBY2rX9z0fTYYWvQ",
         "AIzaSyDAes3uWN2F5a2_2EHBBFuIm0Ctv8Hpj1A",
         "AIzaSyCN9uPuXJyXoVjTvkOA8g5ivcUGsGKDiK8",
-        // 'AIzaSyATqBywB8sPKs2PrAv_FMEp4Xy7OWzqXOI',
+        'AIzaSyATqBywB8sPKs2PrAv_FMEp4Xy7OWzqXOI',
         "AIzaSyDEgtL7oYOo_OJBvIqq2MJhVxDV-IYwekc",
         "AIzaSyBLMEBNxzyohh-zUFGFvHA5ZpI-TLmM4JE",
         "AIzaSyDd-ndJ5GJOKwdBhILSGmAmDneCZEnzrKw"
@@ -157,7 +157,7 @@ export default {
       this.myApi = this.myAPIList[idx];
     },
     InputGetEvent(keyword) {
-      this.myKeyword = keyword;
+      keyword = this.myKeyword.title
       const baseURL = "https://www.googleapis.com/youtube/v3/search";
       // const API_KEY = 'AIzaSyCN9uPuXJyXoVjTvkOA8g5ivcUGsGKDiK8'
       axios
@@ -166,13 +166,13 @@ export default {
             key: this.myApi,
             part: "snippet",
             type: "video",
-            q: this.myKeyword + "공식 예고편",
+            q: keyword + "공식 예고편",
             maxResults: 1
           }
         })
         .then(response => {
           this.video = response.data.items[0];
-          console.log(this.video);
+          console.log('유튭',keyword, response);
           this.VideoData = `https://www.youtube.com/embed/${response.data.items[0].id.videoId}?autoplay=1&mute=1`;
         })
         .catch(error => {
@@ -263,8 +263,8 @@ export default {
   },
   created() {
     this.readArticles()
-    // this.pick()
-    // this.InputGetEvent(this.myKeyword)
+    this.pick()
+    this.InputGetEvent(this.myKeyword)
   },
 };
 </script>
