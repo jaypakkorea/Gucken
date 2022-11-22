@@ -18,6 +18,8 @@
       >👍 {{article.rate}}</div>
       <div class="communityTitle">{{article.title}}<br/> <p style="font-size:1.3rem;">{{article.content}}</p></div>
       <div class="communityDate">{{article.created_at.split('T')[0].replace(/-/g,' / ')}}</div></div>
+      <div>{{profile}}</div>
+      
   </div>
 </template>
   

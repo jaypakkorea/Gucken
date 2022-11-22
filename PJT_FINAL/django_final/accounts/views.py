@@ -41,8 +41,7 @@ def update_profile(request, user_pk):
 
     profile_user = get_object_or_404(get_user_model(), pk=user_pk)
     me = request.user
-    print(profile_user)
-    print(request.data)
+
     if request.method == 'PUT':
         print(me)
         if me == profile_user:

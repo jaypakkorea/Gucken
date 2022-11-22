@@ -26,6 +26,13 @@ class ProfileSerializer(serializers.ModelSerializer):
             class Meta:
                 model = User
                 fields = '__all__'
+                
+        class MovieSerializer(serializers.ModelSerializer):
+            class Meta:
+                model = Movie
+                fields = ('id', 'title')
+        
+        movie = MovieSerializer(many=True, read_only=True)
 
         class Meta:
             model = Rating
