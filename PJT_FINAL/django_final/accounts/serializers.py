@@ -62,3 +62,11 @@ class ProfileUpdateSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('id', 'profile_pic')
+
+
+class LikeProfileSerializer(serializers.ModelSerializer):
+
+
+    class Meta:
+        model = Rating
+        fields = ('id', 'user', 'like_users')

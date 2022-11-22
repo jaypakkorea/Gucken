@@ -1,12 +1,6 @@
 <template>
   <div class="SearchFlexDiv">
     <div class="UserLeftDiv">
-      <!-- <img button 
-        class="userImg"
-        :src="userProfile"
-        alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM5z7l_V183adxjX0NHjejDhNSdunjN8UoTkZIBKts_Q&s"
-        @click="$refs.profileImage.click()"
-      /> -->
       <b-avatar button size="15rem" 
         :src="userProfile"
         alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM5z7l_V183adxjX0NHjejDhNSdunjN8UoTkZIBKts_Q&s"

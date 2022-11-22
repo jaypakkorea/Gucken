@@ -1,4 +1,4 @@
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404, get_list_or_404
 from django.contrib.auth import get_user_model
 
 from rest_framework.decorators import api_view
@@ -16,6 +16,16 @@ def profile(request, user_pk):
     user = get_object_or_404(User, pk=user_pk)
     serializer = ProfileSerializer(user)
     return Response(serializer.data)
+
+
+# @api_view(['GET'])
+# def like_count_profile(request, user_pk):
+#     rating = get_list_or_404(Rating, user_id=user_pk)
+#     print(rating['like_users'], 'dfsdfjl')
+#     result = len(rating)
+#     # rating = get_object_or_404(Rating, user_id=user_pk)
+#     # serializer = LikeProfileSerializer(rating)
+#     return Response(result)
 
 @api_view(['GET'])
 def article_movie(request, movie_pk):
