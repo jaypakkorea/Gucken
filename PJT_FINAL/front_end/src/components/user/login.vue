@@ -13,10 +13,10 @@
       <div class="loginInputDiv">
         <b-button @click="logIn" variant="warning" class="loginButton">LOGIN</b-button>
       </div>
-      <div class="loginFindDiv">
+      <!-- <div class="loginFindDiv">
         <div class="FindTitle">이메일 찾기</div>
         <div class="FindTitle">비밀번호 찾기</div>
-      </div>
+      </div> -->
       <div class="loginInputDiv">
         <!-- <router-link :to="{ name: 'SearchDetailView' }"> -->
           <b-button

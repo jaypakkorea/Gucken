@@ -17,10 +17,10 @@
       <div  class="loginInputDiv">
         <b-button @click="signUp" variant="warning" class="loginButton">회원가입</b-button>
       </div>
-      <div class="loginFindDiv">
+      <!-- <div class="loginFindDiv">
         <div class="FindTitle">이메일 찾기</div>
         <div class="FindTitle">비밀번호 찾기</div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

@@ -107,7 +107,7 @@ export default {
   }
   .lodingDiv{
     width: 100%;
-    height: 80vh;
+    /* height: 80vh; */
     text-align: center;
     margin-top: 300px;
     }
