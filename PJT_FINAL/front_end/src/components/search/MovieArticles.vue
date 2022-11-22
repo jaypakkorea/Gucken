@@ -17,9 +17,8 @@
                   <div class="communityTitle2">{{article.title}}<br/> <p style="font-size:1.3rem;">{{article.content}}</p></div>
                 <div class="communityDate">{{article.created_at.split('T')[0].replace(/-/g,' / ')}}</div>
                 </div>
-                <b-modal centered ref="my-modal" hide-footer size="xl" :id="article.pk+'가나다'">
-                  <commentList :article=article />
-                </b-modal>
+                <commentList :article=article />
+
               <!-- </div> -->
             </div>
         </div>

@@ -129,6 +129,7 @@ export default {
 }
 
 
+
 .routerLink {
   --bs-link-color: none;
   --bs-link-hover-color: none;
@@ -159,7 +160,12 @@ export default {
       rgba(20, 20, 20, 0.8) 50%,
       rgba(20, 20, 20, 0.9) 65%,
       rgba(20, 20, 20, 0.9) 100%
+<<<<<<< HEAD
     );
+=======
+    ),
+    url();
+>>>>>>> e4cbc8e44ce718b1cc7c9ef7b55c7136c603d419
   background-size: cover;
   position: absolute;
   top: 0;
