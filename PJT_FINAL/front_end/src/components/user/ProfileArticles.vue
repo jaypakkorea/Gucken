@@ -2,24 +2,19 @@
   <div>
     <h1 style="color:red">{{profile.ratings_count}}</h1>
     <div class="CommunityDiv" v-for="article in profile.ratings" :key="article.id">
-      <b-avatar
-        button
-        size="3rem"
-        style="margin:auto 0;"
-        :src="userProfile"
-        alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM5z7l_V183adxjX0NHjejDhNSdunjN8UoTkZIBKts_Q&s"
-        @click="$refs.profileImage.click()"
-      ></b-avatar>
-      <ProfileArticleMovie :movie=article.movie />
+      <div class="recommendMovieTitle" >
+        <ProfileArticleMovie :movie=article.movie />
+      </div>
       <div class="communityScore" v-if="article.rate<=6">👎 {{article.rate}}</div>
       <div
         class="communityScore"
         style="background-color:#ffda4f;"
         v-if="article.rate>6"
       >👍 {{article.rate}}</div>
-      <div class="communityTitle">{{article.title}}<br/> <p style="font-size:1.3rem;">{{article.content}}</p></div>
-      <div class="communityDate">{{article.created_at.split('T')[0].replace(/-/g,' / ')}}</div></div>
-      
+      <div class="d-flex justify-content-between" style="width:100%;">
+        <div class="communityTitle">{{article.title}}<br/> <p style="font-size:1.3rem;">{{article.content}}</p></div>
+        <div class="communityDate">{{article.created_at.split('T')[0].replace(/-/g,' / ')}}</div></div>
+      </div>      
   </div>
 </template>
   
@@ -74,5 +69,12 @@ export default {
 }
 #textarea-no-resize2 {
   margin: 3rem 0 2rem 0;
+}
+.recommendMovieTitle{
+  min-width: 150px;
+  max-width: 150px;
+  margin: auto 0;
+  font-size: 1.5rem;
+
 }
 </style>

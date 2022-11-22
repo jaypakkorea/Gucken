@@ -421,11 +421,11 @@ export default {
 .communityScore {
   color: black;
   font-size: 1.8rem;
-  margin: auto 30px;
-  padding: 0 20px;
+  margin: auto 20px;
+  padding: 0 10px;
   border-radius: 5px;
   background-color: rgb(211, 209, 209);
-  min-width: 125px;
+  min-width: 120px;
   text-align: center;
   max-height: 50px;
   

@@ -68,7 +68,6 @@ export default new Vuex.Store({
       })
       .then((res) => {
         console.log(res, context)
-        // console.log(res.data)
         context.commit('GET_TOP10_MOVIES', res.data)
       })
       .catch((err) => {
