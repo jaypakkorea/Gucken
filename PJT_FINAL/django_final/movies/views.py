@@ -110,6 +110,23 @@ def add_list(request, movie_pk):
         return Response(serializer.data)
 
 
+# user가 add list 한 목록
+@api_view(['POST'])
+def like_comment(request, movie_pk, article_pk):
+    user = request.user
+    movie = get_object_or_404(Movie, pk=movie_pk)
+    article = get_object_or_404(Rating, pk=article_pk)
+
+    if article.like_users.filter(pk=user.pk).exists():
+        article.like_users.remove(user)
+        serializer = ArticleSerializer(article)
+        return Response(serializer.data)
+    else:
+        article.like_users.add(user)
+        serializer = ArticleSerializer(article)
+        return Response(serializer.data)
+
+
 
 # 각 영화별 detail 정보
 @api_view(['GET'])

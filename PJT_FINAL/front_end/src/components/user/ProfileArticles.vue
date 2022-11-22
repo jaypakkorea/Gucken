@@ -12,6 +12,7 @@
       ></b-avatar>
       <ProfileArticleMovie :movie=article.movie />
       <div class="communityScore" v-if="article.rate<=6">👎 {{article.rate}}</div>
+
       <div
         class="communityScore"
         style="background-color:#ffda4f;"

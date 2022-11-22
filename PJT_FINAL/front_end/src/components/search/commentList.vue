@@ -14,7 +14,7 @@
       <b-button @click="likeCommunity" v-if="!communityLike"  class="likeButton" variant="outline-danger">🤍</b-button>
       <!-- 좋아요 한 사람은 -->
       <b-button @click="likeCommunity" v-if="communityLike"  class="likeButton" variant="outline-danger">❤</b-button>
-      <div style="text-align: left;">0 명이 이 게시글을 좋아합니다.</div>
+      <div style="text-align: left;">{{this.likecount}} 명이 이 게시글을 좋아합니다.</div>
     </div>
     <div>
       <div class="communityDetailListDiv">댓글 목록</div>
@@ -67,11 +67,13 @@ export default {
       comments : null,
       communityLike : false,
       RecommunityLike : false,
+      likecount : this.count 
     }
   },
   components: { commentProfile },
   props: {
     article: Object,
+    count : Number,
   },
   computed: {
     userProfile(){
@@ -88,6 +90,18 @@ export default {
   created () {
     this.readComments()
   },
+  watch: {
+    communityLike : {
+      handler : function() {
+        if (this.communityLike) {
+          this.likecount ++
+        } else {
+          this.likecount --
+        }
+      }
+    }
+  },
+
   methods:{
     deleteArticle(){
       const API_URL = 'http://127.0.0.1:8000'
@@ -154,17 +168,22 @@ export default {
         Swal.fire('로그인이 필요한 서비스 입니다', '', 'error')
         this.$router.push({name:'user'})
       } else {
-        this.communityLike = !this.communityLike;
-      }
-
-    },
-    likeRecommunity() {
-      if (!this.isLogin) {
-        Swal.fire('로그인이 필요한 서비스 입니다', '', 'error')
-        this.$router.push({name:'user'})
-      } else {
-
-        this.RecommunityLike = !this.RecommunityLike;
+        const API_URL = 'http://127.0.0.1:8000'
+        axios({
+          method: 'post',
+          url: `${API_URL}/movies/${this.$route.params.moviePk}/articles/${this.article.pk}/comments/like/`,
+          headers: {
+            Authorization: `Token ${this.$store.state.token}`
+          }
+        })
+          .then((res) => {
+            console.log(res)
+            this.communityLike = !this.communityLike;
+            console.log(this.communityLike, 'yes!')
+          })
+          .catch((err) => {
+            console.log(err)
+          })
       }
 
     },

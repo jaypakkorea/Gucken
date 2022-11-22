@@ -25,6 +25,14 @@ class ProfileSerializer(serializers.ModelSerializer):
 
     class RatingSerializer(serializers.ModelSerializer):
 
+        class LikeUserSerializer(serializers.ModelSerializer):
+            class Meta:
+                model = User
+                fields = ('pk',)
+
+        like_users = LikeUserSerializer(read_only=True)
+        like_user_count = serializers.IntegerField(source='like_users.count', read_only=True)
+
         class Meta:
             model = Rating
             exclude = ('user',)

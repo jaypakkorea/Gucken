@@ -105,11 +105,19 @@ class ArticleSerializer(serializers.ModelSerializer):
             fields = ('pk', 'username',)
 
     user = UserSerializer(read_only=True)
+
+    class LikeUserSerializer(serializers.ModelSerializer):
+        class Meta:
+            model = User
+            fields = ('pk',)
+
+    like_users = LikeUserSerializer(read_only=True)
+    like_user_count = serializers.IntegerField(source='like_users.count', read_only=True)
     
     
     class Meta:
         model = Rating
-        fields = ('pk', 'user', 'movie', 'title', 'content', 'rate', 'created_at', 'updated_at',)
+        fields = ('pk', 'user', 'movie', 'title', 'content', 'rate', 'like_users', 'created_at', 'updated_at','like_user_count')
 
 
 # 단일 영화 상세 정보

@@ -91,6 +91,7 @@
                 </template>
               </b-modal>
             </div>
+            <div></div>
             <MovieArticles :articles=articles />
           </b-tab>
         </b-tabs>
@@ -263,7 +264,7 @@ export default {
   },
   created() {
     this.readArticles()
-    this.pick()
+    // this.pick()
     this.InputGetEvent(this.myKeyword)
   },
 };
