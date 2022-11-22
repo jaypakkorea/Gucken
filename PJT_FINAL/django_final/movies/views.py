@@ -141,6 +141,32 @@ def article_list_or_create(request, movie_pk):
         return article_list()
 
 
+@api_view(['PUT', 'DELETE'])
+def articles_update_or_delete(request, movie_pk, rating_pk):
+    movie = get_object_or_404(Movie, pk=movie_pk)
+    rating = get_object_or_404(Rating, pk=rating_pk)
+
+    def update_rating():
+        if request.user == rating.user:
+            serializer = ArticleSerializer(instance=rating, data=request.data)
+            if serializer.is_valid(raise_exception=True):
+                serializer.save()
+                ratings = movie.ratings.all()
+                serializer = ArticleSerializer(ratings ,many=True)
+                return Response(serializer.data)
+
+    def delete_rating():
+        if request.user == rating.user:
+            rating.delete()
+            ratings = movie.ratings.all()
+            serializer = ArticleSerializer(ratings, many=True)
+            return Response(serializer.data)
+    
+    if request.method == 'PUT':
+        return update_rating()
+    elif request.method == 'DELETE':
+        return delete_rating()
+
 #popularity top 10 영화 목록 
 @api_view(['GET'])
 def popularity_movie(request):

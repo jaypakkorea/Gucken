@@ -21,7 +21,11 @@
         <p class="avatarTitle" style="font-family: BMDOHYEON; line-height: 110%; margin-left: -7px">아바타 : <br />물의 길</p>
         <div class="avatarHead">
           <b-button variant="secondary" size="sm">ALL</b-button>
-          <b-button variant="warning" size="sm" style="margin-left: 3rem">Watch</b-button>
+          <router-link
+          :to="{ name: 'SearchDetailView', params: { moviePk: 76600 } }"
+        >
+          <b-button variant="warning" size="sm" style="margin-left: 3rem">Detail</b-button>
+        </router-link>
           <p style="margin-left: 3rem">2022</p>
           
         </div>

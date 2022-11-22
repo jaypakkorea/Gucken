@@ -2,10 +2,11 @@
   <div class="communityDetailModal">
     <div  class="communityDetailDate">{{article.created_at.split('T')[0].replace(/-/g,' / ')}}</div>
     <div  class="communityDetailDate">작성자 : {{article.user.username.split('@')[0]}}</div>
-
   <div class="communityDetailTitle">{{article.title}} </div>
   <div class="communityDetailContent">
     <div>{{article.content}} </div>
+    <b-button variant="secondary" size="sm">edit</b-button>
+    <b-button variant="secondary" size="sm">delete</b-button>
   </div>
   <div class="communityLike">
     <!--  좋아요 안 한 사람 -->
