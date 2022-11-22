@@ -1,7 +1,7 @@
 <template>
   <div>
     <carousel-3d :controls-visible="true" :autoplay="true" :autoplay-timeout="1500"  :controls-prev-html="'&#10092; '" :controls-next-html="'&#10093;'" :controls-width="30" :controls-height="60" :clickable="false"  :width="500" :height="750" class="carousel">
-      <slide v-for="(recommendmovie, index) in recommendmovies" :key="recommendmovie" :index="index-1">
+      <slide v-for="(recommendmovie, index) in recommendmovies" :key="recommendmovie" :index="index">
         <router-link :to="{ name: 'SearchDetailView', params: { moviePk: recommendmovie.pk } }">
         <ChartRecommendCard :recommendmovie="recommendmovie" />
         </router-link>

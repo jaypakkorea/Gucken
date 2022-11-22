@@ -201,13 +201,14 @@ def recommend_movies_names(xMovie, idx, movies):
     idx_collection = []
     for i in idx:
         distances = similarity[i]
-        listofMovies = sorted(list(enumerate(distances)), reverse=True, key=lambda x:x[1])[1:10]
+        listofMovies = sorted(list(enumerate(distances)), reverse=True, key=lambda x:x[1])[1:15]
         idx_collection.extend(listofMovies)
  
     # 인덱스를 pk로 바꾸기
     pk_collection = []
     for idx in idx_collection:
-        pk_collection.append(movies.data[idx[0]]['pk'])
+        if movies.data[idx[0]]['poster_path'] != None :
+            pk_collection.append(movies.data[idx[0]]['pk'])
 
     return pk_collection
 
@@ -219,7 +220,7 @@ def user_like_movie(request, user_pk):
     serializer = UserLikeMovieListSerializer(user)
     movies = get_list_or_404(Movie)
     movies_serializer = RecommendMovieListSerializer(movies, many=True)
-
+  
 
     # user가 좋아요한 영화 key값 담기
     movie_key = [data['pk'] for data in serializer.data.get('like_movies')]
@@ -228,11 +229,10 @@ def user_like_movie(request, user_pk):
     idx = []
     for key in movie_key:
         for i in range(len(movies_serializer.data)):
-            if key == movies_serializer.data[i]['pk'] and movies_serializer.data[i]['poster_path'] != 'null':
-                print(movies_serializer.data[i]['poster_path'])
+            if key == movies_serializer.data[i]['pk'] and movies_serializer.data[i]['poster_path'] != None:
                 idx.append(i)
                 break
-        
+
     # words 담기
     xMovie = [data.get('words') for data in movies_serializer.data]
           
