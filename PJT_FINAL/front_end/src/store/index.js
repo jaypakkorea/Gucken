@@ -219,7 +219,7 @@ export default new Vuex.Store({
         url: `${API_URL}/profile/${payload}/`,
       })
       .then((res) => {
-        console.log(res.data)
+        console.log('dhdhd', res.data)
         context.commit("SET_PROFILE", res.data)
       })
     },

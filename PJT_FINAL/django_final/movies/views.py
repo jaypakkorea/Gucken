@@ -228,10 +228,11 @@ def user_like_movie(request, user_pk):
     idx = []
     for key in movie_key:
         for i in range(len(movies_serializer.data)):
-            if key == movies_serializer.data[i]['pk'] and movies_serializer.data[i]['poster_path'][1]:
+            if key == movies_serializer.data[i]['pk'] and movies_serializer.data[i]['poster_path'] != 'null':
+                print(movies_serializer.data[i]['poster_path'])
                 idx.append(i)
                 break
-
+        
     # words 담기
     xMovie = [data.get('words') for data in movies_serializer.data]
           
