@@ -9,9 +9,15 @@
       <input style="display: none" type="file"  @change="inputProfilePic" ref="profileImage"  class="input-file" value="프로필 변경"  >
 
       <div class="userIconDiv">
-        <font-awesome-icon icon="fa-solid fa-trophy" />
-        <font-awesome-icon icon="fa-solid fa-medal" />
-        <font-awesome-icon icon="fa-solid fa-award" />
+        <div v-if="profile.follower_count < 5" ><font-awesome-icon icon="fa-solid fa-trophy" /></div>
+        <div v-if="profile.follower_count >= 5" style="color:#ffda4f;"><font-awesome-icon icon="fa-solid fa-trophy" /></div>
+
+        <div  v-if="sumLikeUserCount < 5"><font-awesome-icon icon="fa-solid fa-medal" /></div>
+        <div v-if="sumLikeUserCount >= 5" style="color:#ffda4f;"><font-awesome-icon icon="fa-solid fa-medal" /></div>
+
+        <div v-if="profile.ratings_count < 5"><font-awesome-icon icon="fa-solid fa-award" /></div>
+        <div v-if="profile.ratings_count >= 5" style="color:#ffda4f;"><font-awesome-icon icon="fa-solid fa-award" /></div>
+        
       </div>
       <!-- <b-button  v-if="!parseInt(this.$route.params.userid) === this.$store.state.currentUser.pk" 
         variant="warning" class="followButton">FOLLOW</b-button> -->
@@ -45,7 +51,7 @@
         </b-tab>
         
         <b-tab title="ARTICLES">
-          <ProfileArticles :profile=profile :userProfile=userProfile />
+          <ProfileArticles :profile=profile :userProfile=userProfile :sumLikeUsers=sumLikeUserCount />
         </b-tab>
 
         <b-tab title="ADD LIST" lazy >
@@ -93,6 +99,7 @@ export default {
       selectedFile: '' ,
       FollowerState:0,
       FollowingState:0,
+      sumLikeUserCount:0,
     };
   },
   components: { AddCardDiv, Carousel, Slide, ProfileArticles, followerProfile,followingProfile },
@@ -145,6 +152,15 @@ export default {
     },
     FollowingStateChange(){
       this.FollowingState = !this.FollowingState
+    },
+    sumLikeUsers(){
+      console.log(' this.profile', this.profile.ratings_count);
+      for(let i=0; i< this.profile.ratings_count; i++){
+        let item = this.profile.ratings[i];
+        console.log('item',item.like_user_count);
+        this.sumLikeUserCount += item.like_user_count
+      }
+      console.log('sumLikeUsers',this.sumLikeUserCount);
     }
 
   },
@@ -155,7 +171,7 @@ export default {
     console.log(typeof parseInt(this.$route.params.userid))
     console.log(typeof this.$store.state.currentUser.pk)
     console.log('yes')
-
+    this.sumLikeUsers()
     this.fetchProfile();
   }
 

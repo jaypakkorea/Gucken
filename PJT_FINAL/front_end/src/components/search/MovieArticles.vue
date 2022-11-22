@@ -58,39 +58,5 @@ export default {
 </script>
 
 <style>
-.communityDetailDate{
-  font-size:1rem;
-   margin-top:0.5rem;
-    text-align: right;
-}
-.communityDetailModal{
-  background-color: aliceblue;
-  width: 80%;
-  margin: 0 auto;
-  border-radius: 10px;
-  padding: 3rem;
-  margin-bottom: 3rem;
-}
-.communityDetailTitle{
-  width: 100%;
-  font-size: 3rem;
-  margin-bottom: 3rem;
-  font-weight: bold;
-}
-.communityDetailContent{
-  width: 100%;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 3rem;
-  display: flex;
-  justify-content: space-between;
-}
-.communityDetailListDiv{
-  font-size: 1.5rem;
-  color: gray;
-  margin-bottom: 1rem;
-}
-#textarea-no-resize2{
-  margin: 3rem 0 2rem 0;
-}
+
 </style>
