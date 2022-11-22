@@ -95,6 +95,30 @@ class RatingSerializer(serializers.ModelSerializer):
         fields= '__all__'
         read_only_fields = ('movie',)
 
+class UserArticleSerializer(serializers.ModelSerializer):
+    
+    class UserSerializer(serializers.ModelSerializer):
+        class Meta:
+            model = User
+            fields = ('pk', 'username',)
+
+    user = UserSerializer(read_only=True)
+
+    class LikeUserSerializer(serializers.ModelSerializer):
+        class Meta:
+            model = User
+            fields = ('pk',)
+
+    like_users = LikeUserSerializer(read_only=True)
+    like_user_count = serializers.IntegerField(source='like_users.count', read_only=True)
+    
+    
+    class Meta:
+        model = Rating
+        fields = ('pk', 'user', 'movie', 'title', 'content', 'rate', 'like_users', 'created_at', 'updated_at','like_user_count')
+
+
+
 
 #영화 평점 create
 class ArticleSerializer(serializers.ModelSerializer):
