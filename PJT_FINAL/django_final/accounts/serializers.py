@@ -9,6 +9,10 @@ class UserSerializer(serializers.ModelSerializer):
         model = User
         fields = ('pk', 'username',  'profile_pic')
 
+class ArticleMovieSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Movie
+        fields = ('pk', 'title', )
 
 class ProfileSerializer(serializers.ModelSerializer):
 
@@ -20,19 +24,6 @@ class ProfileSerializer(serializers.ModelSerializer):
             fields = ('id','username', 'profile_pic')
 
     class RatingSerializer(serializers.ModelSerializer):
-        
-        class UserSerializer(serializers.ModelSerializer):
-            
-            class Meta:
-                model = User
-                fields = '__all__'
-                
-        class MovieSerializer(serializers.ModelSerializer):
-            class Meta:
-                model = Movie
-                fields = ('id', 'title')
-        
-        movie = MovieSerializer(many=True, read_only=True)
 
         class Meta:
             model = Rating
