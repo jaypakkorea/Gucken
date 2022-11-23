@@ -7,7 +7,6 @@
       <div class="d-flex justify-content-between" style="width:100%;">
         <div>
           <div class="communityTitle">{{article.title}}</div>
-          <div v-if="visibleContect"> {{ article.content}}</div>
         </div>
         <div class="d-flex">
           <div class="communityScore">❤ {{article.like_user_count}}</div>
