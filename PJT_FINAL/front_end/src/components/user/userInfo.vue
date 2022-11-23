@@ -35,9 +35,11 @@
           <div> &nbsp; / 5</div> </div>
         </b-tooltip>
       </div>
+      
       <!-- <b-button  v-if="!parseInt(this.$route.params.userid) === this.$store.state.currentUser.pk" 
         variant="warning" class="followButton">FOLLOW</b-button> -->
-      <b-button v-if="this.$store.state.currentUser.pk !== profile.id" variant="warning" class="followButton" @click="followIng">FOLLOW</b-button>
+        <b-button v-if="this.$store.state.currentUser.pk !== profile.id && follow_follwing"  class="followButton"  @click="followIng">UNFOLLOW</b-button>
+        <b-button v-if="this.$store.state.currentUser.pk !== profile.id && !follow_follwing" variant="warning" class="followButton" @click="followIng">FOLLOW</b-button>
     </div>
     <div class="UserRightDiv">
       <b-tabs content-class="mt-3">
@@ -117,6 +119,7 @@ export default {
       FollowerState:0,
       FollowingState:0,
       sumLikeUserCount:0,
+      follow_follwing:'',
     };
   },
   components: { AddCardDiv, Carousel, Slide, ProfileArticles, followerProfile,followingProfile },
@@ -154,6 +157,7 @@ export default {
       }
       const payload = parseInt(this.$route.params.userid);
       this.$store.dispatch("followIng", payload);
+      this.follow_follwing = !this.follow_follwing
     },
     fetchProfile() {
       const payload = parseInt(this.$route.params.userid);
@@ -184,7 +188,6 @@ export default {
         console.log('item',item.like_user_count);
         this.sumLikeUserCount += item.like_user_count
       }
-      console.log('sumLikeUsers',this.sumLikeUserCount);
     }
 
   },

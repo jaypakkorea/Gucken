@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <div>{{this.movieName.title}}</div>
+  <div>    
+    <div v-if="this.movieName.title.length < 6">{{this.movieName.title}}</div>
+    <div v-else>{{this.movieName.title.substring(0,6)+'...'}}</div>
   </div>
 </template>
 
@@ -39,5 +40,4 @@ export default {
 </script>
 
 <style>
-
 </style>

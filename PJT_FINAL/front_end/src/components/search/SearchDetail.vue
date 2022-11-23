@@ -460,6 +460,7 @@ export default {
   word-break: normal;
   word-wrap:break-word;
   word-break:break-all;
+  
 }
 .communityTitle2{
   margin: auto 20px;
