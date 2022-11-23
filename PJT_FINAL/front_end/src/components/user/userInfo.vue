@@ -1,23 +1,39 @@
 <template>
   <div class="SearchFlexDiv">
     <div class="UserLeftDiv">
-      <b-avatar button size="15rem" 
+      <div style="position:relative;">
+        <b-avatar button size="15rem" 
         :src="userProfile"
         alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM5z7l_V183adxjX0NHjejDhNSdunjN8UoTkZIBKts_Q&s"
         @click="$refs.profileImage.click()"></b-avatar>
+        <div v-if="this.$store.state.currentUser.pk === profile.id && !profile.profile_pic" style="position:absolute; left: 35%; top:70% ; font-family: BMDOHYEON; color:white">프로필 변경</div>
+      </div>
         
       <input style="display: none" type="file"  @change="inputProfilePic" ref="profileImage"  class="input-file" value="프로필 변경"  >
-
       <div class="userIconDiv">
-        <div v-if="profile.follower_count < 5" ><font-awesome-icon icon="fa-solid fa-trophy" /></div>
-        <div v-if="profile.follower_count >= 5" style="color:#ffda4f;"><font-awesome-icon icon="fa-solid fa-trophy" /></div>
+        <div v-if="profile.follower_count < 5"  id="tooltip-target-1" ><font-awesome-icon icon="fa-solid fa-trophy" /></div>
+        <div v-if="profile.follower_count >= 5"  id="tooltip-target-1" style="color:#ffda4f;"><font-awesome-icon icon="fa-solid fa-trophy" /></div>
 
-        <div  v-if="sumLikeUserCount < 5"><font-awesome-icon icon="fa-solid fa-medal" /></div>
-        <div v-if="sumLikeUserCount >= 5" style="color:#ffda4f;"><font-awesome-icon icon="fa-solid fa-medal" /></div>
+        <div  v-if="sumLikeUserCount < 5" id="tooltip-target-2"><font-awesome-icon icon="fa-solid fa-medal" /></div>
+        <div v-if="sumLikeUserCount >= 5" id="tooltip-target-2" style="color:#ffda4f;"><font-awesome-icon icon="fa-solid fa-medal" /></div>
 
-        <div v-if="profile.ratings_count < 5"><font-awesome-icon icon="fa-solid fa-award" /></div>
-        <div v-if="profile.ratings_count >= 5" style="color:#ffda4f;"><font-awesome-icon icon="fa-solid fa-award" /></div>
-        
+        <div v-if="profile.ratings_count < 5" id="tooltip-target-3"><font-awesome-icon icon="fa-solid fa-award" /></div>
+        <div v-if="profile.ratings_count >= 5" id="tooltip-target-3" style="color:#ffda4f;"><font-awesome-icon icon="fa-solid fa-award" /></div>
+        <b-tooltip target="tooltip-target-1" triggers="hover">
+          팔로워 수 <div class="d-flex justify-content-center">
+          <div style="color:#ffda4f;"> {{profile.follower_count}} </div>
+          <div> &nbsp; / 5</div> </div>
+        </b-tooltip>
+        <b-tooltip target="tooltip-target-2" triggers="hover">
+          총 좋아요 수 <div class="d-flex justify-content-center">
+          <div style="color:#ffda4f;"> {{sumLikeUserCount}} </div>
+          <div> &nbsp; / 5</div> </div>
+        </b-tooltip>
+        <b-tooltip target="tooltip-target-3" triggers="hover">
+          게시물 수 <div class="d-flex justify-content-center">
+          <div style="color:#ffda4f;"> {{profile.ratings_count}} </div>
+          <div> &nbsp; / 5</div> </div>
+        </b-tooltip>
       </div>
       <!-- <b-button  v-if="!parseInt(this.$route.params.userid) === this.$store.state.currentUser.pk" 
         variant="warning" class="followButton">FOLLOW</b-button> -->
@@ -30,14 +46,14 @@
             <div class="userTextName">Name</div>
             <div class="userText">{{profile.username.split('@')[0]}}</div>
             <div class="userTextName">Follower</div>
-            <div class="userText" @click="FollowerStateChange">{{profile.follower_count}}</div>
+            <div class="userText" style="cursor : pointer;" @click="FollowerStateChange">{{profile.follower_count}}</div>
             <div v-if="FollowerState && profile.follower_count"  class="followingsDiv">
               <div v-for="follower in profile.followers" :key="follower.id">
                   <div><followerProfile :follower="follower" /></div>
               </div>
             </div>
             <div class="userTextName">Following</div>
-            <div class="userText" @click="FollowingStateChange">{{profile.following_count}}</div>
+            <div class="userText" style="cursor : pointer;" @click="FollowingStateChange">{{profile.following_count}}</div>
             <div v-if="FollowingState && profile.following_count" class="followingsDiv" >
               <div v-for="following in profile.followings" :key="following.id">
                   <followingProfile :following="following" />
@@ -87,6 +103,7 @@ import { Carousel, Slide } from "vue-carousel";
 import ProfileArticles from "./ProfileArticles.vue";
 import followerProfile from "./followerProfile.vue";
 import followingProfile from "./followingProfile.vue";
+import Swal from "sweetalert2";
 
 
 export default {
@@ -107,11 +124,14 @@ export default {
     profile() {
       return this.$store.getters.profile;
     },
+    isLogin(){
+      return this.$store.getters.isLogin
+    },
     userProfile(){
       if (this.profile.profile_pic) {
         return `http://localhost:8000${this.profile.profile_pic}`  
       } else {
-        return 'http://localhost:8000/media/profile/images/default.jpg'
+        return 'http://localhost:8000/media/profile/images/change.jpg'
       }
     } 
   },
@@ -128,6 +148,10 @@ export default {
     },
 
     followIng(){
+      if (!this.isLogin) {
+        Swal.fire('로그인이 필요한 서비스 입니다', '', 'error')
+        this.$router.push({name:'user'})
+      }
       const payload = parseInt(this.$route.params.userid);
       this.$store.dispatch("followIng", payload);
     },
@@ -179,6 +203,10 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: BMDOHYEON;
+  src: url(../../fonts/BMDOHYEON_ttf.ttf);
+}
 .UserLeftDiv {
   margin: auto;
 
@@ -191,6 +219,15 @@ export default {
   width: 200px;
   height: 200px;
   border-radius: 100%;
+}
+.profileImgUpdate{
+  background: rgb(175, 175, 175);
+  height: 40px;
+  line-height: 40px;
+  margin-top: 0.8rem;
+  border-radius: 10px;
+  color: rgb(66, 66, 66);
+  font-weight: bold;
 }
 .followButton {
   width: 150px;
@@ -255,4 +292,5 @@ export default {
   top: 20vh;
   color: white;
 }
+
 </style>

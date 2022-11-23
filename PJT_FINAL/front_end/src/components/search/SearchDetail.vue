@@ -153,6 +153,11 @@ export default {
     }
   },
   methods: {
+    sumLikeUsers(){
+      if(this.$store.state.currentUser.pk in this.movie.like_users){
+        this.is_liked = true
+      }
+    },
     pick() {
       const idx = Math.floor(Math.random() * this.myAPIList.length);
       this.myApi = this.myAPIList[idx];
@@ -218,7 +223,11 @@ export default {
           this.articles=res.data
         })
         .catch((err) => {
-          console.log(err)
+          if (err.response.status === 404) {
+            Swal.fire('없는 영화 정보 입니다', '', 'error')
+            setTimeout(()=>this.$router.go(-1), 100)
+            
+  } 
         })
     },
     addCommunity() {
@@ -263,6 +272,7 @@ export default {
     },
   },
   created() {
+    setTimeout(()=>this.sumLikeUsers(),100) 
     this.readArticles()
     // this.pick()
     this.InputGetEvent(this.myKeyword)
@@ -420,40 +430,33 @@ export default {
   margin-right: 2rem;
 }
 .communityScore {
-  color: black;
-  font-size: 1.8rem;
-  margin: auto 20px;
-  padding: 0 10px;
-  border-radius: 5px;
-  background-color: rgb(211, 209, 209);
-  min-width: 120px;
-  text-align: center;
-  max-height: 50px;
+  font-size: 0.8rem;
+  margin: auto 0;
+  min-width: 50px;
+  text-align: left;
+
   
 }
 .communityTitle{
-  margin-right:20px;
+  margin: auto 20px;
   font-size:2rem;
-  font-weight:bold;
   line-height: fit-content;
   word-break: normal;
   word-wrap:break-word;
-  min-width: 63%;
-  max-width: 63%;
+  word-break:break-all;
 }
 .communityTitle2{
-  margin-right:20px;
-  font-size:2rem;
-  font-weight:bold;
+  margin: auto 20px;
+  font-size:1.8rem;
   line-height: fit-content;
   word-break: normal;
   word-wrap:break-word;
+  word-break:break-all;
 
 }
 .communityDate{
-  
-  font-weight:bold;
   margin: auto 0;
+  min-width: 80px;
 }
 .communityScoreHigh {
   color: black;
@@ -464,9 +467,10 @@ export default {
 }
 .communutyText {
   margin-left: 2rem;
-  color: white;
+  color: gray;
   font-size: 2rem;
   margin: auto 0;
+  font-weight: 100;
 }
 
 .communityModal{

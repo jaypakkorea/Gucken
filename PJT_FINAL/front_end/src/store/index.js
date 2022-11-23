@@ -107,7 +107,6 @@ export default new Vuex.Store({
         url: `${API_URL}/movies/search/${movieName}`,
       })
       .then((res) => {
-        console.log(res, context)
         context.commit('SET_SEARCH', res.data)
       })
       .catch((err) => {

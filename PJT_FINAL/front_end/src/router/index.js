@@ -10,7 +10,7 @@ import userProfile from '../views/UserProfileView.vue'
 import LogoutView from '../views/LogoutView.vue'
 // import LikeRecommendation from '../components/chart/LikeRecommendation.vue'
 import InputRecommendtion from '../components/chart/InputRecommendtion.vue'
-
+import NotFount404 from "@/views/NotFound_404";
 Vue.use(VueRouter)
 
 const routes = [
@@ -68,6 +68,13 @@ const routes = [
     path: '/user/profile/:userid',
     name: 'userProfile',
     component: userProfile
+  }, {
+    path: "/404",
+    name: "NotFount404",
+    component: NotFount404,
+  }, {
+    path: "*",
+    redirect:'/404',
   },
 ]
 

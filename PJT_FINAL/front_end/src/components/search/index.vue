@@ -193,6 +193,7 @@ export default {
 .searchSelectDiv {
   width: 270px;
   margin-top: 3rem;
+  cursor : pointer;
 }
 .searchSelect {
   margin: 1rem;

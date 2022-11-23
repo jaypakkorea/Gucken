@@ -7,15 +7,18 @@
     :id="article.pk + '가나다'"
   >
     <div class="communityDetailModal">
-      <div class="d-flex"> <div class="communityDetailTitle">{{ article.title }}</div>
-              <b-button
+      <div class="d-flex">
+        <div class="communityDetailTitle">{{ article.title }}</div>
+        <b-button
+        v-if="article.user.pk === this.$store.state.currentUser.pk"
           class="communityDetailDelete"
           @click="deleteArticle"
           variant="outline-secondary"
           size="sm"
-          ><font-awesome-icon icon="fa-solid fa-trash" /></b-button
-        ></div>
-     
+          ><font-awesome-icon icon="fa-solid fa-trash"
+        /></b-button>
+      </div>
+
       <div class="communityDetailDate">
         작성자 : {{ article.user.username.split("@")[0] }}
       </div>
@@ -25,7 +28,6 @@
       <div class="communityDetailContent">
         <div>{{ article.content }}</div>
         <!-- <b-button variant="secondary" size="sm">edit</b-button> -->
-
       </div>
       <div class="communityLike">
         <!--  좋아요 안 한 사람 -->
@@ -33,17 +35,15 @@
           @click="likeCommunity"
           v-if="!communityLike"
           class="likeButton"
-          style="color:gray;"
-          ><font-awesome-icon icon="fa-solid fa-heart" /></div
+          style="color: gray"
         >
+          <font-awesome-icon icon="fa-solid fa-heart" />
+        </div>
         <!-- 좋아요 한 사람은 -->
-        <div
-          @click="likeCommunity"
-          v-if="communityLike"
-          class="likeButton"
-          ><font-awesome-icon icon="fa-solid fa-heart" /></div
-        >
-        <div style="text-align: left">
+        <div @click="likeCommunity" v-if="communityLike" class="likeButton">
+          <font-awesome-icon icon="fa-solid fa-heart" />
+        </div>
+        <div style="text-align: left; ">
           {{ this.likecount }} 명이 이 게시글을 좋아합니다.
         </div>
       </div>
@@ -73,22 +73,6 @@
                 <div style="font-size: 0.7rem">
                   {{ comment.created_at.split("T")[0].replace(/-/g, " / ") }}
                 </div>
-              </div>
-              <div>
-                <div
-                  @click="likeRecommunity"
-                  v-if="!RecommunityLike"
-                  class="likeButton"
-                  style="color:gray;"
-                  ><font-awesome-icon icon="fa-solid fa-heart" /></div
-                >
-                <!-- 좋아요 한 사람은 -->
-                <div
-                  @click="likeRecommunity"
-                  v-if="RecommunityLike"
-                  class="likeButton"
-                  ><font-awesome-icon icon="fa-solid fa-heart" /></div
-                >
               </div>
             </div>
           </div>
@@ -206,6 +190,10 @@ export default {
         Swal.fire("댓글을 입력해주세요", "", "error");
         return;
       }
+      if (!this.isLogin) {
+        Swal.fire('로그인이 필요한 서비스 입니다', '', 'error')
+        this.$router.push({name:'user'})
+      }
       console.log(recontent);
 
       axios({
@@ -290,6 +278,8 @@ export default {
   font-size: 3rem;
   /* margin-bottom: 3rem; */
   font-weight: bold;
+  word-wrap:break-word;
+  word-break:break-all;
 }
 .communityDetailContent {
   width: 100%;
@@ -298,6 +288,8 @@ export default {
   margin: 3rem 0;
   display: flex;
   justify-content: space-between;
+  word-wrap:break-word;
+  word-break:break-all;
 }
 .communityDetailListDiv {
   font-size: 1.5rem;
@@ -307,11 +299,10 @@ export default {
 #textarea-no-resize2 {
   margin: 3rem 0 2rem 0;
 }
-.recommendMovieTitle{
+.recommendMovieTitle {
   min-width: 150px;
   max-width: 150px;
   margin: auto 0;
   font-size: 1.5rem;
-
 }
 </style>

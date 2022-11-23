@@ -1,6 +1,6 @@
 <template>
   <div class="SearchContainer">
-    <ChartIndex/>
+    <ChartIndex />
   </div>
 </template>
 

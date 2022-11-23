@@ -157,7 +157,7 @@ video {
   z-index: 3;
   backface-visibility: hidden;
   background: black;
-  background: linear-gradient(77deg, rgba(0, 0, 0, 0.6), transparent 85%);
+  background: linear-gradient(77deg, rgba(248, 4, 4, 0.6), transparent 85%);
   opacity: 1;
 }
 .mainSection {

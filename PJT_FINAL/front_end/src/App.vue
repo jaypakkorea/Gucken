@@ -12,16 +12,15 @@
           <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
         </router-link>
       </div>
+      
       <div>
-        <router-link to="/chart">
+        <router-link @click.native="loginAlert" to="/chart" >
           <font-awesome-icon icon="fa-solid fa-video" />
         </router-link>
+
       </div>
       <div>
-        <!-- 로그인 됬으몈 -->
-        <!-- <router-link ="isLogin" to="/user/profile/:username"> -->
-
-        <router-link v-if="isLogin"  :to="{ name: 'userProfile', params: { userid } }">
+        <router-link v-if="isLogin"  :to="{ name: 'userProfile', params: { userid } }" >
           <font-awesome-icon icon="fa-solid fa-circle-user" />
         </router-link>
         <!-- 로그인 안됬으면 -->
@@ -42,7 +41,7 @@
 </template>
 
 <script>
-
+import Swal from "sweetalert2";
 
 export default {
   computed:{
@@ -56,17 +55,15 @@ export default {
   },
   created() {
     this.userid()
+  },
+  methods: {
+    loginAlert() {
+      if (!this.isLogin) {
+        Swal.fire('로그인이 필요한 서비스 입니다', '', 'error')
+        this.$router.push({name:'user'})
+    }
   }
-  // methods: {
-  //   getArticles() {
-  //     if (this.isLogin === true) { 
-  //       alert('로그인 되어있음')
-  //     } else {
-  //       alert('로그인이 필요한 서비스 입니다.')
-  //       this.$router.push({ name: 'LogInView'})
-  //     }
-  //   }
-  // }
+}
 }
 </script>
 

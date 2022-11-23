@@ -23,6 +23,9 @@ export default {
       }).then(result => {
         if (result.value) {
           this.logout()
+          this.$router.push({name:'index'})
+        }else{
+          this.$router.push({name:'index'})
         }
       });
     },
