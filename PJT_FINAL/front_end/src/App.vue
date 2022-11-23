@@ -20,8 +20,8 @@
 
       </div>
       <div>
-        <router-link v-if="isLogin"  :to="{ name: 'userProfile', params: { userid } }" >
-          <font-awesome-icon icon="fa-solid fa-circle-user" />
+        <router-link  v-if="isLogin"  :to="{ name: 'userProfile', params: { userid } }" >
+          <font-awesome-icon @click="reload" icon="fa-solid fa-circle-user" />
         </router-link>
         <!-- 로그인 안됬으면 -->
         <router-link v-if="!isLogin" to="/user">
@@ -62,6 +62,10 @@ export default {
         Swal.fire('로그인이 필요한 서비스 입니다', '', 'error')
         this.$router.push({name:'user'})
     }
+  },
+  reload(){
+    console.log(this.$store.getters.currentUser.pk, 'hi')
+    console.log(typeof this.$store.getters.currentUser.pk, 'wow')
   }
 }
 }

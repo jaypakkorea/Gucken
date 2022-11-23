@@ -50,14 +50,14 @@
             <div class="userTextName">Follower</div>
             <div class="userText" style="cursor : pointer; font-family: BMJUA;" @click="FollowerStateChange">{{profile.follower_count}}</div>
             <div v-if="FollowerState && profile.follower_count"  class="followingsDiv">
-              <div v-for="follower in profile.followers" :key="follower.id">
+              <div style="margin-bottom: 0.5rem;" v-for="follower in profile.followers" :key="follower.id">
                   <div><followerProfile :follower="follower" /></div>
               </div>
             </div>
             <div class="userTextName">Following</div>
             <div class="userText" style="cursor : pointer; font-family: BMJUA;" @click="FollowingStateChange">{{profile.following_count}}</div>
             <div v-if="FollowingState && profile.following_count" class="followingsDiv" >
-              <div v-for="following in profile.followings" :key="following.id">
+              <div style="margin-bottom: 0.5rem;" v-for="following in profile.followings" :key="following.id">
                   <followingProfile :following="following" />
               </div>
             </div>
@@ -72,7 +72,7 @@
           <ProfileArticles :profile=profile :userProfile=userProfile :sumLikeUsers=sumLikeUserCount />
         </b-tab>
 
-        <b-tab title="ADD LIST" lazy >
+        <b-tab title="LIKE LIST" lazy >
           <carousel
             :loop="true"
             v-bind:autoplay="true"

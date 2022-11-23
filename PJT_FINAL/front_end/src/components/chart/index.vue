@@ -70,6 +70,8 @@ export default {
 </script>
 
 <style>
+
+
   .chartIndexDiv {
     padding: 2rem; 
     height: 100vh;

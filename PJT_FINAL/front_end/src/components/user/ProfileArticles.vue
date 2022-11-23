@@ -2,16 +2,16 @@
   <div>
     <div class="CommunityDiv" v-for="article in profile.ratings" :key="article.id">
       <div class="recommendMovieTitle" >
-        <ProfileArticleMovie :movie=article.movie />
+        <ProfileArticleMovie style="font-family: BMHANNAAir_ttf;" :movie=article.movie />
       </div>
-      <div class="d-flex justify-content-between" style="width:100%;">
+      <div class="d-flex justify-content-between" style="width:100%; ">
         <div>
-          <div class="communityTitle">{{article.title}}</div>
+          <div class="communityTitle" style="font-family: BMJUA;">{{article.title}}</div>
         </div>
         <div class="d-flex">
           <div class="communityScore">❤ {{article.like_user_count}}</div>
-          <div class="communityScore">⭐ {{article.rate}}</div>
-          <div class="communityDate">{{article.created_at.split('T')[0].replace(/-/g,' / ')}}</div></div>
+          <div class="communityScore" style="margin-right: 1rem;">⭐ {{article.rate}}</div>
+          <div class="communityDate" >{{article.created_at.split('T')[0].replace(/-/g,' / ')}}</div></div>
         </div>
       </div> 
   </div>

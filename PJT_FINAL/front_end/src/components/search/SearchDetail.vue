@@ -45,7 +45,7 @@
           <!-- DB 평점 -->
           <div v-if="this.movie.vote_average">
             <div style="font-size:3rem;">{{this.movie.vote_average}}</div>
-            <div style="color:gray;">RATE</div>
+            <div style="color:gray;">RATE ⭐</div>
           </div>
         </div>
       </div>
@@ -389,7 +389,7 @@ export default {
 }
 .detail_title {
   margin-top: 3rem;
-  font-size: 5rem;
+  font-size: 7rem;
   font-family: BMDOHYEON;
   /* font-family: BMJUA; */
   /* font-family: BMHANNAAir_ttf; */
