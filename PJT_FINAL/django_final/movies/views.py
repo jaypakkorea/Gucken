@@ -6,6 +6,7 @@ from django.shortcuts import get_object_or_404, get_list_or_404
 
 from .serializers import *
 from .models import *
+from django.db.models import Count
 
 # permission Decorators
 from rest_framework.decorators import permission_classes
@@ -144,7 +145,8 @@ def article_list_or_create(request, movie_pk):
     movie = get_object_or_404(Movie, pk=movie_pk)
 
     def article_list():
-        articles = movie.ratings.all()
+        # articles = movie.ratings.all()
+        articles = Rating.objects.filter(movie_id=movie_pk).annotate(likes_count=Count('like_users')).order_by('-likes_count')
         serializer = ArticleSerializer(articles, many=True)
         return Response(serializer.data)
     

@@ -84,7 +84,7 @@
             style="transition: transform 0.5s ease 0s"
           >
             <slide
-              v-for="(topmovie, index) in profile.like_movies"
+              v-for="(topmovie, index) in profile.like_movies.slice().reverse()"
               :key="topmovie.id"
               :index="index"
             >
