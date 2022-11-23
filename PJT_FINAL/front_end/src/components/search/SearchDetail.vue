@@ -17,7 +17,7 @@
           @click="likeMovie">Like</b-button>
 
         </div>
-        <div style="width: 80%;">{{this.movie.overview}}</div>
+        <div style="width: 80%; font-family: BMHANNAAir_ttf; color:darkgray">{{this.movie.overview}}</div>
         <!-- 배우가 없을떄는 v-if로 div 자체가 뜨지 않게 하기 -->
         <div v-if="this.movie.actors" class="detail_actors">
           <!-- for 문으로 배우 리스트 돌면서 이름, 사진 보여주기 -->
@@ -271,6 +271,19 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: BMDOHYEON;
+  src: url(../../fonts/BMDOHYEON_ttf.ttf);
+}
+@font-face {
+  font-family: BMJUA;
+  src: url(../../fonts/BMJUA_ttf.ttf);
+}
+@font-face {
+  font-family: BMHANNAAir_ttf;
+  src: url(../../fonts/BMHANNAAir_ttf.ttf);
+}
+
 
 .detail_main_div {
   padding-top: 2rem;
@@ -366,7 +379,10 @@ export default {
 }
 .detail_title {
   margin-top: 3rem;
-  font-size: 7rem;
+  font-size: 5rem;
+  font-family: BMDOHYEON;
+  /* font-family: BMJUA; */
+  /* font-family: BMHANNAAir_ttf; */
 }
 
 .detailCommunityDiv {

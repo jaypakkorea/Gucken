@@ -129,7 +129,6 @@ export default {
 }
 
 
-
 .routerLink {
   --bs-link-color: none;
   --bs-link-hover-color: none;
@@ -240,6 +239,7 @@ export default {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
+  font-family: BMHANNAAir_ttf;
 }
 .detailOverviewDiv {
   display: block;
