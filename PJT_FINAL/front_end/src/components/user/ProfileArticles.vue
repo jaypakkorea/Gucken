@@ -42,7 +42,20 @@ export default {
 };
 </script>
   
-  <style>
+<style>
+@font-face {
+  font-family: BMDOHYEON;
+  src: url(../../fonts/BMDOHYEON_ttf.ttf);
+}
+@font-face {
+  font-family: BMJUA;
+  src: url(../../fonts/BMJUA_ttf.ttf);
+}
+@font-face {
+  font-family: BMHANNAAir_ttf;
+  src: url(../../fonts/BMHANNAAir_ttf.ttf);
+}
+
   .recommendSelect{
     font-size:0.8rem;
   }

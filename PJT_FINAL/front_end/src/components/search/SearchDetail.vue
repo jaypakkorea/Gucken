@@ -68,15 +68,15 @@
                 <font-awesome-icon @click="communnityOpen" class="pluscommunuty" icon="fa-solid fa-plus" />
               </b-button>
               <!-- 모달로 게시글 받는곳 -->
-              <b-modal centered class="communityModal" ref="my-modal"  size="xl" id="modal-1" title="게시글 작성">
+              <b-modal centered class="communityModal" ref="my-modal"   size="xl" id="modal-1" title="게시글 작성">
                 <div>
-                  <b-form-input v-model="title" style="margin-bottom:30px;" size="lg" placeholder="제목을 입력하세요"></b-form-input>
-                  <b-form-textarea v-model="content" size="lg" placeholder="내용을 입력하세요" no-resize rows="5" id="textarea-no-resize" type="text" ></b-form-textarea>
+                  <b-form-input v-model="title" style="margin-bottom:30px; font-family: BMJUA;" size="lg" placeholder="제목을 입력하세요"></b-form-input>
+                  <b-form-textarea v-model="content" size="lg" placeholder="내용을 입력하세요" style="font-family: BMHANNAAir_ttf;" no-resize rows="5" id="textarea-no-resize" type="text" ></b-form-textarea>
                   <div style="margin-left:35%; margin-top:50px;">
                   <div @mouseleave="showCurrentRating(0)" style="display:inline-block;">
-                    <star-rating :show-rating="false" @current-rating="showCurrentRating" @rating-selected="setCurrentSelectedRating" :increment="0.1"></star-rating>
+                    <star-rating  :show-rating="false" @current-rating="showCurrentRating" @rating-selected="setCurrentSelectedRating" :increment="0.1"></star-rating>
                   </div>
-                  <div style="margin-top:10px;font-weight:bold;">{{currentRating}}</div>
+                  <div style="margin-top:10px; font-weight : bold ;font-family: BMJUA; color:black">{{currentRating}}</div>
                   </div>
                 </div>
                 <template #modal-footer>
@@ -521,7 +521,7 @@ export default {
   left: 0;
   z-index: -1;
   filter: grayscale(50%);
-  opacity: 0.7;
+  opacity: 0.5;
 }
 #modal-1___BV_modal_header_ > button{
   background-color: transparent;

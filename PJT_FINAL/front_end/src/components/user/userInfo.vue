@@ -44,25 +44,25 @@
         <b-tab title="PROFILE" active>
           <div class="userProfileDiv" v-if="correctState">
             <div class="userTextName">Name</div>
-            <div class="userText">{{profile.username.split('@')[0]}}</div>
+            <div class="userText" style="font-family: BMDOHYEON;">{{profile.username.split('@')[0]}}</div>
             <div class="userTextName">Follower</div>
-            <div class="userText" style="cursor : pointer;" @click="FollowerStateChange">{{profile.follower_count}}</div>
+            <div class="userText" style="cursor : pointer; font-family: BMJUA;" @click="FollowerStateChange">{{profile.follower_count}}</div>
             <div v-if="FollowerState && profile.follower_count"  class="followingsDiv">
               <div v-for="follower in profile.followers" :key="follower.id">
                   <div><followerProfile :follower="follower" /></div>
               </div>
             </div>
             <div class="userTextName">Following</div>
-            <div class="userText" style="cursor : pointer;" @click="FollowingStateChange">{{profile.following_count}}</div>
+            <div class="userText" style="cursor : pointer; font-family: BMJUA;" @click="FollowingStateChange">{{profile.following_count}}</div>
             <div v-if="FollowingState && profile.following_count" class="followingsDiv" >
               <div v-for="following in profile.followings" :key="following.id">
                   <followingProfile :following="following" />
               </div>
             </div>
-            <div class="userTextName">Add Movie</div>
-            <div class="userText">{{profile.like_movies.length}}</div>
+            <div class="userTextName">Like List</div>
+            <div class="userText" style="font-family: BMJUA;">{{profile.like_movies.length}}</div>
             <div class="userTextName">Joined</div>
-            <div class="userText">{{profile.date_joined.split('T')[0].replace(/-/g,' / ')}}</div>
+            <div class="userText" style="font-family: BMJUA;">{{profile.date_joined.split('T')[0].replace(/-/g,' / ')}}</div>
           </div>
         </b-tab>
         
@@ -207,6 +207,16 @@ export default {
   font-family: BMDOHYEON;
   src: url(../../fonts/BMDOHYEON_ttf.ttf);
 }
+@font-face {
+  font-family: BMJUA;
+  src: url(../../fonts/BMJUA_ttf.ttf);
+}
+@font-face {
+  font-family: BMHANNAAir_ttf;
+  src: url(../../fonts/BMHANNAAir_ttf.ttf);
+}
+
+
 .UserLeftDiv {
   margin: auto;
 
