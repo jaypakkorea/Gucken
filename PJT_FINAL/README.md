@@ -201,6 +201,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 - 비밀번호 확인이 틀리거나, 이미 가입되어 있는 이메일이면 alert로 알려줌
 
+- 회원가입 완료시 자동 로그인 -> 홈 화면으로 이동
+
 - 가입 시 프로필 사진 생략 가능
 
 - 이 경우 기본 이미지로 최초 설정
