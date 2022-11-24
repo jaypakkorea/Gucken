@@ -164,8 +164,8 @@ export default {
     // },
     InputGetEvent(keyword) {
       const baseURL = "https://www.googleapis.com/youtube/v3/search";
-      // const API_KEY = 'AIzaSyDvjcb7odUilSZEcCyXBY2rX9z0fTYYWvQ'
-      const API_KEY = ''
+      const API_KEY = 'AIzaSyDvjcb7odUilSZEcCyXBY2rX9z0fTYYWvQ'
+      // const API_KEY = ''
 
       axios
         .get(baseURL, {

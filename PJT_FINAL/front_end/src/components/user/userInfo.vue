@@ -226,7 +226,7 @@ export default {
 
   text-align: center;
   position: fixed;
-  top: 10rem;
+  top: 7rem;
   left: 10%;
 }
 .userImg {
@@ -245,7 +245,7 @@ export default {
 }
 .followButton {
   width: 150px;
-  margin-top: 150px;
+  margin-top: 30px;
 }
 .followingsDiv{
   background-color: aliceblue;
