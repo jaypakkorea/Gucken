@@ -158,7 +158,13 @@ export default new Vuex.Store({
           context.dispatch("fetchCurrentUser")
         })
         .catch((err) => {
-          Swal.fire(err.message, '', 'error')
+          // Swal.fire(err.message, '', 'error')
+          if (err.response.status === 400 && payload.password1 !== payload.password2) {
+            Swal.fire('비밀번호가 다릅니다.', '', 'error')
+            
+          } else if (err.response.status === 400 ) {
+            Swal.fire('이미 가입된 아이디 입니다.', '', 'error')
+        } 
         })
     },
     logIn(context, payload) {

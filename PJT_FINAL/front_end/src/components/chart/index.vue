@@ -59,9 +59,9 @@ export default {
     
   },
   created() {
-    setTimeout(() => this.rodingText = '영화 목록 가져오는 중...', 2000)
-    setTimeout(() => this.rodingText = '10,000개 데이터에서 비슷한 영화 찾는중...', 3500)
-    setTimeout(() => this.rodingText = '추천 영화 하나씩 담는 중...', 7000)
+    setTimeout(() => this.rodingText = '영화 목록 가져오는 중...', 1500)
+    setTimeout(() => this.rodingText = '10,000개 데이터에서 비슷한 영화 찾는중...', 3000)
+    setTimeout(() => this.rodingText = '하나씩 머신러닝 돌려 담는 중...', 6000)
     setTimeout(() => this.rodingText = '영화 목록 포장하는 중...', 9000)
 
     this.userRecommendMovie()
