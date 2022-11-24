@@ -126,7 +126,7 @@ class ArticleSerializer(serializers.ModelSerializer):
     class UserSerializer(serializers.ModelSerializer):
         class Meta:
             model = User
-            fields = ('pk', 'username',)
+            fields = ('pk', 'username', 'profile_pic')
 
     user = UserSerializer(read_only=True)
 
@@ -146,6 +146,13 @@ class ArticleSerializer(serializers.ModelSerializer):
 
 # 단일 영화 상세 정보
 class MovieSerializer(serializers.ModelSerializer):
+
+    class UserSerializer(serializers.ModelSerializer):
+        class Meta:
+            model = User
+            fields = ('pk', 'username', 'profile_pic')
+
+    user = UserSerializer(read_only=True)
 
     class GenreSerializer(serializers.ModelSerializer):
         class Meta:

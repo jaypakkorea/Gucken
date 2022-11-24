@@ -48,7 +48,7 @@
         </div>
       </div>
       <div>
-        <div class="communityDetailListDiv">댓글 목록</div>
+        <div class="communityDetailListDiv" style="font-size: 1rem; margin-top:2rem ;">댓글 목록</div>
         <div
           style="margin-bottom: 1rem"
           v-for="comment in comments"

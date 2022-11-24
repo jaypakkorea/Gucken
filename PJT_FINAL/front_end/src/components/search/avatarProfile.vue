@@ -17,7 +17,7 @@ export default {
       if (this.article.profile_pic) {
         return `http://localhost:8000${this.article.profile_pic}`  
       } else {
-        return 'http://localhost:8000/media/profile/images/default.jpg'
+        return 'http://localhost:8000/media/profile/images/change.jpg'
       }
     },
     userId () {
