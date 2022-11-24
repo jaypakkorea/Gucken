@@ -158,18 +158,17 @@ export default {
         this.is_liked = true
       }
     },
-    pick() {
-      const idx = Math.floor(Math.random() * this.myAPIList.length);
-      this.myApi = this.myAPIList[idx];
-    },
+    // pick() {
+    //   const idx = Math.floor(Math.random() * this.myAPIList.length);
+    //   this.myApi = this.myAPIList[idx];
+    // },
     InputGetEvent(keyword) {
-      keyword = this.myKeyword.title
       const baseURL = "https://www.googleapis.com/youtube/v3/search";
-      // const API_KEY = 'AIzaSyCN9uPuXJyXoVjTvkOA8g5ivcUGsGKDiK8'
+      // const API_KEY = 'AIzaSyDvjcb7odUilSZEcCyXBY2rX9z0fTYYWvQ'
       axios
         .get(baseURL, {
           params: {
-            key: this.myApi,
+            key: API_KEY,
             part: "snippet",
             type: "video",
             q: keyword + "공식 예고편",
@@ -182,7 +181,7 @@ export default {
           this.VideoData = `https://www.youtube.com/embed/${response.data.items[0].id.videoId}?autoplay=1&mute=1`;
         })
         .catch(error => {
-          console.log("something wrong!");
+          console.log("유튭에러!");
           console.log(error);
         });
     },
@@ -272,10 +271,11 @@ export default {
     },
   },
   created() {
-    setTimeout(()=>this.sumLikeUsers(),100) 
     this.readArticles()
+    // this.InputGetEvent(this.movie.title)
+    setTimeout(()=>this.sumLikeUsers(),100) 
     // this.pick()
-    this.InputGetEvent(this.myKeyword)
+    setTimeout(()=>this.InputGetEvent(this.movie.title),200) 
   },
 };
 </script>
