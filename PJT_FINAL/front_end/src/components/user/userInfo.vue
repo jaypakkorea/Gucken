@@ -2,11 +2,11 @@
   <div class="SearchFlexDiv">
     <div class="UserLeftDiv">
       <div style="position:relative;">
-        <b-avatar button size="15rem" 
+        <b-avatar button size="18rem" 
         :src="userProfile"
         alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM5z7l_V183adxjX0NHjejDhNSdunjN8UoTkZIBKts_Q&s"
         @click="$refs.profileImage.click()"></b-avatar>
-        <div v-if="this.$store.state.currentUser.pk === profile.id && !profile.profile_pic" style="position:absolute; left: 35%; top:70% ; font-family: BMDOHYEON; color:white">프로필 변경</div>
+        <div v-if="this.$store.state.currentUser.pk === profile.id && !profile.profile_pic" style="position:absolute; left: 40%; top:70% ; color:white; font-weight: bold;">C l i c k !</div>
       </div>
         
       <input style="display: none" type="file"  @change="inputProfilePic" ref="profileImage"  class="input-file" value="프로필 변경"  >
