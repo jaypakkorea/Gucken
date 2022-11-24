@@ -10,6 +10,7 @@
       </div>
         
       <input style="display: none" type="file"  @change="inputProfilePic" ref="profileImage"  class="input-file" value="프로필 변경"  >
+
       <div class="userIconDiv">
         <div v-if="profile.follower_count < 5"  id="tooltip-target-1" ><font-awesome-icon icon="fa-solid fa-trophy" /></div>
         <div v-if="profile.follower_count >= 5"  id="tooltip-target-1" style="color:#ffda4f;"><font-awesome-icon icon="fa-solid fa-trophy" /></div>
