@@ -197,7 +197,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 ㄱ.  회원가입 페이지
 
-![signup_AdobeExpress](README.assets/signup_AdobeExpress.gif)
+<img src="README.assets/signup_AdobeExpress.gif" alt="signup_AdobeExpress" style="zoom:150%;" />
 
 - 비밀번호 확인이 틀리거나, 이미 가입되어 있는 이메일이면 alert로 알려줌
 
@@ -211,7 +211,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 ㄴ.  로그인 페이지
 
-
+<img src="README.assets/login_AdobeExpress.gif" alt="login_AdobeExpress" style="zoom:150%;" />
 
 - 로그인시 바로 메인 페이지로 이동
 
@@ -221,7 +221,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 ㄷ.  로그아웃 및 비로그인 유저 기능 제한
 
-
+<img src="README.assets/logout_AdobeExpress.gif" alt="logout_AdobeExpress" style="zoom:150%;" />
 
 - 로그아웃 버튼 클릭시 확인을 위한 창 뜸
 
@@ -232,7 +232,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 ㄹ.  메인 페이지
 
-
+![home_AdobeExpress](README.assets/home_AdobeExpress.gif)
 
 - `Best Rating` : 10000개의 데이터를 가중치를 통해 10개 선정
 - `Popularity` : 
@@ -241,7 +241,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 ㅁ. 영화 검색 페이지
 
-![movie_search_AdobeExpress](README.assets/movie_search_AdobeExpress.gif)
+<img src="README.assets/movie_search_AdobeExpress.gif" alt="movie_search_AdobeExpress" style="zoom:150%;" />
 
 - 장르별 영화 50개씩 추천
 
@@ -251,21 +251,21 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 ㅂ.  영화 상세 페이지
 
-
+![movie_detail_AdobeExpress](README.assets/movie_detail_AdobeExpress.gif)
 
 ㅅ. 영화 상세 페이지 커뮤니티, 삭제, 좋아요
 
-
+<img src="README.assets/movie_community_AdobeExpress.gif" alt="movie_community_AdobeExpress" style="zoom:150%;" />
 
 ㅇ. 유저기반 영화 추천 페이지
 
-
+![like_chark_AdobeExpress](README.assets/like_chark_AdobeExpress.gif)
 
 
 
 ㅈ. 유저 프로필 페이지
 
-![user_AdobeExpress](README.assets/user_AdobeExpress.gif)
+<img src="README.assets/user_AdobeExpress.gif" alt="user_AdobeExpress" style="zoom:150%;" />
 
 
 
