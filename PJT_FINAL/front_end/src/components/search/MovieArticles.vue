@@ -16,11 +16,9 @@
 
           <div class="d-flex justify-content-between" style="width: 100%">
             <div class="communityTitle2">{{ article.title }}</div>
-            <div
-            class="communityScore">
-            ⭐ {{ article.rate }}
           </div>
-        </div>
+          <div class="communityScore" >💓{{article.like_user_count}}</div>
+          <div class="communityScore"> ⭐ {{ article.rate }} </div>
         <div class="communityDate">
           {{ article.created_at.split("T")[0].replace(/-/g, " / ") }}
         </div>
