@@ -6,6 +6,7 @@ from rest_framework.response import Response
 from rest_framework import status
 
 from .serializers import *
+from django.db.models import Count
 
 # Create your views here.
 
@@ -14,9 +15,22 @@ User = get_user_model()
 @api_view(['GET'])
 def profile(request, user_pk):
     user = get_object_or_404(User, pk=user_pk)
-    serializer = ProfileSerializer(user)
-    return Response(serializer.data)
 
+    articles = ProfileSerializer(user)
+
+    return Response(articles.data)
+
+@api_view(['GET'])
+def like_num_of_article(request, user_pk):
+    user = get_object_or_404(User, pk=user_pk)
+
+    articles = ProfileSerializer(user)
+    like_count = 0
+    for data in articles.data['ratings']:
+        like_count += data['like_user_count']
+
+    print(like_count)
+    return Response(like_count)
 
 # @api_view(['GET'])
 # def like_count_profile(request, user_pk):

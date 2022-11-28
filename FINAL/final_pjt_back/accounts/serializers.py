@@ -52,9 +52,20 @@ class ProfileSerializer(serializers.ModelSerializer):
     like_movies = MovieSerializer(many=True)
     ratings_count = serializers.IntegerField(source='ratings.count', read_only=True)
 
+    like_count = serializers.IntegerField(default=0)
+
+
+
     class Meta:
         model = User
         fields = '__all__'
+    
+    # def testtest(self,ratings):
+    #     print(ratings.ratings)
+    #     like_count = 0
+    #     for count_like in ratings.data :
+    #         like_count += count_like['like_user_count']
+    #     return like_count
 
 
 

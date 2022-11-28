@@ -10,29 +10,30 @@
       </div>
         
       <input style="display: none" type="file"  @change="inputProfilePic" ref="profileImage"  class="input-file" value="프로필 변경"  >
+      
 
       <div class="userIconDiv">
         <div v-if="profile.follower_count < 5"  id="tooltip-target-1" ><font-awesome-icon icon="fa-solid fa-trophy" /></div>
-        <div v-if="profile.follower_count >= 5"  id="tooltip-target-1" style="color:#ffda4f;"><font-awesome-icon icon="fa-solid fa-trophy" /></div>
+        <div v-if="profile.follower_count >= 5"  id="tooltip-target-1" style="color:#ffc107;"><font-awesome-icon icon="fa-solid fa-trophy" /></div>
 
-        <div  v-if="sumLikeUserCount < 5" id="tooltip-target-2"><font-awesome-icon icon="fa-solid fa-medal" /></div>
-        <div v-if="sumLikeUserCount >= 5" id="tooltip-target-2" style="color:#ffda4f;"><font-awesome-icon icon="fa-solid fa-medal" /></div>
+        <div  v-if="likeCount < 5" id="tooltip-target-2"><font-awesome-icon icon="fa-solid fa-medal" /></div>
+        <div v-if="likeCount >= 5" id="tooltip-target-2" style="color:#ffc107;"><font-awesome-icon icon="fa-solid fa-medal" /></div>
 
         <div v-if="profile.ratings_count < 5" id="tooltip-target-3"><font-awesome-icon icon="fa-solid fa-award" /></div>
-        <div v-if="profile.ratings_count >= 5" id="tooltip-target-3" style="color:#ffda4f;"><font-awesome-icon icon="fa-solid fa-award" /></div>
+        <div v-if="profile.ratings_count >= 5" id="tooltip-target-3" style="color:#ffc107;"><font-awesome-icon icon="fa-solid fa-award" /></div>
         <b-tooltip target="tooltip-target-1" triggers="hover">
           팔로워 수 <div class="d-flex justify-content-center">
-          <div style="color:#ffda4f;"> {{profile.follower_count}} </div>
+          <div style="color:#ffc107;"> {{profile.follower_count}} </div>
           <div> &nbsp; / 5</div> </div>
         </b-tooltip>
         <b-tooltip target="tooltip-target-2" triggers="hover">
           총 좋아요 수 <div class="d-flex justify-content-center">
-          <div style="color:#ffda4f;"> {{sumLikeUserCount}} </div>
+          <div style="color:#ffc107;"> {{likeCount}} </div>
           <div> &nbsp; / 5</div> </div>
         </b-tooltip>
         <b-tooltip target="tooltip-target-3" triggers="hover">
           게시물 수 <div class="d-flex justify-content-center">
-          <div style="color:#ffda4f;"> {{profile.ratings_count}} </div>
+          <div style="color:#ffc107;"> {{profile.ratings_count}} </div>
           <div> &nbsp; / 5</div> </div>
         </b-tooltip>
       </div>
@@ -46,6 +47,7 @@
       <b-tabs content-class="mt-3">
         <b-tab title="PROFILE" active>
           <div class="userProfileDiv" v-if="correctState">
+            <p>{{likeCount}}</p>
             <div class="userTextName">Name</div>
             <div class="userText" style="font-family: BMDOHYEON;">{{profile.username.split('@')[0]}}</div>
             <div class="userTextName">Follower</div>
@@ -107,7 +109,7 @@ import ProfileArticles from "./ProfileArticles.vue";
 import followerProfile from "./followerProfile.vue";
 import followingProfile from "./followingProfile.vue";
 import Swal from "sweetalert2";
-
+import axios from "axios";
 
 export default {
   name: "UserInfo",
@@ -121,6 +123,7 @@ export default {
       FollowingState:0,
       sumLikeUserCount:0,
       follow_follwing:'',
+      likeCount : 0
     };
   },
   components: { AddCardDiv, Carousel, Slide, ProfileArticles, followerProfile,followingProfile },
@@ -140,6 +143,20 @@ export default {
     } 
   },
   methods: {
+    readLikeCount(){
+      const API_URL = 'http://127.0.0.1:8000'
+        axios({
+        method: 'get',
+        url: `${API_URL}/profile/${this.$route.params.userid}/like/`,
+      })
+        .then((res) => {
+          console.log(res,'dfsfd')
+          this.likeCount = res.data
+        })
+        .catch((err) => {
+          console.log(err)
+        })
+    },
     inputProfilePic(event){
       this.selectedFile = event.target.files[0]
       this.updateProfilePic()
@@ -193,14 +210,9 @@ export default {
 
   },
   created() {
-    console.log(this.$store.state.profile)
-    console.log(this.$store.state.currentUser)
-    console.log(this.$route.params.userid)
-    console.log(typeof parseInt(this.$route.params.userid))
-    console.log(typeof this.$store.state.currentUser.pk)
-    console.log('yes')
     this.sumLikeUsers()
     this.fetchProfile();
+    this.readLikeCount()
   }
 
 };
