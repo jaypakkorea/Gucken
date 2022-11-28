@@ -11,12 +11,11 @@
         <div class="detail_title">{{this.movie.title}}</div>
         <div class="detail_flexdiv">
           <div>{{this.movie.release_date}}</div>
-          <b-button v-if="is_liked"  variant = "outline-warning"
+          <b-button v-if="this.movie.like_users.includes(this.$store.state.currentUser.pk) || is_liked"  variant = "outline-warning"
           @click="likeMovie">Cancle</b-button>
-          <b-button v-if="!is_liked" variant = "warning"
+          <b-button v-else variant = "warning"
           @click="likeMovie">Like</b-button>
-
-        </div>
+        </div>        
         <div style="width: 80%; font-family: BMHANNAAir_ttf; color:darkgray">{{this.movie.overview}}</div>
         <!-- 배우가 없을떄는 v-if로 div 자체가 뜨지 않게 하기 -->
         <div v-if="this.movie.actors" class="detail_actors">
@@ -153,11 +152,6 @@ export default {
     }
   },
   methods: {
-    sumLikeUsers(){
-      if(this.$store.state.currentUser.pk in this.movie.like_users){
-        this.is_liked = true
-      }
-    },
     // pick() {
     //   const idx = Math.floor(Math.random() * this.myAPIList.length);
     //   this.myApi = this.myAPIList[idx];
@@ -192,9 +186,16 @@ export default {
         Swal.fire('로그인이 필요한 서비스 입니다', '', 'error')
         this.$router.push({name:'user'})
       } else {
-        const moviePk = this.movie.id;
-        this.$store.dispatch("addList", moviePk);
-        this.is_liked = !this.is_liked;
+        if(this.movie.like_users.includes(this.$store.state.currentUser.pk)){
+          const moviePk = this.movie.id;
+          this.$store.dispatch("addList", moviePk);
+          this.is_liked = false
+        }
+        else{
+          const moviePk = this.movie.id;
+          this.$store.dispatch("addList", moviePk);
+          this.is_liked = true
+        }
       }
 
     },
@@ -275,7 +276,6 @@ export default {
   created() {
     this.readArticles()
     // this.InputGetEvent(this.movie.title)
-    setTimeout(()=>this.sumLikeUsers(),100) 
     // this.pick()
     setTimeout(()=>this.InputGetEvent(this.movie.title),200) 
   },
