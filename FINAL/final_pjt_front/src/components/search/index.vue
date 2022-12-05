@@ -79,7 +79,6 @@ export default {
   components: { indexSearchImg },
   computed: {
     search() {
-      console.log(this.$store.state.search);
       return this.$store.state.search;
     },
     GenreMovies() {
@@ -92,7 +91,6 @@ export default {
   methods: {
     onInputKeyword() {
       const movieName = this.keyword;
-      console.log(this.keyword);
       this.$store.dispatch("search", movieName);
       this.keyword = null;
       this.listState = 1;

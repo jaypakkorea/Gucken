@@ -30,11 +30,7 @@ export default {
   components: {
     LankIndexCard
   },  
-  computed: {
-    // recommendmovies() {
-    //   return this.$store.state.recommendationMovies;
-    // },
-  },
+
   
   methods: {
     userRecommendMovie(){
@@ -44,8 +40,6 @@ export default {
         url: `${API_URL}/movies/${this.$store.state.currentUser.pk}/recommendation/`,
       })
       .then((res) => {
-        console.log('456123');
-        console.log('toppp',res.data[0].poster_path)
         this.recommendmovies = res.data
         this.isLoading = false
       })

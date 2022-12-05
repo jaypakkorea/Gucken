@@ -40,10 +40,7 @@ export default {
     watch: {
         movie: {
         deep : true,
-        handler : function() {
-          console.log('The list of colours has changed!')
-          console.log(this.movie, 'ddd')
-        },
+
       }
     }
 }

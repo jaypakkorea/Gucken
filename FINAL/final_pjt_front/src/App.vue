@@ -49,7 +49,6 @@ export default {
       return this.$store.getters.isLogin
     },
     userid() {
-      console.log(this.$store.getters.currentUser)
       return this.$store.getters.currentUser.pk
     }
   },
@@ -63,10 +62,7 @@ export default {
         this.$router.push({name:'user'})
     }
   },
-  reload(){
-    console.log(this.$store.getters.currentUser.pk, 'hi')
-    console.log(typeof this.$store.getters.currentUser.pk, 'wow')
-  }
+
 }
 }
 </script>

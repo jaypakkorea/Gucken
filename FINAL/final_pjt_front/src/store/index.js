@@ -67,7 +67,6 @@ export default new Vuex.Store({
         url: `${API_URL}/movies/top/`,
       })
       .then((res) => {
-        console.log(res, context)
         context.commit('GET_TOP10_MOVIES', res.data)
       })
       .catch((err) => {
@@ -80,27 +79,12 @@ export default new Vuex.Store({
         url: `${API_URL}/movies/popularity/`,
       })
       .then((res) => {
-        console.log(res, context)
         context.commit('GET_POPULAR_TOP10_MOVIES', res.data)
       })
       .catch((err) => {
         console.log(err)
       })
     },
-    // userRecommendMovie(context){
-    //   axios({
-    //     method: 'get',
-    //     url: `${API_URL}/movies/${this.state.currentUser.pk}/recommendation/`,
-    //   })
-    //   .then((res) => {
-    //     console.log(res, context)
-    //     console.log(this.state.currentUser.pk)
-    //     context.commit('SET_RECOMMENDATION_MOVIES', res.data)
-    //   })
-    //   .catch((err) => {
-    //     console.log(err)
-    //   })
-    // },
     search(context, movieName){
       axios({
         method: 'get',
@@ -120,7 +104,6 @@ export default new Vuex.Store({
         url: `${API_URL}/movies/search/genre/all`,
       })
       .then((res) => {
-        console.log('123456',res)
         context.commit('SET_SEARCH_GENRE', res.data)
       })
       .catch((err) => {
@@ -134,7 +117,6 @@ export default new Vuex.Store({
         url: `${API_URL}/movies/search/genre/${genreId}`,
       })
       .then((res) => {
-        console.log(res, context)
         context.commit('SET_SEARCH_GENRE', res.data)
       })
       .catch((err) => {
@@ -152,7 +134,6 @@ export default new Vuex.Store({
         }
       })
         .then((res) => {
-          // console.log(res)
           context.commit('SIGN_UP', res.data.key)
           localStorage.setItem("token", this.state.token)
           context.dispatch("fetchCurrentUser")
@@ -223,7 +204,6 @@ export default new Vuex.Store({
         url: `${API_URL}/profile/${payload}/`,
       })
       .then((res) => {
-        console.log('dhdhd', res.data)
         context.commit("SET_PROFILE", res.data)
       })
     },
@@ -251,8 +231,7 @@ export default new Vuex.Store({
           Authorization : `Token ${context.state.token}`
         },
       })
-      .then((res) => {
-        console.log(res)
+      .then(() => {
       })
       .catch((err) => {
         Swal.fire(err.message, '', 'error')
@@ -271,22 +250,6 @@ export default new Vuex.Store({
       })
       .catch(err => console.log(err))
     }
-    // changePassword(context, payload){
-    //   axios({
-    //     method: 'post',
-    //     url: `${API_URL}/`,
-    //     data: {
-    //       password1: payload.password1,
-    //       password2: payload.password2,
-    //     }
-    //   })
-    //   .then((res) => {
-    //     // 모르겠음,,
-    //   })
-    //   .catch((err) => {
-    //     alert(err.message)
-    //   })
-    // }
   },
   modules: {
   }

@@ -32,9 +32,6 @@ export default {
     Slide,
     ChartRecommendCard
   },
-  create(){
-    console.log(this.recommendmovies);
-  }
 
 };
 </script>

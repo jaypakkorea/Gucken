@@ -176,7 +176,6 @@ export default {
         url: `${API_URL}/movies/${this.$route.params.moviePk}/articles/${this.article.pk}/comments/`,
       })
         .then((res) => {
-          console.log(res.data, "hiddd");
           this.comments = res.data;
         })
         .catch((err) => {
@@ -194,7 +193,6 @@ export default {
         Swal.fire('로그인이 필요한 서비스 입니다', '', 'error')
         this.$router.push({name:'user'})
       }
-      console.log(recontent);
 
       axios({
         method: "post",
@@ -207,9 +205,7 @@ export default {
         },
       })
         .then((res) => {
-          console.log(res.data, "hiddd");
           this.comments = res.data;
-          // this.$router.push({ name: 'SearchDetailView', params: { moviePk: this.movie.id } })
           this.recontent = null;
         })
         .catch((err) => {
@@ -232,7 +228,6 @@ export default {
           .then((res) => {
             console.log(res);
             this.communityLike = !this.communityLike;
-            console.log(this.communityLike, "yes!");
           })
           .catch((err) => {
             console.log(err);

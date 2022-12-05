@@ -80,10 +80,8 @@ export default {
         })
         .then(response => {
           this.videoUrl = `https://www.youtube.com/embed/${response.data.items[0].id.videoId}?autoplay=1&mute=1`;
-          console.log(this.videoUrl);
         })
         .catch(error => {
-          console.log("something wrong!");
           console.log(error);
         });
     },

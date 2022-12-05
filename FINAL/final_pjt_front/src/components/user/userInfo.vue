@@ -40,8 +40,10 @@
       
       <!-- <b-button  v-if="!parseInt(this.$route.params.userid) === this.$store.state.currentUser.pk" 
         variant="warning" class="followButton">FOLLOW</b-button> -->
-        <b-button v-if="this.$store.state.currentUser.pk !== profile.id && follow_follwing"  class="followButton"  @click="followIng">UNFOLLOW</b-button>
-        <b-button v-if="this.$store.state.currentUser.pk !== profile.id && !follow_follwing" variant="warning" class="followButton" @click="followIng">FOLLOW</b-button>
+        <b-button v-if="this.$store.state.currentUser.pk !== profile.id && follow_follwing || this.followerList.includes(this.$store.state.currentUser.pk)" 
+         class="followButton"  @click="followIng">UNFOLLOW</b-button>
+        <b-button v-else-if="this.$store.state.currentUser.pk !== profile.id && !follow_follwing" 
+        variant="warning" class="followButton" @click="followIng">FOLLOW</b-button>
     </div>
     <div class="UserRightDiv">
       <b-tabs content-class="mt-3">
@@ -123,7 +125,8 @@ export default {
       FollowingState:0,
       sumLikeUserCount:0,
       follow_follwing:'',
-      likeCount : 0
+      likeCount : 0,
+      followerList:[]
     };
   },
   components: { AddCardDiv, Carousel, Slide, ProfileArticles, followerProfile,followingProfile },
@@ -150,7 +153,6 @@ export default {
         url: `${API_URL}/profile/${this.$route.params.userid}/like/`,
       })
         .then((res) => {
-          console.log(res,'dfsfd')
           this.likeCount = res.data
         })
         .catch((err) => {
@@ -200,18 +202,22 @@ export default {
       this.FollowingState = !this.FollowingState
     },
     sumLikeUsers(){
-      console.log(' this.profile', this.profile.ratings_count);
       for(let i=0; i< this.profile.ratings_count; i++){
         let item = this.profile.ratings[i];
-        console.log('item',item.like_user_count);
         this.sumLikeUserCount += item.like_user_count
+      }
+    },
+    makeFollowerList(){
+      for(let i=0; i < this.profile.followers.length; i++){
+        this.followerList.push(this.profile.followers[i].id)
       }
     }
 
   },
   created() {
+    this.makeFollowerList()
     this.sumLikeUsers()
-    this.fetchProfile();
+    this.fetchProfile()
     this.readLikeCount()
   }
 

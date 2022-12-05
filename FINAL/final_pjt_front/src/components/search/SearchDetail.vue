@@ -13,7 +13,7 @@
           <div>{{this.movie.release_date}}</div>
           <b-button v-if="this.movie.like_users.includes(this.$store.state.currentUser.pk) || is_liked"  variant = "outline-warning"
           @click="likeMovie">Cancle</b-button>
-          <b-button v-else variant = "warning"
+          <b-button v-else-if="!this.movie.like_users.includes(this.$store.state.currentUser.pk) || !is_liked" variant = "warning"
           @click="likeMovie">Like</b-button>
         </div>        
         <div style="width: 80%; font-family: BMHANNAAir_ttf; color:darkgray">{{this.movie.overview}}</div>
@@ -173,11 +173,9 @@ export default {
         })
         .then(response => {
           this.video = response.data.items[0];
-          console.log('유튭',keyword, response);
           this.VideoData = `https://www.youtube.com/embed/${response.data.items[0].id.videoId}?autoplay=1&mute=1`;
         })
         .catch(error => {
-          console.log("유튭에러!");
           console.log(error);
         });
     },
@@ -189,12 +187,12 @@ export default {
         if(this.movie.like_users.includes(this.$store.state.currentUser.pk)){
           const moviePk = this.movie.id;
           this.$store.dispatch("addList", moviePk);
-          this.is_liked = false
+          this.is_liked = !this.is_liked
         }
         else{
           const moviePk = this.movie.id;
           this.$store.dispatch("addList", moviePk);
-          this.is_liked = true
+          this.is_liked = !this.is_liked
         }
       }
 
@@ -221,7 +219,6 @@ export default {
         url: `${API_URL}/movies/${this.$route.params.moviePk}/articles/`,
       })
         .then((res) => {
-          console.log(res)
           this.articles=res.data
         })
         .catch((err) => {
@@ -248,7 +245,6 @@ export default {
           Swal.fire('평점을 남겨주세요', '', 'error')
           return
         }
-        console.log(movie, rate, title, content)
 
         axios({
         method: 'post',
@@ -260,8 +256,7 @@ export default {
           Authorization: `Token ${this.$store.state.token}`
         }
       })
-        .then((res) => {
-          console.log(res)
+        .then(() => {
           this.$router.push({ name: 'SearchDetailView', params: { moviePk: this.movie.id } })
           this.$refs['my-modal'].hide()
           this.readArticles()
