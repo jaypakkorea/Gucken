@@ -49,7 +49,6 @@
       <b-tabs content-class="mt-3">
         <b-tab title="PROFILE" active>
           <div class="userProfileDiv" v-if="correctState">
-            <p>{{likeCount}}</p>
             <div class="userTextName">Name</div>
             <div class="userText" style="font-family: BMDOHYEON;">{{profile.username.split('@')[0]}}</div>
             <div class="userTextName">Follower</div>

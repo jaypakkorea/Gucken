@@ -1,6 +1,6 @@
 
 
- # Cucken
+ # Gucken
 
 ### 왜 Gucken 구큰 인가?
 

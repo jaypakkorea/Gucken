@@ -62,6 +62,10 @@ export default {
         this.$router.push({name:'user'})
     }
   },
+  reload(){
+    console.log(this.$store.getters.currentUser.pk, 'hi')
+    console.log(typeof this.$store.getters.currentUser.pk, 'wow')
+  }
 
 }
 }

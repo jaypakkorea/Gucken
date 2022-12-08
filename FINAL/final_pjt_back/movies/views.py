@@ -113,21 +113,7 @@ def add_list(request, movie_pk):
         return Response(serializer.data)
 
 
-# user가 add list 한 목록
-@api_view(['POST'])
-def like_comment(request, movie_pk, article_pk):
-    user = request.user
-    movie = get_object_or_404(Movie, pk=movie_pk)
-    article = get_object_or_404(Rating, pk=article_pk)
 
-    if article.like_users.filter(pk=user.pk).exists():
-        article.like_users.remove(user)
-        serializer = ArticleSerializer(article)
-        return Response(serializer.data)
-    else:
-        article.like_users.add(user)
-        serializer = ArticleSerializer(article)
-        return Response(serializer.data)
 
 
 
@@ -162,8 +148,9 @@ def article_list_or_create(request, movie_pk):
         return article_list()
 
 
-@api_view(['GET', 'PUT', 'DELETE'])
+@api_view(['GET', 'POST', 'PUT', 'DELETE'])
 def articles_get_or_update_or_delete(request, movie_pk, rating_pk):
+    user = request.user
     movie = get_object_or_404(Movie, pk=movie_pk)
     rating = get_object_or_404(Rating, pk=rating_pk)
 
@@ -188,6 +175,18 @@ def articles_get_or_update_or_delete(request, movie_pk, rating_pk):
         print(rating, 'yese')
         serializer = UserArticleSerializer(rating)
         return Response(serializer.data)
+    
+    def like_article() :
+        if rating.like_users.filter(pk=user.pk).exists():
+            rating.like_users.remove(user)
+            print(rating.like_users)
+            serializer = ArticleSerializer(rating)
+            return Response(serializer.data)
+        else:
+            rating.like_users.add(user)
+            print(rating.like_users)
+            serializer = ArticleSerializer(rating)
+            return Response(serializer.data)
 
     if request.method == 'PUT':
         return update_rating()
@@ -195,7 +194,27 @@ def articles_get_or_update_or_delete(request, movie_pk, rating_pk):
         return delete_rating()
     elif request.method == 'GET':
         return get_article()
+    elif request.method == 'POST':
+        return like_article()
 
+
+# user가 add list 한 목록
+@api_view(['POST'])
+def like_comment(request, movie_pk, article_pk):
+    user = request.user
+    movie = get_object_or_404(Movie, pk=movie_pk)
+    article = get_object_or_404(Rating, pk=article_pk)
+
+    if article.like_users.filter(pk=user.pk).exists():
+        article.like_users.remove(user)
+        serializer = ArticleSerializer(article)
+        return Response(serializer.data)
+    else:
+        article.like_users.add(user)
+        serializer = ArticleSerializer(article)
+        return Response(serializer.data)
+
+        
 #popularity top 10 영화 목록 
 @api_view(['GET'])
 def popularity_movie(request):

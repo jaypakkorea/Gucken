@@ -45,6 +45,7 @@
         </div>
         <div style="text-align: left; ">
           {{ this.likecount }} 명이 이 게시글을 좋아합니다.
+          {{article}}
         </div>
       </div>
       <div>
@@ -220,7 +221,7 @@ export default {
         const API_URL = "http://127.0.0.1:8000";
         axios({
           method: "post",
-          url: `${API_URL}/movies/${this.$route.params.moviePk}/articles/${this.article.pk}/comments/like/`,
+          url: `${API_URL}/movies/${this.$route.params.moviePk}/articles/${this.article.pk}/`,
           headers: {
             Authorization: `Token ${this.$store.state.token}`,
           },
