@@ -5,13 +5,11 @@
 </template>
 
 <script>
-import ChartIndex from '../components/chart/index.vue'
-export default { 
-  components:{ChartIndex}
-
-}
+import ChartIndex from '../components/chart/index.vue';
+export default {
+  components: { ChartIndex },
+};
 </script>
 
 <style>
-
 </style>

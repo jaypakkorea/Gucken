@@ -1,5 +1,6 @@
 <template>
   <div
+    v-if="this.movie"
     class="detail_main_div"
     :style="{backgroundImage:`url(${`https://image.tmdb.org/t/p/original/${this.movie.poster_path}`})`}"
   >
@@ -11,17 +12,15 @@
         <div class="detail_title">{{this.movie.title}}</div>
         <div class="detail_flexdiv">
           <div>{{this.movie.release_date}}</div>
-          <b-button v-if="this.movie.like_users.includes(this.$store.state.currentUser.pk) || is_liked"  variant = "outline-warning"
-          @click="likeMovie">Cancle</b-button>
-          <b-button v-else-if="!this.movie.like_users.includes(this.$store.state.currentUser.pk) || !is_liked" variant = "warning"
-          @click="likeMovie">Like</b-button>
-        </div>        
+          <b-button v-if="this.is_liked" variant="outline-warning" @click="likeMovie">Canle</b-button>
+          <b-button v-else variant="warning" @click="likeMovie">Like</b-button>
+        </div>
         <div style="width: 80%; font-family: BMHANNAAir_ttf; color:darkgray">{{this.movie.overview}}</div>
         <!-- 배우가 없을떄는 v-if로 div 자체가 뜨지 않게 하기 -->
         <div v-if="this.movie.actors" class="detail_actors">
           <!-- for 문으로 배우 리스트 돌면서 이름, 사진 보여주기 -->
           <div class="detail_actors_img" v-for="actor in this.movie.actors" :key="actor.name">
-            <actorImgCard :actor="actor"/>
+            <actorImgCard :actor="actor" />
             <p>{{actor.name}}</p>
           </div>
         </div>
@@ -30,17 +29,17 @@
             <div style="font-size:3rem;">GENRE</div>
             <div class="d-flex">
               <div
-                v-for="names in this.movie.genres"
-                :key="names"
+                v-for="genre in this.movie.genres"
+                :key="genre.name"
                 style="color:gray;"
-              >{{names.name}} /</div>
+              >{{genre.name}} /</div>
             </div>
           </div>
           <!-- 내 평점 -->
           <!-- <div>
             <div style="font-size:3rem;">10.0</div>
             <div style="color:gray;">MyRATE</div>
-          </div> -->
+          </div>-->
           <!-- DB 평점 -->
           <div v-if="this.movie.vote_average">
             <div style="font-size:3rem;">{{this.movie.vote_average}}</div>
@@ -50,7 +49,7 @@
       </div>
       <div class="detail_right_div">
         <b-tabs content-class="mt-2">
-          <b-tab title="TRAILER" >
+          <b-tab title="TRAILER">
             <iframe
               style="margin-top:3rem;"
               id="ytplayer"
@@ -64,34 +63,63 @@
           <b-tab title="COMMUNITY" lazy>
             <div class="commumityButtonDiv">
               <b-button v-b-modal.modal-1>
-                <font-awesome-icon @click="communnityOpen" class="pluscommunuty" icon="fa-solid fa-plus" />
+                <font-awesome-icon
+                  @click="communnityOpen"
+                  class="pluscommunuty"
+                  icon="fa-solid fa-plus"
+                />
               </b-button>
               <!-- 모달로 게시글 받는곳 -->
-              <b-modal centered class="communityModal" ref="my-modal"   size="xl" id="modal-1" title="게시글 작성">
+              <b-modal
+                centered
+                class="communityModal"
+                ref="my-modal"
+                size="xl"
+                id="modal-1"
+                title="게시글 작성"
+              >
                 <div>
-                  <b-form-input v-model="title" style="margin-bottom:30px; font-family: BMJUA;" size="lg" placeholder="제목을 입력하세요"></b-form-input>
-                  <b-form-textarea v-model="content" size="lg" placeholder="내용을 입력하세요" style="font-family: BMHANNAAir_ttf;" no-resize rows="5" id="textarea-no-resize" type="text" ></b-form-textarea>
+                  <b-form-input
+                    v-model="title"
+                    style="margin-bottom:30px; font-family: BMJUA;"
+                    size="lg"
+                    placeholder="제목을 입력하세요"
+                  ></b-form-input>
+                  <b-form-textarea
+                    v-model="content"
+                    size="lg"
+                    placeholder="내용을 입력하세요"
+                    style="font-family: BMHANNAAir_ttf;"
+                    no-resize
+                    rows="5"
+                    id="textarea-no-resize"
+                    type="text"
+                  ></b-form-textarea>
                   <div style="margin-left:35%; margin-top:50px;">
-                  <div @mouseleave="showCurrentRating(0)" style="display:inline-block;">
-                    <star-rating  :show-rating="false" @current-rating="showCurrentRating" @rating-selected="setCurrentSelectedRating" :increment="0.1"></star-rating>
-                  </div>
-                  <div style="margin-top:10px; font-weight : bold ;font-family: BMJUA; color:black">{{currentRating}}</div>
+                    <div @mouseleave="showCurrentRating(0)" style="display:inline-block;">
+                      <star-rating
+                        :show-rating="false"
+                        @current-rating="showCurrentRating"
+                        @rating-selected="setCurrentSelectedRating"
+                        :increment="0.1"
+                      ></star-rating>
+                    </div>
+                    <div
+                      style="margin-top:10px; font-weight : bold ;font-family: BMJUA; color:black"
+                    >{{currentRating}}</div>
                   </div>
                 </div>
                 <template #modal-footer>
                   <div>
-                    <b-button
-                    variant="warning"
-                      size="xl"
-                      class="float-right"
-                      @click="addCommunity"
-                    ><font-awesome-icon icon="fa-solid fa-paper-plane" /></b-button>
+                    <b-button variant="warning" size="xl" class="float-right" @click="addCommunity">
+                      <font-awesome-icon icon="fa-solid fa-paper-plane" />
+                    </b-button>
                   </div>
                 </template>
               </b-modal>
             </div>
             <div></div>
-            <MovieArticles :articles=articles />
+            <MovieArticles :articles="articles" />
           </b-tab>
         </b-tabs>
       </div>
@@ -100,56 +128,53 @@
 </template>
 
 <script>
-import axios from "axios";
-import StarRating from 'vue-star-rating'
-import MovieArticles from "./MovieArticles.vue";
-import actorImgCard from"./actorImgCard.vue"
+import axios from 'axios';
+import StarRating from 'vue-star-rating';
+import MovieArticles from './MovieArticles.vue';
+import actorImgCard from './actorImgCard.vue';
 import Swal from 'sweetalert2';
 
 export default {
-  name: "DetailVue",
+  name: 'SearchDetailVue',
   components: {
     StarRating,
     MovieArticles,
     actorImgCard,
   },
-  props: {
-    movie: Object
-  },
+  props: ['movie'],
   data() {
     return {
-      myKeyword: this.movie,
       is_liked: false,
       urlList: [],
       video: [],
-      VideoData: "",
-      myApi: "",
+      VideoData: '',
+      myApi: '',
       myAPIList: [
-        "AIzaSyDvjcb7odUilSZEcCyXBY2rX9z0fTYYWvQ",
-        "AIzaSyDAes3uWN2F5a2_2EHBBFuIm0Ctv8Hpj1A",
-        "AIzaSyCN9uPuXJyXoVjTvkOA8g5ivcUGsGKDiK8",
+        'AIzaSyDvjcb7odUilSZEcCyXBY2rX9z0fTYYWvQ',
+        'AIzaSyDAes3uWN2F5a2_2EHBBFuIm0Ctv8Hpj1A',
+        'AIzaSyCN9uPuXJyXoVjTvkOA8g5ivcUGsGKDiK8',
         'AIzaSyATqBywB8sPKs2PrAv_FMEp4Xy7OWzqXOI',
-        "AIzaSyDEgtL7oYOo_OJBvIqq2MJhVxDV-IYwekc",
-        "AIzaSyBLMEBNxzyohh-zUFGFvHA5ZpI-TLmM4JE",
-        "AIzaSyDd-ndJ5GJOKwdBhILSGmAmDneCZEnzrKw"
+        'AIzaSyDEgtL7oYOo_OJBvIqq2MJhVxDV-IYwekc',
+        'AIzaSyBLMEBNxzyohh-zUFGFvHA5ZpI-TLmM4JE',
+        'AIzaSyDd-ndJ5GJOKwdBhILSGmAmDneCZEnzrKw',
       ],
       tabIndex: 0,
       rating: 0,
-    currentRating: 0,
-    currentSelectedRating: "점수를 등록해 주세요!",
-    boundRating: 3,
-    title:null,
-    content:null,
-    articles : null
+      currentRating: 0,
+      currentSelectedRating: '점수를 등록해 주세요!',
+      boundRating: 3,
+      title: null,
+      content: null,
+      articles: null,
     };
   },
-  computed : {
-    isLogin(){
-      return this.$store.getters.isLogin
+  computed: {
+    isLogin() {
+      return this.$store.getters.isLogin;
     },
-    realData(){
-      return this.$store.getters.isLogin
-    }
+    realData() {
+      return this.$store.getters.isLogin;
+    },
   },
   methods: {
     // pick() {
@@ -157,122 +182,140 @@ export default {
     //   this.myApi = this.myAPIList[idx];
     // },
     InputGetEvent(keyword) {
-      const baseURL = "https://www.googleapis.com/youtube/v3/search";
+      const baseURL = 'https://www.googleapis.com/youtube/v3/search';
       // const API_KEY = 'AIzaSyDvjcb7odUilSZEcCyXBY2rX9z0fTYYWvQ'
-      const API_KEY = ''
+      const API_KEY = '';
 
       axios
         .get(baseURL, {
           params: {
             key: API_KEY,
-            part: "snippet",
-            type: "video",
-            q: keyword + "공식 예고편",
-            maxResults: 1
-          }
+            part: 'snippet',
+            type: 'video',
+            q: keyword + '공식 예고편',
+            maxResults: 1,
+          },
         })
-        .then(response => {
+        .then((response) => {
           this.video = response.data.items[0];
           this.VideoData = `https://www.youtube.com/embed/${response.data.items[0].id.videoId}?autoplay=1&mute=1`;
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error);
         });
     },
     likeMovie() {
       if (!this.isLogin) {
-        Swal.fire('로그인이 필요한 서비스 입니다', '', 'error')
-        this.$router.push({name:'user'})
+        Swal.fire('로그인이 필요한 서비스 입니다', '', 'error');
+        this.$router.push({ name: 'user' });
       } else {
-        if(this.movie.like_users.includes(this.$store.state.currentUser.pk)){
-          const moviePk = this.movie.id;
-          this.$store.dispatch("addList", moviePk);
-          this.is_liked = !this.is_liked
-        }
-        else{
-          const moviePk = this.movie.id;
-          this.$store.dispatch("addList", moviePk);
-          this.is_liked = !this.is_liked
-        }
+        const moviePk = this.movie.id;
+        this.$store.dispatch('addList', moviePk);
+        this.is_liked = !this.is_liked;
       }
-
     },
-    setRating: function(rating) {
-      this.rating =  rating * 2 ;
+    setRating: function (rating) {
+      this.rating = rating * 2;
     },
-    showCurrentRating: function(rating) {
-      this.currentRating = (rating === 0) ? this.currentSelectedRating : rating* 2;
+    showCurrentRating: function (rating) {
+      this.currentRating =
+        rating === 0 ? this.currentSelectedRating : rating * 2;
     },
-    setCurrentSelectedRating: function(rating) {
-      this.currentSelectedRating =  rating* 2 ;
+    setCurrentSelectedRating: function (rating) {
+      this.currentSelectedRating = rating * 2;
     },
-    communnityOpen(){
+    communnityOpen() {
       if (!this.isLogin) {
-        Swal.fire('로그인이 필요한 서비스 입니다', '', 'error')
-        this.$router.push({name:'user'})
+        Swal.fire('로그인이 필요한 서비스 입니다', '', 'error');
+        this.$router.push({ name: 'user' });
       }
     },
-    readArticles(){
-      const API_URL = 'http://127.0.0.1:8000'
-        axios({
+    readArticles() {
+      const API_URL = 'http://127.0.0.1:8000';
+      axios({
         method: 'get',
         url: `${API_URL}/movies/${this.$route.params.moviePk}/articles/`,
       })
         .then((res) => {
-          this.articles=res.data
+          this.articles = res.data;
         })
         .catch((err) => {
           if (err.response.status === 404) {
-            Swal.fire('없는 영화 정보 입니다', '', 'error')
-            setTimeout(()=>this.$router.go(-1), 100)
-            
-  } 
-        })
+            Swal.fire('없는 영화 정보 입니다', '', 'error');
+            setTimeout(() => this.$router.go(-1), 100);
+          }
+        });
     },
     addCommunity() {
-      const API_URL = 'http://127.0.0.1:8000'
-        const movie = this.movie.id
-        const rate = this.currentRating
-        const title = this.title
-        const content = this.content
-        if (!title) {
-          Swal.fire('제목을 입력해주세요', '', 'error')
-          return
-        } else if (!content) {
-          Swal.fire('내용을 입력해주세요', '', 'error')
-          return
-        } else if (rate<=0) {
-          Swal.fire('평점을 남겨주세요', '', 'error')
-          return
-        }
+      const API_URL = 'http://127.0.0.1:8000';
+      const movie = this.movie.id;
+      const rate = this.currentRating;
+      const title = this.title;
+      const content = this.content;
+      if (!title) {
+        Swal.fire('제목을 입력해주세요', '', 'error');
+        return;
+      } else if (!content) {
+        Swal.fire('내용을 입력해주세요', '', 'error');
+        return;
+      } else if (rate <= 0) {
+        Swal.fire('평점을 남겨주세요', '', 'error');
+        return;
+      }
 
-        axios({
+      axios({
         method: 'post',
         url: `${API_URL}/movies/${this.$route.params.moviePk}/articles/`,
         data: {
-          movie, rate, title, content
+          movie,
+          rate,
+          title,
+          content,
         },
         headers: {
-          Authorization: `Token ${this.$store.state.token}`
-        }
+          Authorization: `Token ${this.$store.state.token}`,
+        },
       })
         .then(() => {
-          this.$router.push({ name: 'SearchDetailView', params: { moviePk: this.movie.id } })
-          this.$refs['my-modal'].hide()
-          this.readArticles()
-          this.title = null
-          this.content = null
+          this.$router.push({
+            name: 'SearchDetailView',
+            params: { moviePk: this.movie.id },
+          });
+          this.$refs['my-modal'].hide();
+          this.readArticles();
+          this.title = null;
+          this.content = null;
         })
         .catch((err) => {
-          console.log(err)
-        })
+          console.log(err);
+        });
     },
   },
   created() {
-    this.readArticles()
+    // this.readArticles()
+    // console.log('this.is_liked',this.is_liked);
+    // // this.InputGetEvent(this.movie.title)
+    // // this.pick()
+    // setTimeout(()=>this.InputGetEvent(this.movie.title),200)
+    //   if(this.movie?.like_users.includes(this.$store.state.currentUser.pk)){
+    //     this.is_liked = true
+    //   }
+    // console.log('true',this.movie?.like_users.includes(this.$store.state.currentUser.pk));
+    // this.readArticles()
+    // console.log('this.is_liked',this.is_liked);
+    // // this.InputGetEvent(this.movie.title)
+    // // this.pick()
+    // setTimeout(()=>this.InputGetEvent(this.movie.title),200)
+  },
+  mounted() {
+    this.readArticles();
+
     // this.InputGetEvent(this.movie.title)
     // this.pick()
-    setTimeout(()=>this.InputGetEvent(this.movie.title),200) 
+    setTimeout(() => this.InputGetEvent(this.movie.title), 200);
+    if (this.movie?.like_users.includes(this.$store.state.currentUser.pk)) {
+      this.is_liked = true;
+    }
   },
 };
 </script>
@@ -291,7 +334,6 @@ export default {
   src: url(../../fonts/BMHANNAAir_ttf.ttf);
 }
 
-
 .detail_main_div {
   padding-top: 2rem;
   width: 100%;
@@ -305,7 +347,7 @@ export default {
 .detail_main_div::after {
   width: 100%;
   height: 100%;
-  content: "";
+  content: '';
   background: linear-gradient(
     to left,
     rgba(20, 20, 20, 0.5) 10%,
@@ -381,7 +423,7 @@ export default {
   margin: 0 auto;
 }
 .detail_right_div {
-  width: 65%; 
+  width: 65%;
   padding-right: 100px;
 }
 .detail_title {
@@ -413,7 +455,7 @@ export default {
 .detailCommunityDiv::after {
   width: 100%;
   height: 100%;
-  content: "";
+  content: '';
   background-color: black;
   opacity: 0.2;
   background-size: cover;
@@ -425,7 +467,6 @@ export default {
 
 .CommunitysDiv {
   margin: 20px 50px;
-
 }
 .CommunityDiv {
   border: 1px solid white;
@@ -447,28 +488,24 @@ export default {
   margin: auto 0;
   min-width: 50px;
   text-align: left;
-
-  
 }
-.communityTitle{
+.communityTitle {
   margin: auto 20px;
-  font-size:2rem;
+  font-size: 2rem;
   line-height: fit-content;
   word-break: normal;
-  word-wrap:break-word;
-  word-break:break-all;
-  
+  word-wrap: break-word;
+  word-break: break-all;
 }
-.communityTitle2{
+.communityTitle2 {
   margin: auto 20px;
-  font-size:1.8rem;
+  font-size: 1.8rem;
   line-height: fit-content;
   word-break: normal;
-  word-wrap:break-word;
-  word-break:break-all;
-
+  word-wrap: break-word;
+  word-break: break-all;
 }
-.communityDate{
+.communityDate {
   margin: auto 0;
   min-width: 80px;
 }
@@ -487,33 +524,33 @@ export default {
   font-weight: 100;
 }
 
-.communityModal{
+.communityModal {
   height: 60vh;
 }
-#modal-1{
+#modal-1 {
   color: white;
 }
-.modal-header{
+.modal-header {
   border-bottom: none !important;
 }
-.modal-footer{
+.modal-footer {
   border-top: none !important;
 }
-.modal-content{
+.modal-content {
   /* background-color: rgb(63, 63, 63) !important; */
   width: 90%;
   height: fit-content;
   position: relative;
   z-index: 2;
 }
-.modal-content::after{
+.modal-content::after {
   background-image: url('https://res.klook.com/image/upload/Mobile/City/szhx3ytpgfnhpbmsngk0.jpg');
-  background-size:contain;
+  background-size: contain;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 100%;
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -521,23 +558,21 @@ export default {
   filter: grayscale(50%);
   opacity: 0.5;
 }
-#modal-1___BV_modal_header_ > button{
+#modal-1___BV_modal_header_ > button {
   background-color: transparent;
   border: none;
   font-size: 3rem;
   margin-top: -10px;
 }
-#textarea-no-resize{
+#textarea-no-resize {
   font-size: 2rem;
   color: black;
   font-weight: bold;
 }
-#modal-1___BV_modal_footer_ > div > button{
+#modal-1___BV_modal_footer_ > div > button {
   width: 130px;
   height: 50px;
   font-weight: bolder;
   font-size: 1.5rem;
 }
-
-
 </style>

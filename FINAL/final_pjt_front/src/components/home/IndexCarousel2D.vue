@@ -11,13 +11,8 @@
       id="carousel2Dcontent"
       style="transition: transform 0.5s ease 0s"
     >
-      <slide
-        v-for="(topmovie, index) in topmovies"
-        :key="topmovie.id"
-        :index="index"
-      >
-        <router-link
-        :to="{ name: 'SearchDetailView', params: { moviePk: topmovie.id } }">
+      <slide v-for="(topmovie, index) in topmovies" :key="topmovie.id" :index="index">
+        <router-link :to="{ name: 'SearchDetailView', params: { moviePk: topmovie.id } }">
           <IndexCard :topmovie="topmovie.poster_path" />
         </router-link>
       </slide>
@@ -33,30 +28,22 @@
       :mouse-drag="true"
       id="carousel2Dcontent"
     >
-    <slide
-        v-for="(popularmovies, index) in popularmovies"
-        :key="popularmovies.id"
-        :index="index"
-      >
-        <router-link
-        :to="{ name: 'SearchDetailView', params: { moviePk: popularmovies.id } }">
+      <slide v-for="(popularmovies, index) in popularmovies" :key="popularmovies.id" :index="index">
+        <router-link :to="{ name: 'SearchDetailView', params: { moviePk: popularmovies.id } }">
           <CardsPopular :popularmovies="popularmovies.poster_path" />
         </router-link>
-      </slide>    
+      </slide>
     </carousel>
-</div>
-
-
+  </div>
 </template>
 
 <script>
-import { Carousel, Slide } from "vue-carousel";
-import IndexCard from "./Cards.vue";
-import CardsPopular from "./CardsPopular";
-
+import { Carousel, Slide } from 'vue-carousel';
+import IndexCard from './Cards.vue';
+import CardsPopular from './CardsPopular';
 
 export default {
-  name: "IndexCarousel2D",
+  name: 'IndexCarousel2D',
   components: {
     Carousel,
     Slide,
@@ -73,10 +60,10 @@ export default {
   },
   methods: {
     getTop10Movies() {
-      this.$store.dispatch("getTop10Movies");
+      this.$store.dispatch('getTop10Movies');
     },
     popularTop10Movies() {
-      this.$store.dispatch("popularTop10Movies");
+      this.$store.dispatch('popularTop10Movies');
     },
   },
   created() {

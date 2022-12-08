@@ -1,0 +1,10 @@
+back
+python -m venv venv
+source venv/Scripts/activate
+python manage.py migrate
+python manage.py loaddata actor.json genre.json mymovie.json
+python manage.py runserver
+
+front
+npm i
+npm run serve

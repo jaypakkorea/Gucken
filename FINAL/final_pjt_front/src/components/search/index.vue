@@ -67,13 +67,13 @@
 </template>
   
 <script>
-import indexSearchImg from "./indexSearchImg.vue";
+import indexSearchImg from './indexSearchImg.vue';
 export default {
-  name: "SearchPage",
+  name: 'SearchPage',
   data() {
     return {
-      keyword: "",
-      listState: 0
+      keyword: '',
+      listState: 0,
     };
   },
   components: { indexSearchImg },
@@ -83,7 +83,7 @@ export default {
     },
     GenreMovies() {
       return this.$store.state.genre;
-    }
+    },
     // img_url(){
     //     return  ``
     // }
@@ -91,24 +91,24 @@ export default {
   methods: {
     onInputKeyword() {
       const movieName = this.keyword;
-      this.$store.dispatch("search", movieName);
+      this.$store.dispatch('search', movieName);
       this.keyword = null;
       this.listState = 1;
     },
     searchDetailPage() {},
     searchGenre(genreId) {
-      this.$store.dispatch("searchGenre", genreId);
+      this.$store.dispatch('searchGenre', genreId);
       this.listState = 0;
     },
     allGenre() {
-      this.$store.dispatch("searchGenreAll");
+      this.$store.dispatch('searchGenreAll');
       this.listState = 0;
-    }
+    },
   },
-  created(){
-    this.allGenre()
+  created() {
+    this.allGenre();
     this.listState = 0;
-  }
+  },
 };
 </script>
   
@@ -125,7 +125,6 @@ export default {
   font-family: BMHANNAAir_ttf;
   src: url(../../fonts/BMHANNAAir_ttf.ttf);
 }
-
 
 .routerLink {
   --bs-link-color: none;
@@ -149,16 +148,15 @@ export default {
 .SearchFlexDiv::after {
   width: 100%;
   height: 100%;
-  content: "";
+  content: '';
   background: linear-gradient(
-      to left,
-      rgba(20, 20, 20, 0.5) 10%,
-      rgba(20, 20, 20, 0.7) 25%,
-      rgba(20, 20, 20, 0.8) 50%,
-      rgba(20, 20, 20, 0.9) 65%,
-      rgba(20, 20, 20, 0.9) 100%
-    );
-
+    to left,
+    rgba(20, 20, 20, 0.5) 10%,
+    rgba(20, 20, 20, 0.7) 25%,
+    rgba(20, 20, 20, 0.8) 50%,
+    rgba(20, 20, 20, 0.9) 65%,
+    rgba(20, 20, 20, 0.9) 100%
+  );
 
   background-size: cover;
   position: absolute;
@@ -185,17 +183,17 @@ export default {
   border-bottom: 3px solid white;
   background-color: transparent;
   box-shadow: none;
-  font-family: BMJUA ;
+  font-family: BMJUA;
 }
 .searchSelectDiv {
   width: 270px;
   margin-top: 3rem;
-  cursor : pointer;
+  cursor: pointer;
 }
 .searchSelect {
   margin: 1rem;
   padding: 0.3rem 1rem;
-  font-family: BMDOHYEON
+  font-family: BMDOHYEON;
 }
 .searchSelect:hover {
   border: 1px solid #ffda4f;

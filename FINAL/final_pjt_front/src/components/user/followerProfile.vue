@@ -1,13 +1,7 @@
 <template>
   <div>
     <router-link :to="{ name: 'userProfile', params: { userid: userId } }">
-      <b-avatar
-        badge
-        button
-        size="2rem"
-        @click="onClick"
-        :src="userProfile"
-      ></b-avatar>
+      <b-avatar badge button size="2rem" @click="onClick" :src="userProfile"></b-avatar>
     </router-link>
     {{ follower.username.split("@")[0] }}
   </div>
@@ -15,7 +9,7 @@
   
   <script>
 export default {
-  name: "followerProfile",
+  name: 'followerProfile',
   props: {
     follower: Object,
   },
@@ -24,7 +18,7 @@ export default {
       if (this.follower.profile_pic) {
         return `http://localhost:8000${this.follower.profile_pic}`;
       } else {
-        return "http://localhost:8000/media/profile/images/default.jpg";
+        return 'http://localhost:8000/media/profile/images/default.jpg';
       }
     },
     userId() {

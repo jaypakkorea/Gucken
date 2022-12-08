@@ -1,21 +1,19 @@
 <template>
   <div class="SearchContainer">
-    <signUp/>
+    <signUp />
   </div>
 </template>
 
 <script>
-
-import signUp from '../components/user/signUp.vue'
+import signUp from '../components/user/signUp.vue';
 
 export default {
   name: 'userSignUp',
-  components:{
+  components: {
     signUp,
-  }
-}
+  },
+};
 </script>
 
 <style>
-
 </style>
