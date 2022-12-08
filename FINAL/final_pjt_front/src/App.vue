@@ -65,11 +65,6 @@ export default {
       console.log(typeof this.$store.getters.currentUser.pk, 'wow');
     },
   },
-  reload(){
-    console.log(this.$store.getters.currentUser.pk, 'hi')
-    console.log(typeof this.$store.getters.currentUser.pk, 'wow')
-  }
-
 }
 
 </script>
