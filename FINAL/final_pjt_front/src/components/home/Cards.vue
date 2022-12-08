@@ -6,17 +6,16 @@
 
 <script>
 export default {
-  name: "IndexCard",
+  name: 'IndexCard',
   data() {
     return {
-        link_url: `https://image.tmdb.org/t/p/original/${this.topmovie}`,
+      link_url: `https://image.tmdb.org/t/p/original/${this.topmovie}`,
     };
   },
-  props:{
-    topmovie:String,
-    popularmovies : String
+  props: {
+    topmovie: String,
+    popularmovies: String,
   },
-
 };
 </script>
 

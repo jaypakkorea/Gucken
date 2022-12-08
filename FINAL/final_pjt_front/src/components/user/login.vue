@@ -4,7 +4,7 @@
     <div class="loginSenterDiv">
       <div class="loginInputDiv">
         <div>E-MAIL</div>
-        <input  v-model="username" class="loginInput" type="email" />
+        <input v-model="username" class="loginInput" type="email" />
       </div>
       <div class="loginInputDiv">
         <div>PASSWORD</div>
@@ -16,15 +16,15 @@
       <!-- <div class="loginFindDiv">
         <div class="FindTitle">이메일 찾기</div>
         <div class="FindTitle">비밀번호 찾기</div>
-      </div> -->
+      </div>-->
       <div class="loginInputDiv">
         <!-- <router-link :to="{ name: 'SearchDetailView' }"> -->
-          <b-button
-            style="margin-top:4rem; opacity:0.5;"
-            variant="light"
-            class="loginButton"
-            :to="{ name: 'userSignUp' }"
-          >간편 회원가입</b-button>
+        <b-button
+          style="margin-top:4rem; opacity:0.5;"
+          variant="light"
+          class="loginButton"
+          :to="{ name: 'userSignUp' }"
+        >간편 회원가입</b-button>
         <!-- </router-link> -->
       </div>
     </div>
@@ -33,26 +33,26 @@
 
 <script>
 export default {
-  name: "LoginUser",
+  name: 'LoginUser',
   data() {
     return {
       email: null,
       username: null,
       password: null,
-    }
+    };
   },
   methods: {
     logIn() {
-      const username = this.username
-      const password = this.password
+      const username = this.username;
+      const password = this.password;
 
       const payload = {
         username: username,
         password: password,
-      }
-      this.$store.dispatch('logIn', payload)
-    }
-  }
+      };
+      this.$store.dispatch('logIn', payload);
+    },
+  },
 };
 </script>
 

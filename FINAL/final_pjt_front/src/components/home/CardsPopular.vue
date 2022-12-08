@@ -6,16 +6,15 @@
 
 <script>
 export default {
-  name: "CardsPopular",
+  name: 'CardsPopular',
   data() {
     return {
-        link_url: `https://image.tmdb.org/t/p/original/${this.popularmovies}`,
+      link_url: `https://image.tmdb.org/t/p/original/${this.popularmovies}`,
     };
   },
-  props:{
-    popularmovies : String
+  props: {
+    popularmovies: String,
   },
-
 };
 </script>
 

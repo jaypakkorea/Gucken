@@ -1,20 +1,20 @@
 <template>
   <div class="SearchContainer">
-    <SearchPage/>
+    <SearchPage />
   </div>
 </template>
 
 <script>
-import SearchPage from '../components/search/index.vue' 
+import SearchPage from '../components/search/index.vue';
 export default {
-  components:{
+  components: {
     SearchPage,
-  }
-}
+  },
+};
 </script>
 
 <style>
-.SearchContainer{
+.SearchContainer {
   margin-left: 50px;
   background-color: black;
   min-height: 100vh;

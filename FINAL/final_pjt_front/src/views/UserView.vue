@@ -1,18 +1,17 @@
 <template>
   <div class="SearchContainer">
-    <userIndex/>
+    <userIndex />
   </div>
 </template>
 
 <script>
-import userIndex from '../components/user/index.vue'
+import userIndex from '../components/user/index.vue';
 export default {
-  components:{
+  components: {
     userIndex,
-  }
-}
+  },
+};
 </script>
 
 <style>
-
 </style>

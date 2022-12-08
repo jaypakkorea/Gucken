@@ -1,14 +1,14 @@
 <template>
   <div>
     <div>
-        <img class="ChartRecommendimgDiv"  :src="link_url" />
+      <img class="ChartRecommendimgDiv" :src="link_url" />
     </div>
   </div>
 </template>
   
   <script>
 export default {
-  name: "ChartRecommendCard",
+  name: 'ChartRecommendCard',
   data() {
     return {
       link_url: `https://image.tmdb.org/t/p/original/${this.recommendmovie.poster_path}`,
@@ -20,10 +20,10 @@ export default {
 };
 </script>  
 <style>
-.noneImg{
-    background-color: lightcyan;
+.noneImg {
+  background-color: lightcyan;
 }
-.ChartRecommendimgDiv{
-    border-radius: 20px;
+.ChartRecommendimgDiv {
+  border-radius: 20px;
 }
 </style>

@@ -5,14 +5,14 @@
       v-if="!this.poster_path"
       class="detailImg"
       src="https://icon-library.com/images/no-image-icon/no-image-icon-1.jpg"
-      alt=""
+      alt
     />
   </div>
 </template>
 
 <script>
 export default {
-  name: "indexSearchImg",
+  name: 'indexSearchImg',
   data() {
     return {
       link_url: `https://image.tmdb.org/t/p/original${this.poster_path}`,
@@ -25,5 +25,4 @@ export default {
 </script>
 
 <style>
-
 </style>
