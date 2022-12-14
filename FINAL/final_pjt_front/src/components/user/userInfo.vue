@@ -77,11 +77,7 @@
           class="followButton"
           @click="followIng"
         >FOLLOW</b-button>
-        <b-button
-          v-else-if=" this.followerList.includes(this.$store.state.currentUser.pk) || !follow_follwing"
-          class="followButton"
-          @click="followIng"
-        >UNFOLLOW</b-button>
+        <b-button v-else class="followButton" @click="followIng">UNFOLLOW</b-button>
       </div>
     </div>
     <div class="UserRightDiv">
@@ -288,6 +284,9 @@ export default {
     this.sumLikeUsers();
     this.fetchProfile();
     this.readLikeCount();
+    if (this.followerList?.includes(this.$store.state.currentUser.pk)) {
+      this.follow_follwing = false;
+    }
   },
 };
 </script>
