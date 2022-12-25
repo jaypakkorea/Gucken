@@ -31,7 +31,6 @@
         </div>
         <div style="text-align: left; ">
           {{ this.likecount }} 명이 이 게시글을 좋아합니다.
-          {{article}}
         </div>
       </div>
       <div>
